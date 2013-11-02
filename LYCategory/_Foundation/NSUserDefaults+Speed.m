@@ -10,4 +10,11 @@
 
 @implementation NSUserDefaults (Speed)
 
+#pragma mark - FOR STANDARD
+
++ (NSString *)stringForKey:(NSString *)defaultName {
+	// TODO: NOT FINISHED
+	return nil;
+}
+
 @end

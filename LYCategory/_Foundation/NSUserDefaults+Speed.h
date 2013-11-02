@@ -10,4 +10,8 @@
 
 @interface NSUserDefaults (Speed)
 
+#pragma mark - FOR STANDARD
+
++ (NSString *)stringForKey:(NSString *)defaultName;
+
 @end
