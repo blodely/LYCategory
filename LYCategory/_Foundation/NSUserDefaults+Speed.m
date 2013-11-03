@@ -13,8 +13,7 @@
 #pragma mark - FOR STANDARD
 
 + (NSString *)stringForKey:(NSString *)defaultName {
-	// TODO: NOT FINISHED
-	return nil;
+	return [[NSUserDefaults standardUserDefaults] stringForKey:defaultName];
 }
 
 @end
