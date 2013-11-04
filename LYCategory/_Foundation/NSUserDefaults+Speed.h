@@ -14,4 +14,6 @@
 
 + (NSString *)stringForKey:(NSString *)defaultName;
 
++ (NSArray *)arrayForKey:(NSString *)defaultName;
+
 @end

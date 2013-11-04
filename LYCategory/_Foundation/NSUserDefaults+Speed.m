@@ -16,4 +16,9 @@
 	return [[NSUserDefaults standardUserDefaults] stringForKey:defaultName];
 }
 
++ (NSArray *)arrayForKey:(NSString *)defaultName {
+	// TODO:
+	return nil;
+}
+
 @end
