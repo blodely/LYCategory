@@ -20,4 +20,9 @@
 	return [[NSUserDefaults standardUserDefaults] arrayForKey:defaultName];
 }
 
++ (NSDictionary *)dictionaryForKey:(NSString *)defaultName {
+	// TODO:
+	return nil;
+}
+
 @end

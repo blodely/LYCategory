@@ -16,4 +16,6 @@
 
 + (NSArray *)arrayForKey:(NSString *)defaultName;
 
++ (NSDictionary *)dictionaryForKey:(NSString *)defaultName;
+
 @end
