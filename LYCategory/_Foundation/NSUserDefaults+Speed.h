@@ -2,7 +2,7 @@
 //  NSUserDefaults+Speed.h
 //  LYCategory
 //
-//  Created by Rick Luo on 12/5/13.
+//  Created by Rick Luo on 2013-11.
 //  Copyright (c) 2013 Luo Yu. All rights reserved.
 //
 
