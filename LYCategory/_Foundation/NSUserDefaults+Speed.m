@@ -24,4 +24,9 @@
 	return [[NSUserDefaults standardUserDefaults] dictionaryForKey:defaultName];
 }
 
++ (NSData *)dataForKey:(NSString *)defaultName {
+	// TODO:
+	return nil;
+}
+
 @end

@@ -18,4 +18,6 @@
 
 + (NSDictionary *)dictionaryForKey:(NSString *)defaultName;
 
++ (NSData *)dataForKey:(NSString *)defaultName;
+
 @end
