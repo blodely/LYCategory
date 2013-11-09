@@ -25,8 +25,7 @@
 }
 
 + (NSData *)dataForKey:(NSString *)defaultName {
-	// TODO:
-	return nil;
+	return [[NSUserDefaults standardUserDefaults] dataForKey:defaultName];
 }
 
 @end
