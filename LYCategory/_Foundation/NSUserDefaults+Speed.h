@@ -20,4 +20,6 @@
 
 + (NSData *)dataForKey:(NSString *)defaultName;
 
++ (NSArray *)stringArrayForKey:(NSString *)defaultName;
+
 @end
