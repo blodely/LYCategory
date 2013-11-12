@@ -22,4 +22,6 @@
 
 + (NSArray *)stringArrayForKey:(NSString *)defaultName;
 
++ (NSInteger)integerForKey:(NSString *)defaultName;
+
 @end
