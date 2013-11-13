@@ -32,4 +32,8 @@
 	return [[NSUserDefaults standardUserDefaults] stringArrayForKey:defaultName];
 }
 
++ (NSInteger)integerForKey:(NSString *)defaultName {
+	return [[NSUserDefaults standardUserDefaults] integerForKey:defaultName];
+}
+
 @end
