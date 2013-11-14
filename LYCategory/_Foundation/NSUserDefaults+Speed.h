@@ -24,4 +24,6 @@
 
 + (NSInteger)integerForKey:(NSString *)defaultName;
 
++ (float)floatForKey:(NSString *)defaultName;
+
 @end
