@@ -36,4 +36,8 @@
 	return [[NSUserDefaults standardUserDefaults] integerForKey:defaultName];
 }
 
++ (float)floatForKey:(NSString *)defaultName {
+	return [[NSUserDefaults standardUserDefaults] floatForKey:defaultName];
+}
+
 @end
