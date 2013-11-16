@@ -26,4 +26,6 @@
 
 + (float)floatForKey:(NSString *)defaultName;
 
++ (double)doubleForKey:(NSString *)defaultName;
+
 @end
