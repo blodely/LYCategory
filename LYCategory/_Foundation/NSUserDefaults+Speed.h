@@ -28,4 +28,6 @@
 
 + (double)doubleForKey:(NSString *)defaultName;
 
++ (BOOL)boolForKey:(NSString *)defaultName;
+
 @end
