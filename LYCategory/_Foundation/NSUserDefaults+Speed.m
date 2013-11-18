@@ -40,4 +40,8 @@
 	return [[NSUserDefaults standardUserDefaults] floatForKey:defaultName];
 }
 
++ (double)doubleForKey:(NSString *)defaultName {
+	return [[NSUserDefaults standardUserDefaults] doubleForKey:defaultName];
+}
+
 @end
