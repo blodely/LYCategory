@@ -44,4 +44,8 @@
 	return [[NSUserDefaults standardUserDefaults] doubleForKey:defaultName];
 }
 
++ (BOOL)boolForKey:(NSString *)defaultName {
+	return [[NSUserDefaults standardUserDefaults] boolForKey:defaultName];
+}
+
 @end
