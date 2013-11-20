@@ -30,4 +30,6 @@
 
 + (BOOL)boolForKey:(NSString *)defaultName;
 
++ (NSURL *)URLForKey:(NSString *)defaultName;
+
 @end
