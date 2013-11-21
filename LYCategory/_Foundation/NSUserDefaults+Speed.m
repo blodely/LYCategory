@@ -48,4 +48,8 @@
 	return [[NSUserDefaults standardUserDefaults] boolForKey:defaultName];
 }
 
++ (NSURL *)URLForKey:(NSString *)defaultName {
+	return [[NSUserDefaults standardUserDefaults] URLForKey:defaultName];
+}
+
 @end
