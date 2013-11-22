@@ -32,4 +32,6 @@
 
 + (NSURL *)URLForKey:(NSString *)defaultName;
 
+#pragma mark - WRITE FOR STANDARD
+
 @end

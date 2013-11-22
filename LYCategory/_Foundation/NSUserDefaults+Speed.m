@@ -52,4 +52,6 @@
 	return [[NSUserDefaults standardUserDefaults] URLForKey:defaultName];
 }
 
+#pragma mark - WRITE FOR STANDARD
+
 @end
