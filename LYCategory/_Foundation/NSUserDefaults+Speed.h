@@ -34,4 +34,8 @@
 
 #pragma mark - WRITE FOR STANDARD
 
++ (void)setObject:(id)value forKey:(NSString *)defaultName;
+
+
+
 @end
