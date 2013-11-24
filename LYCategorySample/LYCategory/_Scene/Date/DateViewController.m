@@ -17,7 +17,7 @@
 #pragma mark - ACTIONS
 
 - (void)dateChanged:(id)sender {
-	
+	lblUTC.text = [NSString stringWithFormat:@"%@", [dpDate.date utcTimeIntervalSince1970]];
 }
 
 #pragma mark - INIT
