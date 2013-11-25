@@ -15,6 +15,7 @@
 		B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEC1184325E6007E0B7E /* LYAppDelegate.m */; };
 		B633EEC4184325E6007E0B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B633EEC3184325E6007E0B7E /* Images.xcassets */; };
 		B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEE618432A86007E0B7E /* NSString+Input.m */; };
+		B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEE918432E97007E0B7E /* NSDate+Formatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		B633EEE11843276F007E0B7E /* LYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCategory.h; sourceTree = "<group>"; };
 		B633EEE518432A86007E0B7E /* NSString+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Input.h"; sourceTree = "<group>"; };
 		B633EEE618432A86007E0B7E /* NSString+Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Input.m"; sourceTree = "<group>"; };
+		B633EEE818432E96007E0B7E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
+		B633EEE918432E97007E0B7E /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 			children = (
 				B633EEE518432A86007E0B7E /* NSString+Input.h */,
 				B633EEE618432A86007E0B7E /* NSString+Input.m */,
+				B633EEE818432E96007E0B7E /* NSDate+Formatter.h */,
+				B633EEE918432E97007E0B7E /* NSDate+Formatter.m */,
 			);
 			path = _Foundation;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */,
 				B633EEBE184325E6007E0B7E /* main.m in Sources */,
 				B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */,
+				B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

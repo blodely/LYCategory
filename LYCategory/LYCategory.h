@@ -10,3 +10,7 @@
 #import <Foundation/Foundation.h>
 
 // IMPORT UTILITIES
+
+#import "NSString+Input.h"
+
+#import "NSDate+Formatter.h"
