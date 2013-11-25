@@ -14,10 +14,18 @@
 
 - (BOOL)isEqualToString:(NSString *)aString;
 
+- (float)floatValue;
+
 - (double)doubleValue;
 
 - (int)intValue;
 
+- (NSInteger)integerValue;
+
+- (long long)longLongValue;
+
 - (NSUInteger)length;
+
+- (BOOL)boolValue;
 
 @end

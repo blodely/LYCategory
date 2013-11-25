@@ -12,15 +12,19 @@
 
 - (id)objectAtIndex:(NSUInteger)index {
 	
-	if (self.allKeys.count == 0 || self.allKeys.count <= index) {
+	if ([[self allKeys] count] == 0 || [[self allKeys] count] <= index) {
 		return nil;
 	}
 	
-	return [self objectForKey:[self.allKeys objectAtIndex:index]];
+	return [self objectForKey:[[self allKeys] objectAtIndex:index]];
 }
 
 - (BOOL)isEqualToString:(NSString *)aString {
 	return NO;
+}
+
+- (float)floatValue {
+	return 0.0f;
 }
 
 - (double)doubleValue {
@@ -31,8 +35,20 @@
 	return 0;
 }
 
+- (NSInteger)integerValue {
+	return 0;
+}
+
+- (long long)longLongValue {
+	return 0;
+}
+
 - (NSUInteger)length {
 	return self.allKeys.count;
+}
+
+- (BOOL)boolValue {
+	return self != nil && [[self allKeys] count] != 0;
 }
 
 @end

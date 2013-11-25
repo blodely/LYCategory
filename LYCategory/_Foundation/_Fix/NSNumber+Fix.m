@@ -22,4 +22,8 @@
 	return [[NSString stringWithFormat:@"%@", self] isEqualToString:aString];
 }
 
+- (NSUInteger)length {
+	return 0;
+}
+
 @end

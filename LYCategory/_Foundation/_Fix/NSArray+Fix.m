@@ -26,4 +26,20 @@
 	return 0;
 }
 
+- (NSInteger)integerValue {
+	return 0;
+}
+
+- (long long)longLongValue {
+	return 0;
+}
+
+- (BOOL)boolValue {
+	return self != nil && [self count] != 0;
+}
+
+- (NSUInteger)length {
+	return [self count];
+}
+
 @end

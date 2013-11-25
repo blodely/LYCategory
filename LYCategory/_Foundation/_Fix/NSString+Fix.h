@@ -1,5 +1,5 @@
 //
-//  NSNumber+Fix.h
+//  NSString+Fix.h
 //  LYCategory
 //
 //  Created by Rick Luo on 11/25/13.
@@ -8,14 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSNumber (Fix)
+@interface NSString (Fix)
 
 - (id)objectAtIndex:(NSUInteger)index;
 
 - (id)objectForKey:(id)aKey;
-
-- (BOOL)isEqualToString:(NSString *)aString;
-
-- (NSUInteger)length;
 
 @end

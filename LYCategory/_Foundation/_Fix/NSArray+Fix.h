@@ -18,4 +18,12 @@
 
 - (int)intValue;
 
+- (NSInteger)integerValue;
+
+- (long long)longLongValue;
+
+- (BOOL)boolValue;
+
+- (NSUInteger)length;
+
 @end

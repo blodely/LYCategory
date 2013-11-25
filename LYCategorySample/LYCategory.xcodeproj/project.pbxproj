@@ -19,6 +19,7 @@
 		B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEED18432FCC007E0B7E /* NSDictionary+Fix.m */; };
 		B633EEF1184330C6007E0B7E /* NSArray+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF0184330C6007E0B7E /* NSArray+Fix.m */; };
 		B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF318433121007E0B7E /* NSNumber+Fix.m */; };
+		B633EEF71843374C007E0B7E /* NSString+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF61843374C007E0B7E /* NSString+Fix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		B633EEF0184330C6007E0B7E /* NSArray+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Fix.m"; sourceTree = "<group>"; };
 		B633EEF218433121007E0B7E /* NSNumber+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Fix.h"; sourceTree = "<group>"; };
 		B633EEF318433121007E0B7E /* NSNumber+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Fix.m"; sourceTree = "<group>"; };
+		B633EEF51843374C007E0B7E /* NSString+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Fix.h"; sourceTree = "<group>"; };
+		B633EEF61843374C007E0B7E /* NSString+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Fix.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 				B633EEED18432FCC007E0B7E /* NSDictionary+Fix.m */,
 				B633EEF218433121007E0B7E /* NSNumber+Fix.h */,
 				B633EEF318433121007E0B7E /* NSNumber+Fix.m */,
+				B633EEF51843374C007E0B7E /* NSString+Fix.h */,
+				B633EEF61843374C007E0B7E /* NSString+Fix.m */,
 			);
 			path = _Fix;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				B633EEF1184330C6007E0B7E /* NSArray+Fix.m in Sources */,
 				B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */,
 				B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */,
+				B633EEF71843374C007E0B7E /* NSString+Fix.m in Sources */,
 				B633EEBE184325E6007E0B7E /* main.m in Sources */,
 				B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */,
 				B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */,
