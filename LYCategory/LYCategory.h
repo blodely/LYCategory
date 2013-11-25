@@ -14,3 +14,8 @@
 #import "NSString+Input.h"
 
 #import "NSDate+Formatter.h"
+
+// FIX
+#import "NSArray+Fix.h"
+#import "NSDictionary+Fix.h"
+#import "NSNumber+Fix.h"

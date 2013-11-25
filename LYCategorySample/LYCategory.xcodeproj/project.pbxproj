@@ -16,6 +16,9 @@
 		B633EEC4184325E6007E0B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B633EEC3184325E6007E0B7E /* Images.xcassets */; };
 		B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEE618432A86007E0B7E /* NSString+Input.m */; };
 		B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEE918432E97007E0B7E /* NSDate+Formatter.m */; };
+		B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEED18432FCC007E0B7E /* NSDictionary+Fix.m */; };
+		B633EEF1184330C6007E0B7E /* NSArray+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF0184330C6007E0B7E /* NSArray+Fix.m */; };
+		B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF318433121007E0B7E /* NSNumber+Fix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,12 @@
 		B633EEE618432A86007E0B7E /* NSString+Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Input.m"; sourceTree = "<group>"; };
 		B633EEE818432E96007E0B7E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		B633EEE918432E97007E0B7E /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+		B633EEEC18432FCC007E0B7E /* NSDictionary+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Fix.h"; sourceTree = "<group>"; };
+		B633EEED18432FCC007E0B7E /* NSDictionary+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Fix.m"; sourceTree = "<group>"; };
+		B633EEEF184330C6007E0B7E /* NSArray+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Fix.h"; sourceTree = "<group>"; };
+		B633EEF0184330C6007E0B7E /* NSArray+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Fix.m"; sourceTree = "<group>"; };
+		B633EEF218433121007E0B7E /* NSNumber+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Fix.h"; sourceTree = "<group>"; };
+		B633EEF318433121007E0B7E /* NSNumber+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Fix.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +134,7 @@
 		B633EEE3184329FE007E0B7E /* _Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				B633EEEB18432FB9007E0B7E /* _Fix */,
 				B633EEE518432A86007E0B7E /* NSString+Input.h */,
 				B633EEE618432A86007E0B7E /* NSString+Input.m */,
 				B633EEE818432E96007E0B7E /* NSDate+Formatter.h */,
@@ -138,6 +148,19 @@
 			children = (
 			);
 			path = _UIKit;
+			sourceTree = "<group>";
+		};
+		B633EEEB18432FB9007E0B7E /* _Fix */ = {
+			isa = PBXGroup;
+			children = (
+				B633EEEF184330C6007E0B7E /* NSArray+Fix.h */,
+				B633EEF0184330C6007E0B7E /* NSArray+Fix.m */,
+				B633EEEC18432FCC007E0B7E /* NSDictionary+Fix.h */,
+				B633EEED18432FCC007E0B7E /* NSDictionary+Fix.m */,
+				B633EEF218433121007E0B7E /* NSNumber+Fix.h */,
+				B633EEF318433121007E0B7E /* NSNumber+Fix.m */,
+			);
+			path = _Fix;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B633EEF1184330C6007E0B7E /* NSArray+Fix.m in Sources */,
 				B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */,
+				B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */,
 				B633EEBE184325E6007E0B7E /* main.m in Sources */,
 				B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */,
+				B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */,
 				B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
