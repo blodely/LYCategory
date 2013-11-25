@@ -16,6 +16,8 @@
 
 #pragma mark EMAIL
 
+- (BOOL)isEmail;
+
 #pragma mark PASSWORD
 
 #pragma mark PHONE NUMBER
