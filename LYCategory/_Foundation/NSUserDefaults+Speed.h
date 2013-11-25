@@ -36,6 +36,6 @@
 
 + (void)setObject:(id)value forKey:(NSString *)defaultName;
 
-
++ (void)setAObject:(id)value forKey:(NSString *)defaultName;
 
 @end
