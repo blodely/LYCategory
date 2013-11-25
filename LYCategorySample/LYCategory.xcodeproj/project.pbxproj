@@ -14,6 +14,7 @@
 		B633EEBE184325E6007E0B7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEBD184325E6007E0B7E /* main.m */; };
 		B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEC1184325E6007E0B7E /* LYAppDelegate.m */; };
 		B633EEC4184325E6007E0B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B633EEC3184325E6007E0B7E /* Images.xcassets */; };
+		B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEE618432A86007E0B7E /* NSString+Input.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		B633EEC3184325E6007E0B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B633EECA184325E6007E0B7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B633EEE11843276F007E0B7E /* LYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCategory.h; sourceTree = "<group>"; };
+		B633EEE518432A86007E0B7E /* NSString+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Input.h"; sourceTree = "<group>"; };
+		B633EEE618432A86007E0B7E /* NSString+Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Input.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +104,35 @@
 			isa = PBXGroup;
 			children = (
 				B633EEE11843276F007E0B7E /* LYCategory.h */,
+				B633EEE2184329FE007E0B7E /* _Cocoa */,
+				B633EEE3184329FE007E0B7E /* _Foundation */,
+				B633EEE4184329FE007E0B7E /* _UIKit */,
 			);
 			name = LYCategory;
 			path = ../LYCategory;
+			sourceTree = "<group>";
+		};
+		B633EEE2184329FE007E0B7E /* _Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _Cocoa;
+			sourceTree = "<group>";
+		};
+		B633EEE3184329FE007E0B7E /* _Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B633EEE518432A86007E0B7E /* NSString+Input.h */,
+				B633EEE618432A86007E0B7E /* NSString+Input.m */,
+			);
+			path = _Foundation;
+			sourceTree = "<group>";
+		};
+		B633EEE4184329FE007E0B7E /* _UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */,
 				B633EEBE184325E6007E0B7E /* main.m in Sources */,
 				B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */,
 			);
