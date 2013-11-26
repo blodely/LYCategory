@@ -54,4 +54,9 @@
 
 #pragma mark - WRITE FOR STANDARD
 
++ (void)setAObject:(id)value forKey:(NSString *)defaultName {
+	[[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:value] forKey:defaultName];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 @end
