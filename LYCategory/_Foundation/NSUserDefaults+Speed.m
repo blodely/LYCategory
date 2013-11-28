@@ -52,6 +52,8 @@
 	return [[NSUserDefaults standardUserDefaults] URLForKey:defaultName];
 }
 
+#pragma mark - READ ARCHIVE FOR STANDARD
+
 #pragma mark - WRITE FOR STANDARD
 
 + (void)setObject:(id)value forKey:(NSString *)defaultName {

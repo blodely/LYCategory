@@ -32,6 +32,8 @@
 
 + (NSURL *)URLForKey:(NSString *)defaultName;
 
+#pragma mark - READ ARCHIVE FOR STANDARD
+
 #pragma mark - WRITE FOR STANDARD
 
 + (void)setObject:(id)value forKey:(NSString *)defaultName;
