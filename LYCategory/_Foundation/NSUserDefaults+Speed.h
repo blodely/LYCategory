@@ -34,6 +34,8 @@
 
 #pragma mark - READ ARCHIVE FOR STANDARD
 
+- (id)arcObjectForKey:(NSString *)defaultName;
+
 #pragma mark - WRITE FOR STANDARD
 
 + (void)setObject:(id)value forKey:(NSString *)defaultName;
