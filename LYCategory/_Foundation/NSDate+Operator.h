@@ -18,4 +18,8 @@
 
 - (BOOL)isSameWeekWith:(NSDate *)date;
 
+- (BOOL)isSameMonthWith:(NSDate *)date;
+
+- (BOOL)isSameYearWith:(NSDate *)date;
+
 @end

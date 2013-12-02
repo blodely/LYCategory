@@ -46,4 +46,25 @@
 	return [compSelf weekOfMonth] == [compOther weekOfMonth] && [compSelf month] == [compOther month] && [compSelf year] == [compOther year];
 }
 
+- (BOOL)isSameMonthWith:(NSDate *)date {
+	
+	unsigned flag = NSYearCalendarUnit | NSMonthCalendarUnit;
+	
+	NSDateComponents *compSelf  = [[NSCalendar currentCalendar] components:flag fromDate:self];
+	NSDateComponents *compOther = [[NSCalendar currentCalendar] components:flag fromDate:date];
+	
+	return [compSelf year] == [compOther year] && [compSelf month] && [compOther month];
+	
+}
+
+- (BOOL)isSameYearWith:(NSDate *)date {
+	
+	unsigned flag = NSYearCalendarUnit;
+	
+	NSDateComponents *compSelf  = [[NSCalendar currentCalendar] components:flag fromDate:self];
+	NSDateComponents *compOther = [[NSCalendar currentCalendar] components:flag fromDate:date];
+	
+	return [compSelf year] == [compOther year];
+}
+
 @end
