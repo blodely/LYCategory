@@ -8,6 +8,7 @@
 //
 
 #import "LYAppDelegate.h"
+#import "MenuViewController.h"
 
 @implementation LYAppDelegate
 
@@ -15,6 +16,11 @@
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	// OVERRIDE POINT FOR CUSTOMIZATION AFTER APPLICATION LAUNCH.
 	self.window.backgroundColor = [UIColor whiteColor];
+
+	MenuViewController *menu = [[MenuViewController alloc] init];
+	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:menu];
+	self.window.rootViewController = nav;
+
 	[self.window makeKeyAndVisible];
 	return YES;
 }
