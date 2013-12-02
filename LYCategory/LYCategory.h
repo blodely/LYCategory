@@ -13,6 +13,9 @@
 
 #import "NSString+Input.h"
 #import "NSString+Speed.h"
+#import "NSString+Date.h"
+
+#import "NSNumber+Date.h"
 
 #import "NSDate+Formatter.h"
 #import "NSDate+Operator.h"

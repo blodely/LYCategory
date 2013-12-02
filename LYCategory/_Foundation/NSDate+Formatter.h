@@ -16,4 +16,8 @@
 
 - (NSString *)stringWithFormat:(NSString *)fmtString andTimezone:(NSString *)timezoneName;
 
+#pragma mark UTC
+
+- (NSNumber *)utcTimeIntervalSince1970;
+
 @end

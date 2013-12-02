@@ -39,4 +39,10 @@
 	return [fmt stringFromDate:self];
 }
 
+#pragma mark UTC
+
+- (NSNumber *)utcTimeIntervalSince1970 {
+	return [NSNumber numberWithDouble:[self timeIntervalSince1970]];
+}
+
 @end

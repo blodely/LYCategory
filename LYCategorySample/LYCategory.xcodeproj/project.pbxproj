@@ -25,6 +25,8 @@
 		B6712F13184C3B400046FBC1 /* UITextView+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F12184C3B400046FBC1 /* UITextView+Input.m */; };
 		B6712F16184C52560046FBC1 /* NSURLRequest+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F15184C52560046FBC1 /* NSURLRequest+Speed.m */; };
 		B6712F19184C53860046FBC1 /* NSString+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F18184C53860046FBC1 /* NSString+Speed.m */; };
+		B6712F1D184C56370046FBC1 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F1C184C56370046FBC1 /* NSString+Date.m */; };
+		B6712F20184C58580046FBC1 /* NSNumber+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F1F184C58580046FBC1 /* NSNumber+Date.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,10 @@
 		B6712F15184C52560046FBC1 /* NSURLRequest+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Speed.m"; sourceTree = "<group>"; };
 		B6712F17184C53860046FBC1 /* NSString+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Speed.h"; sourceTree = "<group>"; };
 		B6712F18184C53860046FBC1 /* NSString+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Speed.m"; sourceTree = "<group>"; };
+		B6712F1B184C56370046FBC1 /* NSString+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Date.h"; sourceTree = "<group>"; };
+		B6712F1C184C56370046FBC1 /* NSString+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
+		B6712F1E184C58580046FBC1 /* NSNumber+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Date.h"; sourceTree = "<group>"; };
+		B6712F1F184C58580046FBC1 /* NSNumber+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Date.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,7 @@
 		B633EEE3184329FE007E0B7E /* _Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				B6712F1A184C56250046FBC1 /* _Create */,
 				B633EEEB18432FB9007E0B7E /* _Fix */,
 				B633EEE518432A86007E0B7E /* NSString+Input.h */,
 				B633EEE618432A86007E0B7E /* NSString+Input.m */,
@@ -191,6 +198,17 @@
 				B633EEF61843374C007E0B7E /* NSString+Fix.m */,
 			);
 			path = _Fix;
+			sourceTree = "<group>";
+		};
+		B6712F1A184C56250046FBC1 /* _Create */ = {
+			isa = PBXGroup;
+			children = (
+				B6712F1B184C56370046FBC1 /* NSString+Date.h */,
+				B6712F1C184C56370046FBC1 /* NSString+Date.m */,
+				B6712F1E184C58580046FBC1 /* NSNumber+Date.h */,
+				B6712F1F184C58580046FBC1 /* NSNumber+Date.m */,
+			);
+			path = _Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +278,7 @@
 				B633EEF1184330C6007E0B7E /* NSArray+Fix.m in Sources */,
 				B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */,
 				B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */,
+				B6712F20184C58580046FBC1 /* NSNumber+Date.m in Sources */,
 				B6712F13184C3B400046FBC1 /* UITextView+Input.m in Sources */,
 				B6712F16184C52560046FBC1 /* NSURLRequest+Speed.m in Sources */,
 				B633EEF71843374C007E0B7E /* NSString+Fix.m in Sources */,
@@ -270,6 +289,7 @@
 				B6712F10184C3A6B0046FBC1 /* UITextField+Input.m in Sources */,
 				B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */,
 				B6712F19184C53860046FBC1 /* NSString+Speed.m in Sources */,
+				B6712F1D184C56370046FBC1 /* NSString+Date.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
