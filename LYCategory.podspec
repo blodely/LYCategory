@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.author = { 'Luo Yu' => 'indie.luo@gmail.com' }
 
   s.source = { :git => "https://github.com/blodely/LYCategory.git", :tag => s.version.to_s }
-  s.source_files = 'LYCategory/**'
+  s.source_files = 'LYCategory'
 
-  s.platform = :ios, '5.0'
+  s.ios.deployment_target = '5.0'
   s.requires_arc = true
 
 end
