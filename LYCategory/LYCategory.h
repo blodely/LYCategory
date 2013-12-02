@@ -12,6 +12,7 @@
 // IMPORT UTILITIES
 
 #import "NSString+Input.h"
+#import "NSString+Speed.h"
 
 #import "NSDate+Formatter.h"
 #import "NSDate+Operator.h"
