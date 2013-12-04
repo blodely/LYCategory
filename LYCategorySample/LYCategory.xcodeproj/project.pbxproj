@@ -30,6 +30,7 @@
 		B6712F26184C5A620046FBC1 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F24184C5A620046FBC1 /* MenuViewController.m */; };
 		B6712F27184C5A620046FBC1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6712F25184C5A620046FBC1 /* MenuViewController.xib */; };
 		B6712F92184C79F30046FBC1 /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = B6712F91184C79F30046FBC1 /* placeholder */; };
+		B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FF82B184F001B004E16B9 /* NSURL+Speed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		B6712F24184C5A620046FBC1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		B6712F25184C5A620046FBC1 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		B6712F91184C79F30046FBC1 /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
+		B69FF82A184F001B004E16B9 /* NSURL+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Speed.h"; sourceTree = "<group>"; };
+		B69FF82B184F001B004E16B9 /* NSURL+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Speed.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				B633EEE918432E97007E0B7E /* NSDate+Formatter.m */,
 				B6152991184986A800A28C38 /* NSDate+Operator.h */,
 				B6152992184986A800A28C38 /* NSDate+Operator.m */,
+				B69FF82A184F001B004E16B9 /* NSURL+Speed.h */,
+				B69FF82B184F001B004E16B9 /* NSURL+Speed.m */,
 				B6712F14184C52560046FBC1 /* NSURLRequest+Speed.h */,
 				B6712F15184C52560046FBC1 /* NSURLRequest+Speed.m */,
 				B6712F17184C53860046FBC1 /* NSString+Speed.h */,
@@ -312,6 +317,7 @@
 				B6712F13184C3B400046FBC1 /* UITextView+Input.m in Sources */,
 				B6712F16184C52560046FBC1 /* NSURLRequest+Speed.m in Sources */,
 				B633EEF71843374C007E0B7E /* NSString+Fix.m in Sources */,
+				B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */,
 				B633EEBE184325E6007E0B7E /* main.m in Sources */,
 				B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */,
 				B6152993184986A800A28C38 /* NSDate+Operator.m in Sources */,

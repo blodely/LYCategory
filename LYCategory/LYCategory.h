@@ -20,6 +20,7 @@
 #import "NSDate+Formatter.h"
 #import "NSDate+Operator.h"
 
+#import "NSURL+Speed.h"
 #import "NSURLRequest+Speed.h"
 
 // FIX
