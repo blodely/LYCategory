@@ -38,7 +38,7 @@
 
 #pragma mark - READ ARCHIVE FOR STANDARD
 
-- (id)arcObjectForKey:(NSString *)defaultName;
++ (id)arcObjectForKey:(NSString *)defaultName;
 
 #pragma mark - WRITE ARCHIVE FOR STANDARD
 

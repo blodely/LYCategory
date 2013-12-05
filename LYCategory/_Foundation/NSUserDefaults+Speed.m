@@ -61,7 +61,9 @@
 
 #pragma mark - READ ARCHIVE FOR STANDARD
 
-
++ (id)arcObjectForKey:(NSString *)defaultName {
+	return [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:defaultName]];
+}
 
 #pragma mark - WRITE ARCHIVE FOR STANDARD
 
