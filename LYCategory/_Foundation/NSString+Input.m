@@ -34,6 +34,7 @@
 #pragma mark SPACE
 
 - (NSString *)trimStartSpace {
+	// TODO: NOT FINISHED
 	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
