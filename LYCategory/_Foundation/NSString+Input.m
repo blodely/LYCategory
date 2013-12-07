@@ -34,7 +34,7 @@
 #pragma mark SPACE
 
 - (NSString *)trimStartSpace {
-	return nil;
+	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
 #pragma mark EMAIL
