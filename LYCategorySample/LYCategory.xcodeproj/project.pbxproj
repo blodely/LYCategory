@@ -21,6 +21,8 @@
 		B633EEF1184330C6007E0B7E /* NSArray+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF0184330C6007E0B7E /* NSArray+Fix.m */; };
 		B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF318433121007E0B7E /* NSNumber+Fix.m */; };
 		B633EEF71843374C007E0B7E /* NSString+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF61843374C007E0B7E /* NSString+Fix.m */; };
+		B637AA751855883A0087497C /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B637AA731855883A0087497C /* DateViewController.m */; };
+		B637AA761855883A0087497C /* DateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B637AA741855883A0087497C /* DateViewController.xib */; };
 		B6712F10184C3A6B0046FBC1 /* UITextField+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F0F184C3A6B0046FBC1 /* UITextField+Input.m */; };
 		B6712F13184C3B400046FBC1 /* UITextView+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F12184C3B400046FBC1 /* UITextView+Input.m */; };
 		B6712F16184C52560046FBC1 /* NSURLRequest+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F15184C52560046FBC1 /* NSURLRequest+Speed.m */; };
@@ -61,6 +63,9 @@
 		B633EEF318433121007E0B7E /* NSNumber+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Fix.m"; sourceTree = "<group>"; };
 		B633EEF51843374C007E0B7E /* NSString+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Fix.h"; sourceTree = "<group>"; };
 		B633EEF61843374C007E0B7E /* NSString+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Fix.m"; sourceTree = "<group>"; };
+		B637AA721855883A0087497C /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		B637AA731855883A0087497C /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		B637AA741855883A0087497C /* DateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateViewController.xib; sourceTree = "<group>"; };
 		B6712F0E184C3A6B0046FBC1 /* UITextField+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Input.h"; sourceTree = "<group>"; };
 		B6712F0F184C3A6B0046FBC1 /* UITextField+Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Input.m"; sourceTree = "<group>"; };
 		B6712F11184C3B400046FBC1 /* UITextView+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Input.h"; sourceTree = "<group>"; };
@@ -214,6 +219,16 @@
 			path = _Fix;
 			sourceTree = "<group>";
 		};
+		B637AA71185587B40087497C /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				B637AA721855883A0087497C /* DateViewController.h */,
+				B637AA731855883A0087497C /* DateViewController.m */,
+				B637AA741855883A0087497C /* DateViewController.xib */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
 		B6712F1A184C56250046FBC1 /* _Create */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +243,7 @@
 		B6712F21184C5A260046FBC1 /* _Scene */ = {
 			isa = PBXGroup;
 			children = (
+				B637AA71185587B40087497C /* Date */,
 				B6712F22184C5A540046FBC1 /* Menu */,
 			);
 			path = _Scene;
@@ -299,6 +315,7 @@
 				B6712F27184C5A620046FBC1 /* MenuViewController.xib in Resources */,
 				B6712F92184C79F30046FBC1 /* placeholder in Resources */,
 				B633EEC4184325E6007E0B7E /* Images.xcassets in Resources */,
+				B637AA761855883A0087497C /* DateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +330,7 @@
 				B633EEE718432A86007E0B7E /* NSString+Input.m in Sources */,
 				B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */,
 				B6712F26184C5A620046FBC1 /* MenuViewController.m in Sources */,
+				B637AA751855883A0087497C /* DateViewController.m in Sources */,
 				B6712F20184C58580046FBC1 /* NSNumber+Date.m in Sources */,
 				B6712F13184C3B400046FBC1 /* UITextView+Input.m in Sources */,
 				B6712F16184C52560046FBC1 /* NSURLRequest+Speed.m in Sources */,

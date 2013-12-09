@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "DateViewController.h"
 
 @interface MenuViewController () <UITableViewDataSource, UITableViewDelegate> {
 	
@@ -51,6 +52,8 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
+	
+	[dsMenu addObjectsFromArray:@[@"Dates", @"Strings", @"UI", ]];
 }
 
 #pragma mark MEMORY MANAGEMENT
@@ -72,6 +75,7 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)idp {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MenuCellIdentifier forIndexPath:idp];
+	cell.textLabel.text = dsMenu[idp.row];
 	return cell;
 }
 
@@ -80,16 +84,25 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return [dsMenu count];
+	return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 3;
+	return [dsMenu count];
 }
 
 #pragma mark | UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)idp {
+	
+	switch (idp.row) {
+		case 0: {
+			[self.navigationController pushViewController:[[DateViewController alloc] init] animated:YES];
+		} break;
+		default: {
+			
+		} break;
+	}
 	
 	[tableView deselectRowAtIndexPath:idp animated:YES];
 }
