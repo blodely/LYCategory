@@ -22,4 +22,6 @@
 
 #pragma mark PHONE NUMBER
 
+- (NSString *)phoneNumber;
+
 @end
