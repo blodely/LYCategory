@@ -14,25 +14,48 @@
 
 @implementation DateViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+#pragma mark - ACTIONS
+
+#pragma mark - INIT
+
+- (id)init {
+	self = [super initWithNibName:@"DateViewController" bundle:nil];
+	if (self) {
+		// CUSTOM INITIALIZATION
+	}
+	return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+	return [self init];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark | VIEW LIFE CYCLE
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 }
+
+#pragma mark | MEMORY MANAGEMENT
+
+- (void)didReceiveMemoryWarning {
+	[super didReceiveMemoryWarning];
+	// DISPOSE OF ANY RESOURCES THAT CAN BE RECREATED.
+}
+
+#pragma mark - GETTER & SETTER
+
+#pragma mark - METHOD
+
+#pragma mark | PRIVATE METHOD
+
+#pragma mark - DELEGATE
+
+#pragma mark - NOTIFICATION
+
+#pragma mark - OVERWRITE
+
+#pragma mark TOUCHES
 
 @end
