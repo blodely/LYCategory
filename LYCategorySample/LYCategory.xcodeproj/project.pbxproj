@@ -33,6 +33,7 @@
 		B6712F27184C5A620046FBC1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6712F25184C5A620046FBC1 /* MenuViewController.xib */; };
 		B6712F92184C79F30046FBC1 /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = B6712F91184C79F30046FBC1 /* placeholder */; };
 		B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FF82B184F001B004E16B9 /* NSURL+Speed.m */; };
+		B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A328CA1858102C00C23D32 /* NSNumber+Random.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,8 @@
 		B6712F91184C79F30046FBC1 /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
 		B69FF82A184F001B004E16B9 /* NSURL+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Speed.h"; sourceTree = "<group>"; };
 		B69FF82B184F001B004E16B9 /* NSURL+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Speed.m"; sourceTree = "<group>"; };
+		B6A328C91858102C00C23D32 /* NSNumber+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Random.h"; sourceTree = "<group>"; };
+		B6A328CA1858102C00C23D32 /* NSNumber+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Random.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +239,8 @@
 				B6712F1C184C56370046FBC1 /* NSString+Date.m */,
 				B6712F1E184C58580046FBC1 /* NSNumber+Date.h */,
 				B6712F1F184C58580046FBC1 /* NSNumber+Date.m */,
+				B6A328C91858102C00C23D32 /* NSNumber+Random.h */,
+				B6A328CA1858102C00C23D32 /* NSNumber+Random.m */,
 			);
 			path = _Create;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 				B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */,
 				B6152993184986A800A28C38 /* NSDate+Operator.m in Sources */,
 				B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */,
+				B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */,
 				B6712F10184C3A6B0046FBC1 /* UITextField+Input.m in Sources */,
 				B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */,
 				B6712F19184C53860046FBC1 /* NSString+Speed.m in Sources */,
