@@ -45,4 +45,8 @@
 	return [NSNumber numberWithDouble:[self timeIntervalSince1970]];
 }
 
+- (NSString *)timeIntervalStringSince1970 {
+	return [NSString stringWithFormat:@"%f", [self timeIntervalSince1970]];
+}
+
 @end
