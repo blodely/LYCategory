@@ -31,6 +31,12 @@
 	return NO;
 }
 
+#pragma mark SPACE
+
+- (NSString *)trimStartSpace {
+	return nil;
+}
+
 #pragma mark EMAIL
 
 - (BOOL)isEmail {

@@ -18,6 +18,10 @@
 
 - (BOOL)isEmail;
 
+#pragma mark SPACE
+
+- (NSString *)trimStartSpace;
+
 #pragma mark PASSWORD
 
 - (NSString *)base64;
