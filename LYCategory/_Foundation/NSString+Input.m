@@ -57,7 +57,7 @@
 #pragma mark PHONE NUMBER
 
 - (NSString *)phoneNumber {
-	return [[self componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"/.,()-+ "]] componentsJoinedByString:@""];
+	return [[self componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"/.,()-+  "]] componentsJoinedByString:@""];
 }
 
 @end
