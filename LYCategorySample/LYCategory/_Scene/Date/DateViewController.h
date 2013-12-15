@@ -13,6 +13,11 @@
 	IBOutlet UILabel *lblInterval;
 	IBOutlet UILabel *lblUTC;
 	
+	IBOutlet UILabel *lblTime1;
+	IBOutlet UITextField *tfTimezone1;
+	IBOutlet UILabel *lblTime2;
+	IBOutlet UITextField *tfTimezone2;
+	
 	IBOutlet UIDatePicker *dpDate;
 }
 
