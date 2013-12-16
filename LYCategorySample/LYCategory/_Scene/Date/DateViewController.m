@@ -19,6 +19,9 @@
 - (void)dateChanged:(id)sender {
 	lblInterval.text = [NSString stringWithFormat:@"%@", [dpDate.date utcTimeIntervalSince1970]];
 	lblUTC.text = [NSString stringWithFormat:@"%@", [dpDate.date stringWithFormat:@"yyyy-MM-dd HH:mm ZZZZ" andTimezone:@"UTC"]];
+	
+	lblTime1.text = @"";
+	lblTime2.text = @"";
 }
 
 #pragma mark - INIT
