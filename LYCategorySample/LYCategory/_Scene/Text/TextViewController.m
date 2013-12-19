@@ -8,7 +8,7 @@
 
 #import "TextViewController.h"
 
-@interface TextViewController ()
+@interface TextViewController () <UITextFieldDelegate>
 
 @end
 
@@ -47,5 +47,12 @@
 #pragma mark PRIVATE METHOD
 
 #pragma mark - DELEGATE
+
+#pragma mark | - UITextFieldDelegate
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+	
+	return YES;
+}
 
 @end

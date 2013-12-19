@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TextViewController : UIViewController
+@interface TextViewController : UIViewController {
+	
+	IBOutlet UITextField *tfInput;
+	IBOutlet UILabel *lblInput;
+}
 
 @end
