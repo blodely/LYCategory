@@ -52,7 +52,9 @@
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
 	
-	lblInput.text = [NSString stringWithFormat:@"%@", textField.text];
+	lblInput.text = [NSString stringWithFormat:@"%@", tfInput.text];
+	
+	
 	return YES;
 }
 
