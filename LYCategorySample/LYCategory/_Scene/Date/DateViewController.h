@@ -10,6 +10,8 @@
 
 @interface DateViewController : UIViewController {
 	
+	IBOutlet UILabel *lblUTC;
+	
 	IBOutlet UIDatePicker *dpDate;
 }
 
