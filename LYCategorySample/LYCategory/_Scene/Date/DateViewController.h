@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DateViewController : UIViewController
+@interface DateViewController : UIViewController {
+	
+	IBOutlet UIDatePicker *dpDate;
+}
+
+- (IBAction)dateChanged:(id)sender;
 
 @end
