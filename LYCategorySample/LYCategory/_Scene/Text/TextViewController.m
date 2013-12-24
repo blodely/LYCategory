@@ -54,6 +54,7 @@
 	
 	lblInput.text = [NSString stringWithFormat:@"%@", tfInput.text];
 	
+	[textField isEmpty] ? lblInput.text = @"TEXT FIELD EMPTY" : 0;
 	
 	return YES;
 }
