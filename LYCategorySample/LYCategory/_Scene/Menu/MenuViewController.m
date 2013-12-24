@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "DateViewController.h"
+#import "TextViewController.h"
 
 @interface MenuViewController () <UITableViewDataSource, UITableViewDelegate> {
 	
@@ -98,6 +99,9 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 	switch (idp.row) {
 		case 0: {
 			[self.navigationController pushViewController:[[DateViewController alloc] init] animated:YES];
+		} break;
+		case 1: {
+			[self.navigationController pushViewController:[[TextViewController alloc] init] animated:YES];
 		} break;
 		default: {
 			
