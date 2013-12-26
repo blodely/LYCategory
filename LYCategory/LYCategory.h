@@ -23,10 +23,13 @@
 #import "NSURL+Speed.h"
 #import "NSURLRequest+Speed.h"
 
+#import "NSUserDefaults+Speed.h"
+
 // FIX
 #import "NSArray+Fix.h"
 #import "NSDictionary+Fix.h"
 #import "NSNumber+Fix.h"
+#import "NSNull+Fix.h"
 
 // UI
 #import "UITextField+Input.h"
