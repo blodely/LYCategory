@@ -36,6 +36,7 @@
 		B69EA14C186BD0B30087DD51 /* NSNull+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EA14B186BD0B30087DD51 /* NSNull+Fix.m */; };
 		B69ED753187B9EC600A39ADF /* NSString+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B69ED750187B9EC600A39ADF /* NSString+Input.m */; };
 		B69ED754187B9EC600A39ADF /* NSString+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B69ED752187B9EC600A39ADF /* NSString+Speed.m */; };
+		B69ED75A187B9EDF00A39ADF /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = B69ED759187B9EDF00A39ADF /* NSString+Search.m */; };
 		B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FF82B184F001B004E16B9 /* NSURL+Speed.m */; };
 		B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A328CA1858102C00C23D32 /* NSNumber+Random.m */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,8 @@
 		B69ED750187B9EC600A39ADF /* NSString+Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Input.m"; sourceTree = "<group>"; };
 		B69ED751187B9EC600A39ADF /* NSString+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Speed.h"; sourceTree = "<group>"; };
 		B69ED752187B9EC600A39ADF /* NSString+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Speed.m"; sourceTree = "<group>"; };
+		B69ED758187B9EDF00A39ADF /* NSString+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Search.h"; sourceTree = "<group>"; };
+		B69ED759187B9EDF00A39ADF /* NSString+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Search.m"; sourceTree = "<group>"; };
 		B69FF82A184F001B004E16B9 /* NSURL+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Speed.h"; sourceTree = "<group>"; };
 		B69FF82B184F001B004E16B9 /* NSURL+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Speed.m"; sourceTree = "<group>"; };
 		B6A328C91858102C00C23D32 /* NSNumber+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Random.h"; sourceTree = "<group>"; };
@@ -292,6 +295,8 @@
 			children = (
 				B69ED74F187B9EC600A39ADF /* NSString+Input.h */,
 				B69ED750187B9EC600A39ADF /* NSString+Input.m */,
+				B69ED758187B9EDF00A39ADF /* NSString+Search.h */,
+				B69ED759187B9EDF00A39ADF /* NSString+Search.m */,
 				B69ED751187B9EC600A39ADF /* NSString+Speed.h */,
 				B69ED752187B9EC600A39ADF /* NSString+Speed.m */,
 			);
@@ -377,6 +382,7 @@
 				B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */,
 				B633EEBE184325E6007E0B7E /* main.m in Sources */,
 				B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */,
+				B69ED75A187B9EDF00A39ADF /* NSString+Search.m in Sources */,
 				B6152993184986A800A28C38 /* NSDate+Operator.m in Sources */,
 				B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */,
 				B69ED754187B9EC600A39ADF /* NSString+Speed.m in Sources */,
