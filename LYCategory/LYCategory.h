@@ -14,6 +14,7 @@
 #import "NSString+Input.h"
 #import "NSString+Speed.h"
 #import "NSString+Date.h"
+#import "NSString+Search.h"
 
 #import "NSNumber+Date.h"
 
