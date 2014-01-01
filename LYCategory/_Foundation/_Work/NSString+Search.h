@@ -11,4 +11,6 @@
 
 @interface NSString (Search)
 
+- (BOOL)caseInsensitive:(NSString *)searchString;
+
 @end
