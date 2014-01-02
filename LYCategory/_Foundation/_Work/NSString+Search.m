@@ -11,4 +11,9 @@
 
 @implementation NSString (Search)
 
+- (BOOL)caseInsensitive:(NSString *)searchString {
+	
+	return NO;
+}
+
 @end
