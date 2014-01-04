@@ -23,6 +23,7 @@
 		B633EEF71843374C007E0B7E /* NSString+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF61843374C007E0B7E /* NSString+Fix.m */; };
 		B637AA751855883A0087497C /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B637AA731855883A0087497C /* DateViewController.m */; };
 		B637AA761855883A0087497C /* DateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B637AA741855883A0087497C /* DateViewController.xib */; };
+		B67001A2187808E400F983E4 /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B67001A1187808E400F983E4 /* NSString+Encrypt.m */; };
 		B6712F10184C3A6B0046FBC1 /* UITextField+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F0F184C3A6B0046FBC1 /* UITextField+Input.m */; };
 		B6712F13184C3B400046FBC1 /* UITextView+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F12184C3B400046FBC1 /* UITextView+Input.m */; };
 		B6712F16184C52560046FBC1 /* NSURLRequest+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F15184C52560046FBC1 /* NSURLRequest+Speed.m */; };
@@ -72,6 +73,8 @@
 		B637AA721855883A0087497C /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
 		B637AA731855883A0087497C /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 		B637AA741855883A0087497C /* DateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateViewController.xib; sourceTree = "<group>"; };
+		B67001A0187808E400F983E4 /* NSString+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encrypt.h"; sourceTree = "<group>"; };
+		B67001A1187808E400F983E4 /* NSString+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encrypt.m"; sourceTree = "<group>"; };
 		B6712F0E184C3A6B0046FBC1 /* UITextField+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Input.h"; sourceTree = "<group>"; };
 		B6712F0F184C3A6B0046FBC1 /* UITextField+Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Input.m"; sourceTree = "<group>"; };
 		B6712F11184C3B400046FBC1 /* UITextView+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Input.h"; sourceTree = "<group>"; };
@@ -293,6 +296,8 @@
 		B69ED74E187B9EA400A39ADF /* _Work */ = {
 			isa = PBXGroup;
 			children = (
+				B67001A0187808E400F983E4 /* NSString+Encrypt.h */,
+				B67001A1187808E400F983E4 /* NSString+Encrypt.m */,
 				B69ED74F187B9EC600A39ADF /* NSString+Input.h */,
 				B69ED750187B9EC600A39ADF /* NSString+Input.m */,
 				B69ED758187B9EDF00A39ADF /* NSString+Search.h */,
@@ -392,6 +397,7 @@
 				B6712F10184C3A6B0046FBC1 /* UITextField+Input.m in Sources */,
 				B633CE7A1850822C000A7BD0 /* NSUserDefaults+Speed.m in Sources */,
 				B69ED753187B9EC600A39ADF /* NSString+Input.m in Sources */,
+				B67001A2187808E400F983E4 /* NSString+Encrypt.m in Sources */,
 				B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */,
 				B6712F1D184C56370046FBC1 /* NSString+Date.m in Sources */,
 			);
