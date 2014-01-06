@@ -10,4 +10,6 @@
 
 @interface NSString (Encrypt)
 
+- (NSString *)base64;
+
 @end

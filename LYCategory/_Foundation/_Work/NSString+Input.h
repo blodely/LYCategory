@@ -22,10 +22,6 @@
 
 - (NSString *)trimStartSpace;
 
-#pragma mark PASSWORD
-
-- (NSString *)base64;
-
 #pragma mark PHONE NUMBER
 
 - (NSString *)phoneNumber;
