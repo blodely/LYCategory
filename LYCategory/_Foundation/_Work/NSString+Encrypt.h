@@ -12,4 +12,6 @@
 
 - (NSString *)base64;
 
+- (NSString *)md5;
+
 @end
