@@ -42,6 +42,8 @@
     return [[NSString alloc] initWithData:mutableData encoding:NSASCIIStringEncoding];
 }
 
-
+- (NSString *)md5 {
+	return nil;
+}
 
 @end
