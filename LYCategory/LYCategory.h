@@ -11,6 +11,8 @@
 
 // IMPORT UTILITIES
 
+#import "NSData+Encrypt.h"
+
 #import "NSString+Encrypt.h"
 #import "NSString+Input.h"
 #import "NSString+Speed.h"
