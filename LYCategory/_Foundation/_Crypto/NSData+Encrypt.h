@@ -10,4 +10,6 @@
 
 @interface NSData (Encrypt)
 
+- (NSString *)md5;
+
 @end
