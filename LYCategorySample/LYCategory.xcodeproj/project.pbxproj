@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6152993184986A800A28C38 /* NSDate+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6152992184986A800A28C38 /* NSDate+Operator.m */; };
 		B633CE7A1850822C000A7BD0 /* NSUserDefaults+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B633CE791850822C000A7BD0 /* NSUserDefaults+Speed.m */; };
 		B633EEB2184325E6007E0B7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B633EEB1184325E6007E0B7E /* Foundation.framework */; };
 		B633EEB4184325E6007E0B7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B633EEB3184325E6007E0B7E /* CoreGraphics.framework */; };
@@ -16,7 +15,6 @@
 		B633EEBE184325E6007E0B7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEBD184325E6007E0B7E /* main.m */; };
 		B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEC1184325E6007E0B7E /* LYAppDelegate.m */; };
 		B633EEC4184325E6007E0B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B633EEC3184325E6007E0B7E /* Images.xcassets */; };
-		B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEE918432E97007E0B7E /* NSDate+Formatter.m */; };
 		B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEED18432FCC007E0B7E /* NSDictionary+Fix.m */; };
 		B633EEF1184330C6007E0B7E /* NSArray+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF0184330C6007E0B7E /* NSArray+Fix.m */; };
 		B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B633EEF318433121007E0B7E /* NSNumber+Fix.m */; };
@@ -41,11 +39,11 @@
 		B69ED75A187B9EDF00A39ADF /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = B69ED759187B9EDF00A39ADF /* NSString+Search.m */; };
 		B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FF82B184F001B004E16B9 /* NSURL+Speed.m */; };
 		B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A328CA1858102C00C23D32 /* NSNumber+Random.m */; };
+		B6C6BB98188F73F70068BFF3 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */; };
+		B6C6BB9F188F73F70068BFF3 /* NSDate+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BB9E188F73F70068BFF3 /* NSDate+Operator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6152991184986A800A28C38 /* NSDate+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Operator.h"; sourceTree = "<group>"; };
-		B6152992184986A800A28C38 /* NSDate+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Operator.m"; sourceTree = "<group>"; };
 		B633CE781850822C000A7BD0 /* NSUserDefaults+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Speed.h"; sourceTree = "<group>"; };
 		B633CE791850822C000A7BD0 /* NSUserDefaults+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Speed.m"; sourceTree = "<group>"; };
 		B633EEAE184325E6007E0B7E /* LYCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,8 +59,6 @@
 		B633EEC3184325E6007E0B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B633EECA184325E6007E0B7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B633EEE11843276F007E0B7E /* LYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCategory.h; sourceTree = "<group>"; };
-		B633EEE818432E96007E0B7E /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
-		B633EEE918432E97007E0B7E /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 		B633EEEC18432FCC007E0B7E /* NSDictionary+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Fix.h"; sourceTree = "<group>"; };
 		B633EEED18432FCC007E0B7E /* NSDictionary+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Fix.m"; sourceTree = "<group>"; };
 		B633EEEF184330C6007E0B7E /* NSArray+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Fix.h"; sourceTree = "<group>"; };
@@ -107,6 +103,10 @@
 		B69FF82B184F001B004E16B9 /* NSURL+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Speed.m"; sourceTree = "<group>"; };
 		B6A328C91858102C00C23D32 /* NSNumber+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Random.h"; sourceTree = "<group>"; };
 		B6A328CA1858102C00C23D32 /* NSNumber+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Random.m"; sourceTree = "<group>"; };
+		B6C6BB94188F73F70068BFF3 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
+		B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+		B6C6BB9D188F73F70068BFF3 /* NSDate+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Operator.h"; sourceTree = "<group>"; };
+		B6C6BB9E188F73F70068BFF3 /* NSDate+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Operator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,10 +203,8 @@
 				B6C6BB93188F73F70068BFF3 /* _Date */,
 				B633EEEB18432FB9007E0B7E /* _Fix */,
 				B69ED74E187B9EA400A39ADF /* _Work */,
-				B633EEE818432E96007E0B7E /* NSDate+Formatter.h */,
-				B633EEE918432E97007E0B7E /* NSDate+Formatter.m */,
-				B6152991184986A800A28C38 /* NSDate+Operator.h */,
-				B6152992184986A800A28C38 /* NSDate+Operator.m */,
+				B6C6BB9D188F73F70068BFF3 /* NSDate+Operator.h */,
+				B6C6BB9E188F73F70068BFF3 /* NSDate+Operator.m */,
 				B69FF82A184F001B004E16B9 /* NSURL+Speed.h */,
 				B69FF82B184F001B004E16B9 /* NSURL+Speed.m */,
 				B6712F14184C52560046FBC1 /* NSURLRequest+Speed.h */,
@@ -325,6 +323,8 @@
 		B6C6BB93188F73F70068BFF3 /* _Date */ = {
 			isa = PBXGroup;
 			children = (
+				B6C6BB94188F73F70068BFF3 /* NSDate+Formatter.h */,
+				B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */,
 			);
 			path = _Date;
 			sourceTree = "<group>";
@@ -409,18 +409,18 @@
 				B633EEBE184325E6007E0B7E /* main.m in Sources */,
 				B633EEC2184325E6007E0B7E /* LYAppDelegate.m in Sources */,
 				B69ED75A187B9EDF00A39ADF /* NSString+Search.m in Sources */,
-				B6152993184986A800A28C38 /* NSDate+Operator.m in Sources */,
 				B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */,
 				B69ED754187B9EC600A39ADF /* NSString+Speed.m in Sources */,
+				B6C6BB9F188F73F70068BFF3 /* NSDate+Operator.m in Sources */,
 				B67001A91881443700F983E4 /* NSData+Encrypt.m in Sources */,
 				B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */,
 				B69EA14C186BD0B30087DD51 /* NSNull+Fix.m in Sources */,
 				B6812A2718628E4600BC38AF /* TextViewController.m in Sources */,
 				B67001A6187FF26300F983E4 /* NSString+Encrypt.m in Sources */,
 				B6712F10184C3A6B0046FBC1 /* UITextField+Input.m in Sources */,
+				B6C6BB98188F73F70068BFF3 /* NSDate+Formatter.m in Sources */,
 				B633CE7A1850822C000A7BD0 /* NSUserDefaults+Speed.m in Sources */,
 				B69ED753187B9EC600A39ADF /* NSString+Input.m in Sources */,
-				B633EEEA18432E97007E0B7E /* NSDate+Formatter.m in Sources */,
 				B6712F1D184C56370046FBC1 /* NSString+Date.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
