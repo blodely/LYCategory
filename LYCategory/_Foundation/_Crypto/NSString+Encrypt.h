@@ -14,4 +14,6 @@
 
 - (NSString *)md5;
 
+- (NSString *)sha1;
+
 @end
