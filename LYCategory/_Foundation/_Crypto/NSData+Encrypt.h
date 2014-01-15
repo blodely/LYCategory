@@ -12,4 +12,6 @@
 
 - (NSString *)md5;
 
+- (NSData *)MD5;
+
 @end
