@@ -26,4 +26,11 @@
 	return [NSData dataWithData:[NSMutableData dataWithBytes:output length:outputLength]];
 }
 
+- (NSData *)SHA1 {
+	unsigned int outputLength = CC_SHA1_DIGEST_LENGTH;
+	unsigned char output[outputLength];
+	CC_SHA1(self.bytes, (unsigned int) self.length, output);
+	return [NSData dataWithData:[NSMutableData dataWithBytes:output length:outputLength]];
+}
+
 @end

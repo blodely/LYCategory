@@ -14,4 +14,6 @@
 
 - (NSData *)MD5;
 
+- (NSData *)SHA1;
+
 @end
