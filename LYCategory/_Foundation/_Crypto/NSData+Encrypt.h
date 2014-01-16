@@ -16,4 +16,6 @@
 
 - (NSData *)SHA1;
 
+- (NSData *)SHA256;
+
 @end

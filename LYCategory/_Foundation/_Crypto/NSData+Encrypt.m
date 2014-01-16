@@ -33,4 +33,11 @@
 	return [NSData dataWithData:[NSMutableData dataWithBytes:output length:outputLength]];
 }
 
+- (NSData *)SHA256 {
+	unsigned int outputLength = CC_SHA256_DIGEST_LENGTH;
+	unsigned char output[outputLength];
+	CC_SHA256(self.bytes, (unsigned int) self.length, output);
+	return [NSMutableData dataWithBytes:output length:outputLength];
+}
+
 @end
