@@ -40,7 +40,7 @@
 		B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FF82B184F001B004E16B9 /* NSURL+Speed.m */; };
 		B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A328CA1858102C00C23D32 /* NSNumber+Random.m */; };
 		B6C6BB98188F73F70068BFF3 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */; };
-		B6C6BB9F188F73F70068BFF3 /* NSDate+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BB9E188F73F70068BFF3 /* NSDate+Operator.m */; };
+		B6C6BBA2188F73F70068BFF3 /* NSDate+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BBA1188F73F70068BFF3 /* NSDate+Operator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,8 +105,8 @@
 		B6A328CA1858102C00C23D32 /* NSNumber+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Random.m"; sourceTree = "<group>"; };
 		B6C6BB94188F73F70068BFF3 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
-		B6C6BB9D188F73F70068BFF3 /* NSDate+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Operator.h"; sourceTree = "<group>"; };
-		B6C6BB9E188F73F70068BFF3 /* NSDate+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Operator.m"; sourceTree = "<group>"; };
+		B6C6BBA0188F73F70068BFF3 /* NSDate+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Operator.h"; sourceTree = "<group>"; };
+		B6C6BBA1188F73F70068BFF3 /* NSDate+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Operator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,8 +203,6 @@
 				B6C6BB93188F73F70068BFF3 /* _Date */,
 				B633EEEB18432FB9007E0B7E /* _Fix */,
 				B69ED74E187B9EA400A39ADF /* _Work */,
-				B6C6BB9D188F73F70068BFF3 /* NSDate+Operator.h */,
-				B6C6BB9E188F73F70068BFF3 /* NSDate+Operator.m */,
 				B69FF82A184F001B004E16B9 /* NSURL+Speed.h */,
 				B69FF82B184F001B004E16B9 /* NSURL+Speed.m */,
 				B6712F14184C52560046FBC1 /* NSURLRequest+Speed.h */,
@@ -325,6 +323,8 @@
 			children = (
 				B6C6BB94188F73F70068BFF3 /* NSDate+Formatter.h */,
 				B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */,
+				B6C6BBA0188F73F70068BFF3 /* NSDate+Operator.h */,
+				B6C6BBA1188F73F70068BFF3 /* NSDate+Operator.m */,
 			);
 			path = _Date;
 			sourceTree = "<group>";
@@ -411,12 +411,12 @@
 				B69ED75A187B9EDF00A39ADF /* NSString+Search.m in Sources */,
 				B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */,
 				B69ED754187B9EC600A39ADF /* NSString+Speed.m in Sources */,
-				B6C6BB9F188F73F70068BFF3 /* NSDate+Operator.m in Sources */,
 				B67001A91881443700F983E4 /* NSData+Encrypt.m in Sources */,
 				B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */,
 				B69EA14C186BD0B30087DD51 /* NSNull+Fix.m in Sources */,
 				B6812A2718628E4600BC38AF /* TextViewController.m in Sources */,
 				B67001A6187FF26300F983E4 /* NSString+Encrypt.m in Sources */,
+				B6C6BBA2188F73F70068BFF3 /* NSDate+Operator.m in Sources */,
 				B6712F10184C3A6B0046FBC1 /* UITextField+Input.m in Sources */,
 				B6C6BB98188F73F70068BFF3 /* NSDate+Formatter.m in Sources */,
 				B633CE7A1850822C000A7BD0 /* NSUserDefaults+Speed.m in Sources */,
