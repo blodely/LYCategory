@@ -13,4 +13,6 @@
 
 - (BOOL)caseInsensitive:(NSString *)searchString;
 
+- (BOOL)caseSensitive:(NSString *)searchString;
+
 @end
