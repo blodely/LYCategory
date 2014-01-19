@@ -21,4 +21,9 @@
 	return [[self lowercaseString] rangeOfString:[searchString lowercaseString]].location != NSNotFound;
 }
 
+- (BOOL)caseSensitive:(NSString *)searchString {
+	
+	return NO;
+}
+
 @end
