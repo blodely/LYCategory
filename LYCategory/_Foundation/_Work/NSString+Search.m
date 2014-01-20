@@ -23,6 +23,11 @@
 
 - (BOOL)caseSensitive:(NSString *)searchString {
 	
+	if ([searchString length] == 0 || [self length] == 0 ||
+		([searchString length] > 0 && [self length] > 0 && searchString.length > self.length)) {
+		return NO;
+	}
+	
 	return NO;
 }
 
