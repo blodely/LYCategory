@@ -28,7 +28,7 @@
 		return NO;
 	}
 	
-	return NO;
+	return [self rangeOfString:searchString].location != NSNotFound;
 }
 
 @end
