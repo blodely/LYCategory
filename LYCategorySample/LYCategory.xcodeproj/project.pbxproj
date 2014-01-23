@@ -110,6 +110,7 @@
 		B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 		B6C6BBA0188F73F70068BFF3 /* NSDate+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Operator.h"; sourceTree = "<group>"; };
 		B6C6BBA1188F73F70068BFF3 /* NSDate+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Operator.m"; sourceTree = "<group>"; };
+		B6E25CEC18A8A44300F463BD /* MacroIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroIOS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +226,7 @@
 				B6712F12184C3B400046FBC1 /* UITextView+Input.m */,
 				B636D683188FC42300AE2977 /* UILabel+Extra.h */,
 				B636D684188FC42300AE2977 /* UILabel+Extra.m */,
+				B6E25CEC18A8A44300F463BD /* MacroIOS.h */,
 			);
 			path = _UIKit;
 			sourceTree = "<group>";
