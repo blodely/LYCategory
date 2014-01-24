@@ -35,6 +35,8 @@
 #import "NSNumber+Fix.h"
 #import "NSNull+Fix.h"
 
+#import "MacroIOS.h"
+
 // UI
 #import "UITextField+Input.h"
 #import "UITextView+Input.h"
