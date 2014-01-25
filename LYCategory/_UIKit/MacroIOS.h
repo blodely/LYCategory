@@ -9,6 +9,10 @@
 #ifndef LYCategory_MacroIOS_h
 #define LYCategory_MacroIOS_h
 
+#pragma mark - FRAME
 
+#pragma mark - OS VERSION
+
+#pragma mark - MODEL DETECTION
 
 #endif
