@@ -11,6 +11,8 @@
 
 #pragma mark - FRAME
 
+#define DELTA7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? 0 : 20)
+
 #pragma mark - OS VERSION
 
 #pragma mark - MODEL DETECTION
