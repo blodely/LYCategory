@@ -15,6 +15,8 @@
 
 #define WIDTH 320
 
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
 #pragma mark - OS VERSION
 
 #pragma mark - MODEL DETECTION
