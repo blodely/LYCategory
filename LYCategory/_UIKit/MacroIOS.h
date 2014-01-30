@@ -21,6 +21,8 @@
 
 #define iOS7 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) )
 
+#define iOS6 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0) )
+
 #pragma mark - MODEL DETECTION
 
 #endif
