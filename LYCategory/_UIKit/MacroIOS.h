@@ -27,4 +27,6 @@
 
 #pragma mark - MODEL DETECTION
 
+#define iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
 #endif
