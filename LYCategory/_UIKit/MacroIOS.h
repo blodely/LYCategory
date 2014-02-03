@@ -31,4 +31,6 @@
 
 #define iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
+#define iPhone5 ( iPhone && ( fabs( (double)[[UIScreen mainScreen] bounds].size.height - (double)568 ) < DBL_EPSILON ) )
+
 #endif
