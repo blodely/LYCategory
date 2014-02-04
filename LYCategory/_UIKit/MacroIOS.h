@@ -33,4 +33,6 @@
 
 #define iPhone5 ( iPhone && ( fabs( (double)[[UIScreen mainScreen] bounds].size.height - (double)568 ) < DBL_EPSILON ) )
 
+#define iPod ( [[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"] )
+
 #endif
