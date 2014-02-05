@@ -17,6 +17,8 @@
 
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#define CENTER_X 160
+
 #pragma mark - OS VERSION
 
 #define iOS7 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) )
