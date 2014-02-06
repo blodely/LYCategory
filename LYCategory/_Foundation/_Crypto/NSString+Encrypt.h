@@ -16,4 +16,6 @@
 
 - (NSString *)sha1;
 
+- (NSString *)md5Uppercase32;
+
 @end
