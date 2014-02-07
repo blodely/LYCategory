@@ -74,4 +74,9 @@
 	return output;
 }
 
+- (NSString *)md5Uppercase32 {
+	
+	return nil;
+}
+
 @end
