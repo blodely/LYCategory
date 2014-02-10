@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89D27B8D190235FA007F7834 /* NSString+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D27B8C190235FA007F7834 /* NSString+Random.m */; };
 		B633CE7A1850822C000A7BD0 /* NSUserDefaults+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B633CE791850822C000A7BD0 /* NSUserDefaults+Speed.m */; };
 		B633EEB2184325E6007E0B7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B633EEB1184325E6007E0B7E /* Foundation.framework */; };
 		B633EEB4184325E6007E0B7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B633EEB3184325E6007E0B7E /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89D27B8B190235FA007F7834 /* NSString+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Random.h"; sourceTree = "<group>"; };
+		89D27B8C190235FA007F7834 /* NSString+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Random.m"; sourceTree = "<group>"; };
 		B633CE781850822C000A7BD0 /* NSUserDefaults+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Speed.h"; sourceTree = "<group>"; };
 		B633CE791850822C000A7BD0 /* NSUserDefaults+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Speed.m"; sourceTree = "<group>"; };
 		B633EEAE184325E6007E0B7E /* LYCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -278,6 +281,8 @@
 				B6712F1F184C58580046FBC1 /* NSNumber+Date.m */,
 				B6A328C91858102C00C23D32 /* NSNumber+Random.h */,
 				B6A328CA1858102C00C23D32 /* NSNumber+Random.m */,
+				89D27B8B190235FA007F7834 /* NSString+Random.h */,
+				89D27B8C190235FA007F7834 /* NSString+Random.m */,
 			);
 			path = _Create;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 			files = (
 				B633EEF1184330C6007E0B7E /* NSArray+Fix.m in Sources */,
 				B633EEF418433121007E0B7E /* NSNumber+Fix.m in Sources */,
+				89D27B8D190235FA007F7834 /* NSString+Random.m in Sources */,
 				B6712F26184C5A620046FBC1 /* MenuViewController.m in Sources */,
 				B637AA751855883A0087497C /* DateViewController.m in Sources */,
 				B6712F20184C58580046FBC1 /* NSNumber+Date.m in Sources */,
