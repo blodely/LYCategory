@@ -14,6 +14,8 @@
 
 - (NSString *)md5;
 
+- (NSString *)md5Lowercase16;
+
 - (NSString *)sha1;
 
 - (NSString *)md5Uppercase32;
