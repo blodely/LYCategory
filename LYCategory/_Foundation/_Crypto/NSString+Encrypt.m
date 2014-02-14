@@ -57,6 +57,10 @@
 			digest[8], digest[9], digest[10], digest[11], digest[12], digest[13], digest[14], digest[15]];
 }
 
+- (NSString *)md5Lowercase16 {
+	return nil;
+}
+
 - (NSString *)sha1 {
 	const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
 	NSData *data = [NSData dataWithBytes:cstr length:self.length];
