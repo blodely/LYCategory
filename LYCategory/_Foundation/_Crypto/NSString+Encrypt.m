@@ -58,7 +58,7 @@
 }
 
 - (NSString *)md5Lowercase16 {
-	return [[[self md5] substringToIndex:24] substringFromIndex:8];
+	return [[[[self md5] substringToIndex:24] substringFromIndex:8] lowercaseString];
 }
 
 - (NSString *)sha1 {
