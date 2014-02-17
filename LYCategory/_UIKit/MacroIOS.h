@@ -19,6 +19,8 @@
 
 #define CENTER_X 160
 
+#define CENTER_P CGPointMake(HEIGHT/2, 160)
+
 #pragma mark - OS VERSION
 
 #define iOS7 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) )
