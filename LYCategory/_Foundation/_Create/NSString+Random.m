@@ -10,4 +10,8 @@
 
 @implementation NSString (Random)
 
++ (NSString *)uuid {
+	return nil;
+}
+
 @end
