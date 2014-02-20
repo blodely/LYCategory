@@ -11,7 +11,11 @@
 @implementation NSString (Random)
 
 + (NSString *)uuid {
-	return nil;
+    CFUUIDRef uuidRef = CFUUIDCreate(NULL);
+    CFStringRef uuidStringRef = CFUUIDCreateString(NULL, uuidRef);
+    CFRelease(uuidRef);
+    return (__bridge NSString *)uuidStringRef;
 }
+
 
 @end
