@@ -14,4 +14,6 @@
 	IBOutlet UILabel *lblInput;
 }
 
+- (IBAction)theButtonPressed:(id)sender;
+
 @end
