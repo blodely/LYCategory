@@ -16,6 +16,16 @@
 
 #pragma mark - ACTIONS
 
+- (void)theButtonPressed:(id)sender {
+	
+	if ([tfInput isEmpty]) {
+		lblInput.text = @"TEXT FIELD EMPTY";
+	} else {
+		lblInput.text = [tfInput.text md5];
+		NSLog(@"%@", [tfInput.text md5]);
+	}
+}
+
 #pragma mark - INIT
 
 - (id)init {
@@ -55,6 +65,12 @@
 	lblInput.text = [NSString stringWithFormat:@"%@", tfInput.text];
 	
 	[textField isEmpty] ? lblInput.text = @"TEXT FIELD EMPTY" : 0;
+	
+	return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	[textField resignFirstResponder];
 	
 	return YES;
 }
