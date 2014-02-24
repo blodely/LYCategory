@@ -1,4 +1,4 @@
 LYCategory
 ==========
 
-The categories that you need.
+The categories.
