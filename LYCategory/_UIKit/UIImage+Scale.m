@@ -11,4 +11,9 @@
 
 @implementation UIImage (Scale)
 
+// RESIZE IMAGE
+- (UIImage *)resize:(CGSize)size {
+	return nil;
+}
+
 @end
