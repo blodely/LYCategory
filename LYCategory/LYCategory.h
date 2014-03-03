@@ -41,3 +41,5 @@
 // UI
 #import "UITextField+Input.h"
 #import "UITextView+Input.h"
+#import "UIView+Screenshot.h"
+
