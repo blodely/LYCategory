@@ -10,4 +10,6 @@
 
 @interface UIView (Screenshot)
 
+- (UIImage *)image;
+
 @end
