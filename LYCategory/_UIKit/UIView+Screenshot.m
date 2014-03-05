@@ -10,4 +10,8 @@
 
 @implementation UIView (Screenshot)
 
+- (UIImage *)image {
+	return nil;
+}
+
 @end
