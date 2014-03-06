@@ -11,7 +11,12 @@
 @implementation UIView (Screenshot)
 
 - (UIImage *)image {
-	return nil;
+	// SCREENSHOT
+	UIGraphicsBeginImageContext(self.bounds.size);
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+	return image;
 }
 
 @end
