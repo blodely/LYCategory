@@ -18,4 +18,6 @@
 
 - (NSUInteger)length;
 
+- (NSString *)string;
+
 @end
