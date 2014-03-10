@@ -26,4 +26,8 @@
 	return 0;
 }
 
+- (NSString *)string {
+	return nil;
+}
+
 @end
