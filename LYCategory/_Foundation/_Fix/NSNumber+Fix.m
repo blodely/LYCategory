@@ -27,7 +27,7 @@
 }
 
 - (NSString *)string {
-	return nil;
+	return [NSString stringWithFormat:@"%@", self];
 }
 
 @end
