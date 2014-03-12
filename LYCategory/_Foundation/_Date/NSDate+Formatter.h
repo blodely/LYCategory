@@ -22,6 +22,8 @@
 
 - (NSNumber *)utcTimeIntervalSince1970;
 
+- (NSNumber *)utcTimeIntervalIntSince1970;
+
 - (NSString *)timeIntervalStringSince1970;
 
 @end
