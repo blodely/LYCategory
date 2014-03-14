@@ -46,7 +46,7 @@
 }
 
 - (NSNumber *)utcTimeIntervalIntSince1970 {
-	return nil;
+	return [NSNumber numberWithInt:(int)[self timeIntervalSince1970]];
 }
 
 - (NSString *)timeIntervalStringSince1970 {
