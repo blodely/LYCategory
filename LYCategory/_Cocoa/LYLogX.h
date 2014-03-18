@@ -10,5 +10,6 @@
 
 @interface LYLogX : NSObject
 
+void LYLog(NSString* format, ...);
 
 @end
