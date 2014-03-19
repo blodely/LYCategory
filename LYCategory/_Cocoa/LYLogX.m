@@ -10,4 +10,14 @@
 
 @implementation LYLogX
 
+void
+LYLog(NSString* format, ...) {
+	
+	va_list ap;
+	
+	va_start(ap, format);
+	NSLogv(format, ap);
+	va_end(ap);
+}
+
 @end
