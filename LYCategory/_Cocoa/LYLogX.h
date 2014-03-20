@@ -10,6 +10,6 @@
 
 @interface LYLogX : NSObject
 
-void LYLog(NSString* format, ...);
+FOUNDATION_EXPORT void LYLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
 
 @end
