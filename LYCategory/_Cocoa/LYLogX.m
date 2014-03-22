@@ -16,8 +16,9 @@ LYLog(NSString* format, ...) {
 	va_list ap;
 	
 	va_start(ap, format);
-	NSLogv(format, ap);
+	NSLogv([@"\n>>LERR>>> >>> >>>\n" stringByAppendingString:format], ap);
 	va_end(ap);
+	
 }
 
 @end
