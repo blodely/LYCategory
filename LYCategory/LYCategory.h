@@ -19,6 +19,7 @@
 #import "NSString+Encrypt.h"
 #import "NSString+Input.h"
 #import "NSString+Speed.h"
+#import "NSString+Size.h"
 #import "NSString+Date.h"
 #import "NSString+Search.h"
 #import "NSString+Random.h"
