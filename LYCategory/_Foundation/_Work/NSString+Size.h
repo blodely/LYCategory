@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import <CoreGraphics/CGBase.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (Size)
+
+- (CGFloat)widthWithFont:(UIFont *)font;
 
 @end
