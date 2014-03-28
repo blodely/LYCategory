@@ -10,4 +10,8 @@
 
 @implementation NSString (Size)
 
+- (CGFloat)widthWithFont:(UIFont *)font {
+	return 0.0f;
+}
+
 @end
