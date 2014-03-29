@@ -14,4 +14,8 @@
 	return 0.0f;
 }
 
+- (CGFloat)widthWithSystemFontOfSize:(CGFloat)fontSize {
+	return 0.0f;
+}
+
 @end
