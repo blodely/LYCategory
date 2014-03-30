@@ -11,7 +11,7 @@
 @implementation NSString (Size)
 
 - (CGFloat)widthWithFont:(UIFont *)font {
-	return 0.0f;
+	return ceilf([[NSAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:font,}].size.width);
 }
 
 - (CGFloat)widthWithSystemFontOfSize:(CGFloat)fontSize {
