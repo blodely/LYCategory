@@ -15,7 +15,7 @@
 }
 
 - (CGFloat)widthWithSystemFontOfSize:(CGFloat)fontSize {
-	return 0.0f;
+	return ceilf([[NSAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize],}].size.width);
 }
 
 @end
