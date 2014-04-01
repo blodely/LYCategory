@@ -26,4 +26,6 @@
 
 - (NSString *)phoneNumber;
 
+- (BOOL)isPhoneNumber;
+
 @end
