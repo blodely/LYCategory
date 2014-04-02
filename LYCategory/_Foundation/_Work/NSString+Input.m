@@ -65,4 +65,8 @@
 	return [[self componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"/.,()-+  "]] componentsJoinedByString:@""];
 }
 
+- (BOOL)isPhoneNumber {
+	return YES;
+}
+
 @end
