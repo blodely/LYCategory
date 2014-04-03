@@ -66,7 +66,12 @@
 }
 
 - (BOOL)isPhoneNumber {
-	return YES;
+	
+	// China Mobile:		134[0-8], 135, 136, 137, 138, 139, 150, 151, 157, 158, 159, 182, 187, 188
+	// China Unicom:		130, 131, 132, 152, 155, 156, 185, 186
+	// China Telecom:	133, 1349, 153, 180, 189
+	
+	return NO;
 }
 
 @end
