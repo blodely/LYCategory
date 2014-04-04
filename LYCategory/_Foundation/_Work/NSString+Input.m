@@ -71,7 +71,12 @@
 	// China Unicom:		130, 131, 132, 152, 155, 156, 185, 186
 	// China Telecom:	133, 1349, 153, 180, 189
 	
-	return NO;
+	NSPredicate *preMobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$"];
+	NSPredicate *preCMCC = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$"];
+	NSPredicate *preCU = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-2]|5[256]|8[56])\\d{8}$"];
+	NSPredicate *preCT = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1((33|53|8[09])[0-9]|349)\\d{7}$"];
+	
+	return [preMobile evaluateWithObject:self] || [preCMCC evaluateWithObject:self] || [preCU evaluateWithObject:self] || [preCT evaluateWithObject:self];
 }
 
 @end
