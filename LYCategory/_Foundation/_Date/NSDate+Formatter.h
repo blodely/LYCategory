@@ -26,4 +26,8 @@
 
 - (NSString *)timeIntervalStringSince1970;
 
+#pragma mark WEEKDAY
+
+- (int)weekdayNumber;
+
 @end
