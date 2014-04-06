@@ -53,4 +53,10 @@
 	return [NSString stringWithFormat:@"%f", [self timeIntervalSince1970]];
 }
 
+#pragma mark WEEKDAY
+
+- (int)weekdayNumber {
+	return 0;
+}
+
 @end
