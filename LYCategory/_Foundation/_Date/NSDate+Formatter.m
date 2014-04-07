@@ -56,7 +56,9 @@
 #pragma mark WEEKDAY
 
 - (int)weekdayNumber {
-	return 0;
+	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar]
+				  components:NSWeekdayCalendarUnit fromDate:self]
+				 weekday];
 }
 
 @end
