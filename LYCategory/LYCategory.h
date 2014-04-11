@@ -35,6 +35,8 @@
 
 #import "NSUserDefaults+Speed.h"
 
+#import "NSFileManager+IOS.h"
+
 // FIX
 #import "NSArray+Fix.h"
 #import "NSDictionary+Fix.h"
