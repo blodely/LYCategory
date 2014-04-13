@@ -12,7 +12,11 @@
 
 - (BOOL)isFolderExistInDocuments:(NSString *)folderName {
 	
-	return NO;
+	NSError *error;
+	NSString *path = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@", folderName];
+	BOOL isDir;
+	BOOL exists = [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDir];
+	return exists && isDir;
 }
 
 @end
