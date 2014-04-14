@@ -12,7 +12,6 @@
 
 - (BOOL)isFolderExistInDocuments:(NSString *)folderName {
 	
-	NSError *error;
 	NSString *path = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@", folderName];
 	BOOL isDir;
 	BOOL exists = [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDir];
