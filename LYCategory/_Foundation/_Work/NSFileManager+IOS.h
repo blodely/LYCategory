@@ -10,6 +10,6 @@
 
 @interface NSFileManager (IOS)
 
-- (BOOL)isFolderExistInDocuments:(NSString *)folderName;
++ (BOOL)isFolderExistInDocuments:(NSString *)folderName;
 
 @end
