@@ -10,7 +10,7 @@
 
 @implementation NSFileManager (IOS)
 
-- (BOOL)isFolderExistInDocuments:(NSString *)folderName {
++ (BOOL)isFolderExistInDocuments:(NSString *)folderName {
 	
 	NSString *path = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@", folderName];
 	BOOL isDir;
