@@ -30,4 +30,6 @@
 
 - (int)weekdayNumber;
 
+- (int)weekdayNumberPRC;
+
 @end
