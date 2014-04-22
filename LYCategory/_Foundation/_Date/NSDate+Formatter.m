@@ -61,4 +61,8 @@
 				 weekday];
 }
 
+- (int)weekdayNumberPRC {
+	return 0;
+}
+
 @end
