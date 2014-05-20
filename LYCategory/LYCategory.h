@@ -20,6 +20,7 @@
 #import "NSString+Search.h"
 #import "NSString+Random.h"
 
+#import "NSNumber+Random.h"
 #import "NSNumber+Date.h"
 
 #import "NSDate+Formatter.h"
