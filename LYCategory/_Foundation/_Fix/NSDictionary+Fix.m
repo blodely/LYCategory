@@ -84,6 +84,10 @@
 		return NO;
 	}
 	
+	if ([self[akey] isKindOfClass:[NSString class]] && [self[akey] isEqualToString:@""]) {
+		return NO;
+	}
+	
 	return YES;
 }
 
