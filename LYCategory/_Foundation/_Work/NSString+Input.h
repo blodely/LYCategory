@@ -22,6 +22,8 @@
 
 - (NSString *)trimStartSpace;
 
+- (NSString *)trimSpace;
+
 #pragma mark PHONE NUMBER
 
 - (NSString *)phoneNumber;
