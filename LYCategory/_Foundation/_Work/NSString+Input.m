@@ -38,6 +38,10 @@
 	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+- (NSString *)trimSpace {
+	return nil;
+}
+
 #pragma mark EMAIL
 
 - (BOOL)isEmail {
