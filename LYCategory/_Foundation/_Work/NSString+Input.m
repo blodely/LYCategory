@@ -39,7 +39,7 @@
 }
 
 - (NSString *)trimSpace {
-	return nil;
+	return [self stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
 #pragma mark EMAIL
