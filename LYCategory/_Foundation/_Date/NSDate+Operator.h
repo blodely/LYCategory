@@ -12,6 +12,8 @@
 
 - (BOOL)isToday;
 
+- (BOOL)isYesterday;
+
 - (NSDate *)yesterday;
 
 - (BOOL)isSameDayWith:(NSDate *)date;
