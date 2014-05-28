@@ -20,6 +20,11 @@
 	return comp.year == today.year && comp.month == today.month && comp.day == today.day;
 }
 
+- (BOOL)isYesterday {
+	
+	return NO;
+}
+
 - (NSDate *)yesterday {
 	NSDateComponents *comp = [[NSDateComponents alloc] init];
 	comp.day = -1;
