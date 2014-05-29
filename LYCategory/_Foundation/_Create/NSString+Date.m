@@ -31,7 +31,7 @@
 	NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
 	fmt.dateFormat = fmtString;
 	
-	if (timezoneName != nil && [timezoneName isEqualToString:@""]) {
+	if (timezoneName != nil && ![timezoneName isEqualToString:@""]) {
 		fmt.timeZone = [NSTimeZone timeZoneWithName:timezoneName];
 	}
 	
