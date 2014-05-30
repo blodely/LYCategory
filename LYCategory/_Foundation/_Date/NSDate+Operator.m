@@ -25,6 +25,11 @@
 	return NO;
 }
 
+- (BOOL)isSameDayIgnoringTimeWith:(NSDate *)date {
+	
+	return NO;
+}
+
 - (NSDate *)yesterday {
 	NSDateComponents *comp = [[NSDateComponents alloc] init];
 	comp.day = -1;
