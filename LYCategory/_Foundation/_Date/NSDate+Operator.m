@@ -21,13 +21,15 @@
 }
 
 - (BOOL)isYesterday {
-	
-	return NO;
+	return [self isSameDayIgnoringTimeWith:[self yesterday]];
 }
 
 - (BOOL)isSameDayIgnoringTimeWith:(NSDate *)date {
 	
-	return NO;
+	NSDateComponents *current = [[NSCalendar currentCalendar] components:(NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit) fromDate:self];
+	NSDateComponents *comp = [[NSCalendar currentCalendar] components:(NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit) fromDate:date];
+	
+	return ((current.year == comp.year) && (current.month == comp.month) && (current.day == comp.day));
 }
 
 - (NSDate *)yesterday {
