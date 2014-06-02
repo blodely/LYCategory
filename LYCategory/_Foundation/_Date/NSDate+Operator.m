@@ -24,6 +24,10 @@
 	return [self isSameDayIgnoringTimeWith:[self yesterday]];
 }
 
+- (BOOL)isTheDayBeforeYesterday {
+	return NO;
+}
+
 - (BOOL)isSameDayIgnoringTimeWith:(NSDate *)date {
 	
 	NSDateComponents *current = [[NSCalendar currentCalendar] components:(NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit) fromDate:self];
