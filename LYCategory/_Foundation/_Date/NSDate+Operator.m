@@ -25,7 +25,7 @@
 }
 
 - (BOOL)isTheDayBeforeYesterday {
-	return NO;
+	return [[self yesterday] isSameDayIgnoringTimeWith:[[[NSDate date] yesterday] yesterday]];
 }
 
 - (BOOL)isSameDayIgnoringTimeWith:(NSDate *)date {
