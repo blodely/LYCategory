@@ -16,4 +16,6 @@
 
 - (CGFloat)widthWithSystemFontOfSize:(CGFloat)fontSize;
 
+- (CGFloat)heightWithFont:(UIFont *)font andFixedWidth:(CGFloat)width;
+
 @end
