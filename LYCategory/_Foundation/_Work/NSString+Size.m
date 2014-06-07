@@ -18,4 +18,9 @@
 	return ceilf([[NSAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize],}].size.width);
 }
 
+- (CGFloat)heightWithFont:(UIFont *)font andFixedWidth:(CGFloat)width {
+	
+	return 0.0f;
+}
+
 @end
