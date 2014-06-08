@@ -19,8 +19,9 @@
 }
 
 - (CGFloat)heightWithFont:(UIFont *)font andFixedWidth:(CGFloat)width {
+		
+	return ceil([[[NSAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:font,}] boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil].size.height);
 	
-	return 0.0f;
 }
 
 @end
