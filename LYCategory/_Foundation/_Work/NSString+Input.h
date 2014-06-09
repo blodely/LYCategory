@@ -30,4 +30,6 @@
 
 - (BOOL)isPhoneNumber;
 
+#pragma mark EMOJI
+
 @end
