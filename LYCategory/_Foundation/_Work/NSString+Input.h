@@ -32,4 +32,7 @@
 
 #pragma mark EMOJI
 
+- (NSString *)replaceEmojiTextWithUnicode;
+
+
 @end
