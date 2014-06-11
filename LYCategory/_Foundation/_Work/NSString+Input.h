@@ -34,5 +34,6 @@
 
 - (NSString *)replaceEmojiTextWithUnicode;
 
+- (NSString *)replaceEmojiUnicodeWithText;
 
 @end
