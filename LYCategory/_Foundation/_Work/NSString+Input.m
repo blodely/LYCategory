@@ -83,4 +83,10 @@
 	return [preMobile evaluateWithObject:self] || [preCMCC evaluateWithObject:self] || [preCU evaluateWithObject:self] || [preCT evaluateWithObject:self];
 }
 
+#pragma mark EMOJI
+
+- (NSString *)replaceEmojiTextWithUnicode {
+	return nil;
+}
+
 @end
