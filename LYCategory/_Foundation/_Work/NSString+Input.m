@@ -89,4 +89,8 @@
 	return nil;
 }
 
+- (NSString *)replaceEmojiUnicodeWithText {
+	return nil;
+}
+
 @end
