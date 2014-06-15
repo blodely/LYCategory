@@ -86,6 +86,7 @@
 #pragma mark EMOJI
 
 - (NSString *)replaceEmojiTextWithUnicode {
+	
 	return nil;
 }
 
@@ -920,7 +921,13 @@
 				@"❌": @"[x]",
 				@"0⃣": @"[zero]"
 				};
-	return nil;
+	
+	__block NSString *text = self;
+	[emojis enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+		text = [text stringByReplacingOccurrencesOfString:key withString:obj];
+	}];
+	
+	return text;
 }
 
 @end
