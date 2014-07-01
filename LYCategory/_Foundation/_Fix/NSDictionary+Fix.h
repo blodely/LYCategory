@@ -28,4 +28,6 @@
 
 - (BOOL)boolValue;
 
+- (void)filterNull;
+
 @end
