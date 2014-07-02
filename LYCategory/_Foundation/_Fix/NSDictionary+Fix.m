@@ -51,4 +51,8 @@
 	return self != nil && [[self allKeys] count] != 0;
 }
 
+- (void)filterNull {
+	
+}
+
 @end
