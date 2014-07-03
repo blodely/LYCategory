@@ -28,6 +28,6 @@
 
 - (BOOL)boolValue;
 
-- (void)filterNull;
+- (NSDictionary *)filterNull;
 
 @end
