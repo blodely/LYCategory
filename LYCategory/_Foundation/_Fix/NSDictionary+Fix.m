@@ -51,8 +51,27 @@
 	return self != nil && [[self allKeys] count] != 0;
 }
 
-- (void)filterNull {
+- (NSDictionary *)filterNull {
 	
+	NSMutableDictionary *mself = [NSMutableDictionary dictionaryWithCapacity:1];
+	[mself addEntriesFromDictionary:self];
+	
+	for (id one in [self allKeys]) {
+		
+		if ([self[one] isEqual:[NSNull null]]) {
+			// NULL OBJECT
+			LYLog(@"key=%@=NSNull", one);
+			
+			// REMOVE
+			[mself removeObjectForKey:one];
+		}
+	}
+	
+	if (mself.allKeys.count == 0) {
+		return nil;
+	}
+	
+	return [NSDictionary dictionaryWithDictionary:mself];
 }
 
 @end
