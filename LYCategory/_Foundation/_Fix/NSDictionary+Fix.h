@@ -30,4 +30,6 @@
 
 - (NSDictionary *)filterNull;
 
+- (BOOL)hasObjectWithKey:(NSString *)akey;
+
 @end
