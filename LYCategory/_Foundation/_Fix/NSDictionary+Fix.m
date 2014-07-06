@@ -74,4 +74,9 @@
 	return [NSDictionary dictionaryWithDictionary:mself];
 }
 
+- (BOOL)hasObjectWithKey:(NSString *)akey {
+	
+	return NO;
+}
+
 @end
