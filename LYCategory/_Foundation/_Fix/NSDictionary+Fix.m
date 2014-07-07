@@ -76,7 +76,15 @@
 
 - (BOOL)hasObjectWithKey:(NSString *)akey {
 	
-	return NO;
+	if (self.allKeys.count == 0 || ![self.allKeys containsObject:akey]) {
+		return NO;
+	}
+	
+	if ([self[akey] isEqual:[NSNull null]]) {
+		return NO;
+	}
+	
+	return YES;
 }
 
 @end
