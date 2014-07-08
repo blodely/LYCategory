@@ -14,4 +14,6 @@
 
 - (id)objectForKey:(id)aKey;
 
+- (BOOL)isReal;
+
 @end
