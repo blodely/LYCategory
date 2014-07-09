@@ -18,4 +18,8 @@
 	return nil;
 }
 
+- (BOOL)isReal {
+	return NO;
+}
+
 @end
