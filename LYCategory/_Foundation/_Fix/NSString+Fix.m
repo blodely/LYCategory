@@ -19,7 +19,7 @@
 }
 
 - (BOOL)isReal {
-	return NO;
+	return ![self isEqualToString:@"0"];
 }
 
 @end
