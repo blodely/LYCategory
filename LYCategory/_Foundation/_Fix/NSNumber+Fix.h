@@ -20,4 +20,6 @@
 
 - (NSString *)string;
 
+- (BOOL)isReal;
+
 @end
