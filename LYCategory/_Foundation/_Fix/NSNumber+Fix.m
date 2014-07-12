@@ -30,4 +30,8 @@
 	return [NSString stringWithFormat:@"%@", self];
 }
 
+- (BOOL)isReal {
+	return [self intValue] != 0;
+}
+
 @end
