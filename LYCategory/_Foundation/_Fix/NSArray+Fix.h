@@ -28,4 +28,6 @@
 
 - (NSArray *)nullArrayHandler;
 
+- (BOOL)isReal;
+
 @end
