@@ -42,4 +42,6 @@
 
 - (NSDictionary *)nullDictionaryHandler;
 
+- (BOOL)isReal;
+
 @end
