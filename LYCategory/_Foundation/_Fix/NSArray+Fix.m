@@ -86,4 +86,8 @@
 	return [NSArray arrayWithArray:mutSelf];
 }
 
+- (BOOL)isReal {
+	return self.count > 0;
+}
+
 @end
