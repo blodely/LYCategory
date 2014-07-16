@@ -181,4 +181,8 @@
 	return [NSDictionary dictionaryWithDictionary:mutSelf];
 }
 
+- (BOOL)isReal {
+	return self.allKeys.count > 0;
+}
+
 @end
