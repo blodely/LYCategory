@@ -10,4 +10,6 @@
 
 @interface NSNull (Fix)
 
+- (BOOL)isReal;
+
 @end
