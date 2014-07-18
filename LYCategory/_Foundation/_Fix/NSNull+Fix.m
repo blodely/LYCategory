@@ -10,4 +10,8 @@
 
 @implementation NSNull (Fix)
 
+- (BOOL)isReal {
+	return NO;
+}
+
 @end
