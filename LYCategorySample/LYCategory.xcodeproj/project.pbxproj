@@ -48,6 +48,7 @@
 		B69ED75A187B9EDF00A39ADF /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = B69ED759187B9EDF00A39ADF /* NSString+Search.m */; };
 		B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FF82B184F001B004E16B9 /* NSURL+Speed.m */; };
 		B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A328CA1858102C00C23D32 /* NSNumber+Random.m */; };
+		B6AE2F46197A6F530034B27D /* NSArray+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE2F45197A6F530034B27D /* NSArray+Operator.m */; };
 		B6C6BB98188F73F70068BFF3 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */; };
 		B6C6BBA2188F73F70068BFF3 /* NSDate+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BBA1188F73F70068BFF3 /* NSDate+Operator.m */; };
 /* End PBXBuildFile section */
@@ -130,6 +131,8 @@
 		B69FF82B184F001B004E16B9 /* NSURL+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Speed.m"; sourceTree = "<group>"; };
 		B6A328C91858102C00C23D32 /* NSNumber+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Random.h"; sourceTree = "<group>"; };
 		B6A328CA1858102C00C23D32 /* NSNumber+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Random.m"; sourceTree = "<group>"; };
+		B6AE2F44197A6F530034B27D /* NSArray+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Operator.h"; sourceTree = "<group>"; };
+		B6AE2F45197A6F530034B27D /* NSArray+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Operator.m"; sourceTree = "<group>"; };
 		B6C6BB94188F73F70068BFF3 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 		B6C6BBA0188F73F70068BFF3 /* NSDate+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Operator.h"; sourceTree = "<group>"; };
@@ -361,6 +364,8 @@
 				89C5D59E19ADB407007D7822 /* NSString+Size.m */,
 				8963BF7D19BEF55200A5855D /* NSFileManager+IOS.h */,
 				8963BF7E19BEF55200A5855D /* NSFileManager+IOS.m */,
+				B6AE2F44197A6F530034B27D /* NSArray+Operator.h */,
+				B6AE2F45197A6F530034B27D /* NSArray+Operator.m */,
 			);
 			path = _Work;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 				89D27B8D190235FA007F7834 /* NSString+Random.m in Sources */,
 				B6712F26184C5A620046FBC1 /* MenuViewController.m in Sources */,
 				B637AA751855883A0087497C /* DateViewController.m in Sources */,
+				B6AE2F46197A6F530034B27D /* NSArray+Operator.m in Sources */,
 				B6712F20184C58580046FBC1 /* NSNumber+Date.m in Sources */,
 				B6712F13184C3B400046FBC1 /* UITextView+Input.m in Sources */,
 				B6712F16184C52560046FBC1 /* NSURLRequest+Speed.m in Sources */,
