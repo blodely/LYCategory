@@ -30,6 +30,9 @@
 #import "NSDate+Formatter.h"
 #import "NSDate+Operator.h"
 
+// ARRAY
+#import "NSArray+Operator.h"
+
 #import "NSURL+Speed.h"
 #import "NSURLRequest+Speed.h"
 
