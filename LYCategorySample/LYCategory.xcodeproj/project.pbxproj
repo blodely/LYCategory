@@ -49,6 +49,7 @@
 		B69FF82C184F001B004E16B9 /* NSURL+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B69FF82B184F001B004E16B9 /* NSURL+Speed.m */; };
 		B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A328CA1858102C00C23D32 /* NSNumber+Random.m */; };
 		B6AE2F46197A6F530034B27D /* NSArray+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE2F45197A6F530034B27D /* NSArray+Operator.m */; };
+		B6AE2F49197E64EC0034B27D /* NSMutableArray+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE2F48197E64EC0034B27D /* NSMutableArray+Operator.m */; };
 		B6C6BB98188F73F70068BFF3 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */; };
 		B6C6BBA2188F73F70068BFF3 /* NSDate+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BBA1188F73F70068BFF3 /* NSDate+Operator.m */; };
 /* End PBXBuildFile section */
@@ -133,6 +134,8 @@
 		B6A328CA1858102C00C23D32 /* NSNumber+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Random.m"; sourceTree = "<group>"; };
 		B6AE2F44197A6F530034B27D /* NSArray+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Operator.h"; sourceTree = "<group>"; };
 		B6AE2F45197A6F530034B27D /* NSArray+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Operator.m"; sourceTree = "<group>"; };
+		B6AE2F47197E64EC0034B27D /* NSMutableArray+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Operator.h"; sourceTree = "<group>"; };
+		B6AE2F48197E64EC0034B27D /* NSMutableArray+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Operator.m"; sourceTree = "<group>"; };
 		B6C6BB94188F73F70068BFF3 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 		B6C6BBA0188F73F70068BFF3 /* NSDate+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Operator.h"; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 				8963BF7E19BEF55200A5855D /* NSFileManager+IOS.m */,
 				B6AE2F44197A6F530034B27D /* NSArray+Operator.h */,
 				B6AE2F45197A6F530034B27D /* NSArray+Operator.m */,
+				B6AE2F47197E64EC0034B27D /* NSMutableArray+Operator.h */,
+				B6AE2F48197E64EC0034B27D /* NSMutableArray+Operator.m */,
 			);
 			path = _Work;
 			sourceTree = "<group>";
@@ -470,6 +475,7 @@
 				B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */,
 				B69ED754187B9EC600A39ADF /* NSString+Speed.m in Sources */,
 				89384F5A19A9E52C00D1058B /* NSMutableArray+Fix.m in Sources */,
+				B6AE2F49197E64EC0034B27D /* NSMutableArray+Operator.m in Sources */,
 				89384F5719A1FBF700D1058B /* NSMutableDictionary+Fix.m in Sources */,
 				B67001A91881443700F983E4 /* NSData+Encrypt.m in Sources */,
 				B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */,

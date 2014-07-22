@@ -32,6 +32,7 @@
 
 // ARRAY
 #import "NSArray+Operator.h"
+#import "NSMutableArray+Operator.h"
 
 #import "NSURL+Speed.h"
 #import "NSURLRequest+Speed.h"
