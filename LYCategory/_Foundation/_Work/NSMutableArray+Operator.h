@@ -10,4 +10,6 @@
 
 @interface NSMutableArray (Operator)
 
+- (void)reverse;
+
 @end
