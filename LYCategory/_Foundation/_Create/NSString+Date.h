@@ -14,4 +14,6 @@
 
 - (NSDate *)dateWithFormat:(NSString *)fmtString andTimezone:(NSString *)timezoneName;
 
+- (NSDate *)dateWithFormat:(NSString *)fmtString dateStyle:(NSDateFormatterStyle)style;
+
 @end
