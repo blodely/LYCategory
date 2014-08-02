@@ -38,4 +38,17 @@
 	return [fmt dateFromString:self];
 }
 
+- (NSDate *)dateWithFormat:(NSString *)fmtString dateStyle:(NSDateFormatterStyle)style {
+	
+	if (self == nil || [self isEqualToString:@""] || fmtString == nil || [fmtString isEqualToString:@""]) {
+		return nil;
+	}
+	
+	NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+	fmt.dateStyle = style;
+	fmt.dateFormat = fmtString;
+	
+	return [fmt dateFromString:self];
+}
+
 @end
