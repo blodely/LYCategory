@@ -45,6 +45,7 @@
 	}
 	
 	NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+	fmt.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
 	fmt.dateStyle = style;
 	fmt.dateFormat = fmtString;
 	
