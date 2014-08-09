@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class NSArray;
+
 @interface NSDictionary (Fix)
 
 - (id)objectAtIndex:(NSUInteger)index;
@@ -31,5 +33,7 @@
 - (NSDictionary *)filterNull;
 
 - (BOOL)hasObjectWithKey:(NSString *)akey;
+
+- (id)objectInKeys:(NSArray *)keys;
 
 @end
