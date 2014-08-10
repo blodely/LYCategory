@@ -91,4 +91,13 @@
 	return YES;
 }
 
+- (id)objectInKeys:(NSArray *)keys {
+	
+	if (keys == nil || [keys isKindOfClass:[NSArray class]] == NO || keys.count == 0) {
+		return nil;
+	}
+	
+	return nil;
+}
+
 @end
