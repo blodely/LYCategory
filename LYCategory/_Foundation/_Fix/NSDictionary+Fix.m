@@ -97,6 +97,12 @@
 		return nil;
 	}
 	
+	for (NSString *one in keys) {
+		if (![one isEqual:[NSNull null]] && [self hasObjectWithKey:one]) {
+			return self[one];
+		}
+	}
+	
 	return nil;
 }
 
