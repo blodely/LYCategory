@@ -36,4 +36,6 @@
 
 - (id)objectInKeys:(NSArray *)keys;
 
+- (int)intInKeys:(NSArray *)keys;
+
 @end
