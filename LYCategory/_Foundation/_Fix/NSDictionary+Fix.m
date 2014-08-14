@@ -110,6 +110,16 @@
 
 - (int)intInKeys:(NSArray *)keys {
 	
+	if (keys == nil || ![keys isKindOfClass:[NSArray class]] || keys.count == 0) {
+		return 0;
+	}
+	
+	for (NSString *one in keys) {
+		if (![one isEqual:[NSNull null]] && [self hasObjectWithKey:one]) {
+			return [self[one] intValue];
+		}
+	}
+	
 	return 0;
 }
 
