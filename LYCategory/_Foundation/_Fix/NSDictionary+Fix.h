@@ -38,4 +38,6 @@
 
 - (int)intInKeys:(NSArray *)keys;
 
+- (NSString *)stringInKeys:(NSArray *)keys;
+
 @end
