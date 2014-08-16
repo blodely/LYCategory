@@ -123,4 +123,9 @@
 	return 0;
 }
 
+- (NSString *)stringInKeys:(NSArray *)keys {
+	
+	return @"";
+}
+
 @end
