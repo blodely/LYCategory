@@ -125,6 +125,16 @@
 
 - (NSString *)stringInKeys:(NSArray *)keys {
 	
+	if (keys == nil || ![keys isKindOfClass:[NSArray class]] || keys.count == 0) {
+		return @"";
+	}
+	
+	for (NSString *one in keys) {
+		if (![one isEqual:[NSNull null]] && [self hasObjectWithKey:one]) {
+			return [NSString stringWithFormat:@"%@", self[one]];
+		}
+	}
+	
 	return @"";
 }
 
