@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		890023F8190959B4005B0B91 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 890023F7190959B4005B0B91 /* UIView+Screenshot.m */; };
+		89384F5719A1FBF700D1058B /* NSMutableDictionary+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = 89384F5619A1FBF700D1058B /* NSMutableDictionary+Fix.m */; };
 		8963BF7F19BEF55200A5855D /* NSFileManager+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8963BF7E19BEF55200A5855D /* NSFileManager+IOS.m */; };
 		89C5D59F19ADB407007D7822 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C5D59E19ADB407007D7822 /* NSString+Size.m */; };
 		89D27B8D190235FA007F7834 /* NSString+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D27B8C190235FA007F7834 /* NSString+Random.m */; };
@@ -53,6 +54,8 @@
 /* Begin PBXFileReference section */
 		890023F6190959B4005B0B91 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
 		890023F7190959B4005B0B91 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		89384F5519A1FBF700D1058B /* NSMutableDictionary+Fix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Fix.h"; sourceTree = "<group>"; };
+		89384F5619A1FBF700D1058B /* NSMutableDictionary+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Fix.m"; sourceTree = "<group>"; };
 		8963BF7D19BEF55200A5855D /* NSFileManager+IOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+IOS.h"; sourceTree = "<group>"; };
 		8963BF7E19BEF55200A5855D /* NSFileManager+IOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+IOS.m"; sourceTree = "<group>"; };
 		89C5D59D19ADB407007D7822 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				B633EEF61843374C007E0B7E /* NSString+Fix.m */,
 				B69EA14A186BD0B30087DD51 /* NSNull+Fix.h */,
 				B69EA14B186BD0B30087DD51 /* NSNull+Fix.m */,
+				89384F5519A1FBF700D1058B /* NSMutableDictionary+Fix.h */,
+				89384F5619A1FBF700D1058B /* NSMutableDictionary+Fix.m */,
 			);
 			path = _Fix;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				B69ED75A187B9EDF00A39ADF /* NSString+Search.m in Sources */,
 				B633EEEE18432FCC007E0B7E /* NSDictionary+Fix.m in Sources */,
 				B69ED754187B9EC600A39ADF /* NSString+Speed.m in Sources */,
+				89384F5719A1FBF700D1058B /* NSMutableDictionary+Fix.m in Sources */,
 				B67001A91881443700F983E4 /* NSData+Encrypt.m in Sources */,
 				B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */,
 				B69EA14C186BD0B30087DD51 /* NSNull+Fix.m in Sources */,
