@@ -42,6 +42,7 @@
 #import "NSDictionary+Fix.h"
 #import "NSNumber+Fix.h"
 #import "NSNull+Fix.h"
+#import "NSMutableDictionary+Fix.h"
 
 #import "MacroIOS.h"
 
