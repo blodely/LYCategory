@@ -10,4 +10,6 @@
 
 @interface NSMutableDictionary (Fix)
 
+- (void)nullHandler;
+
 @end
