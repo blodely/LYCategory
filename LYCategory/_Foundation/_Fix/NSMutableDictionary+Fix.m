@@ -10,4 +10,17 @@
 
 @implementation NSMutableDictionary (Fix)
 
+- (void)nullHandler {
+	
+	const id nul = [NSNull null];
+	const NSString *blank = @"";
+	
+	for (NSString *key in self) {
+		id obj = self[key];
+		
+		if (obj == nul) {
+		}
+	}
+}
+
 @end
