@@ -19,8 +19,11 @@
 		id obj = self[key];
 		
 		if (obj == nul) {
+			[self setObject:blank forKey:key];
 		}
 	}
+	
+	// MODIFIED
 }
 
 @end
