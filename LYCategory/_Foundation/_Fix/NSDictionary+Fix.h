@@ -40,4 +40,6 @@
 
 - (NSString *)stringInKeys:(NSArray *)keys;
 
+- (void)nullHandler;
+
 @end
