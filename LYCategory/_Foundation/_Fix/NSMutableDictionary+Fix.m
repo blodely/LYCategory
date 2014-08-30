@@ -20,6 +20,12 @@
 		
 		if (obj == nul) {
 			[self setObject:blank forKey:key];
+		} else if ([obj isKindOfClass:[NSArray class]]) {
+			[obj nullHandler];
+			[self setObject:obj forKey:key];
+		} else if ([obj isKindOfClass:[NSDictionary class]]) {
+			[obj nullHandler];
+			[self setObject:obj forKey:key];
 		}
 	}
 	
