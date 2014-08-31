@@ -26,6 +26,6 @@
 
 - (NSUInteger)length;
 
-- (void)nullHandler;
+- (NSArray *)nullHandler;
 
 @end

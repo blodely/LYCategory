@@ -42,4 +42,28 @@
 	return [self count];
 }
 
+- (NSArray *)nullHandler {
+	
+	const id nul = [NSNull null];
+	
+	const NSString *blank = @"";
+	
+	NSMutableArray *mutSelf = [NSMutableArray arrayWithArray:self];
+	
+	for (int i = 0; i < self.count; i++) {
+		
+		id obj = self[i];
+		
+		if (obj == nul) {
+			[mutSelf replaceObjectAtIndex:i withObject:blank];
+		} else if ([obj isKindOfClass:[NSArray class]]) {
+			[mutSelf replaceObjectAtIndex:i withObject:[obj nullHandler]];
+		} else if ([obj isKindOfClass:[NSDictionary class]]) {
+			[mutSelf replaceObjectAtIndex:i withObject:[obj nullHandler]];
+		}
+	}
+	
+	return [NSArray arrayWithArray:mutSelf];
+}
+
 @end
