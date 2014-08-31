@@ -138,4 +138,27 @@
 	return @"";
 }
 
+- (NSDictionary *)nullDictionaryHandler {
+	
+	const id nul = [NSNull null];
+	const NSString *blank = @"";
+	
+	NSMutableDictionary *mutSelf = [NSMutableDictionary dictionaryWithDictionary:self];
+	
+	for (NSString *key in self.allKeys) {
+		
+		id obj = self[key];
+		
+		if (obj == nul) {
+			[mutSelf setObject:blank forKey:key];
+		} else if ([obj isKindOfClass:[NSArray class]]) {
+			[mutSelf setObject:[obj nullHandler] forKey:key];
+		} else if ([obj isKindOfClass:[NSDictionary class]]) {
+			[mutSelf setObject:[obj nullDictionaryHandler] forKey:key];
+		}
+	}
+	
+	return [NSDictionary dictionaryWithDictionary:mutSelf];
+}
+
 @end
