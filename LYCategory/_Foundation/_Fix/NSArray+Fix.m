@@ -42,7 +42,7 @@
 	return [self count];
 }
 
-- (NSArray *)nullHandler {
+- (NSArray *)nullArrayHandler {
 	
 	const id nul = [NSNull null];
 	
@@ -56,10 +56,16 @@
 		
 		if (obj == nul) {
 			[mutSelf replaceObjectAtIndex:i withObject:blank];
+		} else if ([obj isKindOfClass:[NSMutableArray class]]) {
+			[mutSelf replaceObjectAtIndex:i withObject:[obj nullMutableArrayHandler]];
+			return [NSArray arrayWithArray:mutSelf];
+		} else if ([obj isKindOfClass:[NSMutableDictionary class]]) {
+			[mutSelf replaceObjectAtIndex:i withObject:[obj nullMutableDictionaryHandler]];
+			return [NSArray arrayWithArray:mutSelf];
 		} else if ([obj isKindOfClass:[NSArray class]]) {
-			[mutSelf replaceObjectAtIndex:i withObject:[obj nullHandler]];
+			[mutSelf replaceObjectAtIndex:i withObject:[obj nullArrayHandler]];
 		} else if ([obj isKindOfClass:[NSDictionary class]]) {
-			[mutSelf replaceObjectAtIndex:i withObject:[obj nullHandler]];
+			[mutSelf replaceObjectAtIndex:i withObject:[obj nullDictionaryHandler]];
 		}
 	}
 	
