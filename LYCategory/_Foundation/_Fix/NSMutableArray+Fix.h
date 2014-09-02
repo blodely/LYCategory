@@ -10,6 +10,6 @@
 
 @interface NSMutableArray (Fix)
 
-- (void)nullHandler;
+- (void)nullMutableArrayHandler;
 
 @end

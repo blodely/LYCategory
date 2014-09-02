@@ -10,7 +10,7 @@
 
 @implementation NSMutableArray (Fix)
 
-- (void)nullHandler {
+- (void)nullMutableArrayHandler {
 	
 	const id nul = [NSNull null];
 	
