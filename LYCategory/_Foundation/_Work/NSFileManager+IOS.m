@@ -18,4 +18,7 @@
 	return exists && isDir;
 }
 
++ (void)createFolderIfNotExistInDocuments:(NSString *)folderName {
+}
+
 @end
