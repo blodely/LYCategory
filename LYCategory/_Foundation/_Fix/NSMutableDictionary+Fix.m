@@ -10,22 +10,30 @@
 
 @implementation NSMutableDictionary (Fix)
 
-- (void)nullHandler {
+- (void)nullMutableDictionaryHandler {
 	
 	const id nul = [NSNull null];
 	const NSString *blank = @"";
 	
-	for (NSString *key in self) {
+	for (NSString *key in self.allKeys) {
 		id obj = self[key];
 		
 		if (obj == nul) {
 			[self setObject:blank forKey:key];
+		} else if ([obj isKindOfClass:[NSMutableArray class]]) {
+			[obj nullMutableArrayHandler];
+			[self setObject:obj forKey:key];
+			return;
+		} else if ([obj isKindOfClass:[NSMutableDictionary class]]) {
+			[obj nullMutableDictionaryHandler];
+			[self setObject:obj forKey:key];
+			return;
 		} else if ([obj isKindOfClass:[NSArray class]]) {
-			[obj nullHandler];
-			[self setObject:obj forKey:key];
+			[self setObject:[obj nullArrayHandler] forKey:key];
+			return;
 		} else if ([obj isKindOfClass:[NSDictionary class]]) {
-			[obj nullHandler];
-			[self setObject:obj forKey:key];
+			[self setObject:[obj nullDictionaryHandler] forKey:key];
+			return;
 		}
 	}
 	
