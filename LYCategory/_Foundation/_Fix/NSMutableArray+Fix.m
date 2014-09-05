@@ -21,13 +21,26 @@
 		id obj = self[i];
 		
 		if (obj == nul) {
+			
 			[self replaceObjectAtIndex:i withObject:blank];
+			
 		} else if ([obj isKindOfClass:[NSArray class]]) {
-			[obj nullHandler];
-			[self replaceObjectAtIndex:i withObject:obj];
+			
+			if ([obj isKindOfClass:[NSMutableArray class]]) {
+				[obj nullMutableArrayHandler];
+				[self replaceObjectAtIndex:i withObject:obj];
+			} else {
+				[self replaceObjectAtIndex:i withObject:[obj nullArrayHandler]];
+			}
+			
 		} else if ([obj isKindOfClass:[NSDictionary class]]) {
-			[obj nullHandler];
-			[self replaceObjectAtIndex:i withObject:obj];
+
+			if ([obj isKindOfClass:[NSMutableDictionary class]]) {
+				[obj nullMutableDictionaryHandler];
+				[self replaceObjectAtIndex:i withObject:obj];
+			} else {
+				[self replaceObjectAtIndex:i withObject:[obj nullDictionaryHandler]];
+			}
 		}
 		
 	}
