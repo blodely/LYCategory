@@ -55,17 +55,27 @@
 		id obj = self[i];
 		
 		if (obj == nul) {
+			
 			[mutSelf replaceObjectAtIndex:i withObject:blank];
-		} else if ([obj isKindOfClass:[NSMutableArray class]]) {
-			[mutSelf replaceObjectAtIndex:i withObject:[obj nullMutableArrayHandler]];
-			return [NSArray arrayWithArray:mutSelf];
-		} else if ([obj isKindOfClass:[NSMutableDictionary class]]) {
-			[mutSelf replaceObjectAtIndex:i withObject:[obj nullMutableDictionaryHandler]];
-			return [NSArray arrayWithArray:mutSelf];
+			
 		} else if ([obj isKindOfClass:[NSArray class]]) {
-			[mutSelf replaceObjectAtIndex:i withObject:[obj nullArrayHandler]];
+			
+			if ([obj isKindOfClass:[NSMutableArray class]]) {
+				[obj nullMutableArrayHandler];
+				[mutSelf replaceObjectAtIndex:i withObject:obj];
+			} else {
+				[mutSelf replaceObjectAtIndex:i withObject:[obj nullArrayHandler]];
+			}
+			
 		} else if ([obj isKindOfClass:[NSDictionary class]]) {
-			[mutSelf replaceObjectAtIndex:i withObject:[obj nullDictionaryHandler]];
+			
+			if ([obj isKindOfClass:[NSMutableDictionary class]]) {
+				[obj nullMutableDictionaryHandler];
+				[mutSelf replaceObjectAtIndex:i withObject:obj];
+			} else {
+				[mutSelf replaceObjectAtIndex:i withObject:[obj nullDictionaryHandler]];
+			}
+			
 		}
 	}
 	
