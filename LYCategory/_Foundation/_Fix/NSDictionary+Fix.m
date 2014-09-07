@@ -150,11 +150,27 @@
 		id obj = self[key];
 		
 		if (obj == nul) {
+			
 			[mutSelf setObject:blank forKey:key];
+			
 		} else if ([obj isKindOfClass:[NSArray class]]) {
-			[mutSelf setObject:[obj nullHandler] forKey:key];
+			
+			if ([obj isKindOfClass:[NSMutableArray class]]) {
+				[obj nullMutableArrayHandler];
+				[mutSelf setObject:obj forKey:key];
+			} else {
+				[mutSelf setObject:[obj nullArrayHandler] forKey:key];
+			}
+			
 		} else if ([obj isKindOfClass:[NSDictionary class]]) {
-			[mutSelf setObject:[obj nullDictionaryHandler] forKey:key];
+			
+			if ([obj isKindOfClass:[NSMutableDictionary class]]) {
+				[obj nullMutableDictionaryHandler];
+				[mutSelf setObject:obj forKey:key];
+			} else {
+				[mutSelf setObject:[obj nullDictionaryHandler] forKey:key];
+			}
+			
 		}
 	}
 	
