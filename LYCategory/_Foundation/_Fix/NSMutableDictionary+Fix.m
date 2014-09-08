@@ -25,7 +25,7 @@
 		} else if ([obj isKindOfClass:[NSArray class]]) {
 			
 			if ([obj isKindOfClass:[NSMutableArray class]]) {
-				[obj nullMutableArrayHandler];
+				//[obj nullMutableArrayHandler];
 				[self setObject:obj forKey:key];
 			} else {
 				[self setObject:[obj nullArrayHandler] forKey:key];

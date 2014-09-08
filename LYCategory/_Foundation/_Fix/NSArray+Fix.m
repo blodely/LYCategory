@@ -60,21 +60,25 @@
 			
 		} else if ([obj isKindOfClass:[NSArray class]]) {
 			
-			if ([obj isKindOfClass:[NSMutableArray class]]) {
-				[obj nullMutableArrayHandler];
-				[mutSelf replaceObjectAtIndex:i withObject:obj];
-			} else {
-				[mutSelf replaceObjectAtIndex:i withObject:[obj nullArrayHandler]];
-			}
+			[mutSelf replaceObjectAtIndex:i withObject:[obj nullArrayHandler]];
+			
+			//if ([obj isKindOfClass:[NSMutableArray class]]) {
+			//	[obj nullMutableArrayHandler];
+			//	[mutSelf replaceObjectAtIndex:i withObject:obj];
+			//} else {
+			//	[mutSelf replaceObjectAtIndex:i withObject:[obj nullArrayHandler]];
+			//}
 			
 		} else if ([obj isKindOfClass:[NSDictionary class]]) {
 			
-			if ([obj isKindOfClass:[NSMutableDictionary class]]) {
-				[obj nullMutableDictionaryHandler];
-				[mutSelf replaceObjectAtIndex:i withObject:obj];
-			} else {
-				[mutSelf replaceObjectAtIndex:i withObject:[obj nullDictionaryHandler]];
-			}
+			[mutSelf replaceObjectAtIndex:i withObject:[obj nullDictionaryHandler]];
+			
+			//if ([obj isKindOfClass:[NSMutableDictionary class]]) {
+			//	[obj nullMutableDictionaryHandler];
+			//	[mutSelf replaceObjectAtIndex:i withObject:obj];
+			//} else {
+			//	[mutSelf replaceObjectAtIndex:i withObject:[obj nullDictionaryHandler]];
+			//}
 			
 		}
 	}

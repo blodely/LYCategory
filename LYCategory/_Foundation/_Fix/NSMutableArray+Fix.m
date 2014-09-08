@@ -36,7 +36,7 @@
 		} else if ([obj isKindOfClass:[NSDictionary class]]) {
 
 			if ([obj isKindOfClass:[NSMutableDictionary class]]) {
-				[obj nullMutableDictionaryHandler];
+				//[obj nullMutableDictionaryHandler];
 				[self replaceObjectAtIndex:i withObject:obj];
 			} else {
 				[self replaceObjectAtIndex:i withObject:[obj nullDictionaryHandler]];
