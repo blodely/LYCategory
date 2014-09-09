@@ -12,4 +12,7 @@
 
 + (BOOL)isFolderExistInDocuments:(NSString *)folderName;
 
+// CHECK AND CREATE
++ (void)createFolderIfNotExistInDocuments:(NSString *)folderName;
+
 @end
