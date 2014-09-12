@@ -34,4 +34,9 @@
 	
 }
 
+- (BOOL)isOneOfThem:(NSArray *)strings {
+	
+	return NO;
+}
+
 @end
