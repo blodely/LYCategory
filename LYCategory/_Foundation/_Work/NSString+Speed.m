@@ -36,6 +36,22 @@
 
 - (BOOL)isOneOfThem:(NSArray *)strings {
 	
+	if (strings.count == 0) {
+		return NO;
+	}
+	
+	for (id one in strings) {
+		if ([one isKindOfClass:[NSString class]]) {
+			if ([self isEqualToString:one]) {
+				return YES;
+			}
+		} else {
+			if ([self isEqualToString:[NSString stringWithFormat:@"%@", one]]) {
+				return YES;
+			}
+		}
+	}
+	
 	return NO;
 }
 
