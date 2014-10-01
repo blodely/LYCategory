@@ -32,4 +32,8 @@
 
 - (int)weekdayNumberPRC;
 
+#pragma mark HOUR MINUTE SECOND
+
+- (int)hourNumberPRC;
+
 @end
