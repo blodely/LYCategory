@@ -73,4 +73,12 @@
 				 weekday];
 }
 
+#pragma mark HOUR MINUTE SECOND
+
+- (int)hourNumberPRC {
+	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierRepublicOfChina]
+				  components:NSHourCalendarUnit fromDate:self]
+				 hour];
+}
+
 @end
