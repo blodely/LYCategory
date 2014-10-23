@@ -19,7 +19,7 @@
 }
 
 - (BOOL)isReal {
-	return ![self isEqualToString:@"0"] && [self isEqualToString:@"<NSNull>"];
+	return ![self isEqualToString:@"0"] && ![self isEqualToString:@"<NSNull>"];
 }
 
 @end
