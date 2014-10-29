@@ -83,4 +83,9 @@
 	return [compSelf year] == [compOther year];
 }
 
+- (BOOL)inFiveMinutes:(NSDate *)date {
+	int delta = [self timeIntervalSince1970] - [date timeIntervalSince1970];
+	return (delta >= 0 && delta < 300) || (delta < 0 && delta > -300);
+}
+
 @end

@@ -28,4 +28,6 @@
 
 - (BOOL)isSameYearWith:(NSDate *)date;
 
+- (BOOL)inFiveMinutes:(NSDate *)date;
+
 @end
