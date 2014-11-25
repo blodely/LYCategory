@@ -69,7 +69,7 @@
 	NSDateComponents *compSelf  = [[NSCalendar currentCalendar] components:flag fromDate:self];
 	NSDateComponents *compOther = [[NSCalendar currentCalendar] components:flag fromDate:date];
 	
-	return [compSelf year] == [compOther year] && [compSelf month] && [compOther month];
+	return [compSelf year] == [compOther year] && [compSelf month] == [compOther month];
 	
 }
 
