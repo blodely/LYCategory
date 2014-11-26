@@ -56,12 +56,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8953A7261A25D49E00C3E725 /* libLYCategoryLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLYCategoryLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8953A7261A25D49E00C3E725 /* libLYCategory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLYCategory.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8953A7291A25D49E00C3E725 /* LYCategoryLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYCategoryLib.h; sourceTree = "<group>"; };
 		8953A72B1A25D49E00C3E725 /* LYCategoryLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCategoryLib.m; sourceTree = "<group>"; };
 		8953A7421A25D74800C3E725 /* LYLogX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLogX.h; sourceTree = "<group>"; };
 		8953A7431A25D74800C3E725 /* LYLogX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLogX.m; sourceTree = "<group>"; };
-		8953A7441A25D74800C3E725 /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
 		8953A7471A25D74800C3E725 /* NSNumber+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Date.h"; sourceTree = "<group>"; };
 		8953A7481A25D74800C3E725 /* NSNumber+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Date.m"; sourceTree = "<group>"; };
 		8953A7491A25D74800C3E725 /* NSNumber+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Random.h"; sourceTree = "<group>"; };
@@ -148,7 +147,7 @@
 		8953A7271A25D49E00C3E725 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8953A7261A25D49E00C3E725 /* libLYCategoryLib.a */,
+				8953A7261A25D49E00C3E725 /* libLYCategory.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,7 +178,6 @@
 			children = (
 				8953A7421A25D74800C3E725 /* LYLogX.h */,
 				8953A7431A25D74800C3E725 /* LYLogX.m */,
-				8953A7441A25D74800C3E725 /* placeholder */,
 			);
 			path = _Cocoa;
 			sourceTree = "<group>";
@@ -302,9 +300,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8953A7251A25D49E00C3E725 /* LYCategoryLib */ = {
+		8953A7251A25D49E00C3E725 /* LYCategory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8953A73A1A25D49E00C3E725 /* Build configuration list for PBXNativeTarget "LYCategoryLib" */;
+			buildConfigurationList = 8953A73A1A25D49E00C3E725 /* Build configuration list for PBXNativeTarget "LYCategory" */;
 			buildPhases = (
 				8953A7221A25D49E00C3E725 /* Sources */,
 				8953A7231A25D49E00C3E725 /* Frameworks */,
@@ -314,9 +312,9 @@
 			);
 			dependencies = (
 			);
-			name = LYCategoryLib;
+			name = LYCategory;
 			productName = LYCategoryLib;
-			productReference = 8953A7261A25D49E00C3E725 /* libLYCategoryLib.a */;
+			productReference = 8953A7261A25D49E00C3E725 /* libLYCategory.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +331,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8953A7211A25D49E00C3E725 /* Build configuration list for PBXProject "LYCategoryLib" */;
+			buildConfigurationList = 8953A7211A25D49E00C3E725 /* Build configuration list for PBXProject "LYCategory" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -345,7 +343,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8953A7251A25D49E00C3E725 /* LYCategoryLib */,
+				8953A7251A25D49E00C3E725 /* LYCategory */,
 			);
 		};
 /* End PBXProject section */
@@ -471,7 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LYCategory;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -480,7 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LYCategory;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -488,7 +486,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8953A7211A25D49E00C3E725 /* Build configuration list for PBXProject "LYCategoryLib" */ = {
+		8953A7211A25D49E00C3E725 /* Build configuration list for PBXProject "LYCategory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8953A7381A25D49E00C3E725 /* Debug */,
@@ -497,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8953A73A1A25D49E00C3E725 /* Build configuration list for PBXNativeTarget "LYCategoryLib" */ = {
+		8953A73A1A25D49E00C3E725 /* Build configuration list for PBXNativeTarget "LYCategory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8953A73B1A25D49E00C3E725 /* Debug */,
