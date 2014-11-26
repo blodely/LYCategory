@@ -12,7 +12,7 @@
 
 - (BOOL)isToday {
 	
-	unsigned flag = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+	unsigned flag = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
 	
 	NSDateComponents *today = [[NSCalendar currentCalendar] components:flag fromDate:[NSDate date]];
 	NSDateComponents *comp = [[NSCalendar currentCalendar] components:flag fromDate:self];
@@ -30,8 +30,8 @@
 
 - (BOOL)isSameDayIgnoringTimeWith:(NSDate *)date {
 	
-	NSDateComponents *current = [[NSCalendar currentCalendar] components:(NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit) fromDate:self];
-	NSDateComponents *comp = [[NSCalendar currentCalendar] components:(NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit) fromDate:date];
+	NSDateComponents *current = [[NSCalendar currentCalendar] components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfYear |  NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal) fromDate:self];
+	NSDateComponents *comp = [[NSCalendar currentCalendar] components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal) fromDate:date];
 	
 	return ((current.year == comp.year) && (current.month == comp.month) && (current.day == comp.day));
 }
@@ -44,7 +44,7 @@
 
 - (BOOL)isSameDayWith:(NSDate *)date {
 	
-	unsigned flag = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+	unsigned flag = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
 	
 	NSDateComponents *compSelf = [[NSCalendar currentCalendar] components:flag fromDate:self];
 	NSDateComponents *compOther = [[NSCalendar currentCalendar] components:flag fromDate:date];
@@ -54,7 +54,7 @@
 
 - (BOOL)isSameWeekWith:(NSDate *)date {
 	
-	unsigned flag = NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekOfMonthCalendarUnit;
+	unsigned flag = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfMonth;
 	
 	NSDateComponents *compSelf = [[NSCalendar currentCalendar] components:flag fromDate:self];
 	NSDateComponents *compOther = [[NSCalendar currentCalendar] components:flag fromDate:date];
@@ -64,7 +64,7 @@
 
 - (BOOL)isSameMonthWith:(NSDate *)date {
 	
-	unsigned flag = NSYearCalendarUnit | NSMonthCalendarUnit;
+	unsigned flag = NSCalendarUnitYear | NSCalendarUnitMonth;
 	
 	NSDateComponents *compSelf  = [[NSCalendar currentCalendar] components:flag fromDate:self];
 	NSDateComponents *compOther = [[NSCalendar currentCalendar] components:flag fromDate:date];
@@ -75,7 +75,7 @@
 
 - (BOOL)isSameYearWith:(NSDate *)date {
 	
-	unsigned flag = NSYearCalendarUnit;
+	unsigned flag = NSCalendarUnitYear;
 	
 	NSDateComponents *compSelf  = [[NSCalendar currentCalendar] components:flag fromDate:self];
 	NSDateComponents *compOther = [[NSCalendar currentCalendar] components:flag fromDate:date];
