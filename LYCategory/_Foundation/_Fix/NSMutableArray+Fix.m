@@ -7,6 +7,8 @@
 //
 
 #import "NSMutableArray+Fix.h"
+#import "NSArray+Fix.h"
+#import "NSDictionary+Fix.h"
 
 @implementation NSMutableArray (Fix)
 

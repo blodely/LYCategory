@@ -7,6 +7,7 @@
 //
 
 #import "NSDictionary+Fix.h"
+#import "NSArray+Fix.h"
 
 @implementation NSDictionary (Fix)
 
@@ -60,7 +61,6 @@
 		
 		if ([self[one] isEqual:[NSNull null]]) {
 			// NULL OBJECT
-			LYLog(@"key=%@=NSNull", one);
 			
 			// REMOVE
 			[mself removeObjectForKey:one];

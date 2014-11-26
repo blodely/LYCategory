@@ -7,6 +7,7 @@
 //
 
 #import "NSArray+Fix.h"
+#import "NSDictionary+Fix.h"
 
 @implementation NSArray (Fix)
 

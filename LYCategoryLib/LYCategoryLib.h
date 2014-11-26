@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LYCategory.h"
 
 @interface LYCategoryLib : NSObject
 
