@@ -13,7 +13,7 @@
 
 #define DELTA7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? 0 : 20)
 
-#define WIDTH 320
+#define WIDTH [UIScreen mainScreen].bounds.size.width
 
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 
@@ -22,6 +22,8 @@
 #define CENTER_P CGPointMake(HEIGHT/2, 160)
 
 #pragma mark - OS VERSION
+
+#define iOS8 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 9.0) )
 
 #define iOS7 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) )
 
