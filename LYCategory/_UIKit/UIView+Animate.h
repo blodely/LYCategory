@@ -10,4 +10,6 @@
 
 @interface UIView (Animate)
 
+- (void)showFromScreenBottom;
+
 @end
