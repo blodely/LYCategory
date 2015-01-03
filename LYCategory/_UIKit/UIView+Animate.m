@@ -28,4 +28,65 @@
 	}];
 }
 
+- (void)showFromScreen:(AnimateViewPosition)postion {
+	
+	// COPY FRAME
+	CGPoint center = self.center;
+	CGRect frame = self.frame;
+	
+	CGSize screen = [UIScreen mainScreen].bounds.size;
+	
+	switch (postion) {
+		case AnimateViewPositionTop: {
+			
+			// START
+			center.y = 0 - frame.size.height;
+			self.center = center;
+			
+			// MOVE TO
+			center.y = (screen.height - frame.size.height ) / 2;
+			
+		} break;
+		case AnimateViewPositionLeft: {
+			
+			// START
+			center.x = - center.x - (screen.width / 2);
+			self.center = center;
+			
+			// MOVE TO
+			center.x = (screen.width - frame.size.width) / 2;
+			
+		} break;
+		case AnimateViewPositionRight: {
+			
+			// START
+			center.x = screen.width + frame.size.width;
+			self.center = center;
+			
+			// MOVE TO
+			center.x = (screen.width - frame.size.width) / 2;
+			
+		} break;
+		case AnimateViewPositionBottom: {
+			
+			// START
+			center.y = screen.height + frame.size.height;
+			self.center = center;
+			
+			// MOVE TO
+			center.y = (screen.height - frame.size.height) / 2;
+			
+		} break;
+		default: {
+			
+		} break;
+	}
+	
+	[UIView animateWithDuration:0.25 animations:^{
+		self.center = center;
+	} completion:^(BOOL finished) {
+		
+	}];
+}
+
 @end

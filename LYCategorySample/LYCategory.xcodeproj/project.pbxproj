@@ -40,7 +40,6 @@
 		B6712F20184C58580046FBC1 /* NSNumber+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F1F184C58580046FBC1 /* NSNumber+Date.m */; };
 		B6712F26184C5A620046FBC1 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6712F24184C5A620046FBC1 /* MenuViewController.m */; };
 		B6712F27184C5A620046FBC1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6712F25184C5A620046FBC1 /* MenuViewController.xib */; };
-		B6712F92184C79F30046FBC1 /* placeholder in Resources */ = {isa = PBXBuildFile; fileRef = B6712F91184C79F30046FBC1 /* placeholder */; };
 		B6812A2718628E4600BC38AF /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6812A2518628E4600BC38AF /* TextViewController.m */; };
 		B6812A2818628E4600BC38AF /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6812A2618628E4600BC38AF /* TextViewController.xib */; };
 		B69EA14C186BD0B30087DD51 /* NSNull+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = B69EA14B186BD0B30087DD51 /* NSNull+Fix.m */; };
@@ -119,7 +118,6 @@
 		B6712F23184C5A620046FBC1 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		B6712F24184C5A620046FBC1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		B6712F25184C5A620046FBC1 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
-		B6712F91184C79F30046FBC1 /* placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placeholder; sourceTree = "<group>"; };
 		B6812A2418628E4600BC38AF /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		B6812A2518628E4600BC38AF /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		B6812A2618628E4600BC38AF /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 		B633EEE2184329FE007E0B7E /* _Cocoa */ = {
 			isa = PBXGroup;
 			children = (
-				B6712F91184C79F30046FBC1 /* placeholder */,
 				B6049989199201F00076A5EF /* LYLogX.h */,
 				B604998A199201F00076A5EF /* LYLogX.m */,
 			);
@@ -445,7 +442,6 @@
 			files = (
 				B633EEBC184325E6007E0B7E /* InfoPlist.strings in Resources */,
 				B6712F27184C5A620046FBC1 /* MenuViewController.xib in Resources */,
-				B6712F92184C79F30046FBC1 /* placeholder in Resources */,
 				B6812A2818628E4600BC38AF /* TextViewController.xib in Resources */,
 				B633EEC4184325E6007E0B7E /* Images.xcassets in Resources */,
 				B637AA761855883A0087497C /* DateViewController.xib in Resources */,

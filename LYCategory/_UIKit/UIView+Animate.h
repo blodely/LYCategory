@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+	AnimateViewPositionTop = 1,
+	AnimateViewPositionRight = 2,
+	AnimateViewPositionBottom = 3,
+	AnimateViewPositionLeft = 4,
+} AnimateViewPosition;
+
 @interface UIView (Animate)
 
-- (void)showFromScreenBottom;
+- (void)showFromScreen:(AnimateViewPosition)postion;
 
 @end
