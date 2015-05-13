@@ -57,19 +57,19 @@
 
 - (int)weekdayNumber {
 	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian]
-				  components:NSWeekdayCalendarUnit fromDate:self]
+				  components:NSCalendarUnitWeekday fromDate:self]
 				 weekday];
 }
 
 - (int)weekdayNumberPRC {
 	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierRepublicOfChina]
-				  components:NSWeekdayCalendarUnit fromDate:self]
+				  components:NSCalendarUnitWeekday fromDate:self]
 				 weekday];
 }
 
 - (int)weekdayNumberWithCalendarIdentifier:(NSString *)ident {
 	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:ident]
-				  components:NSWeekdayCalendarUnit fromDate:self]
+				  components:NSCalendarUnitWeekday fromDate:self]
 				 weekday];
 }
 
@@ -77,7 +77,7 @@
 
 - (int)hourNumberPRC {
 	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierRepublicOfChina]
-				  components:NSHourCalendarUnit fromDate:self]
+				  components:NSCalendarUnitHour fromDate:self]
 				 hour];
 }
 
