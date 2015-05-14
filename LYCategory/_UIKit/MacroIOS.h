@@ -17,6 +17,8 @@
 
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#define MAX_LENGTH MAX(WIDTH, HEIGHT)
+
 #define CENTER_X 160
 
 #define CENTER_P CGPointMake(HEIGHT/2, 160)
@@ -37,7 +39,11 @@
 
 #define iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
-#define iPhone5 ( iPhone && ( fabs( (double)[[UIScreen mainScreen] bounds].size.height - (double)568 ) < DBL_EPSILON ) )
+#define iPhone5 ( iPhone && ( fabs( (double)HEIGHT - (double)568 ) < DBL_EPSILON ) )
+
+#define iPhone6 ( iPhone && MAX_LENGTH == 667.0 )
+
+#define iPhone6P ( iPhone && MAX_LENGTH == 736.0 )
 
 #define iPod ( [[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"] )
 
