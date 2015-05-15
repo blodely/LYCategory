@@ -10,7 +10,7 @@
 
 @implementation UIView (Screenshot)
 
-- (UIImage *)image {
+- (UIImage *)imageShot {
 	// SCREENSHOT
 	UIGraphicsBeginImageContext(self.bounds.size);
     [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
