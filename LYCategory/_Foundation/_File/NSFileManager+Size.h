@@ -10,4 +10,6 @@
 
 @interface NSFileManager (Size)
 
++ (float)fileSizeAtPath:(NSString *)filepath;
+
 @end
