@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		890677E11BB25A690040C1D9 /* UIView+Animate.m in Sources */ = {isa = PBXBuildFile; fileRef = 890677E01BB25A690040C1D9 /* UIView+Animate.m */; settings = {ASSET_TAGS = (); }; };
+		890677E51BB25AFF0040C1D9 /* NSFileManager+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 890677E41BB25AFF0040C1D9 /* NSFileManager+Size.m */; settings = {ASSET_TAGS = (); }; };
+		890677E81BB25B410040C1D9 /* NSFileManager+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 890677E71BB25B410040C1D9 /* NSFileManager+IOS.m */; settings = {ASSET_TAGS = (); }; };
 		8953A72A1A25D49E00C3E725 /* LYCategoryLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8953A7291A25D49E00C3E725 /* LYCategoryLib.h */; };
 		8953A72C1A25D49E00C3E725 /* LYCategoryLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A72B1A25D49E00C3E725 /* LYCategoryLib.m */; };
 		8953A78A1A25D74800C3E725 /* LYLogX.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A7431A25D74800C3E725 /* LYLogX.m */; };
@@ -27,7 +29,6 @@
 		8953A7981A25D74800C3E725 /* NSNumber+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A7651A25D74800C3E725 /* NSNumber+Fix.m */; };
 		8953A7991A25D74800C3E725 /* NSString+Fix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A7671A25D74800C3E725 /* NSString+Fix.m */; };
 		8953A79A1A25D74800C3E725 /* NSArray+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A76A1A25D74800C3E725 /* NSArray+Operator.m */; };
-		8953A79B1A25D74800C3E725 /* NSFileManager+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A76C1A25D74800C3E725 /* NSFileManager+IOS.m */; };
 		8953A79C1A25D74800C3E725 /* NSMutableArray+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A76E1A25D74800C3E725 /* NSMutableArray+Operator.m */; };
 		8953A79D1A25D74800C3E725 /* NSString+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A7701A25D74800C3E725 /* NSString+Input.m */; };
 		8953A79E1A25D74800C3E725 /* NSString+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 8953A7721A25D74800C3E725 /* NSString+Search.m */; };
@@ -59,6 +60,10 @@
 /* Begin PBXFileReference section */
 		890677DF1BB25A690040C1D9 /* UIView+Animate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animate.h"; sourceTree = "<group>"; };
 		890677E01BB25A690040C1D9 /* UIView+Animate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animate.m"; sourceTree = "<group>"; };
+		890677E31BB25AFF0040C1D9 /* NSFileManager+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Size.h"; sourceTree = "<group>"; };
+		890677E41BB25AFF0040C1D9 /* NSFileManager+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Size.m"; sourceTree = "<group>"; };
+		890677E61BB25B410040C1D9 /* NSFileManager+IOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+IOS.h"; sourceTree = "<group>"; };
+		890677E71BB25B410040C1D9 /* NSFileManager+IOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+IOS.m"; sourceTree = "<group>"; };
 		8953A7261A25D49E00C3E725 /* libLYCategory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLYCategory.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8953A7291A25D49E00C3E725 /* LYCategoryLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYCategoryLib.h; sourceTree = "<group>"; };
 		8953A72B1A25D49E00C3E725 /* LYCategoryLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCategoryLib.m; sourceTree = "<group>"; };
@@ -96,8 +101,6 @@
 		8953A7671A25D74800C3E725 /* NSString+Fix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Fix.m"; sourceTree = "<group>"; };
 		8953A7691A25D74800C3E725 /* NSArray+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Operator.h"; sourceTree = "<group>"; };
 		8953A76A1A25D74800C3E725 /* NSArray+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Operator.m"; sourceTree = "<group>"; };
-		8953A76B1A25D74800C3E725 /* NSFileManager+IOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+IOS.h"; sourceTree = "<group>"; };
-		8953A76C1A25D74800C3E725 /* NSFileManager+IOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+IOS.m"; sourceTree = "<group>"; };
 		8953A76D1A25D74800C3E725 /* NSMutableArray+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Operator.h"; sourceTree = "<group>"; };
 		8953A76E1A25D74800C3E725 /* NSMutableArray+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Operator.m"; sourceTree = "<group>"; };
 		8953A76F1A25D74800C3E725 /* NSString+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Input.h"; sourceTree = "<group>"; };
@@ -139,6 +142,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890677E21BB25ADD0040C1D9 /* _File */ = {
+			isa = PBXGroup;
+			children = (
+				890677E61BB25B410040C1D9 /* NSFileManager+IOS.h */,
+				890677E71BB25B410040C1D9 /* NSFileManager+IOS.m */,
+				890677E31BB25AFF0040C1D9 /* NSFileManager+Size.h */,
+				890677E41BB25AFF0040C1D9 /* NSFileManager+Size.m */,
+			);
+			path = _File;
+			sourceTree = "<group>";
+		};
 		8953A71D1A25D49E00C3E725 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +205,7 @@
 				8953A7461A25D74800C3E725 /* _Create */,
 				8953A74F1A25D74800C3E725 /* _Crypto */,
 				8953A7541A25D74800C3E725 /* _Date */,
+				890677E21BB25ADD0040C1D9 /* _File */,
 				8953A7591A25D74800C3E725 /* _Fix */,
 				8953A7681A25D74800C3E725 /* _Work */,
 				8953A7771A25D74800C3E725 /* NSURL+Speed.h */,
@@ -266,8 +281,6 @@
 			children = (
 				8953A7691A25D74800C3E725 /* NSArray+Operator.h */,
 				8953A76A1A25D74800C3E725 /* NSArray+Operator.m */,
-				8953A76B1A25D74800C3E725 /* NSFileManager+IOS.h */,
-				8953A76C1A25D74800C3E725 /* NSFileManager+IOS.m */,
 				8953A76D1A25D74800C3E725 /* NSMutableArray+Operator.h */,
 				8953A76E1A25D74800C3E725 /* NSMutableArray+Operator.m */,
 				8953A76F1A25D74800C3E725 /* NSString+Input.h */,
@@ -370,8 +383,8 @@
 				8953A7A61A25D74800C3E725 /* UITextField+Input.m in Sources */,
 				8953A78E1A25D74800C3E725 /* NSString+Random.m in Sources */,
 				8953A7991A25D74800C3E725 /* NSString+Fix.m in Sources */,
-				8953A79B1A25D74800C3E725 /* NSFileManager+IOS.m in Sources */,
 				8953A7A31A25D74800C3E725 /* NSUserDefaults+Speed.m in Sources */,
+				890677E81BB25B410040C1D9 /* NSFileManager+IOS.m in Sources */,
 				8953A78A1A25D74800C3E725 /* LYLogX.m in Sources */,
 				8953A7A71A25D74800C3E725 /* UITextView+Input.m in Sources */,
 				8953A7921A25D74800C3E725 /* NSDate+Operator.m in Sources */,
@@ -385,6 +398,7 @@
 				8953A79A1A25D74800C3E725 /* NSArray+Operator.m in Sources */,
 				8953A7A11A25D74800C3E725 /* NSURL+Speed.m in Sources */,
 				8953A79E1A25D74800C3E725 /* NSString+Search.m in Sources */,
+				890677E51BB25AFF0040C1D9 /* NSFileManager+Size.m in Sources */,
 				8953A7901A25D74800C3E725 /* NSString+Encrypt.m in Sources */,
 				8953A72C1A25D49E00C3E725 /* LYCategoryLib.m in Sources */,
 				8953A78F1A25D74800C3E725 /* NSData+Encrypt.m in Sources */,
