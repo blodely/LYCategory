@@ -14,4 +14,6 @@
 
 - (BOOL)isOneOfThem:(NSArray *)strings;
 
+- (NSString *)removeHTMLtags;
+
 @end
