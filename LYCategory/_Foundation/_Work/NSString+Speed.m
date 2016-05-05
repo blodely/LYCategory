@@ -60,7 +60,7 @@
 	NSString *retstr = [NSString stringWithString:self];
 	
 	// BR
-	retstr = [retstr stringByReplacingOccurrencesOfString:@"<br />" withString:@"/n"];
+	retstr = [retstr stringByReplacingOccurrencesOfString:@"<br />" withString:[NSString stringWithFormat:@"\n"]];
 	
 	NSArray *htmls = @[@"<p>", @"</p>", @"<h1>", @"</h1>", @"<h2>", @"</h2>", @"<h3>", @"</h3>", @"<h4>", @"</h4>", @"<h5>", @"</h5>", @"<em>", @"</em>", @"<code>", @"</code>", ];
 	
