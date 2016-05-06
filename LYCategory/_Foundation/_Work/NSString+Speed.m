@@ -59,7 +59,7 @@
 	
 	NSString *retstr = [NSString stringWithString:self];
 	
-	NSArray *htmls = @[@"<p>", @"</p>", @"<h1>", @"</h1>", @"<h2>", @"</h2>", @"<h3>", @"</h3>", @"<h4>", @"</h4>", @"<h5>", @"</h5>", ];
+	NSArray *htmls = @[@"<p>", @"</p>", @"<h1>", @"</h1>", @"<h2>", @"</h2>", @"<h3>", @"</h3>", @"<h4>", @"</h4>", @"<h5>", @"</h5>", @"<em>", @"</em>", ];
 	
 	for (NSString *one in htmls) {
 		retstr = [retstr stringByReplacingOccurrencesOfString:one withString:@""];
