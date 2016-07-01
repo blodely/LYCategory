@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/blodely/LYCategory.git", :tag => "#{s.version}" }
 
-  s.source_files  = "LYCategory"
+  s.source_files  = "LYCategory", "LYCategory/**/*.{h,m}"
   s.exclude_files = "LYCategory.xcodeproj", "LYCategoryLib", "LYCategorySample"
   
   s.requires_arc = true
