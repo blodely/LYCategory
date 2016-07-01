@@ -49,6 +49,8 @@
 		B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A328CA1858102C00C23D32 /* NSNumber+Random.m */; };
 		B6AE2F46197A6F530034B27D /* NSArray+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE2F45197A6F530034B27D /* NSArray+Operator.m */; };
 		B6AE2F49197E64EC0034B27D /* NSMutableArray+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE2F48197E64EC0034B27D /* NSMutableArray+Operator.m */; };
+		B6BF50A81D74106F0082A8E7 /* NSFileManager+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF50A51D74106F0082A8E7 /* NSFileManager+IOS.m */; };
+		B6BF50A91D74106F0082A8E7 /* NSFileManager+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF50A71D74106F0082A8E7 /* NSFileManager+Size.m */; };
 		B6C6BB98188F73F70068BFF3 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */; };
 		B6C6BBA2188F73F70068BFF3 /* NSDate+Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6BBA1188F73F70068BFF3 /* NSDate+Operator.m */; };
 /* End PBXBuildFile section */
@@ -134,6 +136,10 @@
 		B6AE2F45197A6F530034B27D /* NSArray+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Operator.m"; sourceTree = "<group>"; };
 		B6AE2F47197E64EC0034B27D /* NSMutableArray+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Operator.h"; sourceTree = "<group>"; };
 		B6AE2F48197E64EC0034B27D /* NSMutableArray+Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Operator.m"; sourceTree = "<group>"; };
+		B6BF50A41D74106F0082A8E7 /* NSFileManager+IOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+IOS.h"; sourceTree = "<group>"; };
+		B6BF50A51D74106F0082A8E7 /* NSFileManager+IOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+IOS.m"; sourceTree = "<group>"; };
+		B6BF50A61D74106F0082A8E7 /* NSFileManager+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Size.h"; sourceTree = "<group>"; };
+		B6BF50A71D74106F0082A8E7 /* NSFileManager+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Size.m"; sourceTree = "<group>"; };
 		B6C6BB94188F73F70068BFF3 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		B6C6BB95188F73F70068BFF3 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 		B6C6BBA0188F73F70068BFF3 /* NSDate+Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Operator.h"; sourceTree = "<group>"; };
@@ -234,6 +240,7 @@
 				B6712F1A184C56250046FBC1 /* _Create */,
 				B67001A3187FF25100F983E4 /* _Crypto */,
 				B6C6BB93188F73F70068BFF3 /* _Date */,
+				B6BF50A31D74106F0082A8E7 /* _File */,
 				B633EEEB18432FB9007E0B7E /* _Fix */,
 				B69ED74E187B9EA400A39ADF /* _Work */,
 				B69FF82A184F001B004E16B9 /* NSURL+Speed.h */,
@@ -372,6 +379,17 @@
 			path = _Work;
 			sourceTree = "<group>";
 		};
+		B6BF50A31D74106F0082A8E7 /* _File */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF50A41D74106F0082A8E7 /* NSFileManager+IOS.h */,
+				B6BF50A51D74106F0082A8E7 /* NSFileManager+IOS.m */,
+				B6BF50A61D74106F0082A8E7 /* NSFileManager+Size.h */,
+				B6BF50A71D74106F0082A8E7 /* NSFileManager+Size.m */,
+			);
+			path = _File;
+			sourceTree = "<group>";
+		};
 		B6C6BB93188F73F70068BFF3 /* _Date */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +477,7 @@
 				B6AE2F46197A6F530034B27D /* NSArray+Operator.m in Sources */,
 				B6712F20184C58580046FBC1 /* NSNumber+Date.m in Sources */,
 				B6712F13184C3B400046FBC1 /* UITextView+Input.m in Sources */,
+				B6BF50A91D74106F0082A8E7 /* NSFileManager+Size.m in Sources */,
 				B6712F16184C52560046FBC1 /* NSURLRequest+Speed.m in Sources */,
 				B610D44D195C01F1004F6CBB /* UIImage+Scale.m in Sources */,
 				89C5D59F19ADB407007D7822 /* NSString+Size.m in Sources */,
@@ -479,6 +498,7 @@
 				B6812A2718628E4600BC38AF /* TextViewController.m in Sources */,
 				B604998B199201F00076A5EF /* LYLogX.m in Sources */,
 				B67001A6187FF26300F983E4 /* NSString+Encrypt.m in Sources */,
+				B6BF50A81D74106F0082A8E7 /* NSFileManager+IOS.m in Sources */,
 				B6C6BBA2188F73F70068BFF3 /* NSDate+Operator.m in Sources */,
 				B6712F10184C3A6B0046FBC1 /* UITextField+Input.m in Sources */,
 				B6C6BB98188F73F70068BFF3 /* NSDate+Formatter.m in Sources */,
