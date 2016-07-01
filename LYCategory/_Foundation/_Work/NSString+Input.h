@@ -18,6 +18,10 @@
 
 - (BOOL)isEmail;
 
+#pragma mark ID
+
+- (BOOL)isIDNumber;
+
 #pragma mark SPACE
 
 - (NSString *)trimStartSpace;
