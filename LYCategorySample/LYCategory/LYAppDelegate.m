@@ -19,6 +19,8 @@
 
 	MenuViewController *menu = [[MenuViewController alloc] init];
 	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:menu];
+	nav.navigationBarHidden = NO;
+	nav.navigationBar.translucent = NO;
 	self.window.rootViewController = nav;
 
 	[self.window makeKeyAndVisible];
