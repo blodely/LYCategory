@@ -123,5 +123,5 @@ To take view snapshot, use `-imageShot` method.
 
 To shrink image size down, use `-resize:` method.
 
-
+-
 and etc.
