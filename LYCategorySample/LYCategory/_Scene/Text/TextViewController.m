@@ -16,14 +16,20 @@
 
 #pragma mark - ACTIONS
 
-- (void)theButtonPressed:(id)sender {
-	
+- (IBAction)md5ButtonPressed:(UIButton *)sender {
 	if ([tfInput isEmpty]) {
 		lblInput.text = @"TEXT FIELD EMPTY";
 	} else {
 		lblInput.text = [tfInput.text md5];
 		NSLog(@"%@", [tfInput.text md5]);
 	}
+}
+
+- (IBAction)idnumberButtonPressed:(UIButton *)sender {
+	
+	lblInput.text = [tfInput.text isIDNumber] ? @"身份证号码正确" : @"身份证号码不正确";
+}
+- (IBAction)placeholderButtonPressed:(UIButton *)sender {
 }
 
 #pragma mark - INIT
