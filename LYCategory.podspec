@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LYCategory"
-  s.version      = "1.2.0"
+  s.version      = "1.2.2"
   s.summary      = "The category."
   s.description  = <<-DESC
   THE category.
