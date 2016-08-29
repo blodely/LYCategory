@@ -89,7 +89,54 @@
 						   @"91",//"国外"
 						   ];
 	
-	[self substringToIndex:2];
+	if ([provinces containsObject:[self substringToIndex:2]] == NO) {
+		return NO;
+	}
+	// PASSED PROVINCE CHECK
+	
+	NSString *strBirth;
+	if (self.length == 15) {
+		strBirth = [NSString stringWithFormat:@"19%@", [self substringWithRange:NSMakeRange(6, 6)]];
+	} else if (self.length == 18) {
+		strBirth = [self substringWithRange:NSMakeRange(6, 8)];
+	}
+	
+	if ([[strBirth substringWithRange:NSMakeRange(4, 2)] intValue] > 12) {
+		return NO;
+	}
+	
+	if ([[strBirth substringWithRange:NSMakeRange(6, 2)] intValue] > 31) {
+		return NO;
+	}
+	
+	if (self.length == 18) {
+		
+		NSMutableArray *chars = [NSMutableArray arrayWithCapacity:1];
+		for (int i = 0; i < self.length; i++) {
+			NSRange composedCharRange = [self rangeOfComposedCharacterSequenceAtIndex:i];
+			NSString *character = [self substringWithRange:composedCharRange];
+			if (character) {
+				[chars addObject:character];
+			}
+		}
+		
+		NSInteger encode = ([chars[0] intValue] + [chars[10] intValue]) * 7
+		+ ([chars[1] intValue] + [chars[11] intValue]) * 9
+		+ ([chars[2] intValue] + [chars[12] intValue]) * 10
+		+ ([chars[3] intValue] + [chars[13] intValue]) * 5
+		+ ([chars[4] intValue] + [chars[14] intValue]) * 8
+		+ ([chars[5] intValue] + [chars[15] intValue]) * 4
+		+ ([chars[6] intValue] + [chars[16] intValue]) * 2
+		+ [chars[7] intValue] * 1
+		+ [chars[8] intValue] * 6
+		+ [chars[9] intValue] * 3;
+		
+		NSString *validationString = @"10X98765432";
+		NSString *validRet = [validationString substringWithRange:NSMakeRange(encode % 11, 1)];
+		if ([[validRet uppercaseString] isEqualToString:[[self substringFromIndex:17] uppercaseString]] == NO) {
+			return NO;
+		}
+	}
 	
 	return YES;
 }
