@@ -59,4 +59,5 @@
 #import "UIView+Screenshot.h"
 #import "UIImage+Scale.h"
 #import "UIView+Animate.h"
+#import "UIColor+Speed.h"
 

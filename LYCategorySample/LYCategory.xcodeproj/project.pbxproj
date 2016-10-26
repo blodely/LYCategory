@@ -15,6 +15,7 @@
 		89D27B8D190235FA007F7834 /* NSString+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D27B8C190235FA007F7834 /* NSString+Random.m */; };
 		B604998B199201F00076A5EF /* LYLogX.m in Sources */ = {isa = PBXBuildFile; fileRef = B604998A199201F00076A5EF /* LYLogX.m */; };
 		B610D44D195C01F1004F6CBB /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = B610D44C195C01F1004F6CBB /* UIImage+Scale.m */; };
+		B6320C851DC031B00011A79A /* UIColor+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B6320C841DC031B00011A79A /* UIColor+Speed.m */; };
 		B633CE7A1850822C000A7BD0 /* NSUserDefaults+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = B633CE791850822C000A7BD0 /* NSUserDefaults+Speed.m */; };
 		B633EEB2184325E6007E0B7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B633EEB1184325E6007E0B7E /* Foundation.framework */; };
 		B633EEB4184325E6007E0B7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B633EEB3184325E6007E0B7E /* CoreGraphics.framework */; };
@@ -72,6 +73,8 @@
 		B604998A199201F00076A5EF /* LYLogX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLogX.m; sourceTree = "<group>"; };
 		B610D44B195C01F1004F6CBB /* UIImage+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scale.h"; sourceTree = "<group>"; };
 		B610D44C195C01F1004F6CBB /* UIImage+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scale.m"; sourceTree = "<group>"; };
+		B6320C831DC031B00011A79A /* UIColor+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Speed.h"; sourceTree = "<group>"; };
+		B6320C841DC031B00011A79A /* UIColor+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Speed.m"; sourceTree = "<group>"; };
 		B633CE781850822C000A7BD0 /* NSUserDefaults+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Speed.h"; sourceTree = "<group>"; };
 		B633CE791850822C000A7BD0 /* NSUserDefaults+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Speed.m"; sourceTree = "<group>"; };
 		B633EEAE184325E6007E0B7E /* LYCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +272,8 @@
 				B610D44C195C01F1004F6CBB /* UIImage+Scale.m */,
 				892AB5C21A5D1B3D001CDB12 /* UIView+Animate.h */,
 				892AB5C31A5D1B3D001CDB12 /* UIView+Animate.m */,
+				B6320C831DC031B00011A79A /* UIColor+Speed.h */,
+				B6320C841DC031B00011A79A /* UIColor+Speed.m */,
 			);
 			path = _UIKit;
 			sourceTree = "<group>";
@@ -494,6 +499,7 @@
 				89384F5719A1FBF700D1058B /* NSMutableDictionary+Fix.m in Sources */,
 				B67001A91881443700F983E4 /* NSData+Encrypt.m in Sources */,
 				B6A328CB1858102C00C23D32 /* NSNumber+Random.m in Sources */,
+				B6320C851DC031B00011A79A /* UIColor+Speed.m in Sources */,
 				B69EA14C186BD0B30087DD51 /* NSNull+Fix.m in Sources */,
 				B6812A2718628E4600BC38AF /* TextViewController.m in Sources */,
 				B604998B199201F00076A5EF /* LYLogX.m in Sources */,
