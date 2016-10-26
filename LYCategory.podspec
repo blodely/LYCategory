@@ -1,27 +1,31 @@
+
 Pod::Spec.new do |s|
+  s.name             = 'LYCategory'
+  s.version          = '1.2.2'
+  s.summary          = 'The categories.'
 
-  s.name         = "LYCategory"
-  s.version      = "1.2.2"
-  s.summary      = "The category."
-  s.description  = <<-DESC
-  THE category.
-                   DESC
+  s.description      = <<-DESC
+The categories.
+                       DESC
 
-  s.homepage     = "http://luoyu.space/hub/lib-lycategory"
+  s.homepage         = 'https://github.com/blodely/LYCategory'
 
-  s.license      = "MIT"
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Luo Yu' => 'indie.luo@gmail.com' }
+  s.source           = { :git => 'https://github.com/blodely/LYCategory.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://weibo.com/blodely'
 
-  s.author             = { "Luo Yu" => "indie.luo@gmail.com" }
-  s.social_media_url   = "http://weibo.com/blodely"
+  s.ios.deployment_target = '8.0'
 
-  s.platform     = :ios
-  s.platform     = :ios, "7.0"
-
-  s.source       = { :git => "https://github.com/blodely/LYCategory.git", :tag => "#{s.version}" }
-
-  s.source_files  = "LYCategory", "LYCategory/**/*.{h,m}"
-  s.exclude_files = "LYCategory.xcodeproj", "LYCategoryLib", "LYCategorySample"
+  s.source_files = 'LYCategory/Classes/**/*'
   
-  s.requires_arc = true
+  # s.resource_bundles = {
+  #   'LYCategory' => ['LYCategory/Assets/*.png']
+  # }
 
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
+
+  # s.dependency 'AFNetworking', '~> 2.3'
 end

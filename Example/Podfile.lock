@@ -1,0 +1,16 @@
+PODS:
+  - LYCategory (0.1.0)
+
+DEPENDENCIES:
+  - LYCategory (from `../`)
+
+EXTERNAL SOURCES:
+  LYCategory:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LYCategory: 18c2e3306b45ed7a79beb7829848e51beed9849f
+
+PODFILE CHECKSUM: 14cf9f3d7db7e9bb0636328ce20a2cbc45cb99ec
+
+COCOAPODS: 1.1.1
