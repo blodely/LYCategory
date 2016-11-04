@@ -1,9 +1,9 @@
 //
 //  NSString+Size.m
-//  LYCategory
+//  LYCATEGORY
 //
-//  Created by Luo Yu on 3/23/14.
-//  Copyright (c) 2014 Luo Yu. All rights reserved.
+//  CREATED BY LUO YU ON 3/23/14.
+//  COPYRIGHT (C) 2014 LUO YU. ALL RIGHTS RESERVED.
 //
 
 #import "NSString+Size.h"

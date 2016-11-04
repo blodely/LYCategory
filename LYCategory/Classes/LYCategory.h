@@ -23,6 +23,7 @@
 #import "NSString+Date.h"
 #import "NSString+Search.h"
 #import "NSString+Random.h"
+#import "NSString+Convert.h"
 
 #import "NSNumber+Random.h"
 #import "NSNumber+Date.h"
