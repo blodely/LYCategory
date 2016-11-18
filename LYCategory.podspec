@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary          = 'The categories.'
 
   s.description      = <<-DESC
-The categories.
+The categories for Objective-C.
                        DESC
 
   s.homepage         = 'https://github.com/blodely/LYCategory'
