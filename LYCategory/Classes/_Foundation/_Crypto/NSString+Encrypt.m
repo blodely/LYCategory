@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Encrypt.h"
+//#import "GTMBase64.h"
 #import <CommonCrypto/CommonCrypto.h>
 
 @implementation NSString (Encrypt)
@@ -41,6 +42,60 @@
     }
 	
     return [[NSString alloc] initWithData:mutableData encoding:NSASCIIStringEncoding];
+}
+
+static Byte iv[] = {0x12,0x34,0x56,0x78,0x90,0xAB,0xCD,0xEF};
+
+- (NSString*)encryptUseDESS:(NSString*)plainText key:(NSString*)key {
+	
+	NSString * ciphertext = nil;
+	const char * textBytes = [plainText UTF8String];
+	NSUInteger dataLength = strlen(textBytes);
+	unsigned char buffer[1024];
+	memset(buffer, 0, sizeof(char));
+	size_t numBytesEncrypted = 0;
+	CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmDES,
+										kCCOptionPKCS7Padding,
+										[key UTF8String], kCCKeySizeDES,
+										iv,
+										textBytes, dataLength,
+										buffer,1024,
+										&numBytesEncrypted);
+	
+	if(cryptStatus ==kCCSuccess) {
+		NSData *data = [NSData dataWithBytes:buffer length:(NSUInteger)numBytesEncrypted];
+		ciphertext = [data base64Encoding];
+	}
+	return ciphertext;
+	
+}
+
+- (NSString *)decryptUseDES:(NSString *)cipherText key:(NSString *)key {
+	
+	NSData *cipherData = [[NSData alloc] initWithBase64EncodedString:cipherText options:0];
+	
+	unsigned char buffer[1024*100];
+	memset(buffer, 0, sizeof(char));
+	size_t numBytesDecrypted = 0;
+	Byte iv[] = {0x12,0x34,0x56,0x78,0x90,0xAB,0xCD,0xEF};
+	CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
+										kCCAlgorithmDES,
+										kCCOptionPKCS7Padding,
+										[key UTF8String],
+										kCCKeySizeDES,
+										iv,
+										[cipherData bytes],
+										[cipherData length],
+										buffer,
+										1024*100,
+										&numBytesDecrypted);
+	
+	NSString *plainText = nil;
+	if(cryptStatus ==kCCSuccess) {
+		NSData *data = [NSData dataWithBytes:buffer length:(NSUInteger)numBytesDecrypted];
+		plainText = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+	}
+	return plainText;
 }
 
 - (NSString *)md5 {
