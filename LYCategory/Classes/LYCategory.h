@@ -59,6 +59,7 @@
 #import "UITextView+Input.h"
 #import "UIView+Screenshot.h"
 #import "UIImage+Scale.h"
+#import "UIImage+Filter.h"
 #import "UIView+Animate.h"
 #import "UIColor+Speed.h"
 
