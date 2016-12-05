@@ -7,9 +7,24 @@ The categories.
 #### Cocoapods
 Just put this↓ in your Podfile, then run 'pod install'.
 
-~~~markdown
+~~~ruby
 # LYCategory
 pod 'LYCategory', :git=>'https://github.com/blodely/LYCategory.git'
+~~~
+
+Or
+
+Have custom pod specs installed
+
+~~~shell
+pod repo add LYSpecs https://github.com/blodely/LYSpecs.git
+~~~
+
+then, add this↓ in your Podfile, then run 'pod install'.
+
+~~~ruby
+# LYCategory
+pod 'LYCategory', '~> 1.2.5'
 ~~~
 
 #### Git submodule
