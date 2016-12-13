@@ -94,7 +94,7 @@ Or you can just download and unzip the file, put them in your project.
 
 #### NSArray
 
-~~~objectice-c
+~~~objective-c
 
 // Reverse array
 NSArray *things = @[@"log", @"grass", @"coal",];
