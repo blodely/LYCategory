@@ -27,6 +27,7 @@
 
 #import "NSNumber+Random.h"
 #import "NSNumber+Date.h"
+#import "NSNumber+Distance.h"
 
 #import "NSDate+Formatter.h"
 #import "NSDate+Operator.h"
