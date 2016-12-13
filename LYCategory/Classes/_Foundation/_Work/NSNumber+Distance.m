@@ -15,9 +15,9 @@
 	NSString *disstr;
 	
 	if ([self doubleValue] > 1000) {
-		NSArray *dis = [[NSString stringWithFormat:@"%0.1f", [self doubleValue]] componentsSeparatedByString:@"."];
+		NSArray *dis = [[NSString stringWithFormat:@"%0.1f", [self doubleValue] / 1000.0f] componentsSeparatedByString:@"."];
 		if ([dis[1] intValue] > 0) {
-			disstr = [NSString stringWithFormat:@"%0.1f", [self doubleValue]];
+			disstr = [NSString stringWithFormat:@"%0.1f", [self doubleValue] / 1000.0f];
 		} else {
 			disstr = dis[0];
 		}
