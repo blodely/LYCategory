@@ -6,6 +6,5 @@ target 'LYCategory_Example' do
   target 'LYCategory_Tests' do
     inherit! :search_paths
 
-    
   end
 end
