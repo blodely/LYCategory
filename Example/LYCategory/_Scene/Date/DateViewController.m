@@ -21,7 +21,7 @@
 	lblInterval.text = [NSString stringWithFormat:@"%@", [dpDate.date utcTimeIntervalSince1970]];
 	lblUTC.text = [NSString stringWithFormat:@"%@", [dpDate.date stringWithFormat:@"yyyy-MM-dd HH:mm ZZZZ" andTimezone:@"UTC"]];
 	
-	lblTime1.text = @"";
+	lblTime1.text = [NSString stringWithFormat:@"Asia/Shanghai %@", [dpDate.date stringWithFormat:@"yyyy-MM-dd HH:mm" andTimezone:@"Asia/Shanghai"]];
 	lblTime2.text = @"";
 }
 
