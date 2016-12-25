@@ -36,7 +36,9 @@
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-	return [self init];
+	if (self = [super initWithNibName:@"DateViewController" bundle:nil]) {
+	}
+	return self;
 }
 
 #pragma mark | VIEW LIFE CYCLE
