@@ -38,7 +38,9 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-	return [self init];
+	if (self = [super initWithNibName:@"MenuViewController" bundle:nil]) {
+	}
+	return self;
 }
 
 #pragma mark VIEW LIFE CYCLE
