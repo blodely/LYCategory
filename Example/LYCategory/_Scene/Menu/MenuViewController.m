@@ -84,7 +84,7 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	return [NSString stringWithFormat:@"GROUP %d", section+1];
+	return [NSString stringWithFormat:@"GROUP %@", @(section+1)];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
