@@ -17,7 +17,7 @@ The categories for Objective-C.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LYCategory/Classes/**/*'
+  s.source_files = 'LYCategory/Classes/_Foundation/*', 'LYCategory/Classes/_UIKit/*', 'LYCategory/Classes/**/*'
   
   # s.resource_bundles = {
   #   'LYCategory' => ['LYCategory/Assets/*.png']
