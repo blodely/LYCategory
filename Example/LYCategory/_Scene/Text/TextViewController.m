@@ -50,8 +50,6 @@
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
 	NSLog(@"%@", NSStringFromCGPoint(CENTER_P));
-	
-	LYLog(@"%@", NSStringFromCGPoint(CENTER_P));
 }
 
 #pragma mark MEMORY MANAGEMENT
