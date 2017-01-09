@@ -19,7 +19,7 @@
 
 #define MAX_LENGTH MAX(WIDTH, HEIGHT)
 
-#define CENTER_X 160
+#define CENTER_X WIDTH/2
 
 #define CENTER_P CGPointMake(HEIGHT/2, 160)
 
