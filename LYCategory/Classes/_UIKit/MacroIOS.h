@@ -9,7 +9,7 @@
 #ifndef LYCategory_MacroIOS_h
 #define LYCategory_MacroIOS_h
 
-#pragma mark - FRAME
+// MARK: - FRAME
 
 #define DELTA7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? 0 : 20)
 
@@ -23,7 +23,7 @@
 
 #define CENTER_P CGPointMake(HEIGHT/2, 160)
 
-#pragma mark - OS VERSION
+// MARK: - OS VERSION
 
 #define iOS8 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 9.0) )
 
@@ -33,7 +33,7 @@
 
 #define iOS5 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 6.0) )
 
-#pragma mark - MODEL DETECTION
+// MARK: - MODEL DETECTION
 
 #define iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 
