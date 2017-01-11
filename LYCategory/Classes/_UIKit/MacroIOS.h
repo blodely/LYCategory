@@ -31,8 +31,6 @@
 
 #define iOS6 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0) )
 
-#define iOS5 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 6.0) )
-
 // MARK: - MODEL DETECTION
 
 #define iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
