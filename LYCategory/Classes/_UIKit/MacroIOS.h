@@ -21,7 +21,7 @@
 
 #define CENTER_X WIDTH/2
 
-#define CENTER_P CGPointMake(HEIGHT/2, 160)
+#define CENTER_P CGPointMake(HEIGHT/2, CENTER_X)
 
 // MARK: - OS VERSION
 
