@@ -12,6 +12,12 @@
 
 #pragma mark - FOR STANDARD
 
+/**
+ string value for key in standard user default
+
+ @param defaultName key name
+ @return string value
+ */
 + (NSString *)stringForKey:(NSString *)defaultName;
 
 + (NSArray *)arrayForKey:(NSString *)defaultName;
