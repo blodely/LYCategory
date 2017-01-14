@@ -20,6 +20,12 @@
  */
 + (NSString *)stringForKey:(NSString *)defaultName;
 
+/**
+ array value for key in standard user default
+
+ @param defaultName key name
+ @return array value
+ */
 + (NSArray *)arrayForKey:(NSString *)defaultName;
 
 + (NSDictionary *)dictionaryForKey:(NSString *)defaultName;
