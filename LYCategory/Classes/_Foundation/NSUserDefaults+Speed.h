@@ -28,6 +28,12 @@
  */
 + (NSArray *)arrayForKey:(NSString *)defaultName;
 
+/**
+ dictionary value for key in standard user default
+
+ @param defaultName key name
+ @return dictionary value
+ */
 + (NSDictionary *)dictionaryForKey:(NSString *)defaultName;
 
 + (NSData *)dataForKey:(NSString *)defaultName;
