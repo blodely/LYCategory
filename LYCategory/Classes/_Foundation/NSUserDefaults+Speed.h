@@ -36,6 +36,12 @@
  */
 + (NSDictionary *)dictionaryForKey:(NSString *)defaultName;
 
+/**
+ binary data value for key in standard user default
+
+ @param defaultName key name
+ @return binary data
+ */
 + (NSData *)dataForKey:(NSString *)defaultName;
 
 + (NSArray *)stringArrayForKey:(NSString *)defaultName;
