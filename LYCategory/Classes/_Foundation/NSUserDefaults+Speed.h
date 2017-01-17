@@ -44,6 +44,12 @@
  */
 + (NSData *)dataForKey:(NSString *)defaultName;
 
+/**
+ array of strings value for key in standard user default
+
+ @param defaultName key name
+ @return array object
+ */
 + (NSArray *)stringArrayForKey:(NSString *)defaultName;
 
 + (NSInteger)integerForKey:(NSString *)defaultName;
