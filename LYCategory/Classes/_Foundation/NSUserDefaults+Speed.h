@@ -52,6 +52,12 @@
  */
 + (NSArray *)stringArrayForKey:(NSString *)defaultName;
 
+/**
+ integer value for key in standard user default
+
+ @param defaultName key name
+ @return integer value
+ */
 + (NSInteger)integerForKey:(NSString *)defaultName;
 
 + (float)floatForKey:(NSString *)defaultName;
