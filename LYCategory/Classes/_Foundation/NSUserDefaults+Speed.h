@@ -60,6 +60,12 @@
  */
 + (NSInteger)integerForKey:(NSString *)defaultName;
 
+/**
+ float value for key in standard user default
+
+ @param defaultName key name
+ @return float value
+ */
 + (float)floatForKey:(NSString *)defaultName;
 
 + (double)doubleForKey:(NSString *)defaultName;
