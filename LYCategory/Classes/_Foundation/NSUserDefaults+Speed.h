@@ -68,6 +68,12 @@
  */
 + (float)floatForKey:(NSString *)defaultName;
 
+/**
+ double value for key in standard user default
+
+ @param defaultName key name
+ @return double value
+ */
 + (double)doubleForKey:(NSString *)defaultName;
 
 + (BOOL)boolForKey:(NSString *)defaultName;
