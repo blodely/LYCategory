@@ -76,6 +76,12 @@
  */
 + (double)doubleForKey:(NSString *)defaultName;
 
+/**
+ BOOL value for key in standard user default
+
+ @param defaultName key name
+ @return BOOL value
+ */
 + (BOOL)boolForKey:(NSString *)defaultName;
 
 + (NSURL *)URLForKey:(NSString *)defaultName;
