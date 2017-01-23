@@ -84,6 +84,12 @@
  */
 + (BOOL)boolForKey:(NSString *)defaultName;
 
+/**
+ URL object for key in standard user default
+
+ @param defaultName key name
+ @return URL object
+ */
 + (NSURL *)URLForKey:(NSString *)defaultName;
 
 #pragma mark - WRITE FOR STANDARD
