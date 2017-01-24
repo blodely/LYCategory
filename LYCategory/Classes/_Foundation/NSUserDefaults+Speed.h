@@ -98,6 +98,12 @@
 
 #pragma mark - READ ARCHIVE FOR STANDARD
 
+/**
+ read archived object for key in standard user default
+
+ @param defaultName key name
+ @return unarchived object
+ */
 + (id)arcObjectForKey:(NSString *)defaultName;
 
 #pragma mark - WRITE ARCHIVE FOR STANDARD
