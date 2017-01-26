@@ -108,6 +108,12 @@
 
 #pragma mark - WRITE ARCHIVE FOR STANDARD
 
+/**
+ storage object that has been archived
+
+ @param value object
+ @param defaultName key name
+ */
 + (void)setArcObject:(id)value forKey:(NSString *)defaultName;
 
 @end
