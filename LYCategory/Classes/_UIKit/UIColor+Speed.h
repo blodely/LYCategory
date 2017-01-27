@@ -10,6 +10,14 @@
 
 @interface UIColor (Speed)
 
+/**
+ generate color object with red-green-blue values
+
+ @param redValue red color value, 0~255
+ @param greenValue green color value, 0~255
+ @param blueValue blue color value, 0~255
+ @return color object
+ */
 - (UIColor *)colorWithR:(CGFloat)redValue G:(CGFloat)greenValue B:(CGFloat)blueValue;
 
 @end
