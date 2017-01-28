@@ -18,6 +18,6 @@
  @param blueValue blue color value, 0~255
  @return color object
  */
-- (UIColor *)colorWithR:(CGFloat)redValue G:(CGFloat)greenValue B:(CGFloat)blueValue;
++ (UIColor *)colorWithR:(CGFloat)redValue G:(CGFloat)greenValue B:(CGFloat)blueValue;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation UIColor (Speed)
 
-- (UIColor *)colorWithR:(CGFloat)redValue G:(CGFloat)greenValue B:(CGFloat)blueValue {
++ (UIColor *)colorWithR:(CGFloat)redValue G:(CGFloat)greenValue B:(CGFloat)blueValue {
 	
 	redValue = MAX(redValue, 0);
 	redValue = MIN(redValue, 255.0f);
