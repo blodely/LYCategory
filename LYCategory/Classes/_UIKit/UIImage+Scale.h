@@ -11,7 +11,12 @@
 
 @interface UIImage (Scale)
 
-// RESIZE IMAGE
+/**
+ resize image
+
+ @param size target size
+ @return image result
+ */
 - (UIImage *)resize:(CGSize)size;
 
 @end
