@@ -12,6 +12,11 @@
 
 #pragma mark EMPTY
 
+/**
+ check text field is empty string or not
+
+ @return BOOL result
+ */
 - (BOOL)isEmpty;
 
 @end
