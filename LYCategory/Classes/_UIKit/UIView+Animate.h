@@ -17,6 +17,11 @@ typedef enum {
 
 @interface UIView (Animate)
 
+/**
+ animation method move view from specified postion of screen
+
+ @param postion postion enum value
+ */
 - (void)showFromScreen:(AnimateViewPosition)postion;
 
 @end
