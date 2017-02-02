@@ -10,6 +10,11 @@
 
 @interface UIView (Screenshot)
 
+/**
+ get view's screenshot
+
+ @return image object
+ */
 - (UIImage *)imageShot;
 
 @end
