@@ -10,6 +10,11 @@
 
 @interface NSArray (Operator)
 
+/**
+ reverse array object orders
+
+ @return result array
+ */
 - (NSArray *)reversed;
 
 @end
