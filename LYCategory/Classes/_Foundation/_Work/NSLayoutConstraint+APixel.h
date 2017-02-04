@@ -10,6 +10,10 @@
 
 @interface NSLayoutConstraint (APixel)
 
+/**
+ interface builder inspecter's constants value setter
+ with precise constant pixel property.
+ */
 @property (nonatomic, assign) IBInspectable NSInteger preciseConstant;
 
 @end
