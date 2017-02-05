@@ -10,6 +10,9 @@
 
 @interface NSMutableArray (Operator)
 
+/**
+ reverse mutable array objects' orders
+ */
 - (void)reverse;
 
 @end
