@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYCategory'
-  s.version          = '1.2.10'
+  s.version          = '1.2.11'
   s.summary          = 'The categories.'
 
   s.description      = <<-DESC
@@ -17,7 +17,8 @@ The categories for Objective-C.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LYCategory/Classes/_Foundation/*', 'LYCategory/Classes/_UIKit/*', 'LYCategory/Classes/**/*'
+  s.source_files = 'LYCategory/Classes/_Foundation/*', 'LYCategory/Classes/**/*'
+  s.ios.source_files = 'LYCategory/Classes/_UIKit/*'
   
   # s.resource_bundles = {
   #   'LYCategory' => ['LYCategory/Assets/*.png']
