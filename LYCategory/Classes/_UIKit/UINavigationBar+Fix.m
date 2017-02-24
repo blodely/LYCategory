@@ -10,4 +10,9 @@
 
 @implementation UINavigationBar (Fix)
 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+	self.userInteractionEnabled = [self pointInside:point withEvent:event];
+	return [super hitTest:point withEvent:event];
+}
+
 @end
