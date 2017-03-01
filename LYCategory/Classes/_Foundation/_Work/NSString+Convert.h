@@ -12,4 +12,6 @@
 
 - (NSString *)encodingURL;
 
+- (NSString *)pinyin;
+
 @end
