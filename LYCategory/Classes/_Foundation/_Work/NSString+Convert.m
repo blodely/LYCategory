@@ -14,4 +14,11 @@
 	return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
 }
 
+- (NSString *)pinyin {
+	NSMutableString *mutableString = [[NSMutableString alloc] initWithString:self];
+	CFStringTransform((CFMutableStringRef)mutableString, NULL, kCFStringTransformMandarinLatin, NO);
+	CFStringTransform((CFMutableStringRef)mutableString, NULL, kCFStringTransformStripDiacritics, NO);
+	return [NSString stringWithString:mutableString];
+}
+
 @end
