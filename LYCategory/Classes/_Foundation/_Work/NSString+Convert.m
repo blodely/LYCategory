@@ -21,4 +21,8 @@
 	return [NSString stringWithString:mutableString];
 }
 
+- (NSString *)indexLetter {
+	return [[[self pinyin] substringToIndex:1] uppercaseString];
+}
+
 @end

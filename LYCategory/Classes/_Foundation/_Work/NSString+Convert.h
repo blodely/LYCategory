@@ -14,4 +14,6 @@
 
 - (NSString *)pinyin;
 
+- (NSString *)indexLetter;
+
 @end
