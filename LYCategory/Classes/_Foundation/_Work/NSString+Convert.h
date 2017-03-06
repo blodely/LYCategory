@@ -16,4 +16,6 @@
 
 - (NSString *)indexLetter;
 
+- (NSDate *)extractBirthdayFromIDNumber;
+
 @end

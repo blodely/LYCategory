@@ -25,4 +25,8 @@
 	return [[[self pinyin] substringToIndex:1] uppercaseString];
 }
 
+- (NSDate *)extractBirthdayFromIDNumber {
+	return nil;
+}
+
 @end
