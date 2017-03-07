@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Convert.h"
+#import "NSString+Date.h"
 
 @implementation NSString (Convert)
 
@@ -26,6 +27,15 @@
 }
 
 - (NSDate *)extractBirthdayFromIDNumber {
+	
+	if (self.length == 15) {
+		return [[NSString stringWithFormat:@"19%@", [self substringWithRange:NSMakeRange(6, 6)]] dateWithFormat:@"yyyyMMdd" andTimezone:@"Asia/Shanghai"];
+	}
+	
+	if (self.length == 18) {
+		return [[self substringWithRange:NSMakeRange(6, 8)] dateWithFormat:@"yyyyMMdd" andTimezone:@"Asia/Shanghai"];
+	}
+	
 	return nil;
 }
 
