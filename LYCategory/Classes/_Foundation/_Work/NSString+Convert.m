@@ -39,4 +39,8 @@
 	return nil;
 }
 
+- (NSUInteger)extractAgeFromIDNumber {
+	return 0;
+}
+
 @end

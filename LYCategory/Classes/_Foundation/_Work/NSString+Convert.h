@@ -18,4 +18,6 @@
 
 - (NSDate *)extractBirthdayFromIDNumber;
 
+- (NSUInteger)extractAgeFromIDNumber;
+
 @end
