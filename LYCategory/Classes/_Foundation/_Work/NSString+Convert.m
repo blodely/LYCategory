@@ -40,7 +40,30 @@
 }
 
 - (NSUInteger)extractAgeFromIDNumber {
-	return 0;
+	
+	if (self.length != 15 && self.length != 18) {
+		return 0;
+	}
+	
+	NSDate *birthday;
+	
+	if (self == 15) {
+		// FIRST GENERATION ID
+		birthday = [[NSString stringWithFormat:@"19%@", [self substringWithRange:NSMakeRange(6, 6)]] dateWithFormat:@"yyyyMMdd" andTimezone:@"Asia/Shanghai"];
+	} else if (self.length == 18) {
+		// SECOND GENERATION ID
+		birthday = [[self substringWithRange:NSMakeRange(6, 8)] dateWithFormat:@"yyyyMMdd" andTimezone:@"Asia/Shanghai"];
+	}
+	
+	NSDateComponents *cpBirthday = [[NSCalendar currentCalendar] components:(NSCalendarUnitDay|NSCalendarUnitMonth|NSCalendarUnitYear) fromDate:birthday];
+	NSDateComponents *cpToday = [[NSCalendar currentCalendar] components:(NSCalendarUnitDay|NSCalendarUnitMonth|NSCalendarUnitYear) fromDate:[NSDate date]];
+	
+	NSUInteger age = cpToday.year - cpBirthday.year - 1;
+	if ((cpToday.month > cpBirthday.month) || (cpToday.month == cpBirthday.month && cpToday.day >= cpBirthday.day)) {
+		age++;
+	}
+	
+	return age;
 }
 
 @end
