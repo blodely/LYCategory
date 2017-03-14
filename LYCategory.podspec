@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYCategory'
-  s.version          = '1.2.11'
+  s.version          = '1.2.12'
   s.summary          = 'The categories.'
 
   s.description      = <<-DESC
@@ -26,7 +26,7 @@ The categories for Objective-C.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.frameworks = 'UIKit'
+  s.ios.frameworks = 'UIKit'
 
   # s.dependency 'AFNetworking', '~> 2.3'
 end
