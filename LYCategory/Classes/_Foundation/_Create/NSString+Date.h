@@ -10,6 +10,12 @@
 
 @interface NSString (Date)
 
+/**
+ 字符串转时间对象
+
+ @param fmtString 转换格式
+ @return 时间对象结果
+ */
 - (NSDate *)dateWithFormat:(NSString *)fmtString;
 
 - (NSDate *)dateWithFormat:(NSString *)fmtString andTimezone:(NSString *)timezoneName;
