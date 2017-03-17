@@ -63,4 +63,5 @@
 #import <LYCategory/UIView+Animate.h>
 #import <LYCategory/UIColor+Speed.h>
 #import <LYCategory/UINavigationBar+Fix.h>
+#import <LYCategory/UIAlertController+Speed.h>
 
