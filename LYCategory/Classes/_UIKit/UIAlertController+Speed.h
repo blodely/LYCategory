@@ -10,4 +10,11 @@
 
 @interface UIAlertController (Speed)
 
++ (void)showAlertFromView:(UIViewController *)viewvc
+				withTitle:(NSString *)title
+			   andMessage:(NSString *)message
+		cancelButtonTitle:(NSString *)btnCancelTitle
+	   confirmButtonTitle:(NSString *)btnConfirmTitle
+			confirmAction:(void (^)(void))btnConfirmBlock;
+
 @end
