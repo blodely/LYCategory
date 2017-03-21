@@ -9,6 +9,7 @@
 
 #import "LYAppDelegate.h"
 #import "MenuViewController.h"
+#import <LYCategory/LYCategory.h>
 
 @implementation LYAppDelegate
 
@@ -24,6 +25,7 @@
 	self.window.rootViewController = nav;
 	
 	[self.window makeKeyAndVisible];
+	
 	return YES;
 }
 
