@@ -57,7 +57,7 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
-	[dsMenu addObjectsFromArray:@[@"Dates", @"Strings", @"UI", ]];
+	[dsMenu addObjectsFromArray:@[@"Dates", @"Strings", @"UI", @"Alert", ]];
 }
 
 #pragma mark MEMORY MANAGEMENT
@@ -105,6 +105,11 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 		} break;
 		case 1: {
 			[self.navigationController pushViewController:[[TextViewController alloc] init] animated:YES];
+		} break;
+		case 3: {
+			[UIAlertController showAlertFromView:self withTitle:@"test" andMessage:@"test message" cancelButtonTitle:@"c a n c e l" confirmButtonTitle:@"c o n f i r m" confirmAction:^{
+				NSLog(@"\n\n\n\nconfirmed\n\n\n\n");
+			}];
 		} break;
 		default: {
 			
