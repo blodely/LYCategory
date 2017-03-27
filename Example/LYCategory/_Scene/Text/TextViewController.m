@@ -7,7 +7,7 @@
 //
 
 #import "TextViewController.h"
-#import "LYCategory.h"
+#import <LYCategory/LYCategory.h>
 
 @interface TextViewController () <UITextFieldDelegate>
 
@@ -30,7 +30,13 @@
 	
 	lblInput.text = [tfInput.text isIDNumber] ? @"身份证号码正确" : @"身份证号码不正确";
 }
+
 - (IBAction)placeholderButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)checkMobileNumberButtonPressed:(UIButton *)sender {
+	
+	lblInput.text = [NSString stringWithFormat:@"%@ is %@", tfInput.text, [tfInput.text isPhoneNumber] ? @"valid" : @"invalid"];
 }
 
 #pragma mark - INIT
