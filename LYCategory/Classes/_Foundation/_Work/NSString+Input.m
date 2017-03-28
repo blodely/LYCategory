@@ -149,16 +149,23 @@
 
 - (BOOL)isPhoneNumber {
 	
-	// China Mobile:		134[0-8], 135, 136, 137, 138, 139, 150, 151, 157, 158, 159, 182, 187, 188
-	// China Unicom:		130, 131, 132, 152, 155, 156, 185, 186
-	// China Telecom:	133, 1349, 153, 180, 189
+	/*
+	Updated : 2017-03-01
+	China Mobile：	134 135 136 137 138 139 147 150 151 152 157 158 159 178 182 183 184 187 188
+	China Unicom：	130 131 132 145 155 156 171 175 176 185 186
+	China Telecom：	133 149 153 173 177 180 181 189
+	虚拟运营商:	170
+	*/
 	
-	NSPredicate *preMobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$"];
-	NSPredicate *preCMCC = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$"];
-	NSPredicate *preCU = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-2]|5[256]|8[56])\\d{8}$"];
-	NSPredicate *preCT = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1((33|53|8[09])[0-9]|349)\\d{7}$"];
+	NSPredicate *predCMCC = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[4-9]|47|5[0-27-9]|78|8[2-478])\\d{8}$"];
+	NSPredicate *predCU = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-2]|45|5[56]|7[156]|8[56])\\d{8}$"];
+	NSPredicate *predCT = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(33|49|53|7[37]|8[019])\\d{8}$"];
+	NSPredicate *predV = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(70)\\d{8}$"];
 	
-	return [preMobile evaluateWithObject:self] || [preCMCC evaluateWithObject:self] || [preCU evaluateWithObject:self] || [preCT evaluateWithObject:self];
+	return [predCMCC evaluateWithObject:self] ||
+			[predCU evaluateWithObject:self] ||
+			[predCT evaluateWithObject:self] ||
+			[predV evaluateWithObject:self];
 }
 
 #pragma mark EMOJI
