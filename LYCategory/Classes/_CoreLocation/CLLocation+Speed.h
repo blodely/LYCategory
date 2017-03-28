@@ -11,6 +11,6 @@
 
 @interface CLLocation (Speed)
 
-+ (CLLocationCoordinate2D)convertToMarsGPS:(CLLocationCoordinate2D)coordinate;
++ (CLLocationCoordinate2D)convertFromCnCoordinate:(CLLocationCoordinate2D)coordinate;
 
 @end

@@ -11,7 +11,7 @@
 
 @implementation CLLocation (Speed)
 
-+ (CLLocationCoordinate2D)convertToMarsGPS:(CLLocationCoordinate2D)coordinate {
++ (CLLocationCoordinate2D)convertFromCnCoordinate:(CLLocationCoordinate2D)coordinate {
 	
 	// IS OUT OF CHINA
 	if (coordinate.longitude < 72.004 || coordinate.longitude > 137.8347) {
@@ -24,8 +24,8 @@
 	
 	// IN CHINA
 	
-	double x = coordinate.longitude - 105.0f;
-	double y = coordinate.latitude - 35.0f;
+	double x = coordinate.longitude - 105.0;
+	double y = coordinate.latitude - 35.0;
 	
 	double dLat = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * sqrt(abs(x));
 	dLat += (20.0 * sin(6.0 * x * M_PI) + 20.0 * sin(2.0 * x * M_PI)) * 2.0 / 3.0;
