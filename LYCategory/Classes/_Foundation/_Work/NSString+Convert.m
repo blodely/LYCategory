@@ -47,7 +47,7 @@
 	
 	NSDate *birthday;
 	
-	if (self == 15) {
+	if (self.length == 15) {
 		// FIRST GENERATION ID
 		birthday = [[NSString stringWithFormat:@"19%@", [self substringWithRange:NSMakeRange(6, 6)]] dateWithFormat:@"yyyyMMdd" andTimezone:@"Asia/Shanghai"];
 	} else if (self.length == 18) {
