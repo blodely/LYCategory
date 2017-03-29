@@ -11,6 +11,10 @@
 
 @interface CLLocation (Speed)
 
-+ (CLLocationCoordinate2D)convertFromCnCoordinate:(CLLocationCoordinate2D)coordinate;
++ (CLLocationCoordinate2D)convertFromBDToGCJ02:(CLLocationCoordinate2D)coordinateBd;
+
++ (CLLocationCoordinate2D)convertFromGCJ02ToBD:(CLLocationCoordinate2D)coordinateGCJ02;
+
++ (CLLocationCoordinate2D)convertFromWGS84ToGCJ02:(CLLocationCoordinate2D)coordinateWGS84;
 
 @end
