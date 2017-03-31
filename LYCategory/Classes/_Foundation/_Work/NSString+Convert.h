@@ -20,4 +20,6 @@
 
 - (NSUInteger)extractAgeFromIDNumber;
 
+- (NSString *)extractGenderFromIDNumber;
+
 @end

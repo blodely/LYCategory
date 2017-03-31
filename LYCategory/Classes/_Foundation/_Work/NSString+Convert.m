@@ -8,6 +8,7 @@
 
 #import "NSString+Convert.h"
 #import "NSString+Date.h"
+#import "NSString+Input.h"
 
 @implementation NSString (Convert)
 
@@ -64,6 +65,21 @@
 	}
 	
 	return age;
+}
+
+- (NSString *)extractGenderFromIDNumber {
+	
+	if (![self isIDNumber]) {
+		return @"";
+	}
+	
+	if (self.length == 15) {
+		return [[self substringFromIndex:14] intValue] % 2 > 0 ? @"男" : @"女";
+	} else if (self.length == 18) {
+		return [[self substringWithRange:NSMakeRange(16, 1)] intValue] % 2 > 0 ? @"男" : @"女";
+	}
+	
+	return @"";
 }
 
 @end
