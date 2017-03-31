@@ -1,13 +1,15 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'LYCategory'
-	s.version          = '1.2.19'
+	s.version          = '1.2.20'
 	s.summary          = 'The categories.'
 
 	s.description      = <<-DESC
 The categories for Objective-C.
 1.2.19
 update mobile validation
+1.2.20
+extract gender from id number string
 					   DESC
 
 	s.homepage         = 'https://github.com/blodely/LYCategory'
