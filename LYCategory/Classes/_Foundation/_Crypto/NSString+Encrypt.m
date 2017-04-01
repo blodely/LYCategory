@@ -64,7 +64,7 @@ static Byte iv[] = {0x12,0x34,0x56,0x78,0x90,0xAB,0xCD,0xEF};
 	
 	if(cryptStatus ==kCCSuccess) {
 		NSData *data = [NSData dataWithBytes:buffer length:(NSUInteger)numBytesEncrypted];
-		ciphertext = [data base64Encoding];
+		ciphertext = [data base64EncodedStringWithOptions:0];
 	}
 	return ciphertext;
 	
