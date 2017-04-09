@@ -27,6 +27,12 @@
  */
 + (CLLocationCoordinate2D)convertFromGCJ02ToBD:(CLLocationCoordinate2D)coordinateGCJ02;
 
+/**
+ coodinate converter: from WGS-84(real-world) GPS to GCJ-02 GPS
+
+ @param coordinateWGS84 WGS-84(real-world) coordinate
+ @return GCJ-02 coordinate
+ */
 + (CLLocationCoordinate2D)convertFromWGS84ToGCJ02:(CLLocationCoordinate2D)coordinateWGS84;
 
 @end
