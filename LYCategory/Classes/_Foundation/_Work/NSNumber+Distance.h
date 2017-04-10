@@ -10,6 +10,11 @@
 
 @interface NSNumber (Distance)
 
+/**
+ Get distance string in metric
+
+ @return distance string
+ */
 - (NSString *)distanceString;
 
 @end
