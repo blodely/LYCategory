@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'LYCategory'
-	s.version          = '1.2.21'
+	s.version          = '1.2.22'
 	s.summary          = 'The categories.'
 
 	s.description      = <<-DESC
@@ -12,6 +12,8 @@ update mobile validation
 extract gender from id number string
 1.2.21
 fix : deprecated encrption method
+1.2.22
+refactoring
 					   DESC
 
 	s.homepage         = 'https://github.com/blodely/LYCategory'
