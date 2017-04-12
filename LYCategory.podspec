@@ -23,7 +23,7 @@ refactoring
 	s.source           = { :git => 'https://github.com/blodely/LYCategory.git', :tag => s.version.to_s }
 	s.social_media_url = 'https://weibo.com/blodely'
 
-	s.ios.deployment_target = '8.0'
+	s.ios.deployment_target = '7.0'
 
 	s.source_files = 'LYCategory/Classes/_Foundation/*', 'LYCategory/Classes/_CoreLocation/*', 'LYCategory/Classes/**/*'
 	s.ios.source_files = 'LYCategory/Classes/_UIKit/*'
