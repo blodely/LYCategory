@@ -6,14 +6,10 @@ Pod::Spec.new do |s|
 
 	s.description      = <<-DESC
 The categories for Objective-C.
-1.2.19
-update mobile validation
-1.2.20
-extract gender from id number string
-1.2.21
-fix : deprecated encrption method
-1.2.22
-refactoring
+1.2.19 update mobile validation
+1.2.20 extract gender from id number string
+1.2.21 fix : deprecated encrption method
+1.2.22 refactoring
 					   DESC
 
 	s.homepage         = 'https://github.com/blodely/LYCategory'
