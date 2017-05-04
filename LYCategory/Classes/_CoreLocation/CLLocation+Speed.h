@@ -35,4 +35,6 @@
  */
 + (CLLocationCoordinate2D)convertFromWGS84ToGCJ02:(CLLocationCoordinate2D)coordinateWGS84;
 
++ (CLLocationDistance)distanceFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate;
+
 @end
