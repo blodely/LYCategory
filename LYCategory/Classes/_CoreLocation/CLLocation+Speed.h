@@ -35,6 +35,13 @@
  */
 + (CLLocationCoordinate2D)convertFromWGS84ToGCJ02:(CLLocationCoordinate2D)coordinateWGS84;
 
+/**
+ distance calculator
+
+ @param fromCoordinate start coordinate
+ @param toCoordinate target coordinate
+ @return distance in meter
+ */
 + (CLLocationDistance)distanceFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate;
 
 @end
