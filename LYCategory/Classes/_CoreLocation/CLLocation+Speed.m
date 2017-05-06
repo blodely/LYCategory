@@ -75,4 +75,12 @@
 	
 }
 
++ (CLLocationDistance)distanceFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate {
+	
+	CLLocation *fromLoc = [[CLLocation alloc] initWithLatitude:fromCoordinate.latitude longitude:fromCoordinate.longitude];
+	CLLocation *toLoc = [[CLLocation alloc] initWithLatitude:toCoordinate.latitude longitude:toCoordinate.longitude];
+	
+	return [fromLoc distanceFromLocation:toLoc];
+}
+
 @end
