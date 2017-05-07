@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'LYCategory'
-	s.version          = '1.2.23'
+	s.version          = '1.2.24'
 	s.summary          = 'The categories.'
 
 	s.description      = <<-DESC
@@ -11,6 +11,7 @@ The categories for Objective-C.
 1.2.21 fix : deprecated encrption method
 1.2.22 refactoring
 1.2.23 deployment target version iOS 7.x
+1.2.24 distance
 					   DESC
 
 	s.homepage         = 'https://github.com/blodely/LYCategory'
