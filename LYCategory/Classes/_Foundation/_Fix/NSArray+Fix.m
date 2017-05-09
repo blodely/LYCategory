@@ -15,6 +15,13 @@
 	return nil;
 }
 
+- (id)objAtIdx:(NSInteger)idx {
+	if (idx < [self count]) {
+		return [self objectAtIndex:idx];
+	}
+	return nil;
+}
+
 - (BOOL)isEqualToString:(NSString *)aString {
 	return NO;
 }

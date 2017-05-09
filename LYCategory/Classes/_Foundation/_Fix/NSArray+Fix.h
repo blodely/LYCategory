@@ -12,6 +12,8 @@
 
 - (id)objectForKey:(id)aKey;
 
+- (id)objAtIdx:(NSInteger)idx;
+
 - (BOOL)isEqualToString:(NSString *)aString;
 
 - (double)doubleValue;
