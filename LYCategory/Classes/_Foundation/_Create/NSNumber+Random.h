@@ -10,6 +10,13 @@
 
 @interface NSNumber (Random)
 
+/**
+ get random int value between two values
+
+ @param lowerBound smaller one
+ @param upperBound larger one
+ @return result
+ */
 + (int)randomIntBetween:(int)lowerBound and:(int)upperBound;
 
 + (float)randomFloatBetween:(float)smallNumber and:(float)bigNumber;
