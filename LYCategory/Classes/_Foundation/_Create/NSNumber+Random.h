@@ -19,6 +19,13 @@
  */
 + (int)randomIntBetween:(int)lowerBound and:(int)upperBound;
 
+/**
+ get random float value between two values
+
+ @param smallNumber smaller one
+ @param bigNumber larger one
+ @return result
+ */
 + (float)randomFloatBetween:(float)smallNumber and:(float)bigNumber;
 
 @end
