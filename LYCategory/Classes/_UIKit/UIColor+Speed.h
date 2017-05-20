@@ -20,4 +20,14 @@
  */
 + (UIColor *)colorWithR:(CGFloat)redValue G:(CGFloat)greenValue B:(CGFloat)blueValue;
 
+
+/**
+ generate color object with hex value string
+
+ @param hexstring hex string with #
+ @param alpha alpha value 0-1
+ @return color object
+ */
++ (UIColor *)colorWithHex:(NSString *)hexstring andAlpha:(CGFloat)alpha;
+
 @end
