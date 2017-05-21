@@ -24,4 +24,8 @@
 	return [UIColor colorWithRed:redValue / 255.0f green:greenValue / 255.0f blue:blueValue / 255.0f alpha:1.0];
 }
 
++ (UIColor *)colorWithHex:(NSString *)hexstring andAlpha:(CGFloat)alpha {
+	return nil;
+}
+
 @end
