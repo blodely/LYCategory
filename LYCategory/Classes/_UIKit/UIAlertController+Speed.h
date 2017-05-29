@@ -10,6 +10,16 @@
 
 @interface UIAlertController (Speed)
 
+/**
+ display an alert view controller with alertview style
+
+ @param viewvc from view controller
+ @param title title
+ @param message message
+ @param btnCancelTitle cancel button's title
+ @param btnConfirmTitle confirm button's title
+ @param btnConfirmBlock confirm action block
+ */
 + (void)showAlertFromView:(UIViewController *)viewvc
 				withTitle:(NSString *)title
 			   andMessage:(NSString *)message
