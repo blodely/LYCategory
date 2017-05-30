@@ -27,6 +27,15 @@
 	   confirmButtonTitle:(NSString *)btnConfirmTitle
 			confirmAction:(void (^)(void))btnConfirmBlock;
 
+/**
+ display an alert view controller with alertview style
+
+ @param viewvc from view controller
+ @param title title
+ @param message message
+ @param btnCancelTitle cancel button's title
+ @param btnCancelBlock confirm button's title
+ */
 + (void)showAlertFromView:(UIViewController *)viewvc
 				withTitle:(NSString *)title
 			   andMessage:(NSString *)message
