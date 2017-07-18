@@ -25,7 +25,7 @@ The categories for Objective-C.
 
 	s.ios.deployment_target = '7.0'
 
-	s.source_files = 'LYCategory/Classes/_Foundation/*', 'LYCategory/Classes/_CoreLocation/*', 'LYCategory/Classes/**/*'
+	s.source_files = 'LYCategory/Classes/_Foundation/*', 'LYCategory/Classes/_Const/*', 'LYCategory/Classes/_CoreLocation/*', 'LYCategory/Classes/**/*'
 	s.ios.source_files = 'LYCategory/Classes/_UIKit/*'
 
 	# s.resource_bundles = {
