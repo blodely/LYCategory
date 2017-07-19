@@ -9,6 +9,10 @@
 
 #import "LYCategoryConstants.h"
 
+CGFloat const ANIMATE = 0.25f;
+
+NSString *const TZShanghai = @"Asia/Shanghai";
+
 @implementation LYCategoryConstants
 
 @end

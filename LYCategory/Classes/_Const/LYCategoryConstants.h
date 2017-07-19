@@ -9,6 +9,10 @@
 
 #import <Foundation/Foundation.h>
 
+FOUNDATION_EXPORT CGFloat const ANIMATE;
+
+FOUNDATION_EXPORT NSString *const TZShanghai;
+
 @interface LYCategoryConstants : NSObject
 
 @end
