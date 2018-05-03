@@ -77,6 +77,7 @@
 		B6320D421DC0AF180011A79A /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		D2792FAE4EDD636CCB63CA30 /* Pods-LYCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCategory_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCategory_Example/Pods-LYCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E2089F81FD6B415EB96D89E8 /* LYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYCategory.podspec; path = ../LYCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FC614B30209AC1210082FDE7 /* push_repo_lyspecs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = push_repo_lyspecs.sh; path = ../push_repo_lyspecs.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +190,7 @@
 				E2089F81FD6B415EB96D89E8 /* LYCategory.podspec */,
 				4F7AF405F10CC0970F9AB98D /* README.md */,
 				5A9F3F857833C443F3EA471E /* LICENSE */,
+				FC614B30209AC1210082FDE7 /* push_repo_lyspecs.sh */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
