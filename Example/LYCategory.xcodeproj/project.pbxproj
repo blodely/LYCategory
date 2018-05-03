@@ -76,7 +76,7 @@
 		B6320D411DC0AF180011A79A /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		B6320D421DC0AF180011A79A /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		D2792FAE4EDD636CCB63CA30 /* Pods-LYCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCategory_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCategory_Example/Pods-LYCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E2089F81FD6B415EB96D89E8 /* LYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYCategory.podspec; path = ../LYCategory.podspec; sourceTree = "<group>"; };
+		E2089F81FD6B415EB96D89E8 /* LYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYCategory.podspec; path = ../LYCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
