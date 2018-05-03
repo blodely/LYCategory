@@ -34,6 +34,10 @@
 
 - (BOOL)isPhoneNumber;
 
+#pragma mark NUMBER
+
+- (BOOL)isPureNumber;
+
 #pragma mark EMOJI
 
 - (NSString *)replaceEmojiTextWithUnicode;

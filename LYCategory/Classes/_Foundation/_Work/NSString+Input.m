@@ -168,6 +168,12 @@
 			[predV evaluateWithObject:self];
 }
 
+#pragma mark NUMBER
+
+- (BOOL)isPureNumber {
+	return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"\\d"] evaluateWithObject:self];
+}
+
 #pragma mark EMOJI
 
 - (NSString *)replaceEmojiTextWithUnicode {
