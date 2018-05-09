@@ -17,6 +17,8 @@
 
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#define SCALE [UIScreen mainScreen].scale
+
 #define MAX_LENGTH MAX(WIDTH, HEIGHT)
 
 #define CENTER_X WIDTH/2
