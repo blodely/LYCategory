@@ -5,6 +5,15 @@ The categories.
 ## Installation
 
 #### Cocoapods
+
+use it from official trunk:
+
+```sh
+pod 'LYCategory'
+```
+
+#### Alternative
+
 Just put this↓ in your Podfile, then run 'pod install'.
 
 ~~~ruby
