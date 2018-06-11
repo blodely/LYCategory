@@ -27,7 +27,7 @@
 
 // MARK: - OS VERSION
 
-#define iOS8 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 9.0) )
+// USER OS_AVAILABLE
 
 #define iOS7 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) )
 
