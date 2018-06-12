@@ -39,12 +39,15 @@
 
 #define iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
+#define iPod ( [[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"] )
+
+// MARK: PYSC SCREEN SIZE
+
 #define iPhone5 ( iPhone && ( fabs( (double)HEIGHT - (double)568 ) < DBL_EPSILON ) )
 
 #define iPhone6 ( iPhone && MAX_LENGTH == 667.0 )
 
 #define iPhone6P ( iPhone && MAX_LENGTH == 736.0 )
 
-#define iPod ( [[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"] )
 
 #endif
