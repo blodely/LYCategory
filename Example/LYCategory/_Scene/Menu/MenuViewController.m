@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "DateViewController.h"
 #import "TextViewController.h"
+#import "InterfaceViewController.h"
 #import "LYCategory.h"
 
 @interface MenuViewController () <UITableViewDataSource, UITableViewDelegate> {
@@ -105,6 +106,9 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 		} break;
 		case 1: {
 			[self.navigationController pushViewController:[[TextViewController alloc] init] animated:YES];
+		} break;
+		case 2: {
+			[self.navigationController pushViewController:[[InterfaceViewController alloc] init] animated:YES];
 		} break;
 		case 3: {
 			[UIAlertController showAlertFromView:self withTitle:@"test" andMessage:@"test message" cancelButtonTitle:@"c a n c e l" confirmButtonTitle:@"c o n f i r m" confirmAction:^{

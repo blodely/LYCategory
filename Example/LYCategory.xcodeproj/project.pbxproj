@@ -28,6 +28,8 @@
 		B6320D461DC0AF180011A79A /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6320D3E1DC0AF180011A79A /* MenuViewController.xib */; };
 		B6320D471DC0AF180011A79A /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6320D411DC0AF180011A79A /* TextViewController.m */; };
 		B6320D481DC0AF180011A79A /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6320D421DC0AF180011A79A /* TextViewController.xib */; };
+		FC196D0520EA140F0069F709 /* InterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC196D0320EA140F0069F709 /* InterfaceViewController.m */; };
+		FC196D0620EA140F0069F709 /* InterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC196D0420EA140F0069F709 /* InterfaceViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,9 @@
 		B6320D421DC0AF180011A79A /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		D2792FAE4EDD636CCB63CA30 /* Pods-LYCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCategory_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCategory_Example/Pods-LYCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E2089F81FD6B415EB96D89E8 /* LYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYCategory.podspec; path = ../LYCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FC196D0220EA140F0069F709 /* InterfaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceViewController.h; sourceTree = "<group>"; };
+		FC196D0320EA140F0069F709 /* InterfaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceViewController.m; sourceTree = "<group>"; };
+		FC196D0420EA140F0069F709 /* InterfaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterfaceViewController.xib; sourceTree = "<group>"; };
 		FC614B30209AC1210082FDE7 /* push_repo_lyspecs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = push_repo_lyspecs.sh; path = ../push_repo_lyspecs.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +206,7 @@
 				B6320D371DC0AF180011A79A /* Date */,
 				B6320D3B1DC0AF180011A79A /* Menu */,
 				B6320D3F1DC0AF180011A79A /* Text */,
+				FC196D0120EA13FF0069F709 /* UI */,
 			);
 			path = _Scene;
 			sourceTree = "<group>";
@@ -244,6 +250,16 @@
 				2D314EA1270B71A8E5ED2392 /* Pods-LYCategory_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC196D0120EA13FF0069F709 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FC196D0220EA140F0069F709 /* InterfaceViewController.h */,
+				FC196D0320EA140F0069F709 /* InterfaceViewController.m */,
+				FC196D0420EA140F0069F709 /* InterfaceViewController.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +310,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LY;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "骆昱";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -331,6 +347,7 @@
 				B6320D351DC0AECB0011A79A /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				B6320D441DC0AF180011A79A /* DateViewController.xib in Resources */,
+				FC196D0620EA140F0069F709 /* InterfaceViewController.xib in Resources */,
 				B6320D481DC0AF180011A79A /* TextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC196D0520EA140F0069F709 /* InterfaceViewController.m in Sources */,
 				B6320D431DC0AF180011A79A /* DateViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LYAppDelegate.m in Sources */,
 				B6320D471DC0AF180011A79A /* TextViewController.m in Sources */,
@@ -461,14 +479,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -506,14 +532,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
