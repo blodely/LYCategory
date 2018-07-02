@@ -65,6 +65,7 @@
 #import <LYCategory/UIColor+Speed.h>
 #import <LYCategory/UINavigationBar+Fix.h>
 #import <LYCategory/UIAlertController+Speed.h>
+#import <LYCategory/UIView+Speed.h>
 
 #import <LYCategory/CLLocation+Speed.h>
 
