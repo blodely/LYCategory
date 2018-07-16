@@ -21,25 +21,6 @@ Just put this↓ in your Podfile, then run 'pod install'.
 pod 'LYCategory', :git=>'https://github.com/blodely/LYCategory.git'
 ~~~
 
-Or
-
-Have custom pod specs installed
-
-~~~shell
-pod repo add LYSpecs https://github.com/blodely/LYSpecs.git
-~~~
-
-then, add this↓ in your Podfile, then run 'pod install'.
-
-~~~ruby
-# LYCategory
-pod 'LYCategory', '~> 1.2.5'
-~~~
-
-#### Git submodule
-
-Use command `git submodule`.
-
 #### Files
 
 Or you can just download and unzip the file, put them in your project.
