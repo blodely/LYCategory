@@ -2,7 +2,7 @@
 
 The categories.
 
-## Installation
+### Installation
 
 #### Cocoapods
 
@@ -44,7 +44,7 @@ Or you can just download and unzip the file, put them in your project.
 [@"13986210000" isPhoneNumber];
 // YES
 
-[@"139-8621-0000" phoneNumber];
+[@"139-8621-3146" phoneNumber];
 // @"13986213146"
 
 // Or you can trim space charactor:
@@ -128,5 +128,13 @@ To take view snapshot, use `-imageShot` method.
 
 To shrink image size down, use `-resize:` method.
 
--
+<br>
 and etc.
+
+### Author
+
+骆昱(Luo Yu)
+
+Email: [indie.luo@gmail.com](mailto:indie.luo@gmail.com)
+
+<br><br><br>
