@@ -28,6 +28,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CGBase.h>
 
 FOUNDATION_EXPORT CGFloat const ANIMATE;
 
