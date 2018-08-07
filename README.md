@@ -26,7 +26,7 @@ pod 'LYCategory', :git=>'https://github.com/blodely/LYCategory.git'
 
 Or you can just download and unzip the file, put them in your project.
 
-## features
+### features
 
 #### Foundation
 
