@@ -82,6 +82,7 @@
 		FC196D0220EA140F0069F709 /* InterfaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceViewController.h; sourceTree = "<group>"; };
 		FC196D0320EA140F0069F709 /* InterfaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceViewController.m; sourceTree = "<group>"; };
 		FC196D0420EA140F0069F709 /* InterfaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterfaceViewController.xib; sourceTree = "<group>"; };
+		FC237AE4211D776900899E92 /* push_to_trunk.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = push_to_trunk.sh; path = ../push_to_trunk.sh; sourceTree = "<group>"; };
 		FC614B30209AC1210082FDE7 /* push_repo_lyspecs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = push_repo_lyspecs.sh; path = ../push_repo_lyspecs.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +197,7 @@
 				4F7AF405F10CC0970F9AB98D /* README.md */,
 				5A9F3F857833C443F3EA471E /* LICENSE */,
 				FC614B30209AC1210082FDE7 /* push_repo_lyspecs.sh */,
+				FC237AE4211D776900899E92 /* push_to_trunk.sh */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
