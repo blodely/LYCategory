@@ -37,10 +37,20 @@
 
 - (BOOL)isEqualToString:(NSString *)aString;
 
+/**
+ get length of the object as string
+
+ @return length
+ */
 - (NSUInteger)length;
 
 - (NSString *)string;
 
+/**
+ number in object is not 0 means it's "real"
+
+ @return number with value not 0
+ */
 - (BOOL)isReal;
 
 @end

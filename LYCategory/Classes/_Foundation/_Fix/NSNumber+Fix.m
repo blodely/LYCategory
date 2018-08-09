@@ -44,7 +44,7 @@
 }
 
 - (NSUInteger)length {
-	return 0;
+	return [[NSString stringWithFormat:@"%@", self] length];
 }
 
 - (NSString *)string {
