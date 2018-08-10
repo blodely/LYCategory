@@ -32,7 +32,8 @@
 @interface NSString (Date)
 
 /**
- 字符串转时间对象
+ 字符串转时间对象.
+ Convert string object to date object.
 
  @param fmtString 转换格式
  @return 时间对象结果
@@ -40,7 +41,8 @@
 - (NSDate *)dateWithFormat:(NSString *)fmtString;
 
 /**
- 字符串转换时间对象
+ 字符串转换时间对象.
+ Convert date object to string object.
 
  @param fmtString 转换格式
  @param timezoneName 时区标识符

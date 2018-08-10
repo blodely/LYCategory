@@ -33,7 +33,11 @@
 
 + (BOOL)isFolderExistInDocuments:(NSString *)folderName;
 
-// CHECK AND CREATE
+/**
+ check exist and create folder
+
+ @param folderName folder name to create
+ */
 + (void)createFolderIfNotExistInDocuments:(NSString *)folderName;
 
 @end
