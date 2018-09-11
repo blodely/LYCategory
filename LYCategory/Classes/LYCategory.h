@@ -81,6 +81,7 @@
 #import <LYCategory/UIView+Screenshot.h>
 #import <LYCategory/UIImage+Scale.h>
 #import <LYCategory/UIImage+Filter.h>
+#import <LYCategory/UIImage+Speed.h>
 #import <LYCategory/UIView+Animate.h>
 #import <LYCategory/UIColor+Speed.h>
 #import <LYCategory/UINavigationBar+Fix.h>
