@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0770512147965700D8503C /* UIImage+Speed.h in Headers */ = {isa = PBXBuildFile; fileRef = FC07704F2147965700D8503C /* UIImage+Speed.h */; };
+		FC0770522147965700D8503C /* UIImage+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0770502147965700D8503C /* UIImage+Speed.m */; };
 		FC354B152117E0E5009EBFCF /* LYCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = FC354B132117E0E5009EBFCF /* LYCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC354B7F2117E146009EBFCF /* UIView+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = FC354B1E2117E146009EBFCF /* UIView+Speed.m */; };
 		FC354B802117E146009EBFCF /* UIImage+Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = FC354B1F2117E146009EBFCF /* UIImage+Filter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,6 +98,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC07704F2147965700D8503C /* UIImage+Speed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Speed.h"; sourceTree = "<group>"; };
+		FC0770502147965700D8503C /* UIImage+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Speed.m"; sourceTree = "<group>"; };
 		FC354B102117E0E5009EBFCF /* LYCategory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LYCategory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC354B132117E0E5009EBFCF /* LYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYCategory.h; sourceTree = "<group>"; };
 		FC354B142117E0E5009EBFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -226,11 +230,11 @@
 		FC354B1B2117E146009EBFCF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FC354B1D2117E146009EBFCF /* _UIKit */,
-				FC354B352117E146009EBFCF /* _Foundation */,
-				FC354B762117E146009EBFCF /* _Const */,
 				FC354B792117E146009EBFCF /* _Cocoa */,
+				FC354B762117E146009EBFCF /* _Const */,
 				FC354B7B2117E146009EBFCF /* _CoreLocation */,
+				FC354B352117E146009EBFCF /* _Foundation */,
+				FC354B1D2117E146009EBFCF /* _UIKit */,
 			);
 			name = Classes;
 			path = ../../LYCategory/Classes;
@@ -239,29 +243,31 @@
 		FC354B1D2117E146009EBFCF /* _UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				FC354B1E2117E146009EBFCF /* UIView+Speed.m */,
-				FC354B1F2117E146009EBFCF /* UIImage+Filter.h */,
-				FC354B202117E146009EBFCF /* UIImage+Scale.h */,
-				FC354B212117E146009EBFCF /* UIView+Animate.m */,
-				FC354B222117E146009EBFCF /* UINavigationBar+Fix.h */,
-				FC354B232117E146009EBFCF /* UIAlertController+Speed.h */,
-				FC354B242117E146009EBFCF /* UIColor+Speed.m */,
-				FC354B252117E146009EBFCF /* UIView+Screenshot.h */,
-				FC354B262117E146009EBFCF /* UILabel+Extra.h */,
-				FC354B272117E146009EBFCF /* UITextView+Input.h */,
-				FC354B282117E146009EBFCF /* UITextField+Input.m */,
-				FC354B292117E146009EBFCF /* UIImage+Filter.m */,
-				FC354B2A2117E146009EBFCF /* UIView+Speed.h */,
-				FC354B2B2117E146009EBFCF /* UIView+Animate.h */,
 				FC354B2C2117E146009EBFCF /* MacroIOS.h */,
-				FC354B2D2117E146009EBFCF /* UIImage+Scale.m */,
-				FC354B2E2117E146009EBFCF /* UIColor+Speed.h */,
+				FC354B232117E146009EBFCF /* UIAlertController+Speed.h */,
 				FC354B2F2117E146009EBFCF /* UIAlertController+Speed.m */,
+				FC354B2E2117E146009EBFCF /* UIColor+Speed.h */,
+				FC354B242117E146009EBFCF /* UIColor+Speed.m */,
+				FC354B1F2117E146009EBFCF /* UIImage+Filter.h */,
+				FC354B292117E146009EBFCF /* UIImage+Filter.m */,
+				FC354B202117E146009EBFCF /* UIImage+Scale.h */,
+				FC354B2D2117E146009EBFCF /* UIImage+Scale.m */,
+				FC07704F2147965700D8503C /* UIImage+Speed.h */,
+				FC0770502147965700D8503C /* UIImage+Speed.m */,
+				FC354B262117E146009EBFCF /* UILabel+Extra.h */,
+				FC354B332117E146009EBFCF /* UILabel+Extra.m */,
+				FC354B222117E146009EBFCF /* UINavigationBar+Fix.h */,
 				FC354B302117E146009EBFCF /* UINavigationBar+Fix.m */,
 				FC354B312117E146009EBFCF /* UITextField+Input.h */,
+				FC354B282117E146009EBFCF /* UITextField+Input.m */,
+				FC354B272117E146009EBFCF /* UITextView+Input.h */,
 				FC354B322117E146009EBFCF /* UITextView+Input.m */,
-				FC354B332117E146009EBFCF /* UILabel+Extra.m */,
+				FC354B2B2117E146009EBFCF /* UIView+Animate.h */,
+				FC354B212117E146009EBFCF /* UIView+Animate.m */,
+				FC354B252117E146009EBFCF /* UIView+Screenshot.h */,
 				FC354B342117E146009EBFCF /* UIView+Screenshot.m */,
+				FC354B2A2117E146009EBFCF /* UIView+Speed.h */,
+				FC354B1E2117E146009EBFCF /* UIView+Speed.m */,
 			);
 			path = _UIKit;
 			sourceTree = "<group>";
@@ -270,11 +276,11 @@
 			isa = PBXGroup;
 			children = (
 				FC354B362117E146009EBFCF /* _Create */,
-				FC354B432117E146009EBFCF /* _File */,
+				FC354B712117E146009EBFCF /* _Crypto */,
 				FC354B482117E146009EBFCF /* _Date */,
+				FC354B432117E146009EBFCF /* _File */,
 				FC354B4D2117E146009EBFCF /* _Fix */,
 				FC354B5C2117E146009EBFCF /* _Work */,
-				FC354B712117E146009EBFCF /* _Crypto */,
 			);
 			path = _Foundation;
 			sourceTree = "<group>";
@@ -282,17 +288,17 @@
 		FC354B362117E146009EBFCF /* _Create */ = {
 			isa = PBXGroup;
 			children = (
-				FC354B372117E146009EBFCF /* NSString+Date.h */,
-				FC354B382117E146009EBFCF /* NSNumber+Random.h */,
-				FC354B392117E146009EBFCF /* NSURL+Speed.h */,
-				FC354B3A2117E146009EBFCF /* NSNumber+Date.m */,
-				FC354B3B2117E146009EBFCF /* NSURLRequest+Speed.h */,
-				FC354B3C2117E146009EBFCF /* NSString+Random.h */,
-				FC354B3D2117E146009EBFCF /* NSNumber+Random.m */,
-				FC354B3E2117E146009EBFCF /* NSString+Date.m */,
 				FC354B3F2117E146009EBFCF /* NSNumber+Date.h */,
-				FC354B402117E146009EBFCF /* NSURL+Speed.m */,
+				FC354B3A2117E146009EBFCF /* NSNumber+Date.m */,
+				FC354B382117E146009EBFCF /* NSNumber+Random.h */,
+				FC354B3D2117E146009EBFCF /* NSNumber+Random.m */,
+				FC354B372117E146009EBFCF /* NSString+Date.h */,
+				FC354B3E2117E146009EBFCF /* NSString+Date.m */,
+				FC354B3C2117E146009EBFCF /* NSString+Random.h */,
 				FC354B412117E146009EBFCF /* NSString+Random.m */,
+				FC354B392117E146009EBFCF /* NSURL+Speed.h */,
+				FC354B402117E146009EBFCF /* NSURL+Speed.m */,
+				FC354B3B2117E146009EBFCF /* NSURLRequest+Speed.h */,
 				FC354B422117E146009EBFCF /* NSURLRequest+Speed.m */,
 			);
 			path = _Create;
@@ -301,10 +307,10 @@
 		FC354B432117E146009EBFCF /* _File */ = {
 			isa = PBXGroup;
 			children = (
-				FC354B442117E146009EBFCF /* NSFileManager+Size.h */,
 				FC354B452117E146009EBFCF /* NSFileManager+IOS.h */,
-				FC354B462117E146009EBFCF /* NSFileManager+Size.m */,
 				FC354B472117E146009EBFCF /* NSFileManager+IOS.m */,
+				FC354B442117E146009EBFCF /* NSFileManager+Size.h */,
+				FC354B462117E146009EBFCF /* NSFileManager+Size.m */,
 			);
 			path = _File;
 			sourceTree = "<group>";
@@ -312,9 +318,9 @@
 		FC354B482117E146009EBFCF /* _Date */ = {
 			isa = PBXGroup;
 			children = (
+				FC354B4B2117E146009EBFCF /* NSDate+Formatter.h */,
 				FC354B492117E146009EBFCF /* NSDate+Formatter.m */,
 				FC354B4A2117E146009EBFCF /* NSDate+Operator.h */,
-				FC354B4B2117E146009EBFCF /* NSDate+Formatter.h */,
 				FC354B4C2117E146009EBFCF /* NSDate+Operator.m */,
 			);
 			path = _Date;
@@ -324,19 +330,19 @@
 			isa = PBXGroup;
 			children = (
 				FC354B4E2117E146009EBFCF /* NSArray+Fix.h */,
-				FC354B4F2117E146009EBFCF /* NSMutableArray+Fix.m */,
-				FC354B502117E146009EBFCF /* NSMutableDictionary+Fix.h */,
-				FC354B512117E146009EBFCF /* NSNumber+Fix.h */,
-				FC354B522117E146009EBFCF /* NSString+Fix.m */,
-				FC354B532117E146009EBFCF /* NSNull+Fix.m */,
+				FC354B562117E146009EBFCF /* NSArray+Fix.m */,
+				FC354B592117E146009EBFCF /* NSDictionary+Fix.h */,
 				FC354B542117E146009EBFCF /* NSDictionary+Fix.m */,
 				FC354B552117E146009EBFCF /* NSMutableArray+Fix.h */,
-				FC354B562117E146009EBFCF /* NSArray+Fix.m */,
-				FC354B572117E146009EBFCF /* NSNumber+Fix.m */,
+				FC354B4F2117E146009EBFCF /* NSMutableArray+Fix.m */,
+				FC354B502117E146009EBFCF /* NSMutableDictionary+Fix.h */,
 				FC354B582117E146009EBFCF /* NSMutableDictionary+Fix.m */,
-				FC354B592117E146009EBFCF /* NSDictionary+Fix.h */,
 				FC354B5A2117E146009EBFCF /* NSNull+Fix.h */,
+				FC354B532117E146009EBFCF /* NSNull+Fix.m */,
+				FC354B512117E146009EBFCF /* NSNumber+Fix.h */,
+				FC354B572117E146009EBFCF /* NSNumber+Fix.m */,
 				FC354B5B2117E146009EBFCF /* NSString+Fix.h */,
+				FC354B522117E146009EBFCF /* NSString+Fix.m */,
 			);
 			path = _Fix;
 			sourceTree = "<group>";
@@ -344,26 +350,26 @@
 		FC354B5C2117E146009EBFCF /* _Work */ = {
 			isa = PBXGroup;
 			children = (
-				FC354B5D2117E146009EBFCF /* NSMutableArray+Operator.m */,
-				FC354B5E2117E146009EBFCF /* NSNumber+Distance.m */,
-				FC354B5F2117E146009EBFCF /* NSString+Speed.h */,
+				FC354B632117E146009EBFCF /* NSArray+Operator.h */,
+				FC354B6D2117E146009EBFCF /* NSArray+Operator.m */,
 				FC354B602117E146009EBFCF /* NSLayoutConstraint+APixel.h */,
+				FC354B6A2117E146009EBFCF /* NSLayoutConstraint+APixel.m */,
+				FC354B672117E146009EBFCF /* NSMutableArray+Operator.h */,
+				FC354B5D2117E146009EBFCF /* NSMutableArray+Operator.m */,
+				FC354B6C2117E146009EBFCF /* NSNumber+Distance.h */,
+				FC354B5E2117E146009EBFCF /* NSNumber+Distance.m */,
+				FC354B692117E146009EBFCF /* NSString+Convert.h */,
 				FC354B612117E146009EBFCF /* NSString+Convert.m */,
 				FC354B622117E146009EBFCF /* NSString+Input.h */,
-				FC354B632117E146009EBFCF /* NSArray+Operator.h */,
-				FC354B642117E146009EBFCF /* NSString+Search.h */,
-				FC354B652117E146009EBFCF /* NSString+Size.h */,
-				FC354B662117E146009EBFCF /* NSUserDefaults+Speed.h */,
-				FC354B672117E146009EBFCF /* NSMutableArray+Operator.h */,
 				FC354B682117E146009EBFCF /* NSString+Input.m */,
-				FC354B692117E146009EBFCF /* NSString+Convert.h */,
-				FC354B6A2117E146009EBFCF /* NSLayoutConstraint+APixel.m */,
-				FC354B6B2117E146009EBFCF /* NSString+Speed.m */,
-				FC354B6C2117E146009EBFCF /* NSNumber+Distance.h */,
-				FC354B6D2117E146009EBFCF /* NSArray+Operator.m */,
-				FC354B6E2117E146009EBFCF /* NSUserDefaults+Speed.m */,
-				FC354B6F2117E146009EBFCF /* NSString+Size.m */,
+				FC354B642117E146009EBFCF /* NSString+Search.h */,
 				FC354B702117E146009EBFCF /* NSString+Search.m */,
+				FC354B652117E146009EBFCF /* NSString+Size.h */,
+				FC354B6F2117E146009EBFCF /* NSString+Size.m */,
+				FC354B5F2117E146009EBFCF /* NSString+Speed.h */,
+				FC354B6B2117E146009EBFCF /* NSString+Speed.m */,
+				FC354B662117E146009EBFCF /* NSUserDefaults+Speed.h */,
+				FC354B6E2117E146009EBFCF /* NSUserDefaults+Speed.m */,
 			);
 			path = _Work;
 			sourceTree = "<group>";
@@ -371,10 +377,10 @@
 		FC354B712117E146009EBFCF /* _Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				FC354B722117E146009EBFCF /* NSString+Encrypt.m */,
 				FC354B732117E146009EBFCF /* NSData+Encrypt.h */,
-				FC354B742117E146009EBFCF /* NSString+Encrypt.h */,
 				FC354B752117E146009EBFCF /* NSData+Encrypt.m */,
+				FC354B742117E146009EBFCF /* NSString+Encrypt.h */,
+				FC354B722117E146009EBFCF /* NSString+Encrypt.m */,
 			);
 			path = _Crypto;
 			sourceTree = "<group>";
@@ -382,8 +388,8 @@
 		FC354B762117E146009EBFCF /* _Const */ = {
 			isa = PBXGroup;
 			children = (
-				FC354B772117E146009EBFCF /* LYCategoryConstants.m */,
 				FC354B782117E146009EBFCF /* LYCategoryConstants.h */,
+				FC354B772117E146009EBFCF /* LYCategoryConstants.m */,
 			);
 			path = _Const;
 			sourceTree = "<group>";
@@ -398,8 +404,8 @@
 		FC354B7B2117E146009EBFCF /* _CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				FC354B7C2117E146009EBFCF /* CLLocation+Speed.m */,
 				FC354B7D2117E146009EBFCF /* CLLocation+Speed.h */,
+				FC354B7C2117E146009EBFCF /* CLLocation+Speed.m */,
 			);
 			path = _CoreLocation;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				FC354B982117E146009EBFCF /* NSURL+Speed.h in Headers */,
 				FC354BCE2117E146009EBFCF /* NSString+Encrypt.h in Headers */,
 				FC354BC72117E146009EBFCF /* NSNumber+Distance.h in Headers */,
+				FC0770512147965700D8503C /* UIImage+Speed.h in Headers */,
 				FC354B972117E146009EBFCF /* NSNumber+Random.h in Headers */,
 				FC354B9B2117E146009EBFCF /* NSString+Random.h in Headers */,
 				FC354BCD2117E146009EBFCF /* NSData+Encrypt.h in Headers */,
@@ -535,6 +542,7 @@
 				FC354BC82117E146009EBFCF /* NSArray+Operator.m in Sources */,
 				FC354BCB2117E146009EBFCF /* NSString+Search.m in Sources */,
 				FC354BB32117E146009EBFCF /* NSNumber+Fix.m in Sources */,
+				FC0770522147965700D8503C /* UIImage+Speed.m in Sources */,
 				FC354B9C2117E146009EBFCF /* NSNumber+Random.m in Sources */,
 				FC354B8A2117E146009EBFCF /* UIImage+Filter.m in Sources */,
 				FC354B822117E146009EBFCF /* UIView+Animate.m in Sources */,
