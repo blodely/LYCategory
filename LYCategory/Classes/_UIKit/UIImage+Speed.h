@@ -32,4 +32,6 @@
 
 @interface UIImage (Speed)
 
+- (UIColor *)colorAtPixel:(CGPoint)point;
+
 @end

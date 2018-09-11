@@ -31,4 +31,25 @@
 
 @implementation UIImage (Speed)
 
+- (UIColor *)colorAtPixel:(CGPoint)point {
+	
+	CFDataRef pixelData = CGDataProviderCopyData(CGImageGetDataProvider(self.CGImage));
+	const UInt8* data = CFDataGetBytePtr(pixelData);
+	
+	if (data == NULL) {
+		return [UIColor clearColor];
+	}
+	
+	int pixeldet = ((self.size.width  * point.y) + point.x ) * 4;
+	
+	UInt8 red = data[pixeldet];
+	UInt8 green = data[(pixeldet + 1)];
+	UInt8 blue = data[pixeldet + 2];
+	UInt8 alpha = data[pixeldet + 3];
+	
+	CFRelease(pixelData);
+	
+	return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:alpha/255.0f];;
+}
+
 @end
