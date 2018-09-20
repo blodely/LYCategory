@@ -43,4 +43,6 @@
 
 - (NSString *)extractGenderFromIDNumber;
 
++ (NSString *)numberToChinese:(NSInteger)integer;
+
 @end
