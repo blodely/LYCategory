@@ -103,4 +103,11 @@
 	return @"";
 }
 
++ (NSString *)numberToChinese:(NSInteger)integer {
+	NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
+	fmt.locale = [NSLocale localeWithLocaleIdentifier:@"zh_CN"];
+	fmt.numberStyle = NSNumberFormatterSpellOutStyle;
+	return [fmt stringFromNumber:@(integer)];
+}
+
 @end
