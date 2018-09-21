@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -84,6 +84,13 @@
                         <action selector="checkMobileNumberButtonPressed:" destination="-1" eventType="touchUpInside" id="2UL-Ag-veG"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSB-Oe-97X">
+                    <rect key="frame" x="131.5" y="198" width="112" height="30"/>
+                    <state key="normal" title="num2zh_CN"/>
+                    <connections>
+                        <action selector="numberToChineseButtonPressed:" destination="-1" eventType="touchUpInside" id="x10-ZW-49b"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -95,13 +102,17 @@
                 <constraint firstAttribute="trailing" secondItem="FOn-VP-v3o" secondAttribute="trailing" constant="10" id="DVZ-Ax-7Be"/>
                 <constraint firstItem="X2l-4b-KMt" firstAttribute="top" secondItem="nC7-zV-ggr" secondAttribute="top" id="Fqn-FF-klr"/>
                 <constraint firstItem="nC7-zV-ggr" firstAttribute="top" secondItem="3qY-CP-3su" secondAttribute="top" id="Glt-Sb-bWt"/>
+                <constraint firstItem="jSB-Oe-97X" firstAttribute="width" secondItem="hhw-Zq-mqK" secondAttribute="width" id="KVm-f0-y4J"/>
                 <constraint firstItem="3qY-CP-3su" firstAttribute="top" secondItem="ofs-3N-Z7Z" secondAttribute="bottom" constant="10" id="M0K-nA-K3L"/>
+                <constraint firstItem="jSB-Oe-97X" firstAttribute="top" secondItem="hhw-Zq-mqK" secondAttribute="top" id="MYu-lB-rhR"/>
                 <constraint firstItem="3qY-CP-3su" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="Mi3-Dp-zcR"/>
+                <constraint firstItem="jSB-Oe-97X" firstAttribute="leading" secondItem="nC7-zV-ggr" secondAttribute="leading" id="SFa-nw-pz6"/>
                 <constraint firstItem="nC7-zV-ggr" firstAttribute="leading" secondItem="3qY-CP-3su" secondAttribute="trailing" constant="10" id="V2C-Be-G5p"/>
                 <constraint firstItem="ofs-3N-Z7Z" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="V9T-cw-8Db"/>
                 <constraint firstItem="hhw-Zq-mqK" firstAttribute="top" secondItem="3qY-CP-3su" secondAttribute="bottom" constant="8" id="Xpl-ig-lIQ"/>
                 <constraint firstItem="nC7-zV-ggr" firstAttribute="width" secondItem="3qY-CP-3su" secondAttribute="width" id="dbK-kJ-LBN"/>
                 <constraint firstItem="X2l-4b-KMt" firstAttribute="leading" secondItem="nC7-zV-ggr" secondAttribute="trailing" constant="10" id="fVp-Xp-DCy"/>
+                <constraint firstItem="jSB-Oe-97X" firstAttribute="height" secondItem="hhw-Zq-mqK" secondAttribute="height" id="jWv-WC-adf"/>
                 <constraint firstItem="FOn-VP-v3o" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="sI6-sB-u5y"/>
                 <constraint firstItem="hhw-Zq-mqK" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="16" id="tE4-yS-QbB"/>
                 <constraint firstItem="hhw-Zq-mqK" firstAttribute="width" secondItem="3qY-CP-3su" secondAttribute="width" id="yZc-iI-0vE"/>

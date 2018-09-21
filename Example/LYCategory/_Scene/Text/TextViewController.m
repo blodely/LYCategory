@@ -39,6 +39,10 @@
 	lblInput.text = [NSString stringWithFormat:@"%@ is %@", tfInput.text, [tfInput.text isPhoneNumber] ? @"valid" : @"invalid"];
 }
 
+- (IBAction)numberToChineseButtonPressed:(id)sender {
+	lblInput.text = [NSString numberToChinese:tfInput.text.integerValue];
+}
+
 #pragma mark - INIT
 
 - (id)init {
