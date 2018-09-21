@@ -81,6 +81,10 @@ Or you can just download and unzip the file, put them in your project.
 -dateWithFormat:andTimezone:
 -dateWithFormat:dateStyle:
 
+// Convert Arabic number to Chinese localized string
+[NSString numberToChinese:11];
+// 十一
+
 ~~~
 
 #### NSArray
