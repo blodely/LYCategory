@@ -52,4 +52,8 @@
 	return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:alpha/255.0f];;
 }
 
++ (instancetype)originalNamed:(NSString *)imageName {
+	return [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
 @end

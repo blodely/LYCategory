@@ -34,4 +34,6 @@
 
 - (UIColor *)colorAtPixel:(CGPoint)point;
 
++ (instancetype)originalNamed:(NSString *)imageName;
+
 @end
