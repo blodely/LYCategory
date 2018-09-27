@@ -44,6 +44,13 @@
 	
 	[btnItem2 borderWithWidth:1 andColor:sampleColor];
 	[btnItem2 roundedCornerRadius:6];
+	
+	{
+		UIImageView *imageview = [[UIImageView alloc] init];
+		imageview.frame = (CGRect){btnItem2.frame.origin.x, CGRectGetMaxY(btnItem2.frame) + 15, 100, 100};
+		[self.view addSubview:imageview];
+		imageview.image = [UIImage templateNamed:@"test-image"];
+	}
 }
 
 // MARK: MEMORY MANAGEMENT
