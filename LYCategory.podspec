@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'LYCategory'
-	s.version          = '1.2.33'
+	s.version          = '1.2.34'
 	s.summary          = 'The categories.'
 
 	s.description      = <<-DESC
@@ -14,6 +14,7 @@ The categories for Objective-C.
 1.2.24 distance
 1.2.25 bring back object getter
 1.2.26 color
+1.2.34 image api
 					   DESC
 
 	s.homepage         = 'https://github.com/blodely/LYCategory'
