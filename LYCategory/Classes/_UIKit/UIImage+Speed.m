@@ -56,4 +56,8 @@
 	return [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
++ (instancetype)templateNamed:(NSString *)imageName {
+	return [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+}
+
 @end

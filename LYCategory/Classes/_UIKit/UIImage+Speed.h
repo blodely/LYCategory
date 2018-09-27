@@ -36,4 +36,6 @@
 
 + (instancetype)originalNamed:(NSString *)imageName;
 
++ (instancetype)templateNamed:(NSString *)imageName;
+
 @end
