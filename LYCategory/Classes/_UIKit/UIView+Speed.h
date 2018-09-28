@@ -37,4 +37,6 @@
 
 - (void)border1Px;
 
+- (void)shadowWithRadius:(CGFloat)radius opacity:(CGFloat)opacity;
+
 @end

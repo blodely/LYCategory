@@ -47,4 +47,12 @@
 	self.layer.borderWidth = 1.0 / [UIScreen mainScreen].scale;
 }
 
+- (void)shadowWithRadius:(CGFloat)radius opacity:(CGFloat)opacity {
+	self.layer.masksToBounds = NO;
+	self.layer.shadowRadius = radius;
+	self.layer.shadowColor = [UIColor blackColor].CGColor;
+	self.layer.shadowOpacity = opacity;
+	self.layer.shadowOffset = CGSizeZero;
+}
+
 @end
