@@ -25,6 +25,9 @@
 
 #define CENTER_P CGPointMake(HEIGHT/2, CENTER_X)
 
+// MARK: BLOCKS
+typedef void(^LYCCompletion)(void);
+
 // MARK: - OS VERSION
 
 // USER OS_AVAILABLE
