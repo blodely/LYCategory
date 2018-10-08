@@ -43,6 +43,10 @@
 	lblInput.text = [NSString numberToChinese:tfInput.text.integerValue];
 }
 
+- (IBAction)isPureNumberButtonPressed:(id)sender {
+	lblInput.text = [NSString stringWithFormat:@"%@ is %@number", tfInput.text, [tfInput.text isPureNumber] ? @"pure " : @"not a "];
+}
+
 #pragma mark - INIT
 
 - (id)init {
