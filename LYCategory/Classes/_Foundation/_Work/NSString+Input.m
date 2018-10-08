@@ -171,7 +171,7 @@
 #pragma mark NUMBER
 
 - (BOOL)isPureNumber {
-	return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"\\d"] evaluateWithObject:self];
+	return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"\\d*"] evaluateWithObject:self];
 }
 
 #pragma mark EMOJI
