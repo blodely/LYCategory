@@ -55,7 +55,7 @@
 	
 }
 
-- (BOOL)isOneOfThem:(NSArray *)strings {
+- (BOOL)isOneOfThem:(NSArray<NSString *> *)strings {
 	
 	if (strings.count == 0) {
 		return NO;

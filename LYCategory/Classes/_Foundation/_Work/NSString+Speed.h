@@ -33,7 +33,7 @@
 
 - (BOOL)isEqualWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
 
-- (BOOL)isOneOfThem:(NSArray *)strings;
+- (BOOL)isOneOfThem:(NSArray<NSString *> *)strings;
 
 - (NSString *)removeHTMLtags;
 
