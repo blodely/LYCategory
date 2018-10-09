@@ -77,7 +77,12 @@
 }
 
 - (NSString *)removeHTMLtags {
+	return [[[NSAttributedString alloc] initWithData:[self dataUsingEncoding:NSUnicodeStringEncoding]
+			options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType,}
+			documentAttributes:nil
+			error:NULL] string];
 	
+/*
 	NSString *retstr = [NSString stringWithString:self];
 	
 	// BR
@@ -90,6 +95,7 @@
 	}
 	
 	return retstr;
+*/
 }
 
 @end
