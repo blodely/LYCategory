@@ -33,6 +33,7 @@
 
 @implementation NSMutableArray (Fix)
 
+/*
 - (void)nullMutableArrayHandler {
 	
 	const id nul = [NSNull null];
@@ -68,5 +69,6 @@
 		
 	}
 }
+*/
 
 @end

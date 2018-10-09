@@ -71,6 +71,7 @@
 	return [self count];
 }
 
+/*
 - (NSArray *)nullArrayHandler {
 	
 	const id nul = [NSNull null];
@@ -114,6 +115,7 @@
 	
 	return [NSArray arrayWithArray:mutSelf];
 }
+*/
 
 - (BOOL)isReal {
 	return self.count > 0;

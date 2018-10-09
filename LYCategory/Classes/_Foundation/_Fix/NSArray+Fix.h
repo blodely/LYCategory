@@ -49,7 +49,7 @@
 
 - (NSUInteger)length;
 
-- (NSArray *)nullArrayHandler;
+//- (NSArray *)nullArrayHandler;
 
 - (BOOL)isReal;
 

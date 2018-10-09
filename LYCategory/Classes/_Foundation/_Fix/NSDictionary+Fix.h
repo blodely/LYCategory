@@ -61,7 +61,7 @@
 
 - (NSString *)stringInKeys:(NSArray *)keys;
 
-- (NSDictionary *)nullDictionaryHandler;
+//- (NSDictionary *)nullDictionaryHandler;
 
 - (BOOL)isReal;
 

@@ -33,6 +33,7 @@
 
 @implementation NSMutableDictionary (Fix)
 
+/*
 - (void)nullMutableDictionaryHandler {
 	
 	const id nul = [NSNull null];
@@ -67,5 +68,6 @@
 	
 	// MODIFIED
 }
+*/
 
 @end
