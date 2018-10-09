@@ -28,14 +28,6 @@
 // MARK: BLOCKS
 typedef void(^LYCCompletion)(void);
 
-// MARK: - OS VERSION
-
-// USER OS_AVAILABLE
-
-#define iOS7 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) )
-
-#define iOS6 ( ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0) )
-
 // MARK: - MODEL DETECTION
 
 #define iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
