@@ -34,6 +34,9 @@ FOUNDATION_EXPORT CGFloat const ANIMATE;
 
 FOUNDATION_EXPORT NSString *const TZShanghai;
 
+
+typedef void(^LYCString)(NSString *);
+
 @interface LYCategoryConstants : NSObject
 
 @end
