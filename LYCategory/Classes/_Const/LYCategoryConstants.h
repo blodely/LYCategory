@@ -34,7 +34,8 @@ FOUNDATION_EXPORT CGFloat const ANIMATE;
 
 FOUNDATION_EXPORT NSString *const TZShanghai;
 
-
+// MARK: BLOCKS
+typedef void(^LYCCompletion)(void);
 typedef void(^LYCString)(NSString *);
 
 @interface LYCategoryConstants : NSObject

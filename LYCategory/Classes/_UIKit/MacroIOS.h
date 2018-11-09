@@ -25,9 +25,6 @@
 
 #define CENTER_P CGPointMake(HEIGHT/2, CENTER_X)
 
-// MARK: BLOCKS
-typedef void(^LYCCompletion)(void);
-
 // MARK: - MODEL DETECTION
 
 #define iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
