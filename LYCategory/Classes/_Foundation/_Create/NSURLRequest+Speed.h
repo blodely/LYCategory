@@ -31,6 +31,6 @@
 
 @interface NSURLRequest (Speed)
 
-+ (NSURLRequest *)requestWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
++ (instancetype)requestWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
 
 @end

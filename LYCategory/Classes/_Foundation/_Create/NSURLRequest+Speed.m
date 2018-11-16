@@ -31,7 +31,7 @@
 
 @implementation NSURLRequest (Speed)
 
-+ (NSURLRequest *)requestWithFormat:(NSString *)format, ... {
++ (instancetype)requestWithFormat:(NSString *)format, ... {
 	va_list args;
 	id ret;
 	
@@ -45,7 +45,7 @@
 	va_end(args);
 	
 	if (ret != nil) {
-		return [NSURLRequest requestWithURL:[NSURL URLWithString:ret]];
+		return [[self class] requestWithURL:[NSURL URLWithString:ret]];
 	}
 	
 	return ret;
