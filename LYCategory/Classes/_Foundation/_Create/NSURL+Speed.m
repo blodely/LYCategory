@@ -31,7 +31,7 @@
 
 @implementation NSURL (Speed)
 
-+ (NSURL *)URLWithFormat:(NSString *)format, ... {
++ (instancetype)URLWithFormat:(NSString *)format, ... {
 	va_list args;
 	id ret;
 	
@@ -45,7 +45,7 @@
 	va_end(args);
 	
 	if (ret != nil) {
-		return [NSURL URLWithString:ret];
+		return [[self class] URLWithString:ret];
 	}
 	
 	return nil;

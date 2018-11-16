@@ -31,6 +31,6 @@
 
 @interface NSURL (Speed)
 
-+ (NSURL *)URLWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
++ (instancetype)URLWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
 
 @end
