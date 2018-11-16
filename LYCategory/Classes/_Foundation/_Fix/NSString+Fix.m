@@ -43,4 +43,8 @@
 	return ![self isEqualToString:@"0"] && ![self isEqualToString:@"<NSNull>"];
 }
 
+- (NSString *)string {
+	return self;
+}
+
 @end

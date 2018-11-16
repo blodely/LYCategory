@@ -37,4 +37,6 @@
 
 - (BOOL)isReal;
 
+- (NSString *)string;
+
 @end
