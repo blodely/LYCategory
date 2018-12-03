@@ -2,11 +2,10 @@ platform :ios, '7.0'
 
 use_frameworks!
 
-target 'LYCategory_Example' do
-  pod 'LYCategory', :path => '../'
+target 'demo' do
+	pod 'LYCategory', :path => '../'
 
-  target 'LYCategory_Tests' do
-    inherit! :search_paths
-
-  end
+	target 'LYCategory_Tests' do
+		inherit! :search_paths
+	end
 end

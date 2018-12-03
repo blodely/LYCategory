@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		21D5514E0E96FAE924933F73 /* Pods_LYCategory_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69A664E0B389615FA207A52 /* Pods_LYCategory_Example.framework */; };
 		2F78DC78FE44CE28B85172D0 /* Pods_LYCategory_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90EF107EC5BB9BDBBF9795AF /* Pods_LYCategory_Tests.framework */; };
+		44DD21B703CCBDFB851382AF /* Pods_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EF2E5C7B4DD7228E93A8C3 /* Pods_demo.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		2D314EA1270B71A8E5ED2392 /* Pods-LYCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCategory_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCategory_Tests/Pods-LYCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		37EF2E5C7B4DD7228E93A8C3 /* Pods_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7AF405F10CC0970F9AB98D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5A9F3F857833C443F3EA471E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		713BABDF510CA81E7DA6905B /* Pods-LYCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCategory_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCategory_Example/Pods-LYCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
+		851850AD1178961DE54DF990 /* Pods-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo/Pods-demo.release.xcconfig"; sourceTree = "<group>"; };
 		90EF107EC5BB9BDBBF9795AF /* Pods_LYCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6738C0E2518530D82D8160B /* Pods-LYCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCategory_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCategory_Tests/Pods-LYCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A69A664E0B389615FA207A52 /* Pods_LYCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +80,7 @@
 		B6320D401DC0AF180011A79A /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		B6320D411DC0AF180011A79A /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		B6320D421DC0AF180011A79A /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		CAE6C68FE2360873A826A8D8 /* Pods-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo/Pods-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		D2792FAE4EDD636CCB63CA30 /* Pods-LYCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCategory_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCategory_Example/Pods-LYCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E2089F81FD6B415EB96D89E8 /* LYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYCategory.podspec; path = ../LYCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FC196D0220EA140F0069F709 /* InterfaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceViewController.h; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				21D5514E0E96FAE924933F73 /* Pods_LYCategory_Example.framework in Frameworks */,
+				44DD21B703CCBDFB851382AF /* Pods_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +147,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				A69A664E0B389615FA207A52 /* Pods_LYCategory_Example.framework */,
 				90EF107EC5BB9BDBBF9795AF /* Pods_LYCategory_Tests.framework */,
+				37EF2E5C7B4DD7228E93A8C3 /* Pods_demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,6 +256,8 @@
 				713BABDF510CA81E7DA6905B /* Pods-LYCategory_Example.release.xcconfig */,
 				A6738C0E2518530D82D8160B /* Pods-LYCategory_Tests.debug.xcconfig */,
 				2D314EA1270B71A8E5ED2392 /* Pods-LYCategory_Tests.release.xcconfig */,
+				CAE6C68FE2360873A826A8D8 /* Pods-demo.debug.xcconfig */,
+				851850AD1178961DE54DF990 /* Pods-demo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -394,7 +402,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LYCategory_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-demo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,7 +415,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LYCategory_Example/Pods-LYCategory_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-demo/Pods-demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LYCategory/LYCategory.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -416,7 +424,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYCategory_Example/Pods-LYCategory_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-demo/Pods-demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -574,7 +582,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2792FAE4EDD636CCB63CA30 /* Pods-LYCategory_Example.debug.xcconfig */;
+			baseConfigurationReference = CAE6C68FE2360873A826A8D8 /* Pods-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -590,7 +598,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 713BABDF510CA81E7DA6905B /* Pods-LYCategory_Example.release.xcconfig */;
+			baseConfigurationReference = 851850AD1178961DE54DF990 /* Pods-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
