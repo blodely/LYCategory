@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InterfaceViewController">
             <connections>
                 <outlet property="btnItem2" destination="OkG-5X-x9S" id="aMt-Kr-dLl"/>
+                <outlet property="lblItem3" destination="MsV-Ti-KwC" id="6Kh-NY-0Za"/>
                 <outlet property="vItem0" destination="9w5-sN-1nQ" id="oMc-SZ-bDX"/>
                 <outlet property="vItem1" destination="ndH-E5-IEw" id="rjg-Hy-hxz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -64,9 +65,17 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="button item 2"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label item 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsV-Ti-KwC">
+                    <rect key="frame" x="16" y="210" width="343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="MsV-Ti-KwC" firstAttribute="top" secondItem="OkG-5X-x9S" secondAttribute="bottom" constant="16" id="8x5-uE-2CK"/>
+                <constraint firstItem="MsV-Ti-KwC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="B2Q-Vy-siy"/>
                 <constraint firstItem="9w5-sN-1nQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Big-ks-Tbx"/>
                 <constraint firstAttribute="trailing" secondItem="9w5-sN-1nQ" secondAttribute="trailing" constant="20" id="E9F-uE-n9P"/>
                 <constraint firstItem="OkG-5X-x9S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="LSI-4j-1SP"/>
@@ -74,6 +83,7 @@
                 <constraint firstAttribute="trailing" secondItem="ndH-E5-IEw" secondAttribute="trailing" constant="20" id="PKo-Nu-bc5"/>
                 <constraint firstItem="ndH-E5-IEw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="eYi-cw-hJz"/>
                 <constraint firstItem="OkG-5X-x9S" firstAttribute="top" secondItem="ndH-E5-IEw" secondAttribute="bottom" constant="12" id="nKR-v8-pHc"/>
+                <constraint firstAttribute="trailing" secondItem="MsV-Ti-KwC" secondAttribute="trailing" constant="16" id="nYb-xG-ZjJ"/>
                 <constraint firstItem="9w5-sN-1nQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="qZD-N6-bXG"/>
                 <constraint firstItem="ndH-E5-IEw" firstAttribute="top" secondItem="9w5-sN-1nQ" secondAttribute="bottom" constant="12" id="taM-TE-vXJ"/>
             </constraints>

@@ -4,8 +4,4 @@ use_frameworks!
 
 target 'demo' do
 	pod 'LYCategory', :path => '../'
-
-	target 'LYCategory_Tests' do
-		inherit! :search_paths
-	end
 end

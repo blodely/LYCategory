@@ -1,5 +1,5 @@
 PODS:
-  - LYCategory (1.2.37)
+  - LYCategory (1.2.38)
 
 DEPENDENCIES:
   - LYCategory (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LYCategory: c2bfce601b98b11ec0131753ee269213e44ef95d
+  LYCategory: ff67d438d91af08fb7c779bfe691acbb15db646e
 
-PODFILE CHECKSUM: fd6a34d887ef6b5cd4783d2ded2db5e40a99434e
+PODFILE CHECKSUM: b0498926206fcfb6168f76f3cc681df28efa8231
 
 COCOAPODS: 1.5.3

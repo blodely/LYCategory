@@ -14,6 +14,7 @@
 	__weak IBOutlet UIView *vItem0;
 	__weak IBOutlet UIView *vItem1;
 	__weak IBOutlet UIButton *btnItem2;
+	__weak IBOutlet UILabel *lblItem3;
 }
 
 @end
@@ -45,9 +46,17 @@
 	[btnItem2 borderWithWidth:1 andColor:sampleColor];
 	[btnItem2 roundedCornerRadius:6];
 	
+	if (@available(iOS 11.0, *)) {
+		lblItem3.text = [NSString stringWithFormat:@"Height %@, safe height %@",
+						 @(HEIGHT), @(HEIGHT_SAFE)
+						 ];
+	} else {
+		lblItem3.text = [NSString stringWithFormat:@"Height %@, no safe area (iOS lower than 11.0)", @(HEIGHT)];
+	}
+	
 	{
 		UIImageView *imageview = [[UIImageView alloc] init];
-		imageview.frame = (CGRect){btnItem2.frame.origin.x, CGRectGetMaxY(btnItem2.frame) + 15, 100, 100};
+		imageview.frame = (CGRect){lblItem3.frame.origin.x, CGRectGetMaxY(lblItem3.frame) + 15, 100, 100};
 		[self.view addSubview:imageview];
 		imageview.image = [UIImage templateNamed:@"test-image"];
 	}
