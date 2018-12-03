@@ -13,9 +13,14 @@
 
 #define DELTA7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? 0 : 20)
 
+#define SAFE_TOP UIApplication.sharedApplication.keyWindow.safeAreaInsets.top
+
+#define SAFE_BOTTOM UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom
+
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define HEIGHT_SAFE (HEIGHT - SAFE_TOP - SAFE_BOTTOM)
 
 #define SCALE [UIScreen mainScreen].scale
 
