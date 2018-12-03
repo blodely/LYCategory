@@ -19,7 +19,8 @@ Just put this↓ in your Podfile, then run 'pod install'.
 
 ~~~ruby
 # LYCategory
-pod 'LYCategory', :git=>'https://github.com/blodely/LYCategory.git'
+pod 'LYCategory', :git => 'https://github.com/blodely/LYCategory.git'
+# ↑ BLEEDING EDGE VERSION
 ~~~
 
 #### Files
