@@ -15,6 +15,7 @@
 	__weak IBOutlet UIView *vItem1;
 	__weak IBOutlet UIButton *btnItem2;
 	__weak IBOutlet UILabel *lblItem3;
+	__weak IBOutlet UIImageView *ivScreenshot;
 }
 
 @end
@@ -22,6 +23,11 @@
 @implementation InterfaceViewController
 
 // MARK: - ACTION
+
+- (IBAction)button2Pressed:(id)sender {
+	ivScreenshot.image = [self.view imageShot];
+	UIImageWriteToSavedPhotosAlbum([self.view imageShot], nil, nil, nil);
+}
 
 // MARK: - INIT
 
@@ -60,6 +66,8 @@
 		[self.view addSubview:imageview];
 		imageview.image = [UIImage templateNamed:@"test-image"];
 	}
+	
+	[ivScreenshot border1Px];
 }
 
 // MARK: MEMORY MANAGEMENT

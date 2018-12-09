@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InterfaceViewController">
             <connections>
                 <outlet property="btnItem2" destination="OkG-5X-x9S" id="aMt-Kr-dLl"/>
+                <outlet property="ivScreenshot" destination="bue-h4-ldV" id="T6H-Z4-a6U"/>
                 <outlet property="lblItem3" destination="MsV-Ti-KwC" id="6Kh-NY-0Za"/>
                 <outlet property="vItem0" destination="9w5-sN-1nQ" id="oMc-SZ-bDX"/>
                 <outlet property="vItem1" destination="ndH-E5-IEw" id="rjg-Hy-hxz"/>
@@ -64,6 +65,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <state key="normal" title="button item 2"/>
+                    <connections>
+                        <action selector="button2Pressed:" destination="-1" eventType="touchUpInside" id="tRx-5y-iQD"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label item 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsV-Ti-KwC">
                     <rect key="frame" x="16" y="210" width="343" height="18"/>
@@ -71,6 +75,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bue-h4-ldV">
+                    <rect key="frame" x="195" y="236" width="160" height="160"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bue-h4-ldV" secondAttribute="height" multiplier="1:1" id="ugr-Lo-hxh"/>
+                        <constraint firstAttribute="height" constant="160" id="vTp-NK-2PQ"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -82,11 +94,14 @@
                 <constraint firstAttribute="trailing" secondItem="OkG-5X-x9S" secondAttribute="trailing" constant="20" id="Ohd-iu-ZxO"/>
                 <constraint firstAttribute="trailing" secondItem="ndH-E5-IEw" secondAttribute="trailing" constant="20" id="PKo-Nu-bc5"/>
                 <constraint firstItem="ndH-E5-IEw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="eYi-cw-hJz"/>
+                <constraint firstItem="bue-h4-ldV" firstAttribute="top" secondItem="MsV-Ti-KwC" secondAttribute="bottom" constant="8" id="h2Q-s1-X6Q"/>
                 <constraint firstItem="OkG-5X-x9S" firstAttribute="top" secondItem="ndH-E5-IEw" secondAttribute="bottom" constant="12" id="nKR-v8-pHc"/>
                 <constraint firstAttribute="trailing" secondItem="MsV-Ti-KwC" secondAttribute="trailing" constant="16" id="nYb-xG-ZjJ"/>
                 <constraint firstItem="9w5-sN-1nQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="qZD-N6-bXG"/>
+                <constraint firstAttribute="trailing" secondItem="bue-h4-ldV" secondAttribute="trailing" constant="20" id="qqA-5D-AJQ"/>
                 <constraint firstItem="ndH-E5-IEw" firstAttribute="top" secondItem="9w5-sN-1nQ" secondAttribute="bottom" constant="12" id="taM-TE-vXJ"/>
             </constraints>
+            <point key="canvasLocation" x="132" y="149.77511244377811"/>
         </view>
     </objects>
 </document>

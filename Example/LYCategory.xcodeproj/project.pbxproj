@@ -242,6 +242,11 @@
 				CLASSPREFIX = LY;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "骆昱";
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = K9CJPHW4CP;
+					};
+				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "LYCategory" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -449,6 +454,7 @@
 			baseConfigurationReference = CAE6C68FE2360873A826A8D8 /* Pods-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K9CJPHW4CP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LYCategory/LYCategory-Prefix.pch";
 				INFOPLIST_FILE = "LYCategory/LYCategory-Info.plist";
@@ -465,6 +471,7 @@
 			baseConfigurationReference = 851850AD1178961DE54DF990 /* Pods-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K9CJPHW4CP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LYCategory/LYCategory-Prefix.pch";
 				INFOPLIST_FILE = "LYCategory/LYCategory-Info.plist";
