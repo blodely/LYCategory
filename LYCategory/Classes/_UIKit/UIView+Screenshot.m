@@ -33,7 +33,7 @@
 
 - (UIImage *)imageShot {
 	// SCREENSHOT
-	UIGraphicsBeginImageContext(self.bounds.size);
+	UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, [UIScreen mainScreen].scale);
     [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
