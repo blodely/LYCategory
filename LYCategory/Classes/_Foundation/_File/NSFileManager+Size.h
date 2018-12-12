@@ -31,6 +31,12 @@
 
 @interface NSFileManager (Size)
 
+/**
+ GET FILE SIZE IN MEGABYTE AT PATH
+
+ @param filepath filepath
+ @return size(MB)
+ */
 + (float)fileSizeAtPath:(NSString *)filepath;
 
 @end
