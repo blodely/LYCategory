@@ -34,8 +34,10 @@
 + (NSString *)uuid {
     CFUUIDRef uuidRef = CFUUIDCreate(NULL);
     CFStringRef uuidStringRef = CFUUIDCreateString(NULL, uuidRef);
+	NSString *uuidobj = (__bridge NSString *)uuidStringRef;
     CFRelease(uuidRef);
-    return (__bridge NSString *)uuidStringRef;
+	CFRelease(uuidStringRef);
+    return uuidobj;
 }
 
 

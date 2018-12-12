@@ -37,6 +37,7 @@
 	const UInt8* data = CFDataGetBytePtr(pixelData);
 	
 	if (data == NULL) {
+		CFRelease(pixelData);
 		return [UIColor clearColor];
 	}
 	

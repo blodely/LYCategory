@@ -75,6 +75,10 @@
 	} else if (self.length == 18) {
 		// SECOND GENERATION ID
 		birthday = [[self substringWithRange:NSMakeRange(6, 8)] dateWithFormat:@"yyyyMMdd" andTimezone:@"Asia/Shanghai"];
+	} else {
+		// THIS WILL NEVER BE EXCUTED
+		// ADD ONLY FOR COMPILE CHECK
+		birthday = [NSDate date];
 	}
 	
 	NSDateComponents *cpBirthday = [[NSCalendar currentCalendar] components:(NSCalendarUnitDay|NSCalendarUnitMonth|NSCalendarUnitYear) fromDate:birthday];
