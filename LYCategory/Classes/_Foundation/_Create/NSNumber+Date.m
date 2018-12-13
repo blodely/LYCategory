@@ -1,8 +1,8 @@
 //
-//  NSNumber+Date.m
-//  LYCategory
+//	NSNumber+Date.m
+//	LYCategory
 //
-//  Created by Rick Luo on 12/2/13.
+//	Created by Rick Luo on 12/2/13.
 //	Email: indie.luo@gmail.com
 //
 //	The MIT License (MIT)

@@ -7,4 +7,8 @@
 #  Copyright © 2018 骆昱 (indie.luo@gmail.com). All rights reserved.
 
 
+echo ''
+
 pod repo push LYSpecs LYCategory.podspec --allow-warnings
+
+echo ''
