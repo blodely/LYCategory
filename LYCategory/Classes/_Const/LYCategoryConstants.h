@@ -38,7 +38,13 @@ FOUNDATION_EXPORT NSString *const TZShanghai;
 // MARK: BLOCKS
 typedef void(^LYCCompletion)(void);
 typedef void(^LYCBoolean)(BOOL boolean);
+typedef void(^LYCInteger)(NSInteger integer);
+typedef void(^LYCNumber)(NSNumber *number);
 typedef void(^LYCString)(NSString *string);
+typedef void(^LYCDictionary)(NSDictionary *dictionary);
+typedef void(^LYCArray)(NSArray *array);
+typedef void(^LYCObject)(id object);
+
 
 @interface LYCategoryConstants : NSObject
 
