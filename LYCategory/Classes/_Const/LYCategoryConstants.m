@@ -29,7 +29,9 @@
 
 #import "LYCategoryConstants.h"
 
+
 CGFloat const ANIMATE = 0.25f;
+float const GOLDEN_RATIO = 0.618f;
 
 NSString *const TZShanghai = @"Asia/Shanghai";
 

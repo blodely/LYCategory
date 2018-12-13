@@ -31,6 +31,7 @@
 #import <CoreGraphics/CGBase.h>
 
 FOUNDATION_EXPORT CGFloat const ANIMATE;
+FOUNDATION_EXPORT float const GOLDEN_RATIO;
 
 FOUNDATION_EXPORT NSString *const TZShanghai;
 
