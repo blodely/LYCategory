@@ -33,10 +33,15 @@
 
 - (UIImage *)imageShot {
 	// SCREENSHOT
-	UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, [UIScreen mainScreen].scale);
-    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+	return [self imageShot:YES];
+}
+
+- (UIImage *)imageShot:(BOOL)alpha {
+	// SCREENSHOT
+	UIGraphicsBeginImageContextWithOptions(self.bounds.size, alpha, [UIScreen mainScreen].scale);
+	[self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
+	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
 	return image;
 }
 
