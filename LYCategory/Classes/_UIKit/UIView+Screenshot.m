@@ -33,12 +33,12 @@
 
 - (UIImage *)imageShot {
 	// SCREENSHOT
-	return [self imageShot:YES];
+	return [self imageShot:YES scale:[UIScreen mainScreen].scale];
 }
 
-- (UIImage *)imageShot:(BOOL)alpha {
+- (UIImage *)imageShot:(BOOL)alpha scale:(CGFloat)scale {
 	// SCREENSHOT
-	UIGraphicsBeginImageContextWithOptions(self.bounds.size, alpha, [UIScreen mainScreen].scale);
+	UIGraphicsBeginImageContextWithOptions(self.bounds.size, alpha, scale);
 	[self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
 	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();

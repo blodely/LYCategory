@@ -38,6 +38,6 @@
  */
 - (UIImage *)imageShot;
 
-- (UIImage *)imageShot:(BOOL)alpha;
+- (UIImage *)imageShot:(BOOL)alpha scale:(CGFloat)scale;
 
 @end
