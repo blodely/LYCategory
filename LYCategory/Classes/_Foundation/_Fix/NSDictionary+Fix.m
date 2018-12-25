@@ -109,10 +109,6 @@
 		return NO;
 	}
 	
-	if ([self[akey] isEqual:[NSNull null]]) {
-		return NO;
-	}
-	
 	return YES;
 }
 
