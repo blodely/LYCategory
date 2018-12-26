@@ -31,6 +31,6 @@
 
 @interface NSMutableArray (Fix)
 
-//- (void)nullMutableArrayHandler;
+- (void)nullMutableArrayHandler;
 
 @end

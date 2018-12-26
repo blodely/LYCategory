@@ -159,7 +159,6 @@
 	return @"";
 }
 
-/*
 - (NSDictionary *)nullDictionaryHandler {
 	
 	const id nul = [NSNull null];
@@ -202,7 +201,6 @@
 	
 	return [NSDictionary dictionaryWithDictionary:mutSelf];
 }
-*/
 
 - (BOOL)isReal {
 	return self.allKeys.count > 0;

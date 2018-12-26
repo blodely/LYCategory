@@ -31,6 +31,6 @@
 
 @interface NSMutableDictionary (Fix)
 
-//- (void)nullMutableDictionaryHandler;
+- (void)nullMutableDictionaryHandler;
 
 @end
