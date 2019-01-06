@@ -39,6 +39,8 @@
 
 - (void)shadowWithRadius:(CGFloat)radius opacity:(CGFloat)opacity;
 
+- (void)pauseUserInteractionFor:(float)second;
+
 - (void)pauseUserInteractionForASecond;
 
 - (void)reenableUserInteraction;
