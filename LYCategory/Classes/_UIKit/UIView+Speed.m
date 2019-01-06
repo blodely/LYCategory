@@ -55,4 +55,5 @@
 	self.layer.shadowOffset = CGSizeZero;
 }
 
+- (void)pauseUserInteractionForASecond {}
 @end
