@@ -56,4 +56,5 @@
 }
 
 - (void)pauseUserInteractionForASecond {}
+- (void)reenableUserInteraction {}
 @end
