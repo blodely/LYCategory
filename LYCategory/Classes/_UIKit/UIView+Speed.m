@@ -55,6 +55,13 @@
 	self.layer.shadowOffset = CGSizeZero;
 }
 
-- (void)pauseUserInteractionForASecond {}
-- (void)reenableUserInteraction {}
+- (void)pauseUserInteractionForASecond {
+	self.userInteractionEnabled = NO;
+	[self performSelector:@selector(reenableUserInteraction) withObject:nil afterDelay:1];
+}
+
+- (void)reenableUserInteraction {
+	self.userInteractionEnabled = YES;
+}
+
 @end
