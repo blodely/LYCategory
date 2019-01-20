@@ -46,6 +46,7 @@ typedef void(^LYCCompletion)(void);
 typedef void(^LYCBoolean)(BOOL boolean);
 typedef void(^LYCInteger)(NSInteger integer);
 typedef void(^LYCFloat)(float floatNumber);
+typedef void(^LYCDouble)(double doubleNumber);
 typedef void(^LYCNumber)(NSNumber *number);
 typedef void(^LYCString)(NSString *string);
 typedef void(^LYCDictionary)(NSDictionary *dictionary);
