@@ -37,4 +37,6 @@
 
 - (NSString *)removeHTMLtags;
 
+- (NSComparisonResult)compareVersion:(NSString *)targetversion;
+
 @end
