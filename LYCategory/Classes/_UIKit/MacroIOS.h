@@ -47,9 +47,9 @@
 
 #define MAX_LENGTH MAX(WIDTH, HEIGHT)
 
-#define CENTER_X WIDTH/2
+#define CENTER_X WIDTH * 0.5
 
-#define CENTER_P CGPointMake(HEIGHT/2, CENTER_X)
+#define CENTER_P CGPointMake(HEIGHT * 0.5, CENTER_X)
 
 // MARK: - MODEL DETECTION
 
