@@ -45,4 +45,6 @@
 
 + (NSString *)numberToChinese:(NSInteger)integer;
 
+- (NSArray *)parseGETParameters;
+
 @end

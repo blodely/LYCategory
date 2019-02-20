@@ -114,4 +114,8 @@
 	return [fmt stringFromNumber:@(integer)];
 }
 
+- (NSArray *)parseGETParameters {
+	return nil;
+}
+
 @end
