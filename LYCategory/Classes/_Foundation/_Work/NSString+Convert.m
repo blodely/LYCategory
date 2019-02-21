@@ -115,7 +115,23 @@
 }
 
 - (NSArray *)parseGETParameters {
-	return nil;
+	
+	NSMutableArray *retmut = [NSMutableArray arrayWithCapacity:1];
+	
+	for (NSString *one in [self componentsSeparatedByString:@"&"]) {
+		if ([one containsString:@"="] == NO) {
+			continue;
+		}
+		
+		NSArray *oneret = [one componentsSeparatedByString:@"="];
+		if (oneret == nil || [oneret count] != 2) {
+			continue;
+		}
+		
+		[retmut addObject:@{[NSString stringWithFormat:@"%@", oneret.firstObject]:oneret.lastObject}];
+	}
+	
+	return [NSArray arrayWithArray:retmut];
 }
 
 @end
