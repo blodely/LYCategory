@@ -45,6 +45,11 @@
 
 + (NSString *)numberToChinese:(NSInteger)integer;
 
+/**
+ parse get url string to parameter collection data
+
+ @return parameter
+ */
 - (NSArray *)parseGETParameters;
 
 @end
