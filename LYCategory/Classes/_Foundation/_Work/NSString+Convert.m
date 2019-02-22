@@ -114,9 +114,8 @@
 	return [fmt stringFromNumber:@(integer)];
 }
 
-- (NSArray *)parseGETParameters {
-	
-	NSMutableArray *retmut = [NSMutableArray arrayWithCapacity:1];
+- (NSDictionary *)parseGETParameters {
+	NSMutableDictionary *retmut = [NSMutableDictionary dictionaryWithCapacity:1];
 	
 	for (NSString *one in [self componentsSeparatedByString:@"&"]) {
 		if ([one containsString:@"="] == NO) {
@@ -128,10 +127,10 @@
 			continue;
 		}
 		
-		[retmut addObject:@{[NSString stringWithFormat:@"%@", oneret.firstObject]:oneret.lastObject}];
+		[retmut setObject:oneret.lastObject forKey:[NSString stringWithFormat:@"%@", oneret.firstObject]];
 	}
 	
-	return [NSArray arrayWithArray:retmut];
+	return [NSDictionary dictionaryWithDictionary:retmut];
 }
 
 @end

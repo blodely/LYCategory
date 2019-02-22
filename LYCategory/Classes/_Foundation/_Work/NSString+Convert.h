@@ -50,6 +50,6 @@
 
  @return parameter
  */
-- (NSArray *)parseGETParameters;
+- (NSDictionary *)parseGETParameters;
 
 @end
