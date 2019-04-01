@@ -1,9 +1,12 @@
 # LYCategory
 
-The categories.
+The categories for iOS app dev.
 
+### Support 996.ICU.
 
-### Installation
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+
+### 1. Installation
 
 #### Cocoapods
 
@@ -27,9 +30,9 @@ pod 'LYCategory', :git => 'https://github.com/blodely/LYCategory.git'
 
 Or you can just download and unzip the file, put them in your project.
 
-### features
+### 2. features
 
-#### Foundation
+#### ① Foundation
 
 #### NSString
 
@@ -115,8 +118,9 @@ NSInteger tid = 10504;
 [NSUserDefaults setObject:@"thatMustBeTrue" forKey:@"space.luoyu.testApp.config.isThatTrue"];
 ~~~
 
--
-#### UIKit
+<br>
+
+#### ② UIKit
 
 #### UITextField
 
@@ -137,7 +141,7 @@ To shrink image size down, use `-resize:` method.
 <br>
 and etc.
 
-### License (MIT)
+### 3. License (MIT)
 
 > 
 > The MIT License (MIT)
@@ -171,9 +175,9 @@ A short and simple permissive license <br>with conditions <br>only requiring pre
 This is not legal advice.|
 
 
-### Author
+### 4. Author
 
-骆昱(Luo Yu)
+骆昱 ([Luo Yu](http://luoyu.space))
 
 Email: [indie.luo@gmail.com](mailto:indie.luo@gmail.com)
 
