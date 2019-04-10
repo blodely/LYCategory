@@ -32,4 +32,6 @@
 
 @interface UIViewController (Operator)
 
+- (UIViewController *)getTopViewController;
+
 @end

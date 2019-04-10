@@ -32,4 +32,25 @@
 
 @implementation UIViewController (Operator)
 
+- (UIViewController *)getTopViewController {
+	
+	if (self.presentedViewController) {
+		return [self.presentedViewController getTopViewController];
+	}
+	
+	if ([self isKindOfClass:[UINavigationController class]]) {
+		return [((UINavigationController *)self).visibleViewController getTopViewController];
+	}
+	
+	if ([self isKindOfClass:[UITabBarController class]]) {
+		return [((UITabBarController *)self).selectedViewController getTopViewController];
+	}
+	
+	if (self.isViewLoaded) {
+		return self;
+	}
+	
+	return nil;
+}
+
 @end
