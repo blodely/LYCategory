@@ -32,6 +32,10 @@
 
 @implementation UIViewController (Operator)
 
++ (UIViewController *)theTopViewController {
+	return [[UIApplication sharedApplication].delegate.window.rootViewController getTopViewController];
+}
+
 - (UIViewController *)getTopViewController {
 	
 	if (self.presentedViewController) {

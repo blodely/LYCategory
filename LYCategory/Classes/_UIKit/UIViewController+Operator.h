@@ -32,6 +32,13 @@
 
 @interface UIViewController (Operator)
 
+/**
+ GET APP'S TOP VIEW CONTROLLER
+
+ @return view controller instance if it exist
+ */
++ (UIViewController *)theTopViewController;
+
 - (UIViewController *)getTopViewController;
 
 @end
