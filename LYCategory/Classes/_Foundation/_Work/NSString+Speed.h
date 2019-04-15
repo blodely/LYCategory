@@ -39,4 +39,11 @@
 
 - (NSComparisonResult)compareVersion:(NSString *)targetversion;
 
+/**
+ count the number of lines
+
+ @return number of lines
+ */
+- (NSInteger)numberOfLines;
+
 @end
