@@ -128,4 +128,8 @@
 	return NSOrderedSame;
 }
 
+- (NSInteger)numberOfLines {
+	return [[self componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] count];
+}
+
 @end
