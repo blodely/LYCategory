@@ -30,6 +30,21 @@
 #import <UIKit/UIKit.h>
 
 
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_Xs;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_XsMax;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_XR;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_X;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_8;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_8Plus;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_7;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_7Plus;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_SE;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_6;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_6Plus;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_5s;
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_5;
+
+
 @interface UIDevice (Speed)
 
 /**

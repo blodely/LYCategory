@@ -32,6 +32,21 @@
 #import <sys/utsname.h>
 
 
+NSString *const LYCN_iPhone_Xs = @"lycn.ip.xs";
+NSString *const LYCN_iPhone_XsMax = @"lycn.ip.xs.max";
+NSString *const LYCN_iPhone_XR = @"lycn.ip.xr";
+NSString *const LYCN_iPhone_X = @"lycn.ip.x";
+NSString *const LYCN_iPhone_8 = @"lycn.ip.8";
+NSString *const LYCN_iPhone_8Plus = @"lycn.ip.8.plus";
+NSString *const LYCN_iPhone_7 = @"lycn.ip.7";
+NSString *const LYCN_iPhone_7Plus = @"lycn.ip.7.plus";
+NSString *const LYCN_iPhone_SE = @"lycn.ip.se";
+NSString *const LYCN_iPhone_6 = @"lycn.ip.6";
+NSString *const LYCN_iPhone_6Plus = @"lycn.ip.6.plus";
+NSString *const LYCN_iPhone_5s = @"lycn.ip.5s";
+NSString *const LYCN_iPhone_5 = @"lycn.ip.5";
+
+
 @implementation UIDevice (Speed)
 
 + (NSString *)phoneIdentifier {
