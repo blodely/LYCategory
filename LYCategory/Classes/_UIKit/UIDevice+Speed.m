@@ -54,6 +54,8 @@ NSString *const LYCN_iPhone_3GS = @"lycn.ip.3gs";
 NSString *const LYCN_iPhone_3G = @"lycn.ip.3g";
 NSString *const LYCN_iPhone_1 = @"lycn.ip.1";
 
+NSString *const LYCN_iPhone_Unknown = @"lycn.ip.unknown";
+
 
 @implementation UIDevice (Speed)
 
@@ -61,6 +63,100 @@ NSString *const LYCN_iPhone_1 = @"lycn.ip.1";
 	struct utsname systemInfo;
 	uname(&systemInfo);
 	return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+}
+
++ (NSString *)phoneIDDescription {
+	NSString *phoneid = [self phoneIdentifier];
+	
+	if (phoneid == nil || [phoneid isEqualToString:@""]) {
+		return LYCN_iPhone_Unknown;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone1,1"]) {
+		return LYCN_iPhone_1;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone1,2"]) {
+		return LYCN_iPhone_3G;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone2,1"]) {
+		return LYCN_iPhone_3GS;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone3,1"] || [phoneid isEqualToString:@"iPhone3,2"] || [phoneid isEqualToString:@"iPhone3,3"]) {
+		return LYCN_iPhone_4;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone4,1"]) {
+		return LYCN_iPhone_4s;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone5,1"] || [phoneid isEqualToString:@"iPhone5,2"]) {
+		return LYCN_iPhone_5;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone5,3"] || [phoneid isEqualToString:@"iPhone5,4"]) {
+		return LYCN_iPhone_5c;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone6,1"] || [phoneid isEqualToString:@"iPhone6,2"]) {
+		return LYCN_iPhone_5s;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone7,2"]) {
+		return LYCN_iPhone_6;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone7,1"]) {
+		return LYCN_iPhone_6Plus;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone8,1"]) {
+		return LYCN_iPhone_6s;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone8,2"]) {
+		return LYCN_iPhone_6sPlus;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone8,4"]) {
+		return LYCN_iPhone_SE;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone9,1"] || [phoneid isEqualToString:@"iPhone9,3"]) {
+		return LYCN_iPhone_7;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone9,2"] || [phoneid isEqualToString:@"iPhone9,4"]) {
+		return LYCN_iPhone_7Plus;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone10,1"] || [phoneid isEqualToString:@"iPhone10,4"]) {
+		return LYCN_iPhone_8;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone10,2"] || [phoneid isEqualToString:@"iPhone10,5"]) {
+		return LYCN_iPhone_8Plus;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone10,3"] || [phoneid isEqualToString:@"iPhone10,6"]) {
+		return LYCN_iPhone_X;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone11,2"]) {
+		return LYCN_iPhone_Xs;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone11,6"]) {
+		return LYCN_iPhone_XsMax;
+	}
+	
+	if ([phoneid isEqualToString:@"iPhone11,8"]) {
+		return LYCN_iPhone_XR;
+	}
+	
+	return LYCN_iPhone_Unknown;
 }
 
 @end

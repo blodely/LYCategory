@@ -52,6 +52,8 @@ FOUNDATION_EXPORT NSString *const LYCN_iPhone_3GS;
 FOUNDATION_EXPORT NSString *const LYCN_iPhone_3G;
 FOUNDATION_EXPORT NSString *const LYCN_iPhone_1;
 
+FOUNDATION_EXPORT NSString *const LYCN_iPhone_Unknown;
+
 
 @interface UIDevice (Speed)
 
@@ -61,5 +63,12 @@ FOUNDATION_EXPORT NSString *const LYCN_iPhone_1;
  @return identifier string
  */
 + (NSString *)phoneIdentifier;
+
+/**
+ get readable names from device identifier
+
+ @return description
+ */
++ (NSString *)phoneIDDescription;
 
 @end
