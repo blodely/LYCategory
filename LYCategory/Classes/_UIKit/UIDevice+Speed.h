@@ -32,6 +32,11 @@
 
 @interface UIDevice (Speed)
 
+/**
+ get phone identifier, e.g. iPhone11,2
+
+ @return identifier string
+ */
 + (NSString *)phoneIdentifier;
 
 @end
