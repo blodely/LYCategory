@@ -32,4 +32,6 @@
 
 @interface UIDevice (Speed)
 
++ (NSString *)phoneIdentifier;
+
 @end

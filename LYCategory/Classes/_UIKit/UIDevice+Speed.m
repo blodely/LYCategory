@@ -28,7 +28,16 @@
 //
 
 #import "UIDevice+Speed.h"
+#import <sys/sysctl.h>
+#import <sys/utsname.h>
+
 
 @implementation UIDevice (Speed)
+
++ (NSString *)phoneIdentifier {
+	struct utsname systemInfo;
+	uname(&systemInfo);
+	return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+}
 
 @end

@@ -88,6 +88,7 @@
 #import <LYCategory/UIAlertController+Speed.h>
 #import <LYCategory/UIView+Speed.h>
 #import <LYCategory/UIViewController+Operator.h>
+#import <LYCategory/UIDevice+Speed.h>
 
 #import <LYCategory/CLLocation+Speed.h>
 
