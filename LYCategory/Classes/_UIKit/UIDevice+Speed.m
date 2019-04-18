@@ -41,10 +41,18 @@ NSString *const LYCN_iPhone_8Plus = @"lycn.ip.8.plus";
 NSString *const LYCN_iPhone_7 = @"lycn.ip.7";
 NSString *const LYCN_iPhone_7Plus = @"lycn.ip.7.plus";
 NSString *const LYCN_iPhone_SE = @"lycn.ip.se";
+NSString *const LYCN_iPhone_6s = @"lycn.ip.6s";
+NSString *const LYCN_iPhone_6sPlus = @"lycn.ip.6s.plus";
 NSString *const LYCN_iPhone_6 = @"lycn.ip.6";
 NSString *const LYCN_iPhone_6Plus = @"lycn.ip.6.plus";
 NSString *const LYCN_iPhone_5s = @"lycn.ip.5s";
 NSString *const LYCN_iPhone_5 = @"lycn.ip.5";
+NSString *const LYCN_iPhone_5c = @"lycn.ip.5c";
+NSString *const LYCN_iPhone_4s = @"lycn.ip.4s";
+NSString *const LYCN_iPhone_4 = @"lycn.ip.4";
+NSString *const LYCN_iPhone_3GS = @"lycn.ip.3gs";
+NSString *const LYCN_iPhone_3G = @"lycn.ip.3g";
+NSString *const LYCN_iPhone_1 = @"lycn.ip.1";
 
 
 @implementation UIDevice (Speed)
