@@ -114,6 +114,10 @@
 	return [fmt stringFromNumber:@(integer)];
 }
 
+- (UIImage *)convertBase64Image {
+	return [UIImage imageWithData:[[NSData alloc] initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters]];
+}
+
 - (NSDictionary *)parseGETParameters {
 	NSMutableDictionary *retmut = [NSMutableDictionary dictionaryWithCapacity:1];
 	

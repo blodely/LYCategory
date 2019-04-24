@@ -29,6 +29,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class UIImage;
+
 @interface NSString (Convert)
 
 - (NSString *)encodingURL;
@@ -44,6 +46,13 @@
 - (NSString *)extractGenderFromIDNumber;
 
 + (NSString *)numberToChinese:(NSInteger)integer;
+
+/**
+ Convert base64 image string to image object.
+
+ @return UIImage object
+ */
+- (UIImage *)convertBase64Image;
 
 /**
  parse get url string to parameter collection data
