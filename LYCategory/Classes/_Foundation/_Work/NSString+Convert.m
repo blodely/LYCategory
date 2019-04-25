@@ -115,7 +115,7 @@
 }
 
 - (UIImage *)convertBase64Image {
-	return [UIImage imageWithData:[[NSData alloc] initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters]];
+	return [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self]]];
 }
 
 - (NSDictionary *)parseGETParameters {
