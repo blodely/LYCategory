@@ -36,7 +36,7 @@ Or you can just download and unzip the file, put them in your project.
 
 #### NSString
 
-~~~objective-c
+~~~objc
 
 // You can check string input
 
@@ -93,7 +93,7 @@ Or you can just download and unzip the file, put them in your project.
 
 #### NSArray
 
-~~~objective-c
+~~~objc
 
 // Reverse array
 NSArray *things = @[@"log", @"grass", @"coal",];
@@ -104,7 +104,7 @@ NSArray *things = @[@"log", @"grass", @"coal",];
 
 #### NSURL
 
-~~~objective-c
+~~~objc
 // Creation
 NSInteger tid = 10504;
 [NSURL URLWithFormat:@"http://luoyu.space/tid=%@", @(tid)];
@@ -113,8 +113,7 @@ NSInteger tid = 10504;
 
 #### NSUserDefaults
 
-##### Speed
-~~~objective-c
+~~~objc
 [NSUserDefaults setObject:@"thatMustBeTrue" forKey:@"space.luoyu.testApp.config.isThatTrue"];
 ~~~
 
