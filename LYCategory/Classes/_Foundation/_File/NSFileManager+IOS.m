@@ -41,12 +41,11 @@
 
 + (void)createFolderIfNotExistInDocuments:(NSString *)folderName {
 	
-	// CHECK FOLDER
+	// PATH TO FOLDER
 	NSString *path = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@", folderName];
-	BOOL isDir;
-	BOOL exists = [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDir];
-	
-	if (exists && isDir) {
+
+	// CHECK FOLDER
+	if ([NSFileManager isFolderExistInDocuments:folderName]) {
 		// HAS FOLDER
 		// DO NOTHING
 	} else {
