@@ -31,6 +31,12 @@
 
 @interface NSFileManager (IOS)
 
+/**
+ check folder existence in documents sandbox
+
+ @param folderName folder name
+ @return exist or not
+ */
 + (BOOL)isFolderExistInDocuments:(NSString *)folderName;
 
 /**
