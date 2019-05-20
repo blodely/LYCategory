@@ -31,4 +31,35 @@
 
 @implementation UITableView (Fix)
 
+- (void)reloadRowIgnoredExceptionsAtIndexPath:(NSIndexPath *)idp withRowAnimation:(UITableViewRowAnimation)animation {
+	dispatch_async(dispatch_get_main_queue(), ^{
+		// ONLY ON MAIN THREAD
+		
+		NSUInteger section = [self numberOfSections];
+		if (section == 0 || idp.section >= section) {
+			return;
+		}
+		
+		NSUInteger row = [self numberOfRowsInSection:idp.section];
+		if (row == 0 || idp.row >= row) {
+			return;
+		}
+		
+		@try {
+			if ([[self indexPathsForVisibleRows] indexOfObject:idp] == NSNotFound) {
+				// TARGET CELL NOT VISIBLE
+				// PASS
+				// return;
+			} else {
+				[self reloadRowsAtIndexPaths:@[idp,] withRowAnimation:animation];
+			}
+		} @catch (NSException *exception) {
+			// PASS
+			// return;
+		} @finally {
+			// PASS
+		}
+	});
+}
+
 @end

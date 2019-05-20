@@ -32,4 +32,6 @@
 
 @interface UITableView (Fix)
 
+- (void)reloadRowIgnoredExceptionsAtIndexPath:(NSIndexPath *)indexPath withRowAnimation:(UITableViewRowAnimation)animation;
+
 @end
