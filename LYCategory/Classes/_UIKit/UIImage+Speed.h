@@ -34,6 +34,13 @@
 
 - (UIColor *)colorAtPixel:(CGPoint)point;
 
+/**
+ Similar to -imageNamed: to create a UIImage object with resource name.
+ But it will always rendered as original.
+
+ @param imageName image resource name
+ @return UIImage object
+ */
 + (instancetype)originalNamed:(NSString *)imageName;
 
 + (instancetype)templateNamed:(NSString *)imageName;
