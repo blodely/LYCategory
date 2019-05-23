@@ -57,6 +57,10 @@
 	return [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
++ (instancetype)originalNamed:(NSString *)imageName inBundle:(NSBundle *)bundle {
+	return [[UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
 + (instancetype)templateNamed:(NSString *)imageName {
 	return [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 }
