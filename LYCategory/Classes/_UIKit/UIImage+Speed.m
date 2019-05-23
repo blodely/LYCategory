@@ -65,4 +65,8 @@
 	return [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 }
 
++ (instancetype)templateNamed:(NSString *)imageName inBundle:(NSBundle *)bundle {
+	return [[UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+}
+
 @end

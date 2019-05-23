@@ -54,4 +54,6 @@
  */
 + (instancetype)templateNamed:(NSString *)imageName;
 
++ (instancetype)templateNamed:(NSString *)imageName inBundle:(NSBundle *)bundle;
+
 @end
