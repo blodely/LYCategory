@@ -51,6 +51,7 @@ typedef void(^LYCNumber)(NSNumber *number);
 typedef void(^LYCString)(NSString *string);
 typedef void(^LYCDictionary)(NSDictionary *dictionary);
 typedef void(^LYCArray)(NSArray *array);
+typedef void(^LYCSet)(NSSet *set);
 typedef void(^LYCObject)(id object);
 
 
