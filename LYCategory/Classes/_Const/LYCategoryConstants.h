@@ -45,6 +45,7 @@ FOUNDATION_EXPORT NSString *const LYC_NOTIF_APP_WILL_TERMINATE;
 typedef void(^LYCCompletion)(void);
 typedef void(^LYCBoolean)(BOOL boolean);
 typedef void(^LYCInteger)(NSInteger integer);
+typedef void(^LYCUInteger)(NSUInteger uinteger);
 typedef void(^LYCFloat)(float floatNumber);
 typedef void(^LYCDouble)(double doubleNumber);
 typedef void(^LYCNumber)(NSNumber *number);
