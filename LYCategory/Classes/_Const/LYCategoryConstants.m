@@ -33,6 +33,7 @@
 CGFloat const ANIMATE = 0.25f;
 float const GOLDEN_RATIO = 0.618f;
 
+NSString *const TZUTC = @"UTC";
 NSString *const TZShanghai = @"Asia/Shanghai";
 
 NSString *const LYC_NOTIF_APP_WILL_RESIGN_ACTIVE = @"lyc.notif.app.will.resign.active";
