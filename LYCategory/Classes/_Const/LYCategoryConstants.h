@@ -30,11 +30,17 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CGBase.h>
 
+// MARK: - VALUES
+
 FOUNDATION_EXPORT CGFloat const ANIMATE;
 FOUNDATION_EXPORT float const GOLDEN_RATIO;
 
+// MARK: - TIME ZONE
+
 FOUNDATION_EXPORT NSString *const TZUTC;
 FOUNDATION_EXPORT NSString *const TZShanghai;
+
+// MARK: - NOTIFICATION
 
 FOUNDATION_EXPORT NSString *const LYC_NOTIF_APP_WILL_RESIGN_ACTIVE;
 FOUNDATION_EXPORT NSString *const LYC_NOTIF_APP_DID_ENTER_BACKGROUND;
@@ -42,7 +48,8 @@ FOUNDATION_EXPORT NSString *const LYC_NOTIF_APP_WILL_ENTER_FOREGROUND;
 FOUNDATION_EXPORT NSString *const LYC_NOTIF_APP_DID_BECOME_ACTIVE;
 FOUNDATION_EXPORT NSString *const LYC_NOTIF_APP_WILL_TERMINATE;
 
-// MARK: BLOCKS
+// MARK: - BLOCKS
+
 typedef void(^LYCCompletion)(void);
 typedef void(^LYCBoolean)(BOOL boolean);
 typedef void(^LYCInteger)(NSInteger integer);
@@ -56,6 +63,13 @@ typedef void(^LYCArray)(NSArray *array);
 typedef void(^LYCSet)(NSSet *set);
 typedef void(^LYCObject)(id object);
 
+// MARK: - KEY NAMES
+
+FOUNDATION_EXPORT NSString *const LYK_TITLE;
+FOUNDATION_EXPORT NSString *const LYK_SUBTITLE;
+FOUNDATION_EXPORT NSString *const LYK_ICON;
+FOUNDATION_EXPORT NSString *const LYK_KEY;
+FOUNDATION_EXPORT NSString *const LYK_VAL;
 
 @interface LYCategoryConstants : NSObject
 

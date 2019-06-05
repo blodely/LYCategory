@@ -42,6 +42,14 @@ NSString *const LYC_NOTIF_APP_WILL_ENTER_FOREGROUND = @"lyc.notif.app.will.enter
 NSString *const LYC_NOTIF_APP_DID_BECOME_ACTIVE = @"lyc.notif.app.did.become.active";
 NSString *const LYC_NOTIF_APP_WILL_TERMINATE = @"lyc.notif.app.will.terminate";
 
+// MARK: - KEY NAMES
+
+NSString *const LYK_TITLE = @"lyk.title";
+NSString *const LYK_SUBTITLE = @"lyk.sub.title";
+NSString *const LYK_ICON = @"lyk.icon";
+NSString *const LYK_KEY = @"lyk.key";
+NSString *const LYK_VAL = @"lyk.value";
+
 @implementation LYCategoryConstants
 
 @end
