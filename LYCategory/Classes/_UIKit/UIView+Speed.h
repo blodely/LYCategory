@@ -31,20 +31,41 @@
 
 @interface UIView (Speed)
 
+/**
+ Add rounded corner to view.
+
+ @param radius corner radius
+ */
 - (void)roundedCornerRadius:(CGFloat)radius;
 
+/**
+ Add border to view.
+
+ @param width border width
+ @param color border color
+ */
 - (void)borderWithWidth:(CGFloat)width andColor:(UIColor *)color;
 
+/**
+ Add a exactly one pixel border with tint color as border color to view.
+ */
 - (void)border1Px;
 
+/**
+ Remove view's border.
+ */
 - (void)removeBorder;
 
 - (void)shadowWithRadius:(CGFloat)radius opacity:(CGFloat)opacity;
+
+// MARK: - USER INTERACTION
 
 - (void)pauseUserInteractionFor:(float)second;
 
 - (void)pauseUserInteractionForASecond;
 
 - (void)reenableUserInteraction;
+
+// MARK: -
 
 @end
