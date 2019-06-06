@@ -81,4 +81,16 @@
 	}
 }
 
+- (void)removeAllSubviewsWithClassNamed:(NSString *)className {
+	if (className == nil || [className isKindOfClass:[NSString class]] == NO || [className isEqualToString:@""]) {
+		return;
+	}
+	
+	for (UIView *one in self.subviews) {
+		if ([one isKindOfClass:NSClassFromString(className)]) {
+			[one removeFromSuperview];
+		}
+	}
+}
+
 @end

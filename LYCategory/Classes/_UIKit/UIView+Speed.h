@@ -73,4 +73,11 @@
  */
 - (void)removeAllSubviews;
 
+/**
+ Remove one kind of subviews from view.
+
+ @param className sub view's class name.
+ */
+- (void)removeAllSubviewsWithClassNamed:(NSString *)className;
+
 @end
