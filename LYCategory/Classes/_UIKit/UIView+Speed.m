@@ -73,4 +73,12 @@
 	self.userInteractionEnabled = YES;
 }
 
+// MARK: - SUBVIEW OPS
+
+- (void)removeAllSubviews {
+	for (UIView *one in self.subviews) {
+		[one removeFromSuperview];
+	}
+}
+
 @end

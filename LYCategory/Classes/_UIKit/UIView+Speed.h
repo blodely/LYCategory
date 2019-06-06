@@ -66,6 +66,11 @@
 
 - (void)reenableUserInteraction;
 
-// MARK: -
+// MARK: - SUBVIEW OPS
+
+/**
+ Remove view's all subviews
+ */
+- (void)removeAllSubviews;
 
 @end
