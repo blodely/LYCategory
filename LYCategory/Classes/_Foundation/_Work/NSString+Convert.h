@@ -45,6 +45,12 @@
 
 - (NSString *)extractGenderFromIDNumber;
 
+/**
+ Covert integer number to Chinese number.
+
+ @param integer integer value
+ @return number string in Chinese
+ */
 + (NSString *)numberToChinese:(NSInteger)integer;
 
 /**
