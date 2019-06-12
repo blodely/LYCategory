@@ -56,6 +56,12 @@
  */
 - (void)removeBorder;
 
+/**
+ NOT FINISHED METHOD!!!
+
+ @param radius corner radius
+ @param opacity shadow opacity
+ */
 - (void)shadowWithRadius:(CGFloat)radius opacity:(CGFloat)opacity;
 
 // MARK: - USER INTERACTION
