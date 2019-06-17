@@ -41,6 +41,13 @@
 	return [self objectForKey:[[self allKeys] objectAtIndex:index]];
 }
 
+- (id)objAtIdx:(NSInteger)idx {
+	if ([[self allKeys] count] == 0 || [[self allKeys] count] <= idx) {
+		return nil;
+	}
+	return [self objectForKey:[[self allKeys] objectAtIndex:idx]];
+}
+
 - (BOOL)isEqualToString:(NSString *)aString {
 	return NO;
 }

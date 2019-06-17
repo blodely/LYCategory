@@ -35,6 +35,8 @@
 
 - (id)objectAtIndex:(NSUInteger)index;
 
+- (id)objAtIdx:(NSInteger)idx;
+
 - (BOOL)isEqualToString:(NSString *)aString;
 
 - (float)floatValue;
