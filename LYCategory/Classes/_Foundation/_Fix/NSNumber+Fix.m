@@ -35,6 +35,10 @@
 	return nil;
 }
 
+- (id)objAtIdx:(NSInteger)idx {
+	return nil;
+}
+
 - (id)objectForKey:(id)aKey {
 	return nil;
 }

@@ -33,6 +33,8 @@
 
 - (id)objectAtIndex:(NSUInteger)index;
 
+- (id)objAtIdx:(NSInteger)idx;
+
 - (id)objectForKey:(id)aKey;
 
 - (BOOL)isEqualToString:(NSString *)aString;
