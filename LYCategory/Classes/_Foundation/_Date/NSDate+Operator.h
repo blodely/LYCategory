@@ -31,6 +31,11 @@
 
 @interface NSDate (Operator)
 
+/**
+ is date today.
+
+ @return bool value
+ */
 - (BOOL)isToday;
 
 - (BOOL)isYesterday;
