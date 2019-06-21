@@ -38,6 +38,11 @@
  */
 - (BOOL)isToday;
 
+/**
+ is date yesterday.
+
+ @return bool value
+ */
 - (BOOL)isYesterday;
 
 - (BOOL)isTheDayBeforeYesterday;
