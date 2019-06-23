@@ -45,6 +45,11 @@
  */
 - (BOOL)isYesterday;
 
+/**
+ is date the day before yesterday.
+
+ @return bool value
+ */
 - (BOOL)isTheDayBeforeYesterday;
 
 - (BOOL)isSameDayIgnoringTimeWith:(NSDate *)date;
