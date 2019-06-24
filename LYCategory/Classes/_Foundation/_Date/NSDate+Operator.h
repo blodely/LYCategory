@@ -54,6 +54,11 @@
 
 - (BOOL)isSameDayIgnoringTimeWith:(NSDate *)date;
 
+/**
+ get yesterday object
+
+ @return date object
+ */
 - (NSDate *)yesterday;
 
 - (BOOL)isSameDayWith:(NSDate *)date;
