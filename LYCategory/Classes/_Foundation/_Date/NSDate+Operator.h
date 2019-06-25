@@ -69,6 +69,12 @@
  */
 - (BOOL)isSameDayWith:(NSDate *)date;
 
+/**
+ is date same week with current date object.
+
+ @param date date to compare
+ @return bool value
+ */
 - (BOOL)isSameWeekWith:(NSDate *)date;
 
 - (BOOL)isSameMonthWith:(NSDate *)date;
