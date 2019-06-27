@@ -49,7 +49,7 @@
 
 #pragma mark WEEKDAY
 
-- (int)weekdayNumber;
+- (NSInteger)weekdayNumber;
 
 - (int)weekdayNumberPRC;
 
