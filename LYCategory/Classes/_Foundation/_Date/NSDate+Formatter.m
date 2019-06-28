@@ -88,8 +88,8 @@
 				 weekday];
 }
 
-- (int)weekdayNumberWithCalendarIdentifier:(NSString *)ident {
-	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:ident]
+- (NSInteger)weekdayNumberWithCalendarIdentifier:(NSString *)ident {
+	return (NSInteger)[[[[NSCalendar alloc] initWithCalendarIdentifier:ident]
 				  components:NSCalendarUnitWeekday fromDate:self]
 				 weekday];
 }
