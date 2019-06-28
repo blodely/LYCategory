@@ -82,8 +82,8 @@
 				 weekday];
 }
 
-- (int)weekdayNumberPRC {
-	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierRepublicOfChina]
+- (NSInteger)weekdayNumberPRC {
+	return (NSInteger)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierRepublicOfChina]
 				  components:NSCalendarUnitWeekday fromDate:self]
 				 weekday];
 }

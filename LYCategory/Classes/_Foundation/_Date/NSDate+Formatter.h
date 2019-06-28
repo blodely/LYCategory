@@ -51,7 +51,7 @@
 
 - (NSInteger)weekdayNumber;
 
-- (int)weekdayNumberPRC;
+- (NSInteger)weekdayNumberPRC;
 
 #pragma mark HOUR MINUTE SECOND
 
