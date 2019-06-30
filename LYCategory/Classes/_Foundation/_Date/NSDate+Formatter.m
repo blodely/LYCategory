@@ -96,8 +96,8 @@
 
 #pragma mark HOUR MINUTE SECOND
 
-- (int)hourNumberPRC {
-	return (int)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierRepublicOfChina]
+- (NSInteger)hourNumberPRC {
+	return (NSInteger)[[[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierRepublicOfChina]
 				  components:NSCalendarUnitHour fromDate:self]
 				 hour];
 }

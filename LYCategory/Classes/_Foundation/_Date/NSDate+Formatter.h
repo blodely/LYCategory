@@ -55,6 +55,6 @@
 
 #pragma mark HOUR MINUTE SECOND
 
-- (int)hourNumberPRC;
+- (NSInteger)hourNumberPRC;
 
 @end
