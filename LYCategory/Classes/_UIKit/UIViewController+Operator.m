@@ -57,4 +57,11 @@
 	return nil;
 }
 
+- (void)observeNotifName:(NSString *)notifName selector:(SEL)selector {
+	if (notifName == nil || [notifName isKindOfClass:[NSString class]] == NO || [notifName isEqualToString:@""] == NO) {
+		return;
+	}
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:selector name:notifName object:nil];
+}
+
 @end

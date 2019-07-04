@@ -41,4 +41,12 @@
 
 - (UIViewController *)getTopViewController;
 
+/**
+ Add self notification center observing
+
+ @param notifName The name of the notification for which to register the observer; that is, only notifications with this name are delivered to the observer.
+ @param selector Selector that specifies the message the receiver sends observer to notify it of the notification posting. The method specified by aSelector must have one and only one argument (an instance of NSNotification).
+ */
+- (void)observeNotifName:(NSString *)notifName selector:(SEL)selector;
+
 @end
