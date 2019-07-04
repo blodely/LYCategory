@@ -90,6 +90,7 @@
 #import <LYCategory/UIViewController+Operator.h>
 #import <LYCategory/UIDevice+Speed.h>
 #import <LYCategory/UITableView+Fix.h>
+#import <LYCategory/UIImageView+Speed.h>
 
 #import <LYCategory/CLLocation+Speed.h>
 
