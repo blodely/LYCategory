@@ -32,4 +32,6 @@
 
 @interface UIImageView (Speed)
 
+- (void)setTemplateImageNamed:(NSString *)imageName withTintColor:(UIColor *)tintColor;
+
 @end

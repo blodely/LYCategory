@@ -28,8 +28,21 @@
 //
 
 #import "UIImageView+Speed.h"
+#import <LYCategory/UIImage+Speed.h>
 
 
 @implementation UIImageView (Speed)
+
+- (void)setTemplateImageNamed:(NSString *)imageName withTintColor:(UIColor *)tintColor {
+	if ([tintColor isKindOfClass:[UIColor class]]) {
+		self.tintColor = tintColor;
+	}
+	
+	if (imageName != nil && [imageName isKindOfClass:[NSString class]] && [imageName isEqualToString:@""] == NO) {
+		self.image = [UIImage templateNamed:imageName];
+	} else {
+		self.image = nil;
+	}
+}
 
 @end
