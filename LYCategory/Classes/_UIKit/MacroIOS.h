@@ -39,8 +39,8 @@
 
 // ONLY AVAILBLE AT iOS 11.0+
 // UIApplication.sharedApplication.keyWindow.safeAreaInsets .top .bottom
-#define SAFE_TOP HEIGHT > 811 ? 44 : 20
-#define SAFE_BOTTOM HEIGHT > 811 ? 34 : 0
+#define SAFE_TOP (HEIGHT > 811 ? 44 : 20)
+#define SAFE_BOTTOM (HEIGHT > 811 ? 34 : 0)
 
 #define HEIGHT_SAFE (HEIGHT - SAFE_TOP - SAFE_BOTTOM)
 
