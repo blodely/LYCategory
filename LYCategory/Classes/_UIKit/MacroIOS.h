@@ -38,8 +38,9 @@
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 
 // ONLY AVAILBLE AT iOS 11.0+
-#define SAFE_TOP MAX(UIApplication.sharedApplication.keyWindow.safeAreaInsets.top, 20)
-#define SAFE_BOTTOM UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom
+// UIApplication.sharedApplication.keyWindow.safeAreaInsets .top .bottom
+#define SAFE_TOP HEIGHT > 811 ? 44 : 20
+#define SAFE_BOTTOM HEIGHT > 811 ? 34 : 0
 
 #define HEIGHT_SAFE (HEIGHT - SAFE_TOP - SAFE_BOTTOM)
 
@@ -61,11 +62,10 @@
 
 // MARK: PYSC SCREEN SIZE
 
-#define iPhone5 ( iPhone && ( fabs( (double)HEIGHT - (double)568 ) < DBL_EPSILON ) )
-
-#define iPhone6 ( iPhone && MAX_LENGTH == 667.0 )
-
-#define iPhone6P ( iPhone && MAX_LENGTH == 736.0 )
+#define iPhone4inch ( iPhone && ( fabs( (double)HEIGHT - (double)568 ) < DBL_EPSILON ) )
+#define iPhone4_7inch ( iPhone && MAX_LENGTH == 667.0 )
+#define iPhone5_5inch ( iPhone && MAX_LENGTH == 736.0 )
+#define iPhoneX ( iPhone && MAX_LENGTH > 811 ) // 812
 
 
 #endif
