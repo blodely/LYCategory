@@ -104,6 +104,15 @@
 	return [compSelf year] == [compOther year];
 }
 
+- (BOOL)isSameHourWith:(NSDate *)date {
+	unsigned flag = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour;
+	
+	NSDateComponents *compSelf  = [[NSCalendar currentCalendar] components:flag fromDate:self];
+	NSDateComponents *compOther = [[NSCalendar currentCalendar] components:flag fromDate:date];
+	
+	return [compSelf year] == [compOther year] && [compSelf month] == [compOther month] && [compSelf day] == [compOther day] && [compSelf hour] == [compOther hour];
+}
+
 - (BOOL)inFiveMinutes:(NSDate *)date {
 	double delta = [self timeIntervalSince1970] - [date timeIntervalSince1970];
 	return fabs(delta) < 300.0f;

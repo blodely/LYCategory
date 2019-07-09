@@ -81,6 +81,8 @@
 
 - (BOOL)isSameYearWith:(NSDate *)date;
 
+- (BOOL)isSameHourWith:(NSDate *)date;
+
 - (BOOL)inFiveMinutes:(NSDate *)date;
 
 @end
