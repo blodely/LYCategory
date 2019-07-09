@@ -115,7 +115,12 @@
 
 - (BOOL)inFiveMinutes:(NSDate *)date {
 	double delta = [self timeIntervalSince1970] - [date timeIntervalSince1970];
-	return fabs(delta) < 300.0f;
+	return fabs(delta) < 5 * 60.0f;
+}
+
+- (BOOL)inAnHour:(NSDate *)date {
+	double delta = [self timeIntervalSince1970] - [date timeIntervalSince1970];
+	return fabs(delta) < 60 * 60.0f;
 }
 
 @end

@@ -85,4 +85,6 @@
 
 - (BOOL)inFiveMinutes:(NSDate *)date;
 
+- (BOOL)inAnHour:(NSDate *)date;
+
 @end
