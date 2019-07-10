@@ -49,4 +49,6 @@
  */
 - (void)observeNotifName:(NSString *)notifName selector:(SEL)selector;
 
+- (void)removeObservingNotifName:(NSString *)notifName;
+
 @end
