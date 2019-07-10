@@ -49,6 +49,11 @@
  */
 - (void)observeNotifName:(NSString *)notifName selector:(SEL)selector;
 
+/**
+ Removes matching entries from the notification center's dispatch table.
+
+ @param notifName Name of the notification to remove from dispatch table. Specify a notification name to remove only entries that specify this notification name. When nil, the receiver does not use notification names as criteria for removal.
+ */
 - (void)removeObservingNotifName:(NSString *)notifName;
 
 @end
