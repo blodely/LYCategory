@@ -58,14 +58,14 @@
 }
 
 - (void)observeNotifName:(NSString *)notifName selector:(SEL)selector {
-	if (notifName == nil || [notifName isKindOfClass:[NSString class]] == NO || [notifName isEqualToString:@""] == NO) {
+	if (notifName == nil || [notifName isKindOfClass:[NSString class]] == NO || [notifName isEqualToString:@""]) {
 		return;
 	}
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:selector name:notifName object:nil];
 }
 
 - (void)removeObservingNotifName:(NSString *)notifName {
-	if (notifName == nil || [notifName isKindOfClass:[NSString class]] == NO || [notifName isEqualToString:@""] == NO) {
+	if (notifName == nil || [notifName isKindOfClass:[NSString class]] == NO || [notifName isEqualToString:@""]) {
 		return;
 	}
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:notifName object:nil];
