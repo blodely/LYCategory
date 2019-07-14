@@ -39,4 +39,6 @@
 
 - (CGFloat)heightWithFont:(UIFont *)font andFixedWidth:(CGFloat)width;
 
+- (CGFloat)heightWithFont:(UIFont *)font lineSpacing:(CGFloat)lineSpace andFixedWidth:(CGFloat)width;
+
 @end
