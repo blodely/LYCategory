@@ -45,4 +45,8 @@
 	
 }
 
+- (CGFloat)heightWithFont:(UIFont *)font lineSpacing:(CGFloat)lineSpace andFixedWidth:(CGFloat)width {
+	return 0;
+}
+
 @end
