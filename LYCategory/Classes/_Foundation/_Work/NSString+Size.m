@@ -46,7 +46,11 @@
 }
 
 - (CGFloat)heightWithFont:(UIFont *)font lineSpacing:(CGFloat)lineSpace andFixedWidth:(CGFloat)width {
-	return 0;
+	CGFloat textHeight = [self heightWithFont:font andFixedWidth:width];
+	CGFloat oneLineTextHeight = [@" " heightWithFont:font andFixedWidth:200];
+	NSInteger numberOfLines = textHeight / oneLineTextHeight;
+	
+	return textHeight + numberOfLines * MAX((oneLineTextHeight - 1), 0);
 }
 
 @end
