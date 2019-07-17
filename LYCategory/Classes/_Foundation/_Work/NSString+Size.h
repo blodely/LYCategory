@@ -41,6 +41,12 @@
  */
 - (CGFloat)widthWithFont:(UIFont *)font;
 
+/**
+ Calculate width of string using font (system default) family with custom font size.
+
+ @param fontSize font size
+ @return width
+ */
 - (CGFloat)widthWithSystemFontOfSize:(CGFloat)fontSize;
 
 - (CGFloat)heightWithFont:(UIFont *)font andFixedWidth:(CGFloat)width;
