@@ -33,6 +33,11 @@
 
 - (NSString *)base64;
 
+/**
+ default MD5 (32)
+
+ @return converted value
+ */
 - (NSString *)md5;
 
 - (NSString *)md5Lowercase16;
