@@ -33,6 +33,12 @@
 
 @interface NSString (Size)
 
+/**
+ Calculate width of string with specified font.
+
+ @param font font
+ @return width
+ */
 - (CGFloat)widthWithFont:(UIFont *)font;
 
 - (CGFloat)widthWithSystemFontOfSize:(CGFloat)fontSize;
