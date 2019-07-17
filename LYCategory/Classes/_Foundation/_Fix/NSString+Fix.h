@@ -33,6 +33,12 @@
 
 - (id)objectAtIndex:(NSUInteger)index;
 
+/**
+ Safe object getter. If index out of bounds, it will return nil.
+
+ @param idx index
+ @return object at index or nil
+ */
 - (id)objAtIdx:(NSInteger)idx;
 
 - (id)objectForKey:(id)aKey;
