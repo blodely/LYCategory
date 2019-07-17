@@ -32,7 +32,13 @@
 @implementation NSString (Size)
 
 - (CGFloat)widthWithFont:(UIFont *)font {
-	return ceilf([[NSAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:font,}].size.width);
+	UIFont *opfont;
+	if (font == nil || [font isKindOfClass:[UIFont class]] == NO) {
+		opfont = [UIFont systemFontOfSize:14];
+	} else {
+		opfont = font;
+	}
+	return ceilf([[NSAttributedString alloc] initWithString:self attributes:@{NSFontAttributeName:opfont,}].size.width);
 }
 
 - (CGFloat)widthWithSystemFontOfSize:(CGFloat)fontSize {
