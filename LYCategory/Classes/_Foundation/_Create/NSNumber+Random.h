@@ -41,6 +41,15 @@
 + (int)randomIntBetween:(int)lowerBound and:(int)upperBound;
 
 /**
+ get randon integer value between two values
+
+ @param lowerBound smaller one
+ @param upperBound larger one
+ @return result
+ */
++ (NSInteger)randomIntegerBetween:(NSInteger)lowerBound and:(NSInteger)upperBound;
+
+/**
  get random float value between two values
 
  @param smallNumber smaller one
