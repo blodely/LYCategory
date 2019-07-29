@@ -63,6 +63,7 @@ typedef void(^LYCArray)(NSArray *array);
 typedef void(^LYCSet)(NSSet *set);
 typedef void(^LYCObject)(id object);
 typedef void(^LYCSize)(CGSize size);
+typedef void(^LYCRectangle)(CGRect rect);
 
 // MARK: - KEY NAMES
 
