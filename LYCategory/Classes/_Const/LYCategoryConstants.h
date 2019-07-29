@@ -103,11 +103,47 @@ typedef void(^LYCNumber)(NSNumber *number);
  @param string string object
  */
 typedef void(^LYCString)(NSString *string);
+
+/**
+ Block with parameter NSDictionary object.
+
+ @param dictionary dictionary object
+ */
 typedef void(^LYCDictionary)(NSDictionary *dictionary);
+
+/**
+ Block with parameter NSArray object.
+
+ @param array array object
+ */
 typedef void(^LYCArray)(NSArray *array);
+
+/**
+ Block with parameter NSSet object.
+
+ @param set set object
+ */
 typedef void(^LYCSet)(NSSet *set);
+
+/**
+ Block with parameter id object.
+
+ @param object any object
+ */
 typedef void(^LYCObject)(id object);
+
+/**
+ Block with parameter CGSize value.
+
+ @param size size value
+ */
 typedef void(^LYCSize)(CGSize size);
+
+/**
+ Block with parameter CGRect value.
+
+ @param rect rectangle value
+ */
 typedef void(^LYCRectangle)(CGRect rect);
 
 // MARK: - KEY NAMES
