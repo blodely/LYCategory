@@ -50,13 +50,58 @@ FOUNDATION_EXPORT NSString *const LYC_NOTIF_APP_WILL_TERMINATE;
 
 // MARK: - BLOCKS
 
+/**
+ Block with parameter void.
+ */
 typedef void(^LYCCompletion)(void);
+
+/**
+ Block with parameter boolean value.
+
+ @param boolean boolean value
+ */
 typedef void(^LYCBoolean)(BOOL boolean);
+
+/**
+ Block with parameter integer value.
+
+ @param integer integer value
+ */
 typedef void(^LYCInteger)(NSInteger integer);
+
+/**
+ Block with parameter unsigned integer value.
+
+ @param uinteger unsigned integer value
+ */
 typedef void(^LYCUInteger)(NSUInteger uinteger);
+
+/**
+ Block with parameter float value.
+
+ @param floatNumber float value
+ */
 typedef void(^LYCFloat)(float floatNumber);
+
+/**
+ Block with parameter double value.
+
+ @param doubleNumber double value
+ */
 typedef void(^LYCDouble)(double doubleNumber);
+
+/**
+ Block with parameter NSNumber object.
+
+ @param number number object
+ */
 typedef void(^LYCNumber)(NSNumber *number);
+
+/**
+ Block with parameter NSString object.
+
+ @param string string object
+ */
 typedef void(^LYCString)(NSString *string);
 typedef void(^LYCDictionary)(NSDictionary *dictionary);
 typedef void(^LYCArray)(NSArray *array);
