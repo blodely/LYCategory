@@ -29,6 +29,25 @@
 
 #import "UITableViewCell+Operator.h"
 
+
 @implementation UITableViewCell (Operator)
+
+- (NSIndexPath *)indexPathAtContainer {
+	if ([self superview] == nil) {
+		return nil;
+	}
+	
+	if ([[self superview] isKindOfClass:[UITableView class]]) {
+		// FOR iOS 11.0 +
+		return [(UITableView *)[self superview] indexPathForCell:self];
+	}
+	
+	if ([NSStringFromClass([[self superview] class]) isEqualToString:@"UITableViewWrapperView"]) {
+		// FOR iOS 10.* -
+		return [(UITableView *)[[self superview] superview] indexPathForCell:self];
+	}
+	
+	return nil;
+}
 
 @end

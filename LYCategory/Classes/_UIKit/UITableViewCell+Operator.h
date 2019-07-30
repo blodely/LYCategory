@@ -32,4 +32,6 @@
 
 @interface UITableViewCell (Operator)
 
+- (NSIndexPath *)indexPathAtContainer;
+
 @end
