@@ -55,8 +55,9 @@
 	CGFloat textHeight = [self heightWithFont:font andFixedWidth:width];
 	CGFloat oneLineTextHeight = [@" " heightWithFont:font andFixedWidth:200];
 	NSInteger numberOfLines = textHeight / oneLineTextHeight;
+	numberOfLines = MAX(numberOfLines - 1, 0);
 	
-	return textHeight + numberOfLines * MAX((oneLineTextHeight - 1), 0);
+	return textHeight + numberOfLines * MAX(lineSpace, 0);
 }
 
 @end
