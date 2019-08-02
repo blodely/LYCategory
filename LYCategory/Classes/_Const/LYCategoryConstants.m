@@ -49,6 +49,7 @@ NSString *const LYK_SUBTITLE = @"lyk.sub.title";
 NSString *const LYK_ICON = @"lyk.icon";
 NSString *const LYK_KEY = @"lyk.key";
 NSString *const LYK_VAL = @"lyk.value";
+NSString *const LYK_TOGGLE = @"lyk.toggle";
 
 @implementation LYCategoryConstants
 
