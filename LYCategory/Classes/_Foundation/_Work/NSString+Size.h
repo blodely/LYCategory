@@ -54,3 +54,11 @@
 - (CGFloat)heightWithFont:(UIFont *)font lineSpacing:(CGFloat)lineSpace andFixedWidth:(CGFloat)width;
 
 @end
+
+
+// MARK: - NSAttributedString (Size)
+@interface NSAttributedString (Size)
+
+- (CGFloat)heightWithFixedWidth:(CGFloat)width;
+
+@end

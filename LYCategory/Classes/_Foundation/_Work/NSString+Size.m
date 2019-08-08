@@ -61,3 +61,24 @@
 }
 
 @end
+
+
+// MARK: - NSAttributedString (Size)
+@implementation NSAttributedString (Size)
+
+- (CGFloat)heightWithFixedWidth:(CGFloat)width {
+	CGFloat height = 0;
+	
+	{
+		UILabel *workinglabel = [[UILabel alloc] initWithFrame:(CGRect){0, 0, width, CGFLOAT_MAX}];
+		workinglabel.attributedText = self;
+		workinglabel.numberOfLines = 0;
+		[workinglabel sizeToFit];
+		
+		height = workinglabel.frame.size.height;
+	}
+	
+	return height;
+}
+
+@end
