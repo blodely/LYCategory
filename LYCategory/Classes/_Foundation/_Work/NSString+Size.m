@@ -78,7 +78,7 @@
 		height = workinglabel.frame.size.height;
 	}
 	
-	return height;
+	return (CGFloat)ceil(height);
 }
 
 @end
