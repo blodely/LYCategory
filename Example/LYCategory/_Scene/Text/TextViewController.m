@@ -64,6 +64,11 @@
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
 	NSLog(@"%@", NSStringFromCGPoint(CENTER_P));
+	
+	{
+		NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:@"text.\na new line." attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],}];
+		NSLog(@"Attributed String Height %@", @([attributedString heightWithFixedWidth:WIDTH - 32]));
+	}
 }
 
 #pragma mark MEMORY MANAGEMENT
