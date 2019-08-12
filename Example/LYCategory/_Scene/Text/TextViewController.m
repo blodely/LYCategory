@@ -66,7 +66,7 @@
 	NSLog(@"%@", NSStringFromCGPoint(CENTER_P));
 	
 	{
-		NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:@"text.\na new line." attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],}];
+		NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:@"text.\na new line. line three. text text text text text text text text text text text text." attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],}];
 		NSLog(@"Attributed String Height %@", @([attributedString heightWithFixedWidth:WIDTH - 32]));
 	}
 }
