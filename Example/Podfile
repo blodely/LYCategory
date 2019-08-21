@@ -1,5 +1,7 @@
 platform :ios, '12.0'
 
+project './LYCategory.xcodeproj'
+
 use_frameworks!
 
 target 'demo' do
