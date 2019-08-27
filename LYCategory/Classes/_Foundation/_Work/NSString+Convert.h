@@ -40,6 +40,11 @@
  */
 - (NSString *)encodingURL;
 
+/**
+ convert hanzi to pinyin
+
+ @return pinyin string
+ */
 - (NSString *)pinyin;
 
 - (NSString *)indexLetter;
