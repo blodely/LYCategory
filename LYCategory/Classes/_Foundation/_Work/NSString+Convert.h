@@ -33,6 +33,11 @@
 
 @interface NSString (Convert)
 
+/**
+ Encode URL string
+
+ @return encoded string
+ */
 - (NSString *)encodingURL;
 
 - (NSString *)pinyin;
