@@ -47,6 +47,11 @@
  */
 - (NSString *)pinyin;
 
+/**
+ Get Chinese string's index letter
+
+ @return index letter
+ */
 - (NSString *)indexLetter;
 
 - (NSDate *)extractBirthdayFromIDNumber;
