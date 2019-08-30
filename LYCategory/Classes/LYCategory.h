@@ -55,6 +55,8 @@
 #import <LYCategory/NSArray+Operator.h>
 #import <LYCategory/NSMutableArray+Operator.h>
 
+#import <LYCategory/NSDictionary+Attributes.h>
+
 #import <LYCategory/NSURL+Speed.h>
 #import <LYCategory/NSURLRequest+Speed.h>
 
