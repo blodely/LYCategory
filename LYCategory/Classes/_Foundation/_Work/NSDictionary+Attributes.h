@@ -32,4 +32,13 @@
 
 @interface NSDictionary (Attributes)
 
+/**
+ Generate attributes using default font with custom size number and foreground color.
+
+ @param fontSize font size
+ @param color foreground color
+ @return attributes dictionary
+ */
+- (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color;
+
 @end
