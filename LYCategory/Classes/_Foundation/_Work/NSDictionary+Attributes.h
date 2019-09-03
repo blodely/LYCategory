@@ -41,4 +41,14 @@
  */
 - (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color;
 
+/**
+ Generate attributes using default font with custom size number and foreground color, and specified line spacing.
+
+ @param fontSize font size
+ @param color foreground color
+ @param lineSpacing line spacing value
+ @return attributes dictionary
+ */
+- (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color andLineSpacing:(CGFloat)lineSpacing;
+
 @end
