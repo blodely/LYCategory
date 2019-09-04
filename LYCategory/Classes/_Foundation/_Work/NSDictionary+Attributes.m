@@ -31,4 +31,12 @@
 
 @implementation NSDictionary (Attributes)
 
+- (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color {
+	return nil;
+}
+
+- (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color andLineSpacing:(CGFloat)lineSpacing {
+	return nil;
+}
+
 @end
