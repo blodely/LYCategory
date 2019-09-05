@@ -52,6 +52,11 @@
 - (void)border1Px;
 
 /**
+ Add a one pixel stoke to all subviews.
+ */
+- (void)stokeSubviews;
+
+/**
  Remove view's border.
  */
 - (void)removeBorder;
