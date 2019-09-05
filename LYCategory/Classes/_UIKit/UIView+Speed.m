@@ -47,6 +47,12 @@
 	self.layer.borderWidth = 1.0 / [UIScreen mainScreen].scale;
 }
 
+- (void)stokeSubviews {
+	for (UIView *one in self.subviews) {
+		[one border1Px];
+	}
+}
+
 - (void)removeBorder {
 	self.layer.borderColor = [UIColor clearColor].CGColor;
 	self.layer.borderWidth = 0;
