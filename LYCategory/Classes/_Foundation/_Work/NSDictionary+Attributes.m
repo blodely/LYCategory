@@ -46,7 +46,22 @@
 }
 
 - (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color andLineSpacing:(CGFloat)lineSpacing {
-	return nil;
+	
+	NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+	paragraphStyle.lineSpacing = lineSpacing;
+	
+	UIColor *foreColor;
+	if (color == nil || [color isKindOfClass:[UIColor class]] == NO) {
+		foreColor = [UIColor darkTextColor];
+	} else {
+		foreColor = color;
+	}
+	
+	return @{
+			 NSParagraphStyleAttributeName:paragraphStyle,
+			 NSForegroundColorAttributeName:foreColor,
+			 NSFontAttributeName:[UIFont systemFontOfSize:fontSize],
+			 };
 }
 
 @end
