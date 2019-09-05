@@ -31,7 +31,7 @@
 
 @implementation NSDictionary (Attributes)
 
-- (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color {
++ (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color {
 	UIColor *foreColor;
 	if (color == nil || [color isKindOfClass:[UIColor class]] == NO) {
 		foreColor = [UIColor darkTextColor];
@@ -45,7 +45,7 @@
 			 };
 }
 
-- (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color andLineSpacing:(CGFloat)lineSpacing {
++ (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color andLineSpacing:(CGFloat)lineSpacing {
 	
 	NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
 	paragraphStyle.lineSpacing = lineSpacing;
