@@ -32,7 +32,17 @@
 @implementation NSDictionary (Attributes)
 
 - (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color {
-	return nil;
+	UIColor *foreColor;
+	if (color == nil || [color isKindOfClass:[UIColor class]] == NO) {
+		foreColor = [UIColor darkTextColor];
+	} else {
+		foreColor = color;
+	}
+	
+	return @{
+			 NSForegroundColorAttributeName:foreColor,
+			 NSFontAttributeName:[UIFont systemFontOfSize:fontSize],
+			 };
 }
 
 - (instancetype)attributesWithSystemFontOfSize:(CGFloat)fontSize color:(UIColor *)color andLineSpacing:(CGFloat)lineSpacing {
