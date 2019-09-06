@@ -32,10 +32,16 @@
 @implementation NSNumber (Random)
 
 + (int)randomIntBetween:(int)lowerBound and:(int)upperBound {
+	if (lowerBound == upperBound) {
+		return lowerBound;
+	}
 	return lowerBound + arc4random() % (upperBound - lowerBound);
 }
 
 + (NSInteger)randomIntegerBetween:(NSInteger)lowerBound and:(NSInteger)upperBound {
+	if (lowerBound == upperBound) {
+		return lowerBound;
+	}
 	return lowerBound + (NSInteger)(arc4random() % (upperBound - lowerBound));
 }
 
