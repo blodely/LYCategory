@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'LYCategory'
-	s.version          = '1.2.44'
+	s.version          = '1.12.0'
 	s.summary          = 'The categories.'
 
 	s.description      = <<-DESC
@@ -16,6 +16,7 @@ The categories for Objective-C.
 1.2.26 color
 1.2.34 image api
 1.2.42 top view controller getter
+1.12.0 support Xcode 12, set lowest deployment target to 9.0
 					   DESC
 
 	s.homepage         = 'https://github.com/blodely/LYCategory'
@@ -25,7 +26,7 @@ The categories for Objective-C.
 	s.source           = { :git => 'https://github.com/blodely/LYCategory.git', :tag => s.version.to_s }
 	s.social_media_url = 'https://weibo.com/blodely'
 
-	s.ios.deployment_target = '7.0'
+	s.ios.deployment_target = '9.0'
 
 	s.source_files = 'LYCategory/Classes/_Foundation/*', 'LYCategory/Classes/_Const/*', 'LYCategory/Classes/_CoreLocation/*', 'LYCategory/Classes/**/*'
 	s.ios.source_files = 'LYCategory/Classes/_UIKit/*'
