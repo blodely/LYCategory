@@ -54,18 +54,16 @@
 
 // MARK: - MODEL DETECTION
 
-#define iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-
-#define iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-
-#define iPod ( [[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"] )
+#define LY_iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define LY_iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define LY_iPod ( [[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"] )
 
 // MARK: PYSC SCREEN SIZE
 
-#define iPhone4inch ( iPhone && ( fabs( (double)HEIGHT - (double)568 ) < DBL_EPSILON ) )
-#define iPhone4_7inch ( iPhone && MAX_LENGTH == 667.0 )
-#define iPhone5_5inch ( iPhone && MAX_LENGTH == 736.0 )
-#define iPhoneX ( iPhone && MAX_LENGTH > 811 ) // 812
+#define LY_iPhone4inch ( iPhone && ( fabs( (double)HEIGHT - (double)568 ) < DBL_EPSILON ) )
+#define LY_iPhone4_7inch ( iPhone && MAX_LENGTH == 667.0 )
+#define LY_iPhone5_5inch ( iPhone && MAX_LENGTH == 736.0 )
+#define LY_iPhoneX ( iPhone && MAX_LENGTH > 811 ) // 812
 
 
 #endif
