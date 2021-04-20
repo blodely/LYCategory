@@ -126,6 +126,13 @@ typedef void(^LYCArray)(NSArray *array);
 typedef void(^LYCSet)(NSSet *set);
 
 /**
+ Block with parameter NSError object.
+ 
+ @param error error object
+ */
+typedef void(^LYCError)(NSError *error);
+
+/**
  Block with parameter id object.
 
  @param object any object
