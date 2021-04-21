@@ -126,6 +126,13 @@ typedef void(^LYCArray)(NSArray *array);
 typedef void(^LYCSet)(NSSet *set);
 
 /**
+ Block with parameter NSDate object.
+ 
+ @param date date object
+ */
+typedef void(^LYCDate)(NSDate *date);
+
+/**
  Block with parameter NSError object.
  
  @param error error object
