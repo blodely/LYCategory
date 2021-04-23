@@ -64,4 +64,22 @@
  */
 + (CLLocationDistance)distanceFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate;
 
+/**
+ distance on latitudinal
+ 
+ @param fromCoordinate start coordinate
+ @param toCoordinate target coordinate
+ @return distance on latitudinal in meters
+ */
++ (CLLocationDistance)distanceLatitudinalMetersFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate;
+
+/**
+ distance on longitudinal in meters
+ 
+ @param fromCoordinate start coordinate
+ @param toCoordinate target coordinate
+ @return distance on longitudinal in meters
+ */
++ (CLLocationDistance)distanceLongitudinalMetersFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate;
+
 @end

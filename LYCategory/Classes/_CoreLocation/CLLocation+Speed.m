@@ -103,4 +103,23 @@
 	return [fromLoc distanceFromLocation:toLoc];
 }
 
++ (CLLocationDistance)distanceLatitudinalMetersFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate {
+	
+	CLLocationDegrees sameLongitude = fromCoordinate.longitude;
+	CLLocation *fromLoc = [[CLLocation alloc] initWithLatitude:fromCoordinate.latitude longitude:sameLongitude];
+	CLLocation *toLoc = [[CLLocation alloc] initWithLatitude:toCoordinate.latitude longitude:sameLongitude];
+	
+	return [fromLoc distanceFromLocation:toLoc];
+}
+
++ (CLLocationDistance)distanceLongitudinalMetersFrom:(CLLocationCoordinate2D)fromCoordinate to:(CLLocationCoordinate2D)toCoordinate {
+	
+	CLLocationDegrees sameLatitude = MIN(fromCoordinate.latitude, toCoordinate.latitude);
+	
+	CLLocation *fromLoc = [[CLLocation alloc] initWithLatitude:sameLatitude longitude:fromCoordinate.longitude];
+	CLLocation *toLoc = [[CLLocation alloc] initWithLatitude:sameLatitude longitude:toCoordinate.longitude];
+	
+	return [fromLoc distanceFromLocation:toLoc];
+}
+
 @end
