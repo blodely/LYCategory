@@ -73,4 +73,29 @@
 	[viewvc presentViewController:alert animated:YES completion:^{}];
 }
 
++ (void)showTwoItemActionSheetFromView:(UIViewController *)viewvc withTitle:(NSString *)title andMessage:(NSString *)message cancelButtonTitle:(NSString *)btnCancelTitle cancelAction:(void (^)(void))btnCancelBlock buttonOneTitle:(NSString *)buttonOneTitle buttonOneAction:(void (^)(void))buttonOneBlock buttonTwoTitle:(NSString *)buttonTwoTitle buttonTwoAction:(void (^)(void))buttonTwoBlock {
+	
+	UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
+	
+	[alert addAction:[UIAlertAction actionWithTitle:btnCancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+		if (btnCancelBlock != nil) {
+			btnCancelBlock();
+		}
+	}]];
+	
+	[alert addAction:[UIAlertAction actionWithTitle:buttonOneTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+		if (buttonOneBlock != nil) {
+			buttonOneBlock();
+		}
+	}]];
+	
+	[alert addAction:[UIAlertAction actionWithTitle:buttonTwoTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+		if (buttonTwoBlock != nil) {
+			buttonTwoBlock();
+		}
+	}]];
+	
+	[viewvc presentViewController:alert animated:YES completion:^{}];
+}
+
 @end

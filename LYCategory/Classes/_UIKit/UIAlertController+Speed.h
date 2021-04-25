@@ -55,12 +55,36 @@
  @param title title
  @param message message
  @param btnCancelTitle cancel button's title
- @param btnCancelBlock confirm button's title
+ @param btnCancelBlock cancel action block
  */
 + (void)showAlertFromView:(UIViewController *)viewvc
 				withTitle:(NSString *)title
 			   andMessage:(NSString *)message
 		cancelButtonTitle:(NSString *)btnCancelTitle
 			 cancelAction:(void (^)(void))btnCancelBlock;
+
+
+/**
+ display an alert view controller for image picker with alertview style
+ 
+ @param viewvc from view controller
+ @param title title
+ @param message message
+ @param btnCancelTitle cancel button's title
+ @param btnCancelBlock cancel action block
+ @param buttonOneTitle button one's title
+ @param buttonOneBlock button one action block
+ @param buttonTwoTitle button two's title
+ @param buttonTwoBlock button two action block
+ */
++ (void)showTwoItemActionSheetFromView:(UIViewController *)viewvc
+							 withTitle:(NSString *)title
+							andMessage:(NSString *)message
+					 cancelButtonTitle:(NSString *)btnCancelTitle
+						  cancelAction:(void (^)(void))btnCancelBlock
+						buttonOneTitle:(NSString *)buttonOneTitle
+					   buttonOneAction:(void (^)(void))buttonOneBlock
+						buttonTwoTitle:(NSString *)buttonTwoTitle
+					   buttonTwoAction:(void (^)(void))buttonTwoBlock;
 
 @end
