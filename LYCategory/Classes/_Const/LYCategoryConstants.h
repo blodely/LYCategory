@@ -29,6 +29,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CGBase.h>
+#import <CoreGraphics/CGGeometry.h>
 
 // MARK: - VALUES
 
@@ -145,6 +146,13 @@ typedef void(^LYCError)(NSError *error);
  @param object any object
  */
 typedef void(^LYCObject)(id object);
+
+/**
+ Block with parameter CGPoint value.
+ 
+ @param point point value
+ */
+typedef void(^LYCPoint)(CGPoint point);
 
 /**
  Block with parameter CGSize value.
