@@ -56,4 +56,11 @@
  */
 - (void)removeObservingNotifName:(NSString *)notifName;
 
+/**
+ Push to view controller if possible
+ 
+ @param viewController view controller to push
+ */
+- (void)pushTo:(UIViewController *)viewController;
+
 @end

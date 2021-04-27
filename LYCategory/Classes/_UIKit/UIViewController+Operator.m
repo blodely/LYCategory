@@ -71,4 +71,10 @@
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:notifName object:nil];
 }
 
+- (void)pushTo:(UIViewController *)viewController {
+	if (self.navigationController != nil) {
+		[self.navigationController pushViewController:viewController animated:YES];
+	}
+}
+
 @end
