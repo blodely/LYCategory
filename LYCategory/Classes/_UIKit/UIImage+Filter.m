@@ -40,7 +40,7 @@
 	[filter setValue:@(radius) forKey:@"inputRadius"];
 	CIImage *result = [filter valueForKey:kCIOutputImageKey];
 	CGImageRef outImage = [context createCGImage:result fromRect:[image extent]];
-	UIImage * blurImage = [UIImage imageWithCGImage:outImage];
+	UIImage *blurImage = [UIImage imageWithCGImage:outImage];
 	CGImageRelease(outImage);
 	return blurImage;
 }

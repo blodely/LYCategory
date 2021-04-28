@@ -54,6 +54,13 @@
  */
 + (instancetype)templateNamed:(NSString *)imageName;
 
+/**
+ Create a UIImage object with resource name, and it will rendered as template,
+ with color by view's tint color.
+ 
+ @param imageName image resource name
+ @param bundle resource in bundle
+ */
 + (instancetype)templateNamed:(NSString *)imageName inBundle:(NSBundle *)bundle;
 
 @end
