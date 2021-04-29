@@ -45,4 +45,31 @@
 	return blurImage;
 }
 
+- (UIImage *)grayscale {
+	
+	CGFloat width = self.size.width;
+	CGFloat height = self.size.height;
+
+	CGRect imageRect = (CGRect){0, 0, width, height};
+	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+
+	CGContextRef context = CGBitmapContextCreate(nil, width, height, 8, 0, colorSpace, kCGImageAlphaNone);
+	CGContextDrawImage(context, imageRect, self.CGImage);
+
+	CGImageRef grayImage = CGBitmapContextCreateImage(context);
+	CGColorSpaceRelease(colorSpace);
+	CGContextRelease(context);
+
+	context = CGBitmapContextCreate(nil, width, height, 8, 0, nil, kCGImageAlphaOnly);
+	CGContextDrawImage(context, imageRect, self.CGImage);
+	CGImageRef mask = CGBitmapContextCreateImage(context);
+	CGContextRelease(context);
+
+	UIImage *grayscaleImage = [UIImage imageWithCGImage:CGImageCreateWithMask(grayImage, mask) scale:self.scale orientation:self.imageOrientation];
+	CGImageRelease(grayImage);
+	CGImageRelease(mask);
+
+	return grayscaleImage;
+}
+
 @end

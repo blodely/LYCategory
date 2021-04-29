@@ -39,4 +39,9 @@
  */
 - (UIImage *)gaussianBlur:(CGFloat)radius;
 
+/**
+ Turn image to grey
+ */
+- (UIImage *)grayscale;
+
 @end
