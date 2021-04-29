@@ -40,4 +40,6 @@
  */
 - (BOOL)isEmpty;
 
+- (BOOL)forCurrencyShouldChange:(NSRange)range to:(NSString *)string;
+
 @end

@@ -28,6 +28,8 @@
 //
 
 #import "UITextField+Input.h"
+#import "NSString+Input.h"
+
 
 @implementation UITextField (Input)
 
@@ -35,6 +37,30 @@
 
 - (BOOL)isEmpty {
 	return self == nil || self.text == nil || [self.text isEqualToString:@""];
+}
+
+- (BOOL)forCurrencyShouldChange:(NSRange)range to:(NSString *)string {
+	
+	if ([string isEqualToString:@""]) {
+		// ALLOW DELETE OP
+		return YES;
+	}
+	
+	if ([string isPureNumber]) {
+		// ALLOW PURE NUMBER
+		return YES;
+	}
+	
+	if ([string isEqualToString:@"."]) {
+		// ONLY ALLOW ONE DOT
+		return [self.text containsString:@"."] == NO;
+	}
+	
+	if ([self.text containsString:@"."]) {
+		// PROCESS TWO DIGITAL NUMBER FOLLOWED BY DOT
+	}
+	
+	return NO;
 }
 
 @end
