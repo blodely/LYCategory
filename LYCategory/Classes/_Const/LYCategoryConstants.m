@@ -36,6 +36,8 @@ float const GOLDEN_RATIO = 0.618f;
 NSString *const TZUTC = @"UTC";
 NSString *const TZShanghai = @"Asia/Shanghai";
 
+double const DeltaDistance1km = 0.009009;
+
 NSString *const LYC_NOTIF_APP_WILL_RESIGN_ACTIVE = @"lyc.notif.app.will.resign.active";
 NSString *const LYC_NOTIF_APP_DID_ENTER_BACKGROUND = @"lyc.notif.app.did.enter.background";
 NSString *const LYC_NOTIF_APP_WILL_ENTER_FOREGROUND = @"lyc.notif.app.will.enter.foreground";
