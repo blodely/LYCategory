@@ -30,6 +30,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CGBase.h>
 #import <CoreGraphics/CGGeometry.h>
+#import <CoreLocation/CLLocation.h>
 
 // MARK: - VALUES
 
@@ -167,6 +168,13 @@ typedef void(^LYCSize)(CGSize size);
  @param rect rectangle value
  */
 typedef void(^LYCRectangle)(CGRect rect);
+
+/**
+ Block with parameter CLLocationCoordinate2D value.
+ 
+ @param coordinate coordinate value
+ */
+typedef void(^LYCCoordinate2D)(CLLocationCoordinate2D coordinate);
 
 // MARK: - KEY NAMES
 
