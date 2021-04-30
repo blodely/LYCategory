@@ -56,24 +56,26 @@
 		return [self.text containsString:@"."] == NO;
 	}
 	
-	if ([self.text containsString:@"."]) {
-		// PROCESS TWO DIGITAL NUMBER FOLLOWED BY DOT
-		
-		NSRange dotrange = [self.text rangeOfString:@"."];
-		if (range.location < dotrange.location) {
-			// INSERT NUMBER BEFORE DOT
-			// ALWAYS ALLOWED
-			return YES;
-		}
-		
-		if (range.location > dotrange.location) {
-			// INSERT NUMBER AFTER DOT
-			
-			if ([self.text substringFromIndex:range.location + 1].length < 2) {
-				return YES;
-			}
-		}
-	}
+//	if ([self.text containsString:@"."]) {
+//		// PROCESS TWO DIGITAL NUMBER FOLLOWED BY DOT
+//		
+//		NSRange dotrange = [self.text rangeOfString:@"."];
+//		if (range.location < dotrange.location) {
+//			// INSERT NUMBER BEFORE DOT
+//			// ALWAYS ALLOWED
+//			return YES;
+//		}
+//		
+//		if (range.location > dotrange.location) {
+//			// INSERT NUMBER AFTER DOT
+//			
+//			if ([self.text substringFromIndex:range.location + 1].length < 2) {
+//				return YES;
+//			} else {
+//				return NO;
+//			}
+//		}
+//	}
 	
 	return NO;
 }
