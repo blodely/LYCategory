@@ -47,6 +47,12 @@
 	lblInput.text = [NSString stringWithFormat:@"%@ is %@number", tfInput.text, [tfInput.text isPureNumber] ? @"pure " : @"not a "];
 }
 
+- (IBAction)toggleCurrencyCheckButtonPressed:(id)sender {
+	
+	__weak UIButton *button = (UIButton *)sender;
+	button.selected = !button.isSelected;
+}
+
 #pragma mark - INIT
 
 - (id)init {
@@ -93,6 +99,54 @@
 	lblInput.text = [NSString stringWithFormat:@"%@", tfInput.text];
 	
 	[textField isEmpty] ? lblInput.text = @"TEXT FIELD EMPTY" : 0;
+	
+	if (btnCurrency.isSelected) {
+		
+		if ([string isEqualToString:@""]) {
+			// ALLOW DELETE OP
+			return YES;
+		}
+		
+		if ([string isPureNumber] == NO && [string isEqualToString:@"."] == NO) {
+			// ALLOW PURE NUMBER
+			return NO;
+		}
+		
+		if ([textField.text containsString:@"."] == NO) {
+			// WHEN THERE IS NO DOT
+			return [string isPureNumber] || [string isEqualToString:@"."];
+		}
+		
+		if ([string isEqualToString:@"."]) {
+			// ONLY ALLOW ONE DOT
+			return [textField.text containsString:@"."] == NO;
+		}
+		
+		if ([textField.text containsString:@"."]) {
+			// PROCESS TWO DIGITAL NUMBER FOLLOWED BY DOT
+			
+			NSRange dotrange = [textField.text rangeOfString:@"."];
+			if (range.location < dotrange.location) {
+				// INSERT NUMBER BEFORE DOT
+				// ALWAYS ALLOWED
+				return YES;
+			}
+			
+			if (range.location > dotrange.location) {
+				// INSERT NUMBER AFTER DOT
+				
+				if ([textField.text substringFromIndex:range.location + 1].length < 2) {
+					return YES;
+				} else {
+					return NO;
+				}
+			}
+		}
+		
+		return NO;
+		
+//		return [textField forCurrencyShouldChange:range to:string];
+	}
 	
 	return YES;
 }

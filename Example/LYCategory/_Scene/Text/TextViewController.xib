@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextViewController">
             <connections>
+                <outlet property="btnCurrency" destination="jrQ-gj-IO8" id="6tK-6Q-G1d"/>
                 <outlet property="lblInput" destination="ofs-3N-Z7Z" id="5v8-bQ-T8L"/>
                 <outlet property="tfInput" destination="FOn-VP-v3o" id="L6k-Ki-9sf"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -41,7 +40,7 @@
                         <outlet property="delegate" destination="-1" id="dOn-iD-F7U"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qY-CP-3su">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qY-CP-3su">
                     <rect key="frame" x="10" y="160" width="111.5" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="jSz-92-FJj"/>
@@ -53,7 +52,7 @@
                         <action selector="md5ButtonPressed:" destination="-1" eventType="touchUpInside" id="r0c-Jz-l17"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC7-zV-ggr">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC7-zV-ggr">
                     <rect key="frame" x="131.5" y="160" width="112" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="60J-9a-JMR"/>
@@ -65,7 +64,7 @@
                         <action selector="idnumberButtonPressed:" destination="-1" eventType="touchUpInside" id="Fhy-pM-2TP"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2l-4b-KMt">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2l-4b-KMt">
                     <rect key="frame" x="253.5" y="160" width="111.5" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="DYa-Si-7bu"/>
@@ -77,25 +76,35 @@
                         <action selector="placeholderButtonPressed:" destination="-1" eventType="touchUpInside" id="VVb-KI-GAY"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhw-Zq-mqK">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhw-Zq-mqK">
                     <rect key="frame" x="16" y="198" width="111.5" height="30"/>
                     <state key="normal" title="mobile"/>
                     <connections>
                         <action selector="checkMobileNumberButtonPressed:" destination="-1" eventType="touchUpInside" id="2UL-Ag-veG"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSB-Oe-97X">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSB-Oe-97X">
                     <rect key="frame" x="131.5" y="198" width="112" height="30"/>
                     <state key="normal" title="num2zh_CN"/>
                     <connections>
                         <action selector="numberToChineseButtonPressed:" destination="-1" eventType="touchUpInside" id="x10-ZW-49b"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxh-Z7-ImA">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxh-Z7-ImA">
                     <rect key="frame" x="253.5" y="198" width="111.5" height="30"/>
                     <state key="normal" title="is pure num"/>
                     <connections>
                         <action selector="isPureNumberButtonPressed:" destination="-1" eventType="touchUpInside" id="8Jn-bY-cxR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrQ-gj-IO8">
+                    <rect key="frame" x="16" y="238" width="111.5" height="30"/>
+                    <state key="normal" title="currency"/>
+                    <state key="selected" title="currency enabled">
+                        <color key="titleColor" red="1" green="0.28627450980000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleCurrencyCheckButtonPressed:" destination="-1" eventType="touchUpInside" id="aUv-b7-NBs"/>
                     </connections>
                 </button>
             </subviews>
@@ -103,10 +112,13 @@
             <constraints>
                 <constraint firstItem="ofs-3N-Z7Z" firstAttribute="top" secondItem="FOn-VP-v3o" secondAttribute="bottom" constant="10" id="0nJ-Ll-8Uc"/>
                 <constraint firstAttribute="trailing" secondItem="X2l-4b-KMt" secondAttribute="trailing" constant="10" id="3Mp-AL-LhI"/>
+                <constraint firstItem="jrQ-gj-IO8" firstAttribute="trailing" secondItem="hhw-Zq-mqK" secondAttribute="trailing" id="3ic-T0-ht2"/>
                 <constraint firstItem="Dxh-Z7-ImA" firstAttribute="bottom" secondItem="jSB-Oe-97X" secondAttribute="bottom" id="4we-cP-LZB"/>
                 <constraint firstItem="X2l-4b-KMt" firstAttribute="width" secondItem="3qY-CP-3su" secondAttribute="width" id="5CR-OG-l3T"/>
                 <constraint firstAttribute="trailing" secondItem="ofs-3N-Z7Z" secondAttribute="trailing" constant="10" id="5ge-gm-YYq"/>
+                <constraint firstItem="jrQ-gj-IO8" firstAttribute="top" secondItem="hhw-Zq-mqK" secondAttribute="bottom" constant="10" id="6wr-V1-5qG"/>
                 <constraint firstItem="Dxh-Z7-ImA" firstAttribute="top" secondItem="jSB-Oe-97X" secondAttribute="top" id="86D-wN-hbz"/>
+                <constraint firstItem="jrQ-gj-IO8" firstAttribute="leading" secondItem="hhw-Zq-mqK" secondAttribute="leading" id="999-BS-vKy"/>
                 <constraint firstItem="FOn-VP-v3o" firstAttribute="top" secondItem="1" secondAttribute="top" constant="10" id="Cah-oQ-vXo"/>
                 <constraint firstAttribute="trailing" secondItem="FOn-VP-v3o" secondAttribute="trailing" constant="10" id="DVZ-Ax-7Be"/>
                 <constraint firstItem="X2l-4b-KMt" firstAttribute="top" secondItem="nC7-zV-ggr" secondAttribute="top" id="Fqn-FF-klr"/>

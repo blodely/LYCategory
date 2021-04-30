@@ -12,6 +12,8 @@
 	
 	IBOutlet UITextField *tfInput;
 	IBOutlet UILabel *lblInput;
+	
+	IBOutlet UIButton *btnCurrency;
 }
 
 @end
