@@ -152,13 +152,13 @@
 	/*
 	Updated : 2017-03-01
 	China Mobile：	134 135 136 137 138 139 147 150 151 152 157 158 159 178 182 183 184 187 188 198
-	China Unicom：	130 131 132 145 155 156 166 171 175 176 185 186
+	China Unicom：	130 131 132 145 155 156 166 167 171 175 176 185 186
 	China Telecom：	133 149 153 173 177 180 181 189 199
 	虚拟运营商:	170
 	*/
 	
 	NSPredicate *predCMCC = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[4-9]|47|5[0-27-9]|78|8[2-478]|98)\\d{8}$"];
-	NSPredicate *predCU = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-2]|45|5[56]|66|7[156]|8[56])\\d{8}$"];
+	NSPredicate *predCU = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-2]|45|5[56]|6[67]|7[156]|8[56])\\d{8}$"];
 	NSPredicate *predCT = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(33|49|53|7[37]|8[019]|99)\\d{8}$"];
 	NSPredicate *predV = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(70)\\d{8}$"];
 	
