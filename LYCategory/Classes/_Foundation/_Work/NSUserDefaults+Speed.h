@@ -123,9 +123,10 @@
  read archived object for key in standard user default
 
  @param defaultName key name
+ @param cls class name for the data type
  @return unarchived object
  */
-+ (id)arcObjectForKey:(NSString *)defaultName;
++ (id)arcObjectForKey:(NSString *)defaultName withDataTypeClass:(Class)cls;
 
 #pragma mark - WRITE ARCHIVE FOR STANDARD
 

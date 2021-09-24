@@ -82,14 +82,14 @@
 
 #pragma mark - READ ARCHIVE FOR STANDARD
 
-+ (id)arcObjectForKey:(NSString *)defaultName {
-	return [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:defaultName]];
++ (id)arcObjectForKey:(NSString *)defaultName withDataTypeClass:(Class)cls {
+    return [NSKeyedUnarchiver unarchivedObjectOfClass:cls fromData:[[NSUserDefaults standardUserDefaults] objectForKey:defaultName] error:NULL];
 }
 
 #pragma mark - WRITE ARCHIVE FOR STANDARD
 
 + (void)setArcObject:(id)value forKey:(NSString *)defaultName {
-	[[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:value] forKey:defaultName];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:value requiringSecureCoding:YES error:NULL] forKey:defaultName];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
