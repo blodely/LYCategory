@@ -95,8 +95,8 @@
 			[view1.heightAnchor constraintEqualToConstant:88].active = YES;
 		}
 		
-//		[view2 makeEdgeEqualTo:view1 insets:UIEdgeInsetsMake(10, 10, 10, 10)];
-		[view2 makeEdgeEqualTo:view1];
+		// TEST API EFFECT:
+		[view2 makeEdgeEqualTo:view1 insets:UIEdgeInsetsMake(10, 100, -10, -10)];
 	}
 }
 
