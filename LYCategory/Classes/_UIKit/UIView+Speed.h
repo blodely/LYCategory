@@ -97,4 +97,6 @@
 
 - (void)makeEdgeEqualTo:(UIView *)anotherView;
 
+- (void)makeEdgeEqualToSuperView;
+
 @end

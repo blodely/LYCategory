@@ -102,6 +102,9 @@
 // MARK: CONSTRAINT
 
 - (void)makeEdgeEqualTo:(UIView *)anotherView insets:(UIEdgeInsets)inset {
+	if (anotherView == nil) {
+		return;
+	}
 	
 	self.translatesAutoresizingMaskIntoConstraints = NO;
 	
@@ -114,6 +117,10 @@
 
 - (void)makeEdgeEqualTo:(UIView *)anotherView {
 	[self makeEdgeEqualTo:anotherView insets:UIEdgeInsetsZero];
+}
+
+- (void)makeEdgeEqualToSuperView {
+	[self makeEdgeEqualTo:self.superview insets:UIEdgeInsetsZero];
 }
 
 @end
