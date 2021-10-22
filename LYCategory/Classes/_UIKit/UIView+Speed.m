@@ -101,7 +101,19 @@
 
 // MARK: CONSTRAINT
 
+- (void)makeEdgeEqualTo:(UIView *)anotherView insets:(UIEdgeInsets)inset {
+	
+	self.translatesAutoresizingMaskIntoConstraints = NO;
+	
+	[self.leftAnchor constraintEqualToAnchor:anotherView.leftAnchor constant:inset.left].active = YES;
+	[self.rightAnchor constraintEqualToAnchor:anotherView.rightAnchor constant:inset.right].active = YES;
+	[self.topAnchor constraintEqualToAnchor:anotherView.topAnchor constant:inset.top].active = YES;
+	[self.bottomAnchor constraintEqualToAnchor:anotherView.bottomAnchor constant:inset.bottom].active = YES;
+	
+}
+
 - (void)makeEdgeEqualTo:(UIView *)anotherView {
+	[self makeEdgeEqualTo:anotherView insets:UIEdgeInsetsZero];
 }
 
 @end

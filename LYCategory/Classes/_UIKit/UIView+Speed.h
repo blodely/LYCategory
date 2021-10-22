@@ -93,6 +93,8 @@
 
 // MARK: - CONSTRAINT
 
+- (void)makeEdgeEqualTo:(UIView *)anotherView insets:(UIEdgeInsets)inset;
+
 - (void)makeEdgeEqualTo:(UIView *)anotherView;
 
 @end
