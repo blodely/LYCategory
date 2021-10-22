@@ -68,6 +68,36 @@
 	}
 	
 	[ivScreenshot border1Px];
+	
+	{
+		UILabel *view1 = [[UILabel alloc] init];
+		UILabel *view2 = [[UILabel alloc] init];
+		
+		view1.backgroundColor = [UIColor colorWithHex:@"#e3e3e3" andAlpha:0.5];
+		view2.backgroundColor = [UIColor colorWithHex:@"#d3d3d3" andAlpha:0.5];
+		view1.textColor = view2.textColor = [UIColor blackColor];
+		view1.font = view2.font = [UIFont systemFontOfSize:12];
+		
+		view1.text = @"autolayout view 1";
+		view2.text = @"autolayout view 2";
+		
+		[view1 border1Px];
+		[view2 border1Px];
+		
+		[self.view addSubview:view1];
+		[self.view addSubview:view2];
+		
+		{
+			view1.translatesAutoresizingMaskIntoConstraints = NO;
+			[view1.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:16].active = YES;
+			[view1.topAnchor constraintEqualToAnchor:ivScreenshot.bottomAnchor constant:16].active = YES;
+			[view1.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-16].active = YES;
+			[view1.heightAnchor constraintEqualToConstant:88].active = YES;
+		}
+		
+//		[view2 makeEdgeEqualTo:view1 insets:UIEdgeInsetsMake(10, 10, 10, 10)];
+		[view2 makeEdgeEqualTo:view1];
+	}
 }
 
 // MARK: MEMORY MANAGEMENT
