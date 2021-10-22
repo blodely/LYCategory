@@ -91,4 +91,8 @@
  */
 - (void)removeAllSubviewsWithClassNamed:(NSString *)className;
 
+// MARK: - CONSTRAINT
+
+- (void)makeEdgeEqualTo:(UIView *)anotherView;
+
 @end
