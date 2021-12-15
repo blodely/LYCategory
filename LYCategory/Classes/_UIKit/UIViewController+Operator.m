@@ -72,6 +72,10 @@
 }
 
 - (void)pushTo:(UIViewController *)viewController {
+	if (viewController == nil || [viewController isKindOfClass:[UIViewController class]] == NO) {
+		return;
+	}
+	
 	if (self.navigationController != nil) {
 		[self.navigationController pushViewController:viewController animated:YES];
 	}
