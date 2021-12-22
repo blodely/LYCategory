@@ -94,6 +94,7 @@
 #import <LYCategory/UITableView+Fix.h>
 #import <LYCategory/UITableViewCell+Operator.h>
 #import <LYCategory/UIImageView+Speed.h>
+#import <LYCategory/UIApplication+Speed.h>
 
 #import <LYCategory/CLLocation+Speed.h>
 
