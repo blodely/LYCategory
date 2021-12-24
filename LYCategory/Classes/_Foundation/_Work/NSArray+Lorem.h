@@ -32,4 +32,7 @@
 
 @interface NSArray (Lorem)
 
+/// Lorem Ipsum default strings generator. Create a list of text, contains seven items.
++ (instancetype)loremipsum;
+
 @end

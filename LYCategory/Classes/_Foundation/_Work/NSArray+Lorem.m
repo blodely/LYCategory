@@ -33,4 +33,16 @@
 
 @implementation NSArray (Lorem)
 
++ (instancetype)loremipsum {
+	return @[
+		@"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		@"Suspendisse at ligula aliquet, scelerisque augue dictum, pharetra turpis.",
+		@"Nunc sollicitudin elit id lobortis dapibus.",
+		@"Donec semper augue in scelerisque egestas.",
+		@"Morbi eget justo cursus, viverra ipsum quis, ullamcorper libero.",
+		@"Integer feugiat eros nec dolor tincidunt, et tempus nunc accumsan.",
+		@"Sed quis ante non dui lobortis accumsan.",
+	];
+}
+
 @end
