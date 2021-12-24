@@ -40,6 +40,7 @@
 #import <LYCategory/NSString+Date.h>
 #import <LYCategory/NSString+Search.h>
 #import <LYCategory/NSString+Random.h>
+#import <LYCategory/NSString+Lorem.h>
 #import <LYCategory/NSString+Convert.h>
 
 #import <LYCategory/NSNumber+Random.h>
