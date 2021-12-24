@@ -32,6 +32,10 @@
 
 @interface NSString (Lorem)
 
+/// Lorem Ipsum default string generator. Create a paragraph of text.
 + (instancetype)loremipsum;
+
+/// Lorem Ipsum longer string generator. Create a seven paragraphs of text.
++ (instancetype)loremipsumLong;
 
 @end
