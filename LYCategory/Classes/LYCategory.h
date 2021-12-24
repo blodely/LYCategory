@@ -53,6 +53,7 @@
 #import <LYCategory/NSLayoutConstraint+APixel.h>
 
 // ARRAY
+#import <LYCategory/NSArray+Lorem.h>
 #import <LYCategory/NSArray+Operator.h>
 #import <LYCategory/NSMutableArray+Operator.h>
 
