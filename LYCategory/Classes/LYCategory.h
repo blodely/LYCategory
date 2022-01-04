@@ -89,6 +89,7 @@
 #import <LYCategory/UIView+Animate.h>
 #import <LYCategory/UIColor+Speed.h>
 #import <LYCategory/UINavigationBar+Fix.h>
+#import <LYCategory/UITabBarItem+Speed.h>
 #import <LYCategory/UIAlertController+Speed.h>
 #import <LYCategory/UIView+Speed.h>
 #import <LYCategory/UIViewController+Operator.h>
