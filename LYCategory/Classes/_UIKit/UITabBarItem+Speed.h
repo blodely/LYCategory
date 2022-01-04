@@ -32,6 +32,16 @@
 
 @interface UITabBarItem (Speed)
 
+/// setup title, image, selected image at once
+/// @param title title string
+/// @param image image object
+/// @param selectedImage selected image object
 - (void)setTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage;
+
+/// setup title image selected one at once by string names
+/// @param title title string
+/// @param imageName image by name
+/// @param selectedImageNamed selected image by string
+- (void)setTitle:(NSString *)title imageNamed:(NSString *)imageName selectedImageNamed:(NSString *)selectedImageNamed;
 
 @end

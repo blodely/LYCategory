@@ -37,4 +37,10 @@
 	self.selectedImage = selectedImage;
 }
 
+- (void)setTitle:(NSString *)title imageNamed:(NSString *)imageName selectedImageNamed:(NSString *)selectedImageNamed {
+	self.title = title;
+	self.image = [UIImage imageNamed:imageName];
+	self.selectedImage = [UIImage imageNamed:selectedImageNamed];
+}
+
 @end
