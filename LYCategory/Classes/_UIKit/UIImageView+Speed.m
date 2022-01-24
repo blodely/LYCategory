@@ -34,7 +34,7 @@
 @implementation UIImageView (Speed)
 
 - (void)setTemplateImageNamed:(NSString *)imageName withTintColor:(UIColor *)tintColor {
-	if ([tintColor isKindOfClass:[UIColor class]]) {
+	if (tintColor != nil && [tintColor isKindOfClass:[UIColor class]]) {
 		self.tintColor = tintColor;
 	}
 	
