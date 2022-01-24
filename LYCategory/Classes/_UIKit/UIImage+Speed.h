@@ -43,6 +43,9 @@
  */
 + (instancetype)originalNamed:(NSString *)imageName;
 
+/// Create a UIImage object with resource name in bunble, and set it's render mode original.
+/// @param imageName image resource name
+/// @param bundle bundle object
 + (instancetype)originalNamed:(NSString *)imageName inBundle:(NSBundle *)bundle;
 
 /**
