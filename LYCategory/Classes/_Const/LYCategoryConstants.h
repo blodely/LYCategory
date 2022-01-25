@@ -151,6 +151,13 @@ typedef void(^LYCError)(NSError *error);
 typedef void(^LYCObject)(id object);
 
 /**
+ Block with parameter UITableViewCell object.
+ 
+ @param cell UITableViewCell object
+ */
+typedef void(^LYCTableCell)(__kindof UITableViewCell *cell);
+
+/**
  Block with parameter UICollectionViewCell (or it's children class) object.
  
  @param cell UICollectionViewCell object
