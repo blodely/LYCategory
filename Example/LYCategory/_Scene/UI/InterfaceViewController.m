@@ -16,6 +16,8 @@
 	__weak IBOutlet UIButton *btnItem2;
 	__weak IBOutlet UILabel *lblItem3;
 	__weak IBOutlet UIImageView *ivScreenshot;
+	
+	__strong LYCCollectionCell blockCollectionCell;
 }
 
 @end
