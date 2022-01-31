@@ -10,7 +10,9 @@
 #import "DateViewController.h"
 #import "TextViewController.h"
 #import "InterfaceViewController.h"
+#import "GeoViewController.h"
 #import "LYCategory.h"
+
 
 @interface MenuViewController () <UITableViewDataSource, UITableViewDelegate> {
 	
@@ -58,7 +60,7 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
 	
-	[dsMenu addObjectsFromArray:@[@"Dates", @"Strings", @"UI", @"Alert", ]];
+	[dsMenu addObjectsFromArray:@[@"Dates", @"Strings", @"UI", @"Alert", @"Geo", ]];
 }
 
 #pragma mark MEMORY MANAGEMENT
@@ -114,6 +116,9 @@ static NSString *MenuCellIdentifier = @"MenuCellIdentifier";
 			[UIAlertController showAlertFromView:self withTitle:@"test" andMessage:@"test message" cancelButtonTitle:@"c a n c e l" confirmButtonTitle:@"c o n f i r m" confirmAction:^{
 				NSLog(@"\n\n\n\nconfirmed\n\n\n\n");
 			}];
+		} break;
+		case 4: {
+			[self pushTo:[[GeoViewController alloc] init]];
 		} break;
 		default: {
 			

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DC2A43C27A7AB1E0081CF7E /* GeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2A43B27A7AB1E0081CF7E /* GeoViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		05F46C8113E5FF298782C1B1 /* Pods_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC2A43A27A7AB1E0081CF7E /* GeoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoViewController.h; sourceTree = "<group>"; };
+		1DC2A43B27A7AB1E0081CF7E /* GeoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoViewController.m; sourceTree = "<group>"; };
 		4F7AF405F10CC0970F9AB98D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5A9F3F857833C443F3EA471E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DC2A43927A7AAFE0081CF7E /* Geo */ = {
+			isa = PBXGroup;
+			children = (
+				1DC2A43A27A7AB1E0081CF7E /* GeoViewController.h */,
+				1DC2A43B27A7AB1E0081CF7E /* GeoViewController.m */,
+			);
+			path = Geo;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B6320D371DC0AF180011A79A /* Date */,
+				1DC2A43927A7AAFE0081CF7E /* Geo */,
 				B6320D3B1DC0AF180011A79A /* Menu */,
 				B6320D3F1DC0AF180011A79A /* Text */,
 				FC196D0120EA13FF0069F709 /* UI */,
@@ -320,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC196D0520EA140F0069F709 /* InterfaceViewController.m in Sources */,
+				1DC2A43C27A7AB1E0081CF7E /* GeoViewController.m in Sources */,
 				B6320D431DC0AF180011A79A /* DateViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LYAppDelegate.m in Sources */,
 				B6320D471DC0AF180011A79A /* TextViewController.m in Sources */,
