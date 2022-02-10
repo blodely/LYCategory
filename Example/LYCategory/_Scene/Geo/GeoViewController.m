@@ -29,16 +29,15 @@
 
 #import "GeoViewController.h"
 #import <LYCategory/LYCategory.h>
+#import "GeoCoordinatesInputView.h"
 
 
 @interface GeoViewController () {
 	
-	__weak UITextField *tfLatitude;
-	__weak UITextField *tfLongitude;
+	__weak GeoCoordinatesInputView *giBd;
+	__weak GeoCoordinatesInputView *giGcj;
+	__weak GeoCoordinatesInputView *giWgs;
 	
-	__weak UILabel *lblRetBD;
-	__weak UILabel *lblRetGCJ;
-	__weak UILabel *lblRetWGS;
 }
 @end
 
@@ -59,46 +58,39 @@
 	}
 	
 	{
-		UITextField *view = [[UITextField alloc] init];
+		GeoCoordinatesInputView *view = [[GeoCoordinatesInputView alloc] init];
 		view.translatesAutoresizingMaskIntoConstraints = NO;
-		[view border1Px];
-		view.keyboardType = UIKeyboardTypeNumberPad;
-		view.placeholder = @"latitude";
+		view.lblTitle.text = @"Coordinate BD";
 		[self.view addSubview:view];
-		tfLatitude = view;
+		giBd = view;
 		
-		[view.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:16].active = YES;
-		[view.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-16].active = YES;
-		[view.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:16].active = YES;
-		[view.heightAnchor constraintEqualToConstant:36].active = YES;
+		[view.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
+		[view.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
+		[view.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor].active = YES;
 	}
 	
 	{
-		UITextField *view = [[UITextField alloc] init];
+		GeoCoordinatesInputView *view = [[GeoCoordinatesInputView alloc] init];
 		view.translatesAutoresizingMaskIntoConstraints = NO;
-		view.keyboardType = UIKeyboardTypeNumberPad;
-		view.placeholder = @"Longitude";
-		[view border1Px];
+		view.lblTitle.text = @"Coordinate GCJ";
 		[self.view addSubview:view];
-		tfLongitude = view;
+		giGcj = view;
 		
-		[view.leadingAnchor constraintEqualToAnchor:tfLatitude.leadingAnchor].active = YES;
-		[view.trailingAnchor constraintEqualToAnchor:tfLatitude.trailingAnchor].active = YES;
-		[view.topAnchor constraintEqualToAnchor:tfLatitude.bottomAnchor constant:16].active = YES;
-		[view.heightAnchor constraintEqualToConstant:36].active = YES;
+		[view.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
+		[view.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
+		[view.topAnchor constraintEqualToAnchor:giBd.bottomAnchor].active = YES;
 	}
 	
 	{
-		UILabel *view[3];
-		for (NSInteger i = 0; i < 3; i++) {
-			view[i] = [[UILabel alloc] init];
-			view[i].translatesAutoresizingMaskIntoConstraints = NO;
-			[self.view addSubview:view[i]];
-		}
+		GeoCoordinatesInputView *view = [[GeoCoordinatesInputView alloc] init];
+		view.translatesAutoresizingMaskIntoConstraints = NO;
+		view.lblTitle.text = @"Coordinate WGS";
+		[self.view addSubview:view];
+		giWgs = view;
 		
-		lblRetBD = view[0];
-		lblRetGCJ = view[1];
-		lblRetWGS = view[2];
+		[view.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
+		[view.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
+		[view.topAnchor constraintEqualToAnchor:giGcj.bottomAnchor].active = YES;
 	}
 }
 

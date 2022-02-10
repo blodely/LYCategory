@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3E4C0127B51E5800BF4D7B /* GeoCoordinatesInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E4C0027B51E5800BF4D7B /* GeoCoordinatesInputView.m */; };
 		1DC2A43C27A7AB1E0081CF7E /* GeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2A43B27A7AB1E0081CF7E /* GeoViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		05F46C8113E5FF298782C1B1 /* Pods_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3E4BFF27B51E5800BF4D7B /* GeoCoordinatesInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoCoordinatesInputView.h; sourceTree = "<group>"; };
+		1D3E4C0027B51E5800BF4D7B /* GeoCoordinatesInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoCoordinatesInputView.m; sourceTree = "<group>"; };
 		1DC2A43A27A7AB1E0081CF7E /* GeoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoViewController.h; sourceTree = "<group>"; };
 		1DC2A43B27A7AB1E0081CF7E /* GeoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoViewController.m; sourceTree = "<group>"; };
 		4F7AF405F10CC0970F9AB98D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 			children = (
 				1DC2A43A27A7AB1E0081CF7E /* GeoViewController.h */,
 				1DC2A43B27A7AB1E0081CF7E /* GeoViewController.m */,
+				1D3E4BFF27B51E5800BF4D7B /* GeoCoordinatesInputView.h */,
+				1D3E4C0027B51E5800BF4D7B /* GeoCoordinatesInputView.m */,
 			);
 			path = Geo;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				B6320D431DC0AF180011A79A /* DateViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LYAppDelegate.m in Sources */,
 				B6320D471DC0AF180011A79A /* TextViewController.m in Sources */,
+				1D3E4C0127B51E5800BF4D7B /* GeoCoordinatesInputView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				B6320D451DC0AF180011A79A /* MenuViewController.m in Sources */,
 			);
