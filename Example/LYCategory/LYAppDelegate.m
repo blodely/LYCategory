@@ -25,6 +25,18 @@
 	self.window.rootViewController = nav;
 	
 	[self.window makeKeyAndVisible];
+	
+	{
+		NSString *filepath = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/luos"];
+		
+		NSDictionary *filedata = @{
+			LYK_TITLE:@"test file",
+			LYK_VAL:@"you've found me.",
+		};
+		[filedata writeToFile:filepath atomically:YES];
+		
+		NSLog(@"file `luos` exist at %@? RESULT: %@", filepath, [NSFileManager isFileExistAtPath:filepath] ? @"Yes" : @"No");
+	}
 		
 	return YES;
 }
