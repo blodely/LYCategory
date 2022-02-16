@@ -46,4 +46,8 @@
  */
 + (void)createFolderIfNotExistInDocuments:(NSString *)folderName;
 
+/// check file existence at path
+/// @param filepath filepath string
++ (BOOL)isFileExistAtPath:(NSString *)filepath;
+
 @end

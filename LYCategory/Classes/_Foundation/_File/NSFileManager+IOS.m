@@ -28,6 +28,8 @@
 //
 
 #import "NSFileManager+IOS.h"
+#import "NSString+Input.h"
+
 
 @implementation NSFileManager (IOS)
 
@@ -52,6 +54,21 @@
 		// CREATE
 		[[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
 	}
+}
+
++ (BOOL)isFileExistAtPath:(NSString *)filepath {
+	
+	if (filepath == nil || [filepath isKindOfClass:[NSString class]] == NO || [filepath isEmpty] || [filepath isEqualToString:@"/"]) {
+		// FILE PATH ERROR
+		return NO;
+	}
+	
+	if ([filepath hasPrefix:@"/"]) {
+		NSDictionary<NSFileAttributeKey, id> *attrs = [[NSFileManager defaultManager] attributesOfItemAtPath:filepath error:NULL];
+		return attrs[NSFileType] == NSFileTypeRegular;
+	}
+	
+	return NO;
 }
 
 @end
