@@ -81,4 +81,8 @@
 	}
 }
 
++ (void)topViewControllerMakePush:(UIViewController *)viewController {
+	[[self theTopViewController] pushTo:viewController];
+}
+
 @end

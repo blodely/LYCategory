@@ -63,4 +63,8 @@
  */
 - (void)pushTo:(UIViewController *)viewController;
 
+/// get app's current top view controller, and try to make push-to action
+/// @param viewController view controller
++ (void)topViewControllerMakePush:(UIViewController *)viewController;
+
 @end
