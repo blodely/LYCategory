@@ -51,4 +51,8 @@
 	return self;
 }
 
+- (NSNumber *)integerNumber {
+	return @([self integerValue]);
+}
+
 @end

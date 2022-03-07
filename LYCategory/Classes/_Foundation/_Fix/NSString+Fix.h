@@ -47,4 +47,6 @@
 
 - (NSString *)string;
 
+- (NSNumber *)integerNumber;
+
 @end
