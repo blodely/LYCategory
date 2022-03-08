@@ -47,6 +47,10 @@
 
 - (NSInteger)integerValue;
 
+- (NSNumber *)integerNumber;
+
+- (NSString *)string;
+
 - (long long)longLongValue;
 
 - (NSUInteger)length;

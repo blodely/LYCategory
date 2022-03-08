@@ -68,6 +68,14 @@
 	return 0;
 }
 
+- (NSNumber *)integerNumber {
+	return @0;
+}
+
+- (NSString *)string {
+	return @"";
+}
+
 - (long long)longLongValue {
 	return 0;
 }
