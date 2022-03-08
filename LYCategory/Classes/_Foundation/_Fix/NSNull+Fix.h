@@ -33,4 +33,6 @@
 
 - (BOOL)isReal;
 
+- (NSNumber *)integerNumber;
+
 @end

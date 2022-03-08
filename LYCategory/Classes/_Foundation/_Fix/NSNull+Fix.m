@@ -35,4 +35,8 @@
 	return NO;
 }
 
+- (NSNumber *)integerNumber {
+	return @0;
+}
+
 @end
