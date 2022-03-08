@@ -47,6 +47,7 @@
 
 - (NSString *)string;
 
+/// fix for to integer number object converting
 - (NSNumber *)integerNumber;
 
 @end

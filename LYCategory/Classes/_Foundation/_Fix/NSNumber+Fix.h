@@ -49,6 +49,9 @@
 /// convert number object to string
 - (NSString *)string;
 
+/// fix for to integer number object converting
+- (NSNumber *)integerNumber;
+
 /**
  number in object is not 0 means it's "real"
 

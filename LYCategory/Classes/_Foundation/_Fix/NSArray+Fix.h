@@ -47,6 +47,7 @@
 
 - (BOOL)boolValue;
 
+/// fix for to integer number object converting
 - (NSNumber *)integerNumber;
 
 /// fix for to string converting

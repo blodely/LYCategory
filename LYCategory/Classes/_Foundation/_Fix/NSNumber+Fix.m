@@ -55,6 +55,10 @@
 	return [NSString stringWithFormat:@"%@", self];
 }
 
+- (NSNumber *)integerNumber {
+	return self;
+}
+
 - (BOOL)isReal {
 	return [self intValue] != 0;
 }
