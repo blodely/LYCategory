@@ -35,4 +35,7 @@
 
 - (NSNumber *)integerNumber;
 
+/// fix for to string converting
+- (NSString *)string;
+
 @end

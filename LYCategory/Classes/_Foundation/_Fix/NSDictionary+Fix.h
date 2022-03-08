@@ -49,6 +49,7 @@
 
 - (NSNumber *)integerNumber;
 
+/// fix for to string converting
 - (NSString *)string;
 
 - (long long)longLongValue;

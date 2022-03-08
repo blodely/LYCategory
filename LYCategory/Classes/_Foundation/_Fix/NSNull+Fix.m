@@ -39,4 +39,8 @@
 	return @0;
 }
 
+- (NSString *)string {
+	return @"";
+}
+
 @end

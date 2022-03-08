@@ -46,6 +46,7 @@
  */
 - (NSUInteger)length;
 
+/// convert number object to string
 - (NSString *)string;
 
 /**
