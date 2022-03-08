@@ -67,6 +67,10 @@
 	return self != nil && [self count] != 0;
 }
 
+- (NSNumber *)integerNumber {
+	return @0;
+}
+
 - (NSUInteger)length {
 	return [self count];
 }

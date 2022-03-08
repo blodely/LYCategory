@@ -47,6 +47,8 @@
 
 - (BOOL)boolValue;
 
+- (NSNumber *)integerNumber;
+
 - (NSUInteger)length;
 
 - (NSArray *)nullArrayHandler;
