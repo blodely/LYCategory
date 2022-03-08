@@ -49,6 +49,8 @@
 
 - (NSNumber *)integerNumber;
 
+- (NSString *)string;
+
 - (NSUInteger)length;
 
 - (NSArray *)nullArrayHandler;

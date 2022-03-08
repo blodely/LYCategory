@@ -71,6 +71,10 @@
 	return @0;
 }
 
+- (NSString *)string {
+	return @"";
+}
+
 - (NSUInteger)length {
 	return [self count];
 }
