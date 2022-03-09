@@ -63,6 +63,7 @@
 #import <LYCategory/NSURLRequest+Speed.h>
 
 #import <LYCategory/NSUserDefaults+Speed.h>
+#import <LYCategory/NSNotificationCenter+Speed.h>
 
 /// File
 #import <LYCategory/NSFileManager+IOS.h>
