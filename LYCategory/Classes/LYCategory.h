@@ -64,22 +64,24 @@
 
 #import <LYCategory/NSUserDefaults+Speed.h>
 
-// FILE
+/// File
 #import <LYCategory/NSFileManager+IOS.h>
 #import <LYCategory/NSFileManager+Size.h>
 
-// FIX
+/// Fix
 #import <LYCategory/NSArray+Fix.h>
 #import <LYCategory/NSDictionary+Fix.h>
 #import <LYCategory/NSNumber+Fix.h>
+#import <LYCategory/NSString+Fix.h>
 #import <LYCategory/NSNull+Fix.h>
 #import <LYCategory/NSMutableArray+Fix.h>
 #import <LYCategory/NSMutableDictionary+Fix.h>
 
+/// Constants
 #import <LYCategory/MacroIOS.h>
 #import <LYCategory/LYCategoryConstants.h>
 
-// UI
+/// UI
 #import <LYCategory/UITextField+Input.h>
 #import <LYCategory/UITextView+Input.h>
 #import <LYCategory/UIView+Screenshot.h>
