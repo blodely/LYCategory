@@ -32,4 +32,6 @@
 
 @interface NSNotificationCenter (Speed)
 
++ (void)postDefaultNotificationName:(NSNotificationName)name;
+
 @end
