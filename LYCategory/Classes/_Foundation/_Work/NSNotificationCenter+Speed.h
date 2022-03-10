@@ -32,6 +32,8 @@
 
 @interface NSNotificationCenter (Speed)
 
+/// Using default notification center to post a notify without other parameters
+/// @param name notification name string
 + (void)postDefaultNotifName:(NSNotificationName)name;
 
 @end
