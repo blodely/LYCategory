@@ -32,7 +32,7 @@
 
 @implementation NSNotificationCenter (Speed)
 
-+ (void)postDefaultNotificationName:(NSNotificationName)name {
++ (void)postDefaultNotifName:(NSNotificationName)name {
 	[[NSNotificationCenter defaultCenter] postNotificationName:name object:nil];
 }
 
