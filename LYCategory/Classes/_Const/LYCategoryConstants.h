@@ -158,6 +158,14 @@ typedef void(^LYCObject)(id object);
 typedef void(^LYCTableCell)(__kindof UITableViewCell *cell);
 
 /**
+ Block with parameters UITableViewCell and it's indexPath object.
+ 
+ @param cell UITableViewCell object
+ @param idp The indexpath that cell located
+ */
+typedef void(^LYCTableCellIndex)(__kindof UITableViewCell *cell, NSIndexPath *idp);
+
+/**
  Block with parameter UICollectionViewCell (or it's children class) object.
  
  @param cell UICollectionViewCell object
