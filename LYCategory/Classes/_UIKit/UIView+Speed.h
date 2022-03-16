@@ -52,9 +52,9 @@
 - (void)border1Px;
 
 /**
- Add a one pixel stoke to all subviews.
+ Add a one pixel stroke to all subviews.
  */
-- (void)stokeSubviews;
+- (void)strokeSubviews;
 
 /**
  Remove view's border.

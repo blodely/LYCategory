@@ -47,7 +47,7 @@
 	self.layer.borderWidth = 1.0 / [UIScreen mainScreen].scale;
 }
 
-- (void)stokeSubviews {
+- (void)strokeSubviews {
 	for (UIView *one in self.subviews) {
 		[one border1Px];
 	}
