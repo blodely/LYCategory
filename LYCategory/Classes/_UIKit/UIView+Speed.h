@@ -71,6 +71,8 @@
 
 // MARK: - USER INTERACTION
 
+/// Disable view's interaction for speicified time duration
+/// @param second seconds
 - (void)pauseUserInteractionFor:(float)second;
 
 - (void)pauseUserInteractionForASecond;
