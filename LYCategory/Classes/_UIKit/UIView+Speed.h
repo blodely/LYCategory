@@ -75,6 +75,7 @@
 /// @param second seconds
 - (void)pauseUserInteractionFor:(float)second;
 
+/// Disable view's interaction for one second
 - (void)pauseUserInteractionForASecond;
 
 - (void)reenableUserInteraction;
