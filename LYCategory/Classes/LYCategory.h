@@ -65,6 +65,8 @@
 #import <LYCategory/NSUserDefaults+Speed.h>
 #import <LYCategory/NSNotificationCenter+Speed.h>
 
+#import <LYCategory/NSKeyedArchiver+Speed.h>
+
 /// File
 #import <LYCategory/NSFileManager+IOS.h>
 #import <LYCategory/NSFileManager+Size.h>
