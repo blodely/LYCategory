@@ -72,7 +72,8 @@
 }
 
 - (NSString *)base64Decoded {
-	return nil;
+	NSString *ret = [[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:self options:(NSDataBase64DecodingOptions)0] encoding:NSUTF8StringEncoding];
+	return ret;
 }
 
 // MARK: - DES
