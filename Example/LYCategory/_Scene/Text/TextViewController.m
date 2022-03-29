@@ -75,6 +75,13 @@
 		NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:@"text.\na new line. line three. text text text text text text text text text text text text." attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],}];
 		NSLog(@"Attributed String Height %@", @([attributedString heightWithFixedWidth:WIDTH - 32]));
 	}
+	
+	{
+		// BASE64 STRING DEMO
+		NSString *normal = @"normal text";
+		NSLog(@"is %@ same.", [[normal base64] isEqualToString:[normal base64Encoded]] ? @"the" : @"not the");
+		NSLog(@"result %@", [[normal base64Encoded] base64Decoded]);
+	}
 }
 
 #pragma mark MEMORY MANAGEMENT
