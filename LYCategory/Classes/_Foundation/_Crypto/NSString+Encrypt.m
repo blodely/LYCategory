@@ -68,7 +68,7 @@
 }
 
 - (NSString *)base64Encoded {
-	return nil;
+	return [[self dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:(NSDataBase64EncodingOptions)0];
 }
 
 - (NSString *)base64Decoded {
