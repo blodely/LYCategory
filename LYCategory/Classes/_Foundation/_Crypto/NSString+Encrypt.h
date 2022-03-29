@@ -31,7 +31,15 @@
 
 @interface NSString (Encrypt)
 
+// MARK: - BASE64
+
 - (NSString *)base64;
+
+- (NSString *)base64Encoded;
+
+- (NSString *)base64Decoded;
+
+// MARK: - MD5
 
 /**
  default MD5 (32)

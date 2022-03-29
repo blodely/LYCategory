@@ -33,6 +33,8 @@
 
 @implementation NSString (Encrypt)
 
+// MARK: - BASE64
+
 - (NSString *)base64 {
 	
 	// From AFNetworking
@@ -64,6 +66,16 @@
 	
     return [[NSString alloc] initWithData:mutableData encoding:NSASCIIStringEncoding];
 }
+
+- (NSString *)base64Encoded {
+	return nil;
+}
+
+- (NSString *)base64Decoded {
+	return nil;
+}
+
+// MARK: - DES
 
 static Byte iv[] = {0x12,0x34,0x56,0x78,0x90,0xAB,0xCD,0xEF};
 
@@ -118,6 +130,8 @@ static Byte iv[] = {0x12,0x34,0x56,0x78,0x90,0xAB,0xCD,0xEF};
 	}
 	return plainText;
 }
+
+// MARK: - MD5
 
 - (NSString *)md5 {
 	
