@@ -32,6 +32,8 @@
 
 @interface UIImage (Speed)
 
+/// get color object from specified pixel of an image
+/// @param point pixel
 - (UIColor *)colorAtPixel:(CGPoint)point;
 
 /**
