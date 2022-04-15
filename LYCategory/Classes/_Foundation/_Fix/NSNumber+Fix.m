@@ -56,7 +56,7 @@
 }
 
 - (NSNumber *)integerNumber {
-	return self;
+	return @([self integerValue]);
 }
 
 - (BOOL)isReal {
