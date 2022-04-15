@@ -60,7 +60,7 @@
 }
 
 - (BOOL)isReal {
-	return [self intValue] != 0;
+	return [self integerValue] != 0;
 }
 
 @end
