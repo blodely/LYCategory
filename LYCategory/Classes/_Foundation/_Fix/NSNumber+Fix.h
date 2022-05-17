@@ -31,6 +31,8 @@
 
 @interface NSNumber (Fix)
 
+/// method placeholder with a nil return
+/// @param index any unsigned integer
 - (id)objectAtIndex:(NSUInteger)index;
 
 - (id)objAtIdx:(NSInteger)idx;
