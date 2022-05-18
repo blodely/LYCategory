@@ -35,6 +35,8 @@
 /// @param index any unsigned integer
 - (id)objectAtIndex:(NSUInteger)index;
 
+/// method placeholder with a nil return.
+/// @param idx any integer number
 - (id)objAtIdx:(NSInteger)idx;
 
 - (id)objectForKey:(id)aKey;
