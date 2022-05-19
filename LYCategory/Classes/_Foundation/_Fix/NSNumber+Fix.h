@@ -39,6 +39,8 @@
 /// @param idx any integer number
 - (id)objAtIdx:(NSInteger)idx;
 
+/// method placeholder with a nil return.
+/// @param aKey any object
 - (id)objectForKey:(id)aKey;
 
 - (BOOL)isEqualToString:(NSString *)aString;
