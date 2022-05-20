@@ -43,6 +43,8 @@
 /// @param aKey any object
 - (id)objectForKey:(id)aKey;
 
+/// convert to string then verify it
+/// @param aString string
 - (BOOL)isEqualToString:(NSString *)aString;
 
 /**
