@@ -123,4 +123,8 @@
 	return fabs(delta) < 60 * 60.0f;
 }
 
+- (NSInteger)getCurrentAgeForBirthdayDate {
+    return [NSCalendar.currentCalendar components:NSCalendarUnitYear fromDate:self toDate:NSDate.date options:0].year;
+}
+
 @end

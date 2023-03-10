@@ -87,4 +87,7 @@
 
 - (BOOL)inAnHour:(NSDate *)date;
 
+/// Treat as birthday date, get current age number.
+- (NSInteger)getCurrentAgeForBirthdayDate;
+
 @end
