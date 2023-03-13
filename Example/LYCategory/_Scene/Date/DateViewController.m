@@ -46,6 +46,8 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// DO ANY ADDITIONAL SETUP AFTER LOADING THE VIEW FROM ITS NIB.
+    
+    NSLog(@"RANDOM DATE = %@", [NSDate randomDateBetweenYear:1984 toYear:2002]);
 }
 
 #pragma mark | MEMORY MANAGEMENT

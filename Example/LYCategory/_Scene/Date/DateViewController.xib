@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,29 +24,26 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7vK-cI-6hS">
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="7vK-cI-6hS">
                     <rect key="frame" x="0.0" y="505" width="375" height="162"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="162" id="MWd-5O-R6P"/>
                     </constraints>
-                    <date key="date" timeIntervalSinceReferenceDate="409395915.87694901">
-                        <!--2013-12-22 09:05:15 +0000-->
-                    </date>
                     <connections>
                         <action selector="dateChanged:" destination="-1" eventType="valueChanged" id="okW-Im-cKK"/>
                     </connections>
                 </datePicker>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="UTC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fl-gS-c0z">
-                    <rect key="frame" x="20" y="54" width="32.5" height="20"/>
+                    <rect key="frame" x="20" y="54" width="32" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="Xup-NP-q1U"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-lb-kxb">
-                    <rect key="frame" x="62.5" y="53" width="292.5" height="21"/>
+                    <rect key="frame" x="62" y="53" width="293" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="Zic-kl-y7O"/>
                     </constraints>
@@ -77,11 +72,11 @@
                         <constraint firstAttribute="height" constant="20" id="vXy-Jd-Fps"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBP-1R-j6H">
-                    <rect key="frame" x="20" y="114" width="49.5" height="19.5"/>
+                    <rect key="frame" x="20" y="114" width="49.5" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="5JC-Xf-jJD"/>
                     </constraints>
@@ -101,7 +96,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="0000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R0T-Zo-afN">
-                    <rect key="frame" x="89.5" y="115" width="265.5" height="20"/>
+                    <rect key="frame" x="89.5" y="121" width="265.5" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="6fe-U1-32x"/>
                     </constraints>
@@ -109,7 +104,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="0000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Txj-Hf-Bg0">
-                    <rect key="frame" x="88" y="85" width="267" height="20"/>
+                    <rect key="frame" x="88" y="91" width="267" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="izt-jf-Nqv"/>
                     </constraints>
@@ -143,12 +138,12 @@
                 <constraint firstItem="R0T-Zo-afN" firstAttribute="baseline" secondItem="hBP-1R-j6H" secondAttribute="baseline" id="vWh-Mp-Y1J"/>
                 <constraint firstAttribute="bottom" secondItem="7vK-cI-6hS" secondAttribute="bottom" id="yV4-6k-Ygt"/>
             </constraints>
-            <point key="canvasLocation" x="24.5" y="52.5"/>
+            <point key="canvasLocation" x="37.404580152671755" y="36.971830985915496"/>
         </view>
     </objects>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
-    </simulatedMetricsContainer>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
