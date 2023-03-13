@@ -47,6 +47,7 @@
 #import <LYCategory/NSNumber+Date.h>
 #import <LYCategory/NSNumber+Distance.h>
 
+#import <LYCategory/NSDate+Random.h>
 #import <LYCategory/NSDate+Formatter.h>
 #import <LYCategory/NSDate+Operator.h>
 
