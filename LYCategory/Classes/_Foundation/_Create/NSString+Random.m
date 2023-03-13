@@ -40,5 +40,9 @@
     return uuidobj;
 }
 
++ (NSString *)randomMaleName {
+    return @"";
+}
+
 
 @end

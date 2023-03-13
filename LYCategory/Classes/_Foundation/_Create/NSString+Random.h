@@ -33,4 +33,6 @@
 
 + (NSString *)uuid;
 
++ (NSString *)randomMaleName;
+
 @end
