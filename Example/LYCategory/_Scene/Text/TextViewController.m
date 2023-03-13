@@ -53,6 +53,11 @@
 	button.selected = !button.isSelected;
 }
 
+- (IBAction)generateRandomName:(id)sender {
+    lblInput.text = [NSString randomMaleName];
+    
+}
+
 #pragma mark - INIT
 
 - (id)init {
