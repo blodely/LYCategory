@@ -102,4 +102,7 @@
 
 - (void)makeEdgeEqualToSuperView;
 
+/// remove all constraints with self
+- (void)removeAllConstraints;
+
 @end

@@ -123,4 +123,19 @@
 	[self makeEdgeEqualTo:self.superview insets:UIEdgeInsetsZero];
 }
 
+- (void)removeAllConstraints {
+    
+    UIView *superview = self; //self.superview;
+    while (superview != nil) {
+        for (NSLayoutConstraint *cs in superview.constraints) {
+            if (cs.firstItem == self || cs.secondItem == self) {
+                [superview removeConstraint:cs];
+            }
+        }
+        superview = superview.superview;
+    }
+    
+    //[self removeConstraints:self.constraints];
+}
+
 @end
