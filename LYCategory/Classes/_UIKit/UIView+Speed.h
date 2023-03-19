@@ -94,6 +94,10 @@
  */
 - (void)removeAllSubviewsWithClassNamed:(NSString *)className;
 
+// MARK: - FRAME
+
+- (void)makeFrameCenterAtSuperview;
+
 // MARK: - CONSTRAINT
 
 - (void)makeEdgeEqualTo:(UIView *)anotherView insets:(UIEdgeInsets)inset;

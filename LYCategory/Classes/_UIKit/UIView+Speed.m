@@ -99,6 +99,18 @@
 	}
 }
 
+// MARK: - FRAME
+
+- (void)makeFrameCenterAtSuperview {
+    if (self.superview == nil) {
+        return;
+    }
+    
+    CGSize size = self.superview.frame.size;
+    CGPoint center = (CGPoint){floor(size.width * 0.5), floor(size.height * 0.5)};
+    self.center = center;
+}
+
 // MARK: CONSTRAINT
 
 - (void)makeEdgeEqualTo:(UIView *)anotherView insets:(UIEdgeInsets)inset {
