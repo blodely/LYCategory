@@ -123,6 +123,18 @@
 	[self makeEdgeEqualTo:self.superview insets:UIEdgeInsetsZero];
 }
 
+- (void)makeHorizontalEdgeEqualTo:(UIView *)anotherView insets:(UIEdgeInsets)inset {
+    if (anotherView == nil) {
+        // DO NOTHING
+        return;
+    }
+    
+    self.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    [self.leftAnchor constraintEqualToAnchor:anotherView.leftAnchor constant:inset.left].active = YES;
+    [self.rightAnchor constraintEqualToAnchor:anotherView.rightAnchor constant:inset.right].active = YES;
+}
+
 - (void)removeAllConstraints {
     
     UIView *superview = self; //self.superview;
