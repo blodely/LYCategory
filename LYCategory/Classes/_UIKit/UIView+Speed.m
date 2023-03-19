@@ -135,6 +135,10 @@
     [self.rightAnchor constraintEqualToAnchor:anotherView.rightAnchor constant:inset.right].active = YES;
 }
 
+- (void)makeHorizontalEdgeEqualToSuperView {
+    [self makeHorizontalEdgeEqualTo:self.superview insets:UIEdgeInsetsZero];
+}
+
 - (void)removeAllConstraints {
     
     UIView *superview = self; //self.superview;
