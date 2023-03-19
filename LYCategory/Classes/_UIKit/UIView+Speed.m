@@ -106,7 +106,7 @@
 		return;
 	}
 	
-	self.translatesAutoresizingMaskIntoConstraints = NO;
+//	self.translatesAutoresizingMaskIntoConstraints = NO; // EXPLICIT CALL (SHOULD)
 	
 	[self.leftAnchor constraintEqualToAnchor:anotherView.leftAnchor constant:inset.left].active = YES;
 	[self.rightAnchor constraintEqualToAnchor:anotherView.rightAnchor constant:inset.right].active = YES;
@@ -129,7 +129,7 @@
         return;
     }
     
-    self.translatesAutoresizingMaskIntoConstraints = NO;
+//    self.translatesAutoresizingMaskIntoConstraints = NO; // EXPLICIT CALL (SHOULD)
     
     [self.leftAnchor constraintEqualToAnchor:anotherView.leftAnchor constant:inset.left].active = YES;
     [self.rightAnchor constraintEqualToAnchor:anotherView.rightAnchor constant:inset.right].active = YES;
