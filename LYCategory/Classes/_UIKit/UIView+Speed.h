@@ -106,6 +106,10 @@
 
 - (void)makeHorizontalEdgeEqualToSuperView;
 
+- (void)makeVerticalEdgeEqualTo:(UIView *)anotherView insets:(UIEdgeInsets)inset;
+
+- (void)makeVerticalEdgeEqualToSuperView;
+
 /// remove all constraints with self
 - (void)removeAllConstraints;
 

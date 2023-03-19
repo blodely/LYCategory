@@ -139,6 +139,19 @@
     [self makeHorizontalEdgeEqualTo:self.superview insets:UIEdgeInsetsZero];
 }
 
+- (void)makeVerticalEdgeEqualTo:(UIView *)anotherView insets:(UIEdgeInsets)inset {
+    if (anotherView == nil) {
+        return;
+    }
+    
+    [self.topAnchor constraintEqualToAnchor:anotherView.topAnchor constant:inset.top].active = YES;
+    [self.bottomAnchor constraintEqualToAnchor:anotherView.bottomAnchor constant:inset.bottom].active = YES;
+}
+
+- (void)makeVerticalEdgeEqualToSuperView {
+    [self makeVerticalEdgeEqualTo:self.superview insets:UIEdgeInsetsZero];
+}
+
 - (void)removeAllConstraints {
     
     UIView *superview = self; //self.superview;
