@@ -98,6 +98,8 @@
 
 - (void)animateCenterTo:(CGPoint)center;
 
+- (void)animateCenterX:(CGFloat)xvalue;
+
 - (void)animateCenterY:(CGFloat)yvalue;
 
 // MARK: - FRAME
