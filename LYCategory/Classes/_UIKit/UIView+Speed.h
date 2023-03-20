@@ -94,6 +94,10 @@
  */
 - (void)removeAllSubviewsWithClassNamed:(NSString *)className;
 
+// MARK: - ANIMATE CENTER
+
+- (void)animateCenterTo:(CGPoint)center;
+
 // MARK: - FRAME
 
 - (void)makeFrameCenterAtSuperview;

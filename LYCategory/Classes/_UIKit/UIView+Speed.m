@@ -28,6 +28,7 @@
 //
 
 #import "UIView+Speed.h"
+#import "LYCategoryConstants.h"
 
 
 @implementation UIView (Speed)
@@ -97,6 +98,20 @@
 			[one removeFromSuperview];
 		}
 	}
+}
+
+// MARK: - ANIMATE CENTER
+
+- (void)animateCenterTo:(CGPoint)center {
+    if (self.superview == nil) {
+        return;
+    }
+    
+    __block UIView *blockself = self;
+    [UIView animateWithDuration:ANIMATE delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        blockself.center = center;
+    } completion:^(BOOL finished) {
+    }];
 }
 
 // MARK: - FRAME
