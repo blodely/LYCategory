@@ -98,6 +98,8 @@
 
 - (void)animateCenterTo:(CGPoint)center;
 
+- (void)animateCenterY:(CGFloat)yvalue;
+
 // MARK: - FRAME
 
 - (void)makeFrameCenterAtSuperview;

@@ -114,6 +114,21 @@
     }];
 }
 
+- (void)animateCenterY:(CGFloat)yvalue {
+    if (self.superview == nil) {
+        return;
+    }
+    
+    __block CGPoint center = self.center;
+    center.y = yvalue;
+    __block UIView *blockself = self;
+    
+    [UIView animateWithDuration:ANIMATE delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        blockself.center = center;
+    } completion:^(BOOL finished) {
+    }];
+}
+
 // MARK: - FRAME
 
 - (void)makeFrameCenterAtSuperview {
