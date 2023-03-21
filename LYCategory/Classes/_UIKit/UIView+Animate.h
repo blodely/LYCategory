@@ -45,4 +45,9 @@ typedef enum {
  */
 - (void)showFromScreen:(AnimateViewPosition)postion;
 
+/// move view to point and scale view with animation
+/// @param pt target point
+/// @param scale scale
+- (void)animateTo:(CGPoint)pt scale:(CGFloat)scale;
+
 @end
