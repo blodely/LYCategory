@@ -50,4 +50,9 @@ typedef enum {
 /// @param scale scale
 - (void)animateTo:(CGPoint)pt scale:(CGFloat)scale;
 
+/// move view to point and scale view with spring animation
+/// @param pt target point
+/// @param scale scale
+- (void)springTo:(CGPoint)pt scale:(CGFloat)scale;
+
 @end

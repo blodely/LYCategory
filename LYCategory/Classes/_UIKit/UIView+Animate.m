@@ -120,4 +120,12 @@
     } completion:nil];
 }
 
+- (void)springTo:(CGPoint)pt scale:(CGFloat)scale {
+    __block UIView *blockself = self;
+    [UIView animateWithDuration:ANIMATE delay:0 usingSpringWithDamping:ANIMATE initialSpringVelocity:6 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        blockself.center = pt;
+        blockself.transform = CGAffineTransformMakeScale(scale, scale);
+    } completion:nil];
+}
+
 @end
