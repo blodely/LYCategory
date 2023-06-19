@@ -107,9 +107,7 @@
 	
 	[UIView animateWithDuration:0.25 animations:^{
 		self.center = center;
-	} completion:^(BOOL finished) {
-		
-	}];
+	} completion:nil];
 }
 
 - (void)animateTo:(CGPoint)pt scale:(CGFloat)scale {
