@@ -31,10 +31,6 @@
 
 @interface NSData (Encrypt)
 
-- (NSString *)md5;
-
-- (NSData *)MD5;
-
 - (NSData *)SHA1;
 
 - (NSData *)SHA256;

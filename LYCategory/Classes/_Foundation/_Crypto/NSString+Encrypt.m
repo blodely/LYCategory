@@ -107,24 +107,6 @@ static Byte iv[] = {0x12,0x34,0x56,0x78,0x90,0xAB,0xCD,0xEF};
 
 // MARK: - MD5
 
-- (NSString *)md5 {
-	
-	const char *cstr = [self UTF8String];
-	
-    unsigned char digest[16];
-	
-    CC_MD5(cstr, (unsigned int)strlen(cstr), digest);
-	
-    return [NSString stringWithFormat:
-			@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",
-			digest[0], digest[1], digest[2], digest[3], digest[4], digest[5], digest[6], digest[7],
-			digest[8], digest[9], digest[10], digest[11], digest[12], digest[13], digest[14], digest[15]];
-}
-
-- (NSString *)md5Lowercase16 {
-	return [[[[self md5] substringToIndex:24] substringFromIndex:8] lowercaseString];
-}
-
 - (NSString *)sha1 {
 	const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
 	NSData *data = [NSData dataWithBytes:cstr length:self.length];
@@ -140,20 +122,6 @@ static Byte iv[] = {0x12,0x34,0x56,0x78,0x90,0xAB,0xCD,0xEF};
 	}
 	
 	return output;
-}
-
-- (NSString *)md5Uppercase32 {
-	
-	const char *cStr = [self UTF8String];
-	unsigned char result[32];
-	
-	CC_MD5(cStr, (unsigned int)strlen(cStr), result);
-	return [NSString stringWithFormat:
-			@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
-			result[0],result[1],result[2],result[3],
-			result[4],result[5],result[6],result[7],
-			result[8],result[9],result[10],result[11],
-			result[12],result[13],result[14],result[15]];
 }
 
 @end
