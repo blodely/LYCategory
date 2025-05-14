@@ -21,8 +21,7 @@
 	if ([tfInput isEmpty]) {
 		lblInput.text = @"TEXT FIELD EMPTY";
 	} else {
-		lblInput.text = [tfInput.text md5];
-		NSLog(@"%@", [tfInput.text md5]);
+		lblInput.text = @"DEPRECATED";
 	}
 }
 
